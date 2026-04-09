@@ -1,0 +1,23 @@
+{
+  "name": "paretomed-evidencia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build/convert-docs.js && node build/normalize-filenames.js && node build/sync-src.js",
+    "sync": "node build/sync-src.js",
+    "serve": "cd dist && python -m http.server 8080",
+    "audit": "node build/audit-dist.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "glob": "^13.0.6",
+    "mammoth": "^1.12.0",
+    "markdown-it": "^14.1.1",
+    "xlsx": "^0.18.5"
+  }
+}

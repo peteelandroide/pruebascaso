@@ -1,0 +1,82 @@
+[10/02/26, 1:37:32 PM] ~Paretomed: ‎This business uses a secure service from Meta to manage this chat. Tap to learn more.
+[10/02/26, 1:37:32 PM] Carlos Vargas: Hola, buenas tardes!
+[10/02/26, 1:38:11 PM] ~Paretomed: ¡Hola Carlos!
+Te saludamos desde *Paretomed,* el programa que te ayudará a convertirte en residente.  
+Por favor selecciona una opción de acuerdo a tu interés.
+- ‎Button 1: Info del programa
+- ‎Button 2: Quiero inscribirme
+- ‎Button 3: Soporte alumnos
+
+[10/02/26, 1:38:26 PM] Carlos Vargas: Quiero inscribirme
+[10/02/26, 1:39:35 PM] ~Paretomed: *¡Felicidades por dar este gran paso hacia tu residencia!* 🚀
+
+Ya recibimos tu solicitud. Te estamos transfiriendo ahora mismo con un coordinador de inscripciones, quien te guiará personalmente para formalizar tu matrícula de manera rápida y sencilla.
+[10/02/26, 1:40:21 PM] Carlos Vargas: Me recomendaron los cursos de paretomed, quiesiera tener mas información al respecto
+[10/02/26, 2:17:14 PM] ~Paretomed: Buenas tardes, Doc. Te habla Isabella de Paretomed. Con el fin de brindarte una atención más precisa, te realizaré tres preguntas: 🎯
+¿Eres médico general o actualmente te encuentras realizando el internado o el servicio rural?
+En los próximos seis meses, ¿a qué universidad tienes previsto presentarte?
+¿En qué rango de edad te encuentras?
+A. Entre 21 y 25 años
+B. Entre 25 y 42 años
+C. Entre 43 y 50 años
+[10/02/26, 3:05:25 PM] Carlos Vargas: Medico General, Universidad del Norte, 21-25 años
+[10/02/26, 3:08:53 PM] ~Paretomed: Excelente Doc, ¿estas esperando sorteo para el rural?
+¿A que especialidad te gustaría pasar?
+[10/02/26, 3:28:06 PM] Carlos Vargas: El Curso seria para mi novia,
+[10/02/26, 3:28:17 PM] Carlos Vargas: Quiere irse por oftalmologia
+[10/02/26, 3:34:47 PM] ~Paretomed: Entiendo, nos encantaría que la Dra pueda conversar con nuestra directora académica, quien podrá explicarte cómo nuestro programa puede ayudarte a convertirte en residente. 🎯
+Es una reunión breve de solo 20 minutos, en la que saldrás con una ruta clara y definida para acceder a la especialidad. ☺️
+¿En qué horario le quedaría mejor?
+[10/02/26, 3:40:35 PM] Carlos Vargas: En ese caso podria tener información de los valores y los medios de pago?
+[10/02/26, 3:40:42 PM] Carlos Vargas: Se lo quiero regalar
+[10/02/26, 3:41:11 PM] Carlos Vargas: Y pues ya lo demas del proceso me imagino será directamente con ella
+[10/02/26, 4:01:11 PM] ~Paretomed: Listo Doc, claro que sí
+[10/02/26, 4:01:15 PM] ~Paretomed: Ya te confirmo los valores
+‎[10/02/26, 4:01:26 PM] ~Paretomed: ‎<attached: 00000018-PHOTO-2026-02-10-16-01-26.jpg>
+[10/02/26, 4:01:36 PM] ~Paretomed: Me cuentas que alternativa te queda mejor
+[10/02/26, 4:01:53 PM] ~Paretomed: Si ella se va a presentar en la Norte más otras universidades
+[10/02/26, 4:02:06 PM] ~Paretomed: Lo más aconsejable
+[10/02/26, 4:02:35 PM] ~Paretomed: Es que tome el plan plus  de 4 meses, en dónde si lo  llegas a pagar de contado, te damos un mes más
+[10/02/26, 4:02:57 PM] Carlos Vargas: Listo, dejame y reviso bien las opciones
+[10/02/26, 4:03:44 PM] ~Paretomed: Listo Doc,
+[10/02/26, 4:20:44 PM] Carlos Vargas: Si, la de 4 meses
+[10/02/26, 4:21:34 PM] ~Paretomed: Listo Doc, entonces ya te envio el link de pago
+[10/02/26, 4:21:45 PM] ~Paretomed: ¿ Vas aprovechar la promo?
+[10/02/26, 4:21:51 PM] Carlos Vargas: Aceptan pago con tarjeta?
+[10/02/26, 4:21:51 PM] ~Paretomed: Para los 5 meses
+[10/02/26, 4:22:02 PM] Carlos Vargas: O solo transferencia?
+[10/02/26, 4:22:39 PM] ~Paretomed: Si, claro
+[10/02/26, 4:22:57 PM] ~Paretomed: Ya te envio el link de pago
+[10/02/26, 4:23:14 PM] Carlos Vargas: Si, entonces pago de contado
+[10/02/26, 4:23:21 PM] ~Paretomed: https://checkout.bold.co/payment/LNK_1JPYFOQ5K1
+
+Vas a pagar $2.850.000 COP a Paretomed, un Negocio Master en Bold con respaldo y experiencia en nuestra plataforma. Este comercio:
+
+⏳ Tiene trayectoria en Bold.
+🛍️ Procesa pagos de forma segura y confiable.
+✅ Sus datos han sido verificados exitosamente.
+[10/02/26, 4:23:22 PM] Carlos Vargas: Transferencia esta bien
+[10/02/26, 4:23:28 PM] ~Paretomed: Listo
+[10/02/26, 4:24:32 PM] ~Paretomed: *Nombre:*
+*Edad:*
+*Cedula:*
+*Teléfono/WhatsApp:* 
+*Email usado en la plataforma:*
+*Especialidad soñada:*
+*Universidad(es) a las que te piensas presentar:* 
+*Por que medio nos conociste*redes sociales*
+[10/02/26, 4:25:53 PM] Carlos Vargas: Déjame y confirmo la información
+[10/02/26, 4:42:30 PM] Carlos Vargas: Camila Almanza restrepo
+25
+3505132596
+Oftalmologia
+Universidad del Norte
+Instagram
+[10/02/26, 4:42:54 PM] Carlos Vargas: Estoy esperando confirmar el resto
+[10/02/26, 4:43:58 PM] ~Paretomed: Listo Doc
+[10/02/26, 4:45:43 PM] Carlos Vargas: Tienen certificado bancario de la cuenta a donde se va a transferir ?
+[10/02/26, 4:51:30 PM] ~Paretomed: Ya te envio la certificación bancaria
+‎[10/02/26, 5:09:37 PM] ~Paretomed: Certificado_20260210 ‎<attached: 00000044-Certificado_20260210.pdf>
+[10/02/26, 5:09:51 PM] ~Paretomed: Contraseña: 1129573046
+[10/02/26, 5:15:16 PM] Carlos Vargas: Otra pregunta, el curso podria ser pausado por un tiempo y despues continuar?
+[10/02/26, 5:15:26 PM] ~Paretomed: Si claro

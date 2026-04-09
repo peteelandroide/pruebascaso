@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso ParetoMed — Portal de Evidencia</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo">
+            <h1>Caso ParetoMed <span class="subtitle">Portal de Evidencia</span></h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="global-search" placeholder="🔍 Buscar hechos, fechas, nombres, o pruebas (ej. 'Oscar', '2025', 'P-04')...">
+        </div>
+        <nav class="app-nav">
+            <button class="tab-btn active" data-target="tab-hechos">Hechos</button>
+            <button class="tab-btn" data-target="tab-pruebas">Pruebas</button>
+            <button class="tab-btn" data-target="tab-documentos">Documentos</button>
+            <button class="tab-btn" data-target="tab-resumen">Resumen</button>
+        </nav>
+    </header>
+
+    <main class="app-content">
+        <!-- VISTA HECHOS -->
+        <section id="tab-hechos" class="tab-pane active split-view-tab">
+            <div class="split-layout">
+                <!-- Panel izquierdo 35%: Hechos -->
+                <div class="hechos-sidebar">
+                    <div id="hechos-container" class="chapters-container"></div>
+                </div>
+                
+                <!-- Panel derecho 65%: Visor de documentos -->
+                <div class="document-viewer">
+                    <div class="viewer-header">
+                        <div class="viewer-title" id="viewer-title">
+                            <span class="v-icon">📄</span> <span id="v-title-text">Ninguna evidencia seleccionada</span>
+                        </div>
+                        <div class="viewer-actions">
+                            <a id="viewer-newtab-btn" href="#" target="_blank" style="display:none;" title="Abrir en pestaña nueva">↗ Abrir</a>
+                            <a id="viewer-download-btn" href="#" download style="display:none;" title="Descargar archivo">⬇ Descargar</a>
+                            <button id="close-viewer-btn" class="close-viewer-btn" title="Cerrar Visor">×</button>
+                        </div>
+                    </div>
+                    <div class="viewer-content">
+                        <div id="viewer-placeholder" class="viewer-placeholder">
+                            <div class="placeholder-icon">📚</div>
+                            <h3>Visor de Evidencia</h3>
+                            <p>Seleccione un documento, audio o chat del panel izquierdo para previsualizarlo aquí.</p>
+                        </div>
+                        <iframe id="doc-iframe" class="viewer-iframe" style="display:none;" title="Visor de Evidencia"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISTA PRUEBAS — con split layout propio -->
+        <section id="tab-pruebas" class="tab-pane split-view-tab">
+            <div class="split-layout" id="pruebas-split">
+                <!-- Panel izquierdo: catálogo -->
+                <div class="pruebas-sidebar">
+                    <div class="filters">
+                        <span>Filtrar: </span>
+                        <button class="filter-btn active" data-filter="all">Todas</button>
+                        <button class="filter-btn" data-filter="chat">Chats</button>
+                        <button class="filter-btn" data-filter="audio">Audios</button>
+                        <button class="filter-btn" data-filter="documento">Docs</button>
+                        <button class="filter-btn" data-filter="financiero">Finanzas</button>
+                        <button class="filter-btn" data-filter="certificacion">Certificaciones</button>
+                        <button class="filter-btn" data-filter="imagen">Imagen</button>
+                        <button class="filter-btn" data-filter="testimonial">Testimonial</button>
+                    </div>
+                    <div id="pruebas-container"></div>
+                </div>
+
+                <!-- Panel derecho: visor -->
+                <div class="document-viewer" id="pruebas-viewer">
+                    <div class="viewer-header">
+                        <div class="viewer-title">
+                            <span class="v-icon">📄</span>
+                            <span id="pv-title-text">Seleccione una prueba</span>
+                        </div>
+                        <div class="viewer-actions">
+                            <a id="pv-newtab-btn" href="#" target="_blank" style="display:none;" title="Abrir en pestaña nueva">↗ Abrir</a>
+                            <a id="pv-download-btn" href="#" download style="display:none;" title="Descargar">⬇ Descargar</a>
+                            <button id="pv-close-btn" class="close-viewer-btn" title="Cerrar Visor">×</button>
+                        </div>
+                    </div>
+                    <div class="viewer-content">
+                        <div id="pv-placeholder" class="viewer-placeholder">
+                            <div class="placeholder-icon">📚</div>
+                            <h3>Visor de Pruebas</h3>
+                            <p>Haga clic en cualquier prueba del catálogo para previsualizarla aquí.</p>
+                        </div>
+                        <iframe id="pv-iframe" class="viewer-iframe" style="display:none;" title="Visor de Pruebas"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISTA DOCUMENTOS -->
+        <section id="tab-documentos" class="tab-pane">
+            <div id="documentos-list"></div>
+        </section>
+
+        <!-- VISTA RESUMEN -->
+        <section id="tab-resumen" class="tab-pane">
+            <div id="resumen-dashboard" class="dashboard"></div>
+        </section>
+    </main>
+
+    <!-- Data generada por el script de build -->
+    <script src="scripts/data.js"></script>
+    <!-- Logica UI SPA -->
+    <script src="scripts/app.js"></script>
+</body>
+</html>

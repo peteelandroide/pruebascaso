@@ -1,0 +1,7 @@
+node_modules/
+.env
+dist/
+# Optional: exclude local test files or temporary handoffs
+HANDOFF_*.md
+*.log
+.DS_Store
