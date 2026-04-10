@@ -42,6 +42,18 @@ function escapeHtml(value) {
         .replace(/>/g, '&gt;');
 }
 
+/**
+ * Inyecta IDs de línea (id="L1", id="L2", ...) en elementos de bloque HTML.
+ * Permite al visor hacer autoscroll a una línea específica.
+ */
+function injectLineIds(html) {
+    let lineNum = 0;
+    return html.replace(/<(p|tr|li|h[1-6]|blockquote|div class="line")(\s|>)/gi, (match, tag, after) => {
+        lineNum++;
+        return `<${tag} id="L${lineNum}"${after}`;
+    });
+}
+
 function writeHtml(relativeOutputPath, html) {
     const outputPath = path.join(DIST_ROOT, relativeOutputPath);
     ensureParentDir(outputPath);
@@ -63,7 +75,7 @@ async function processDocx(filePath, relativeSourcePath) {
         </head>
         <body>
           <div class="document-container document-viewer-mode">
-            ${result.value}
+            ${injectLineIds(result.value)}
           </div>
         </body>
         </html>
@@ -99,7 +111,7 @@ function processXlsx(filePath, relativeSourcePath) {
         </head>
         <body>
           <div class="document-container">
-            ${contentHtml}
+            ${injectLineIds(contentHtml)}
           </div>
         </body>
         </html>

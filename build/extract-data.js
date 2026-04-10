@@ -24,6 +24,30 @@ function resetGeneratedDirs() {
     });
 }
 
+function uniqueStrings(values) {
+    return [...new Set((values || []).filter(Boolean))];
+}
+
+function uniqueFragments(values) {
+    const seen = new Set();
+    return (values || []).filter(fragment => {
+        const key = [
+            fragment.cita || '',
+            fragment.fuente || '',
+            fragment.linea || '',
+            fragment.fecha || ''
+        ].join('|');
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+    });
+}
+
+function resolveByFactId(collection, hecho) {
+    if (!collection || !hecho) return null;
+    return collection[hecho.id] || collection[hecho.numero] || null;
+}
+
 async function main() {
     console.log("=== INICIANDO BUILD DEL PORTAL DE EVIDENCIA ===");
 
@@ -48,10 +72,10 @@ async function main() {
     // 4.1 INYECTAR FRAGMENTOS CURADOS MANUALMENTE
     const CURATED = require('./curated-fragments');
     for (const hId in finalData.hechos) {
-        const hNum = finalData.hechos[hId].numero;
-        if (CURATED[hNum] && CURATED[hNum].extractos && CURATED[hNum].extractos.length > 0) {
-            // Reemplazar fragmentos automáticos con los curados
-            finalData.hechos[hId].fragmentos_clave = CURATED[hNum].extractos.map(e => ({
+        const hecho = finalData.hechos[hId];
+        const curatedEntry = resolveByFactId(CURATED, hecho);
+        if (curatedEntry && curatedEntry.extractos && curatedEntry.extractos.length > 0) {
+            const curatedFragments = curatedEntry.extractos.map(e => ({
                 cita: e.cita,
                 fuente: e.fuente === "chat-oscar" ? "chat-oscar-pedro" : e.fuente,
                 linea: e.linea || null,
@@ -59,15 +83,23 @@ async function main() {
                 autor: e.autor || null,
                 relevancia: e.relevancia || null
             }));
+            hecho.fragmentos_clave = uniqueFragments([
+                ...curatedFragments,
+                ...(hecho.fragmentos_clave || [])
+            ]);
         }
     }
+
+    // 4.1b SEGUNDA PASADA: buscar lineas para fragmentos curados sin linea
+    findFragments.fillMissingLines(finalData);
 
     // 4.2 INYECTAR TÍTULOS CURADOS
     const TITLES = require('./hecho-titles');
     for (const hId in finalData.hechos) {
-        const hNum = finalData.hechos[hId].numero;
-        if (TITLES[hNum]) {
-            finalData.hechos[hId].titulo_corto = TITLES[hNum];
+        const hecho = finalData.hechos[hId];
+        const title = resolveByFactId(TITLES, hecho);
+        if (title) {
+            hecho.titulo_corto = title;
         }
     }
 
@@ -233,6 +265,11 @@ async function main() {
             tipo: pData.tipo,
             categoria: pData.cat
         };
+    }
+
+    for (const hecho of Object.values(finalData.hechos || {})) {
+        hecho.pruebas = uniqueStrings(hecho.pruebas);
+        hecho.fragmentos_clave = uniqueFragments(hecho.fragmentos_clave);
     }
 
     // --- NUEVO: Extraer lista de archivos crudos para Descarga directa ---

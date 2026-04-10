@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { slugifyBaseName } = require('./path-utils');
 
 const SOURCE_DIR = path.join(__dirname, '../source');
 
@@ -29,24 +30,33 @@ function levenshteinDistance(s, t) {
     return arr[t.length][s.length];
 }
 
+// Mapeo fijo para archivos con IDs conocidos (chats, grabación)
+const FIXED_IDS = {
+    'Chat de WhatsApp con Oscar Maldonado Paretomed.txt': 'chat-oscar-pedro',
+    'Chat de WhatsApp con Equipo de Trabajo - Paretomed 🟠.txt': 'chat-equipo',
+    'Chat de WhatsApp con Correcciones y sugerencias PARETOMED.txt': 'chat-correcciones',
+    'Grabación de llamada Oscar PARETOMED_250814_184648_original.txt': 'grabacion-llamada-oscar-250814',
+    'TRANSCRIPCIONES_CONSOLIDADAS_FINAL.txt': 'transcripciones'
+};
+
 function searchFragmentsInDocs(hechosData) {
-    console.log("Iniciando find-fragments.js...");
-    // Cargar los archivos base para la busqueda
-    const chatFiles = [
-        { id: 'chat-oscar-pedro', file: 'Chat de WhatsApp con Oscar Maldonado Paretomed.txt' },
-        { id: 'chat-equipo', file: 'Chat de WhatsApp con Equipo de Trabajo - Paretomed 🟠.txt' },
-        { id: 'grabacion-llamada-oscar-250814', file: 'Grabación de llamada Oscar PARETOMED_250814_184648_original.txt' },
-        { id: 'transcripciones', file: 'TRANSCRIPCIONES_CONSOLIDADAS_FINAL.txt' }
-    ];
+    console.log("Iniciando find-fragments.js (indexación universal)...");
+
+    // Escanear TODOS los .txt y .md del directorio source/
+    const allFiles = fs.readdirSync(SOURCE_DIR).filter(f => {
+        const ext = path.extname(f).toLowerCase();
+        return (ext === '.txt' || ext === '.md') && fs.statSync(path.join(SOURCE_DIR, f)).isFile();
+    });
 
     const sourcesCache = {};
-    for (const cf of chatFiles) {
-        const fp = path.join(SOURCE_DIR, cf.file);
-        if (fs.existsSync(fp)) {
-            const lineas = fs.readFileSync(fp, 'utf8').split('\n');
-            sourcesCache[cf.id] = lineas.map((txt, idx) => ({ idx: idx + 1, original: txt, norm: normalizeStr(txt) }));
-        }
+    for (const file of allFiles) {
+        const id = FIXED_IDS[file] || slugifyBaseName(path.parse(file).name);
+        const fp = path.join(SOURCE_DIR, file);
+        const lineas = fs.readFileSync(fp, 'utf8').split('\n');
+        sourcesCache[id] = lineas.map((txt, idx) => ({ idx: idx + 1, original: txt, norm: normalizeStr(txt) }));
     }
+
+    console.log(`[V] Archivos indexados para búsqueda: ${Object.keys(sourcesCache).length} (${allFiles.length} archivos)`);
 
     let foundCount = 0;
     let notFoundCount = 0;
@@ -107,4 +117,54 @@ function searchFragmentsInDocs(hechosData) {
     return hechosData;
 }
 
-module.exports = { searchFragmentsInDocs };
+/**
+ * Segunda pasada: para fragmentos curados que tienen fuente de texto indexable
+ * pero sin linea, intentar encontrar la linea exacta.
+ */
+function fillMissingLines(hechosData) {
+    // Recargar las fuentes de texto indexables
+    const allFiles = fs.readdirSync(SOURCE_DIR).filter(f => {
+        const ext = path.extname(f).toLowerCase();
+        return (ext === '.txt' || ext === '.md') && fs.statSync(path.join(SOURCE_DIR, f)).isFile();
+    });
+
+    const sourcesCache = {};
+    for (const file of allFiles) {
+        const id = FIXED_IDS[file] || slugifyBaseName(path.parse(file).name);
+        const fp = path.join(SOURCE_DIR, file);
+        const lineas = fs.readFileSync(fp, 'utf8').split('\n');
+        sourcesCache[id] = lineas.map((txt, idx) => ({ idx: idx + 1, original: txt, norm: normalizeStr(txt) }));
+    }
+
+    let filled = 0;
+    for (const hId of Object.keys(hechosData.hechos)) {
+        const hecho = hechosData.hechos[hId];
+        for (const frag of (hecho.fragmentos_clave || [])) {
+            if (frag.linea) continue; // ya tiene linea
+            if (!frag.fuente || !sourcesCache[frag.fuente]) continue; // fuente no indexable
+
+            const qNorm = normalizeStr(frag.cita);
+            if (qNorm.length < 5) continue;
+
+            const docLines = sourcesCache[frag.fuente];
+            for (const line of docLines) {
+                if (line.norm.length < 5) continue;
+                if (line.norm.includes(qNorm)) {
+                    frag.linea = line.idx;
+                    filled++;
+                    break;
+                }
+                // Buscar si la cita es substring parcial (primeras 80 chars)
+                const shortQ = qNorm.substring(0, 80);
+                if (shortQ.length >= 15 && line.norm.includes(shortQ)) {
+                    frag.linea = line.idx;
+                    filled++;
+                    break;
+                }
+            }
+        }
+    }
+    console.log(`[V] fillMissingLines: ${filled} fragmentos curados recibieron línea`);
+}
+
+module.exports = { searchFragmentsInDocs, fillMissingLines };

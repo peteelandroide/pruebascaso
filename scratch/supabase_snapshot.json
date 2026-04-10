@@ -27,8 +27,8 @@
   },
   {
     "id": "hecho-12",
-    "titulo": "Dashboard React y gestión tecnológica",
-    "resumen": "Pedro aporto conocimiento y gestion tecnologica consistente en: gestion de pixel de Meta y campanas publicitarias; y desarrollo de un Dashboard de Venta Consultiva en lenguaje React desplegado con herramientas de Google Cloud, herramienta que fue pue...",
+    "titulo": "Dashboard React y gestion tecnologica",
+    "resumen": "Pedro aporto conocimiento y gestion tecnologica consistente en la gestion de pixel de Meta, campanas publicitarias y un Dashboard de Venta Consultiva en React desplegado en Google Cloud. Este dashboard es distinto de la aplicacion educativa independiente de preguntas y respuestas para examenes de residencia descrita en el Hecho Quincuagesimonoveno.",
     "pruebas": [
       "P-02"
     ]
@@ -519,8 +519,8 @@
   },
   {
     "id": "hecho-59",
-    "titulo": "Automatización de Checkout y Recurrencia",
-    "resumen": "Pedro desarrollo, de manera independiente y fuera del alcance de los aportes de la sociedad descritos en el Hecho Decimosegundo, una herramienta tecnologica educativa orientada a los estudiantes de ParetoMed. Pedro presento el prototipo a Oscar como ...",
+    "titulo": "\"Eres socio - lo que desarrolles es para ParetoMed\"",
+    "resumen": "Pedro desarrollo de manera independiente, fuera del alcance del Hecho Decimosegundo, una aplicacion educativa de preguntas y respuestas para examenes de residencia orientada a estudiantes de ParetoMed. Oscar pretendio apropiarsela como activo social y, en los audios del 13/07/2025, no solo exigio deberes de socio sino que admitio haberle ofrecido la sociedad a Pedro.",
     "pruebas": [
       "P-02",
       "P-05",

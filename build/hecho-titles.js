@@ -29,6 +29,12 @@ module.exports = {
   18: "Creación de canales digitales de ParetoMed",
   19: "Edición audiovisual y control de calidad",
   20: "Registro DNDA — 238 obras audiovisuales",
+  "hecho-18-canales": "Creación de canales digitales de ParetoMed",
+  "hecho-19-capcut": "Edición audiovisual y control de calidad",
+  "hecho-20-dnda": "Registro DNDA — 238 obras audiovisuales",
+  "hecho-18": "Primera liquidación — 20% de ganancia neta",
+  "hecho-19": "17 transferencias bancarias — $122.3M total",
+  "hecho-20": "Variabilidad de pagos — Participación en utilidades",
 
   // CAP IV: REPARTO DE UTILIDADES
   // Nota: la numeración interna del MD repite H18-H20 en Cap IV,

@@ -12,6 +12,62 @@ document.addEventListener('DOMContentLoaded', async () => {
     // ────────────────────────────────────────────────────
     async function loadFromSupabase() {
         try {
+            const localCaseData = typeof CASE_DATA !== 'undefined' ? CASE_DATA : null;
+
+            function hasText(value) {
+                return typeof value === 'string' && value.trim().length > 0;
+            }
+
+            function mergeUniqueStrings(...arrays) {
+                return [...new Set(arrays.flat().filter(Boolean))];
+            }
+
+            function mergeFragments(localFragments, remoteFragments) {
+                const merged = [];
+                const seen = new Set();
+                [...(remoteFragments || []), ...(localFragments || [])].forEach(fragment => {
+                    const key = [
+                        fragment.cita || '',
+                        fragment.fuente || '',
+                        fragment.linea || '',
+                        fragment.fecha || ''
+                    ].join('|');
+                    if (seen.has(key)) return;
+                    seen.add(key);
+                    merged.push(fragment);
+                });
+                return merged;
+            }
+
+            function mergeHecho(localHecho, remoteHecho) {
+                const merged = { ...(localHecho || {}), ...(remoteHecho || {}) };
+                merged.id = remoteHecho?.id || localHecho?.id;
+                merged.numero = Number.isFinite(remoteHecho?.numero) ? remoteHecho.numero : localHecho?.numero;
+                merged.ordinal = hasText(remoteHecho?.ordinal) ? remoteHecho.ordinal : localHecho?.ordinal;
+                merged.capitulo_id = hasText(remoteHecho?.capitulo_id) ? remoteHecho.capitulo_id : (localHecho?.capitulo_id || localHecho?.capitulo);
+                merged.capitulo = merged.capitulo_id;
+                merged.source_key = hasText(remoteHecho?.source_key) ? remoteHecho.source_key : localHecho?.source_key;
+                merged.resumen = hasText(remoteHecho?.resumen) ? remoteHecho.resumen : localHecho?.resumen;
+                merged.texto_completo = hasText(remoteHecho?.texto_completo) ? remoteHecho.texto_completo : localHecho?.texto_completo;
+                merged.texto_completo_html = hasText(remoteHecho?.texto_completo_html) ? remoteHecho.texto_completo_html : localHecho?.texto_completo_html;
+                merged.titulo_corto = hasText(remoteHecho?.titulo_corto) ? remoteHecho.titulo_corto : localHecho?.titulo_corto;
+                merged.nota_abogado = hasText(remoteHecho?.nota_abogado) ? remoteHecho.nota_abogado : localHecho?.nota_abogado;
+                merged.pruebas = mergeUniqueStrings(localHecho?.pruebas || [], remoteHecho?.pruebas || []);
+                merged.fragmentos_clave = mergeFragments(localHecho?.fragmentos_clave || [], remoteHecho?.fragmentos_clave || []);
+                return merged;
+            }
+
+            function mergeChapterHechos(localIds, remoteIds) {
+                const merged = [];
+                const seen = new Set();
+                [...(localIds || []), ...(remoteIds || [])].forEach(id => {
+                    if (!id || seen.has(id)) return;
+                    seen.add(id);
+                    merged.push(id);
+                });
+                return merged;
+            }
+
             const [capRes, hechosRes, pruebasRes, mappingRes, fragRes] = await Promise.all([
                 supabase.from('capitulos').select('*').order('orden'),
                 supabase.from('hechos').select('*').order('numero'),
@@ -92,11 +148,46 @@ document.addEventListener('DOMContentLoaded', async () => {
                 };
             });
 
-            // Merge with existing CASE_DATA (from data.js) which has documentos, pruebas_urls, pruebas_meta, archivos_crudos
-            if (typeof CASE_DATA !== 'undefined') {
-                CASE_DATA.capitulos = capitulos;
-                CASE_DATA.hechos = hechos;
-                CASE_DATA.pruebas_catalogo = pruebas_catalogo;
+            // Mezcla resiliente: si Supabase trae algo incompleto, conservamos el fallback local.
+            if (localCaseData) {
+                const localHechos = localCaseData.hechos || {};
+                const mergedHechos = {};
+                const mergedIds = new Set([...Object.keys(localHechos), ...Object.keys(hechos)]);
+                mergedIds.forEach(id => {
+                    mergedHechos[id] = mergeHecho(localHechos[id], hechos[id]);
+                });
+
+                const localCapitulos = localCaseData.capitulos || [];
+                const remoteCapitulos = capitulos || [];
+                const remoteCapMap = Object.fromEntries(remoteCapitulos.map(cap => [cap.id, cap]));
+                const localCapMap = Object.fromEntries(localCapitulos.map(cap => [cap.id, cap]));
+                const mergedCapitulos = [];
+                const seenCapIds = new Set();
+
+                localCapitulos.forEach(localCap => {
+                    const remoteCap = remoteCapMap[localCap.id];
+                    mergedCapitulos.push({
+                        id: localCap.id,
+                        numero: remoteCap?.numero || localCap.numero,
+                        titulo: remoteCap?.titulo || localCap.titulo,
+                        hechos: mergeChapterHechos(localCap.hechos, remoteCap?.hechos)
+                    });
+                    seenCapIds.add(localCap.id);
+                });
+
+                remoteCapitulos.forEach(remoteCap => {
+                    if (seenCapIds.has(remoteCap.id)) return;
+                    mergedCapitulos.push({
+                        id: remoteCap.id,
+                        numero: remoteCap.numero,
+                        titulo: remoteCap.titulo,
+                        hechos: mergeChapterHechos(localCapMap[remoteCap.id]?.hechos, remoteCap.hechos)
+                    });
+                });
+
+                CASE_DATA.capitulos = mergedCapitulos;
+                CASE_DATA.hechos = mergedHechos;
+                CASE_DATA.pruebas_catalogo = { ...(localCaseData.pruebas_catalogo || {}), ...pruebas_catalogo };
             } else {
                 window.CASE_DATA = {
                     capitulos,
@@ -109,7 +200,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 };
             }
 
-            console.log(`[Supabase] Data loaded: ${capitulos.length} capitulos, ${Object.keys(hechos).length} hechos, ${Object.keys(pruebas_catalogo).length} pruebas`);
+            const finalCaseData = typeof CASE_DATA !== 'undefined' ? CASE_DATA : window.CASE_DATA;
+            const finalFactsCount = Object.keys((finalCaseData || {}).hechos || {}).length;
+            console.log(`[Supabase] Data loaded: ${capitulos.length} capitulos remotos, ${Object.keys(hechos).length} hechos remotos, ${finalFactsCount} hechos finales tras merge resiliente`);
         } catch (err) {
             console.error('[Supabase] Error loading data:', err);
             console.log('[Supabase] Falling back to static data.js');
@@ -460,7 +553,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const strengthLabels = ['', 'Baja', 'Media', 'Media-Alta', 'Alta', 'Muy Alta'];
 
                 html += `
-                <div class="hecho-card" id="hecho-${h.numero}" data-id="${h.id}">
+                <div class="hecho-card" id="hecho-${h.id}" data-id="${h.id}">
                     <div class="hecho-header" onclick="this.parentElement.classList.toggle('expanded')">
                         <span class="h-num">${(h.numero < 10 ? '0' : '') + h.numero}</span>
                         <span class="h-title">${title}</span>

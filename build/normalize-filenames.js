@@ -13,7 +13,7 @@ DIRS.forEach(dir => {
     const files = fs.readdirSync(dir);
     
     files.forEach(file => {
-        const normalized = file.normalize('NFC');
+        const normalized = file.normalize('NFC').toLowerCase();
         if (file !== normalized) {
             const oldPath = path.join(dir, file);
             const newPath = path.join(dir, normalized);

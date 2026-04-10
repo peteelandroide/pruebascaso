@@ -6,9 +6,18 @@
  */
 const CURATED = {
   // ========== CAPITULO I: IDENTIFICACION ==========
-  1: { extractos: [] }, // H1 - Identificación Pedro (dato registral, sin citas)
-  2: { extractos: [] }, // H2 - Identificación Oscar (dato registral, sin citas)
-  3: { extractos: [] }, // H3 - ParetoMed establecimiento (datos de Cámara de Comercio)
+  1: { extractos: [
+    { cita: "DOCTOR FLIGHT S.A.S. (NIT 901.767.877-2)", fuente: "doc-camara-comercio-doctor-flight", relevancia: "Identificacion registral del vehiculo societario de Pedro soportada en el certificado de existencia y representacion legal — P-21" },
+    { cita: "representante legal y controlante de la sociedad DOCTOR FLIGHT S.A.S.", fuente: "doc-hechos", relevancia: "El escrito matriz resume el dato registral del demandante con remision expresa a la prueba P-21, util como respaldo navegable del hecho identificativo" }
+  ]},
+  2: { extractos: [
+    { cita: "SERVICIOS EDUCATIVOS AUTOMATIZADOS MEDIANTE CLOUD COMPUTING", fuente: "doc-camara-comercio", relevancia: "Actividad economica registrada de ParetoMed en Camara de Comercio — P-20" },
+    { cita: "ParetoMed (Matricula 865.875, registrado 05/04/2023, renovado 09/08/2025)", fuente: "doc-reuniones", relevancia: "Resumen investigativo basado en el certificado mercantil que identifica a Oscar como titular del establecimiento comercial — P-20" }
+  ]},
+  3: { extractos: [
+    { cita: "Nuestro programa esta compuesto por 14 modulos de temas clinicos, compuestos por videoclases y simulacros explicados que se encuentran en una plataforma virtual, ademas contamos con GRUPOS DE ESTUDIO y ACOMPANAMIENTO PERSONALIZADO", fuente: "chat-equipo", fecha: "08/06/2024", autor: "Oscar PARETOMED", relevancia: "Descripcion directa del producto ParetoMed por parte de Oscar ante el equipo comercial — coincide con la estructura expuesta en el hecho tercero" },
+    { cita: "Nuestro programa esta disenado para que revises UN MODULO POR SEMANA de la siguiente manera: de lunes a viernes entras a la plataforma virtual en donde ves las videoclases y haces los simulacros", fuente: "chat-equipo", fecha: "08/06/2024", autor: "Oscar PARETOMED", relevancia: "Detalle operacional del programa: plataforma, videoclases, simulacros, grupo de estudio y retroalimentacion — soporte documental del modelo educativo descrito en el hecho tercero" }
+  ]},
 
   // ========== CAPITULO II: ORIGEN Y FORMACION ==========
   4: { extractos: [
@@ -42,8 +51,7 @@ const CURATED = {
     { cita: "experiencia en manejo de redes, edicion de videos, redaccion de guiones, grabacion de videoclases, asesoria en creacion de contenido y marketing, gestion de cuentas, optimizacion del tunel de ventas", fuente: "doc-contrato-cp", fecha: "22/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar RECONOCE TEXTUALMENTE los aportes de Pedro en el Contrato de Cuentas en Participación — P-14. Es un inventario de aportes industriales redactado por el propio demandado" }
   ]},
   12: { extractos: [
-    { cita: "la clausula de no competencia", fuente: "chat-oscar-pedro", fecha: "13/01/2025", autor: "Oscar Maldonado", relevancia: "Oscar menciona la cláusula anticompetencia en el contexto del Dashboard React, reconociendo que la herramienta era un aporte valioso para ParetoMed — P-02" },
-    { cita: "tu eres socio, no es que vas a sacar tu aplicacion propia... tenemos el acuerdo de que lo que desarrolles es para ParetoMed porque tu eres socio", fuente: "transcripciones", fecha: "13/07/2025", autor: "Oscar Maldonado", relevancia: "CONFESIÓN: Oscar exige que el Dashboard desarrollado por Pedro pertenezca a ParetoMed por ser Pedro su socio — P-50. Reconoce aporte tecnológico al exigir deberes societarios sobre él" }
+    { cita: "la clausula de no competencia", fuente: "chat-oscar-pedro", fecha: "13/01/2025", autor: "Oscar Maldonado", relevancia: "Oscar menciona la clausula de no competencia al discutir las herramientas tecnologicas aportadas por Pedro, incluido el Dashboard React del Hecho Decimosegundo — P-02" }
   ]},
   13: { extractos: [
     { cita: "Pensaba que tan factible es que lo hagamos en tu estudio para que se vea bien profesional", fuente: "chat-oscar-pedro", fecha: "12/04/2024", autor: "Oscar Maldonado", relevancia: "Oscar reconoce y solicita el uso del estudio de grabación profesional de Pedro como aporte al negocio — P-02" }
@@ -69,20 +77,30 @@ const CURATED = {
     { cita: "se lo deje a Paul para que aprendiera a hacerlo", fuente: "chat-oscar-pedro", fecha: "18/03/2025", autor: "Pedro Vergara", relevancia: "Pedro asigna segundo empleado propio al negocio — duplica el aporte en industria" },
     { cita: "Te esta escribiendo Paul... Para seguir subiendo a YouTube y tiktok estamos bloqueados", fuente: "chat-oscar-pedro", fecha: "13/08/2025", autor: "Pedro Vergara", relevancia: "Paul gestiona accesos directamente con Oscar — trabajador de Pedro integrado como recurso del negocio" }
   ]},
-  18: { extractos: [
+  "hecho-18-canales": { extractos: [
     { cita: "Crear cuentas @paretomed para titk tok y youtube y facebook", fuente: "chat-oscar-pedro", fecha: "28/03/2024", autor: "Pedro Vergara", relevancia: "Pedro propone y crea los canales digitales del negocio — acto fundacional propio de socio" },
     { cita: "Crea el canal de YouTube con esta cuenta", fuente: "chat-oscar-pedro", fecha: "29/03/2024", autor: "Oscar Maldonado", relevancia: "Oscar entrega credenciales institucionales a Pedro para crear infraestructura digital" },
-    { cita: "ya estan creados los canales de YouTube y tiktok", fuente: "chat-oscar-pedro", fecha: "01/04/2024", autor: "Pedro Vergara", relevancia: "Pedro confirma creación de canales — infraestructura digital del negocio construida por el demandante" },
+    { cita: "ya estan creados los canales de YouTube y tiktok", fuente: "chat-oscar-pedro", fecha: "01/04/2024", autor: "Pedro Vergara", relevancia: "Pedro confirma creación de canales — infraestructura digital del negocio construida por el demandante" }
+  ]},
+  "hecho-18": { extractos: [
     { cita: "Ingresos: 10,889,303. Egresos: 3,872,653. Ganancia: 7,016,650. Porcentaje de Pedro: 7,016,650 x 0,20 = 1,403,330", fuente: "chat-oscar-pedro", fecha: "07/05/2024", autor: "Oscar Maldonado", relevancia: "Primera liquidación: Oscar calcula el 20% sobre GANANCIA NETA — fórmula de utilidades de socio, no honorarios de servicios — P-13" }
   ]},
-  19: { extractos: [
+  "hecho-19-capcut": { extractos: [
     { cita: "los que aprendi fueron Da Vinci Resolve y Capcut para escritorio", fuente: "chat-oscar-pedro", fecha: "04/01/2024", autor: "Oscar Maldonado", relevancia: "Oscar reconoce conocimiento superior de Pedro en edición audiovisual desde el inicio" },
     { cita: "Da vinci resolve es muy bueno pero siento que para empezar es muy complicado, capcut de escritorio es mas amigable", fuente: "chat-oscar-pedro", fecha: "04/01/2024", autor: "Pedro Vergara", relevancia: "Pedro asesora a Oscar en herramientas de edición — rol de dirección, no ejecución subordinada" },
     { cita: "Oscar trate de editarlo pa que lo subieras ahorita y no me gusto el capcut de movil no tiene buenas funciones para mejorar el audio y los subtitulos", fuente: "chat-oscar-pedro", fecha: "23/03/2024", autor: "Pedro Vergara", relevancia: "Pedro asume control de calidad de ediciones — liderazgo técnico propio de socio" }
   ]},
-  20: { extractos: [
+  "hecho-19": { extractos: [
+    { cita: "14 transferencias bancarias de la cuenta de OSCAR MALDONADO a la cuenta Bancolombia **4483 de Pedro Vergara, por un total de $99.319.834 COP", fuente: "doc-pagos-bancolombia", fecha: "mayo 2024 - agosto 2025", autor: "Oscar Maldonado", relevancia: "Transferencias variables documentadas a la cuenta personal de Pedro — parte del patron de participacion en utilidades" },
+    { cita: "31/12/2024 | $8.413.000 | Diciembre 2024 (pago adelantado) | Comprobante No. 0000057400", fuente: "doc-hechos", relevancia: "El escrito matriz compila las transferencias a Doctor Flight y el comprobante bancario de diciembre 2024 como parte del total de 17 pagos" }
+  ]},
+  "hecho-20-dnda": { extractos: [
     { cita: "238 obras audiovisuales unicas, 476 registros", fuente: "doc-certificado-dnda", fecha: "28/10/2025", autor: "DNDA", relevancia: "Certificado DNDA: 238 obras registradas por Pedro como AUTOR, DIRECTOR y PRODUCTOR — P-22, P-23. Oscar solo aparece como ARTISTA/INTERPRETE/EJECUTANTE, nunca como autor" },
     { cita: "si tu desarrollas una aplicacion, tu eres socio para esto... papi, tu lo desarrollaste siendo socio de ParetoMed", fuente: "transcripciones", fecha: "13/07/2025", autor: "Oscar Maldonado", relevancia: "Oscar reconoce que las obras creadas por Pedro son de ParetoMed — confesión que confirma el carácter societario del aporte intelectual — P-50" }
+  ]},
+  "hecho-20": { extractos: [
+    { cita: "El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025 — cuenta personal)", fuente: "doc-hechos", relevancia: "La propia demanda sintetiza la variabilidad extrema de los pagos como rasgo incompatible con honorarios fijos y compatible con utilidades variables" },
+    { cita: "la rentabilidad de este mes fue 83,633,800", fuente: "chat-oscar-pedro", fecha: "05/02/2025", autor: "Oscar Maldonado", relevancia: "Oscar vincula el pago mensual al resultado economico del negocio, no a una tarifa estable de servicios" }
   ]},
 
   // ========== CAPITULO IV: REPARTO DE UTILIDADES ==========
@@ -265,8 +283,9 @@ const CURATED = {
 
   // ========== CAPITULO XVI: HECHOS ADICIONALES FINALES ==========
   59: { extractos: [
-    { cita: "tu eres socio, no es que vas a sacar tu aplicacion propia... tenemos el acuerdo de que lo que desarrolles es para ParetoMed porque tu eres socio", fuente: "transcripciones", fecha: "13/07/2025", autor: "Oscar Maldonado", relevancia: "CONFESIÓN: Oscar EXIGE deberes de socio a Pedro — P-50. Solo un mes antes de la ruptura, Oscar reconoce inequívocamente la condición de socio y exige obligaciones fiduciarias" },
-    { cita: "si tu desarrollas una aplicacion, tu eres socio para esto... papi, tu lo desarrollaste siendo socio de ParetoMed... yo creo que ahi no hay cabida, no hay duda", fuente: "transcripciones", fecha: "13/07/2025", autor: "Oscar Maldonado", relevancia: "Oscar reitera 'eres socio' en 3 frases distintas — P-50. La repetición demuestra convicción, no desliz verbal. 'No hay duda' es la eliminación de cualquier ambigüedad" }
+    { cita: "tu eres socio, no es que vas a sacar tu aplicacion propia... tenemos el acuerdo de que lo que desarrolles es para ParetoMed porque tu eres socio", fuente: "transcripciones", fecha: "13/07/2025", autor: "Oscar Maldonado", relevancia: "CONFESION: Oscar exige deberes de socio sobre la aplicacion educativa independiente de preguntas y respuestas para examenes de residencia, no sobre el Dashboard React del Hecho Decimosegundo — P-50" },
+    { cita: "tu no estabas trabajando en vainas de examenes de residencia hasta que comenzaste a trabajar conmigo que yo te abria el espacio y te ofreci la sociedad", fuente: "transcripciones", fecha: "13/07/2025", autor: "Oscar Maldonado", relevancia: "Admision literal: Oscar reconoce que le abrio el espacio a Pedro y le ofrecio la sociedad antes de reclamar la aplicacion como parte de ParetoMed — P-50" },
+    { cita: "tu lo desarrollaste siendo socio de ParetoMed... yo creo que ahi no hay cabida, no hay duda sobre cual es el proposito de esa aplicacion", fuente: "transcripciones", fecha: "13/07/2025", autor: "Oscar Maldonado", relevancia: "Oscar intenta apropiarse de la aplicacion precisamente porque afirma que Pedro ya la habia desarrollado siendo socio de ParetoMed — P-50" }
   ]},
   60: { extractos: [
     { cita: "Si reconozco.", fuente: "chat-oscar-pedro", fecha: "12/07/2025", autor: "Oscar Maldonado", relevancia: "Oscar reconoce con dos palabras los aportes metodológicos de Pedro — P-02. Respuesta directa a la lista de aportes presentada por Pedro" },

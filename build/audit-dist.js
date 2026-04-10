@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
+const { EXPECTED_FACT_COUNT } = require('./hecho-blueprint');
 
 const DIST = path.join(__dirname, '..', 'dist');
 
@@ -77,8 +78,13 @@ console.log(`  Found: ${foundPruebas}/${withHtml} (pruebas with html link)`);
 // 5. Check fragment fuentes point to valid documentos
 console.log('\n--- Fragment fuentes → documentos mapping ---');
 let unmapped = new Set();
+let hechosSinFragmentos = [];
+let hechosSinPruebas = [];
 for (const [hId, hecho] of Object.entries(CASE_DATA.hechos || {})) {
-    (hecho.fragmentos_clave || hecho.extractos || []).forEach(frag => {
+    const fragmentos = hecho.fragmentos_clave || hecho.extractos || [];
+    if (!fragmentos.length) hechosSinFragmentos.push({ id: hId, titulo: hecho.titulo_corto || hecho.resumen || 'Sin título' });
+    if (!(hecho.pruebas || []).length) hechosSinPruebas.push({ id: hId, titulo: hecho.titulo_corto || hecho.resumen || 'Sin título' });
+    fragmentos.forEach(frag => {
         if (frag.fuente && !CASE_DATA.documentos[frag.fuente]) {
             unmapped.add(frag.fuente);
         }
@@ -88,6 +94,19 @@ if (unmapped.size > 0) {
     console.log(`  ✗ Unmapped fuentes (no entry in documentos):`, [...unmapped]);
 } else {
     console.log(`  ✓ All fragment fuentes map to a documento`);
+}
+
+console.log('\n--- Hechos y cobertura ---');
+console.log(`  Hechos en data.js: ${Object.keys(CASE_DATA.hechos || {}).length}/${EXPECTED_FACT_COUNT}`);
+if (hechosSinFragmentos.length > 0) {
+    console.log(`  ✗ Hechos sin fragmentos (${hechosSinFragmentos.length}):`);
+    hechosSinFragmentos.forEach(item => console.log(`    - ${item.id}: ${item.titulo}`));
+} else {
+    console.log('  ✓ Todos los hechos tienen al menos un fragmento documental');
+}
+if (hechosSinPruebas.length > 0) {
+    console.log(`  ✗ Hechos sin pruebas (${hechosSinPruebas.length}):`);
+    hechosSinPruebas.forEach(item => console.log(`    - ${item.id}: ${item.titulo}`));
 }
 
 // 6. Check docs directory for files NOT in data.js
@@ -120,6 +139,8 @@ console.log(`Core files: ${coreFiles.length} checked`);
 console.log(`Documentos: ${foundDocs} found, ${missingDocs.length} missing`);
 console.log(`Prueba URLs: ${foundPruebas} found, ${missingPruebas.length} missing`);
 console.log(`Unmapped fuentes: ${unmapped.size}`);
-if (missingDocs.length > 0 || missingPruebas.length > 0) {
+console.log(`Hechos sin fragmentos: ${hechosSinFragmentos.length}`);
+console.log(`Hechos sin pruebas: ${hechosSinPruebas.length}`);
+if (missingDocs.length > 0 || missingPruebas.length > 0 || hechosSinFragmentos.length > 0) {
     console.log('\n!!! ACTION REQUIRED: Fix missing files above !!!');
 }
