@@ -2664,13 +2664,13 @@ const CASE_DATA = {
       "multipleraw": null
     },
     "P-14": {
-      "html": "docs/Contrato de Cuentas en Participación Paretomed  APORTADO POR OSCAR VIERNES 22 DE AGOSTO 2025 NUNCA FIRMADO.html",
+      "html": "docs/Contrato de Cuentas en Participación Paretomed  APORTADO POR OSCAR VIERNES 22 DE AGOSTO 2025 NUNCA FIRMADO.html",
       "raw": null,
       "multipleraw": null
     },
     "P-15": {
       "html": null,
-      "raw": "assets/Contrato de transacción No.10.09.2025.pdf",
+      "raw": "assets/Contrato de transacción No.10.09.2025.pdf",
       "multipleraw": null
     },
     "P-16": {
@@ -2747,7 +2747,7 @@ const CASE_DATA = {
       "multipleraw": null
     },
     "P-30": {
-      "html": "docs/20251111 PEDRO VERGARA - Solicitud de conciliación por antiguos abogados EF LEGAL nunca radicada ni enviada.html",
+      "html": "docs/20251111 PEDRO VERGARA - Solicitud de conciliación por antiguos abogados EF LEGAL nunca radicada ni enviada.html",
       "raw": null,
       "multipleraw": null
     },
@@ -3134,8 +3134,8 @@ const CASE_DATA = {
   },
   "archivos_crudos": [
     {
-      "nombre": "20251111 PEDRO VERGARA - Solicitud de conciliación por antiguos abogados EF LEGAL nunca radicada ni enviada.docx",
-      "ruta": "raw_source/20251111 PEDRO VERGARA - Solicitud de conciliación por antiguos abogados EF LEGAL nunca radicada ni enviada.docx",
+      "nombre": "20251111 PEDRO VERGARA - Solicitud de conciliación por antiguos abogados EF LEGAL nunca radicada ni enviada.docx",
+      "ruta": "raw_source/20251111 PEDRO VERGARA - Solicitud de conciliación por antiguos abogados EF LEGAL nunca radicada ni enviada.docx",
       "tamano": 34848
     },
     {
@@ -3234,13 +3234,13 @@ const CASE_DATA = {
       "tamano": 32988
     },
     {
-      "nombre": "Contrato de Cuentas en Participación Paretomed  APORTADO POR OSCAR VIERNES 22 DE AGOSTO 2025 NUNCA FIRMADO.docx",
-      "ruta": "raw_source/Contrato de Cuentas en Participación Paretomed  APORTADO POR OSCAR VIERNES 22 DE AGOSTO 2025 NUNCA FIRMADO.docx",
+      "nombre": "Contrato de Cuentas en Participación Paretomed  APORTADO POR OSCAR VIERNES 22 DE AGOSTO 2025 NUNCA FIRMADO.docx",
+      "ruta": "raw_source/Contrato de Cuentas en Participación Paretomed  APORTADO POR OSCAR VIERNES 22 DE AGOSTO 2025 NUNCA FIRMADO.docx",
       "tamano": 38655
     },
     {
-      "nombre": "Contrato de transacción No.10.09.2025.pdf",
-      "ruta": "raw_source/Contrato de transacción No.10.09.2025.pdf",
+      "nombre": "Contrato de transacción No.10.09.2025.pdf",
+      "ruta": "raw_source/Contrato de transacción No.10.09.2025.pdf",
       "tamano": 226001
     },
     {

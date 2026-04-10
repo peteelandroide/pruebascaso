@@ -946,6 +946,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // --- Visor de Pruebas: abrir documento ---
     function openInPruebasViewer(url, title, cita) {
         if (!url) return;
+        url = url.normalize('NFC'); // Normalización de seguridad para compatibilidad con Linux/Nginx
         if (url && !url.includes('.') && url.includes('docs/')) {
             const parts = url.split('#');
             url = parts[0] + '.html' + (parts[1] ? '#' + parts[1] : '');
@@ -1022,6 +1023,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function openInViewer(url, title, cita) {
         if (!url) return;
+        url = url.normalize('NFC'); // Normalización de seguridad para compatibilidad con Linux/Nginx
         if (url && !url.includes('.') && url.includes('docs/')) {
             const parts = url.split('#');
             url = parts[0] + '.html' + (parts[1] ? '#' + parts[1] : '');

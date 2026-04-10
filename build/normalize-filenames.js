@@ -1,26 +1,31 @@
 const fs = require('fs');
 const path = require('path');
 
-const DOCS_DIR = path.join(__dirname, '..', 'dist', 'docs');
+const DIRS = [
+    path.join(__dirname, '..', 'dist', 'docs'),
+    path.join(__dirname, '..', 'dist', 'assets')
+];
 
-// Get all files
-const files = fs.readdirSync(DOCS_DIR);
+let renamedTotal = 0;
 
-let renamed = 0;
-files.forEach(file => {
-    // Normalize to NFC (composed form)
-    const normalized = file.normalize('NFC');
-    if (file !== normalized) {
-        const oldPath = path.join(DOCS_DIR, file);
-        const newPath = path.join(DOCS_DIR, normalized);
-        console.log(`Renaming:\n  FROM: ${file}\n    TO: ${normalized}`);
-        fs.renameSync(oldPath, newPath);
-        renamed++;
-    }
+DIRS.forEach(dir => {
+    if (!fs.existsSync(dir)) return;
+    const files = fs.readdirSync(dir);
+    
+    files.forEach(file => {
+        const normalized = file.normalize('NFC');
+        if (file !== normalized) {
+            const oldPath = path.join(dir, file);
+            const newPath = path.join(dir, normalized);
+            console.log(`Renaming in ${path.basename(dir)}:\n  FROM: ${file}\n    TO: ${normalized}`);
+            fs.renameSync(oldPath, newPath);
+            renamedTotal++;
+        }
+    });
 });
 
-if (renamed === 0) {
+if (renamedTotal === 0) {
     console.log('All filenames are already NFC-normalized.');
 } else {
-    console.log(`\nRenamed ${renamed} files to NFC form.`);
+    console.log(`\nRenamed ${renamedTotal} files to NFC form.`);
 }
