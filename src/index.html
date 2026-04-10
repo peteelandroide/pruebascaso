@@ -20,16 +20,16 @@
             <input type="text" id="global-search" placeholder="🔍 Buscar hechos, fechas, nombres, o pruebas (ej. 'Oscar', '2025', 'P-04')...">
         </div>
         <nav class="app-nav">
-            <button class="tab-btn active" data-target="tab-hechos">Hechos</button>
+            <button class="tab-btn" data-target="tab-hechos">Hechos</button>
             <button class="tab-btn" data-target="tab-pruebas">Pruebas</button>
             <button class="tab-btn" data-target="tab-documentos">Documentos</button>
-            <button class="tab-btn" data-target="tab-resumen">Resumen</button>
+            <button class="tab-btn active" data-target="tab-resumen">Resumen</button>
         </nav>
     </header>
 
     <main class="app-content">
         <!-- VISTA HECHOS -->
-        <section id="tab-hechos" class="tab-pane active split-view-tab">
+        <section id="tab-hechos" class="tab-pane split-view-tab">
             <div class="split-layout">
                 <!-- Panel izquierdo 35%: Hechos -->
                 <div class="hechos-sidebar">
@@ -110,14 +110,16 @@
         </section>
 
         <!-- VISTA RESUMEN -->
-        <section id="tab-resumen" class="tab-pane">
+        <section id="tab-resumen" class="tab-pane active">
             <div id="resumen-dashboard" class="dashboard"></div>
         </section>
     </main>
 
-    <!-- Data generada por el script de build -->
+    <!-- Supabase SDK (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <!-- Static file-path mappings (documentos, pruebas_urls, pruebas_meta, archivos_crudos) -->
     <script src="scripts/data.js"></script>
-    <!-- Logica UI SPA -->
+    <!-- Logica UI SPA — carga dinámica desde Supabase -->
     <script src="scripts/app.js"></script>
 </body>
 </html>

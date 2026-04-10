@@ -5,3 +5,27 @@ dist/
 HANDOFF_*.md
 *.log
 .DS_Store
+
+# AI Agents & IDE folders
+.agents/
+.claude/
+.codebuddy/
+.commandcode/
+.continue/
+.crush/
+.factory/
+.goose/
+.kilocode/
+.kiro/
+.mcpjam/
+.mux/
+.neovate/
+.openhands/
+.pi/
+.qoder/
+.qwen/
+.roo/
+.trae/
+.windsurf/
+.zencoder/
+skills-lock.json

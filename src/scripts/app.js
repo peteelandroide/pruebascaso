@@ -1,4 +1,124 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+
+    // ────────────────────────────────────────────────────
+    // Supabase Client
+    // ────────────────────────────────────────────────────
+    const SUPABASE_URL = 'https://bqigfoolbrrwpuqafxst.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJxaWdmb29sYnJyd3B1cWFmeHN0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU3Njc5MjMsImV4cCI6MjA5MTM0MzkyM30.SL7otV5hWtc_EXWMF0s7bP1VRiZ97EBR7zxyMeFpq6Y';
+    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    // ────────────────────────────────────────────────────
+    // Cargar datos desde Supabase y reconstruir CASE_DATA
+    // ────────────────────────────────────────────────────
+    async function loadFromSupabase() {
+        try {
+            const [capRes, hechosRes, pruebasRes, mappingRes, fragRes] = await Promise.all([
+                supabase.from('capitulos').select('*').order('orden'),
+                supabase.from('hechos').select('*').order('numero'),
+                supabase.from('pruebas').select('*'),
+                supabase.from('hecho_pruebas').select('*'),
+                supabase.from('fragmentos_clave').select('*')
+            ]);
+
+            if (capRes.error) throw capRes.error;
+            if (hechosRes.error) throw hechosRes.error;
+            if (pruebasRes.error) throw pruebasRes.error;
+            if (mappingRes.error) throw mappingRes.error;
+            if (fragRes.error) throw fragRes.error;
+
+            // Build mapping: hecho_id → array of prueba_ids
+            const hechoToPruebas = {};
+            mappingRes.data.forEach(m => {
+                if (!hechoToPruebas[m.hecho_id]) hechoToPruebas[m.hecho_id] = [];
+                hechoToPruebas[m.hecho_id].push(m.prueba_id);
+            });
+
+            // Build mapping: hecho_id → array of fragmentos
+            const hechoToFragmentos = {};
+            fragRes.data.forEach(f => {
+                if (!hechoToFragmentos[f.hecho_id]) hechoToFragmentos[f.hecho_id] = [];
+                hechoToFragmentos[f.hecho_id].push({
+                    cita: f.cita,
+                    fuente: f.fuente,
+                    linea: f.linea,
+                    fecha: f.fecha,
+                    autor: f.autor,
+                    relevancia: f.relevancia
+                });
+            });
+
+            // Build mapping: capitulo_id → array of hecho_ids (preserving order)
+            const capToHechos = {};
+            hechosRes.data.forEach(h => {
+                if (h.capitulo_id) {
+                    if (!capToHechos[h.capitulo_id]) capToHechos[h.capitulo_id] = [];
+                    capToHechos[h.capitulo_id].push(h.id);
+                }
+            });
+
+            // Reconstruct capitulos with their hecho arrays
+            const capitulos = capRes.data.map(c => ({
+                id: c.id,
+                numero: c.numero,
+                titulo: c.titulo,
+                hechos: capToHechos[c.id] || []
+            }));
+
+            // Reconstruct hechos as object keyed by id
+            const hechos = {};
+            hechosRes.data.forEach(h => {
+                hechos[h.id] = {
+                    id: h.id,
+                    numero: h.numero,
+                    ordinal: h.ordinal,
+                    capitulo_id: h.capitulo_id,
+                    resumen: h.resumen,
+                    texto_completo: h.texto_completo,
+                    texto_completo_html: h.texto_completo_html,
+                    titulo_corto: h.titulo_corto,
+                    nota_abogado: h.nota_abogado,
+                    pruebas: hechoToPruebas[h.id] || [],
+                    fragmentos_clave: hechoToFragmentos[h.id] || []
+                };
+            });
+
+            // Reconstruct pruebas_catalogo keyed by id
+            const pruebas_catalogo = {};
+            pruebasRes.data.forEach(p => {
+                pruebas_catalogo[p.id] = {
+                    descripcion: p.descripcion,
+                    tipo: p.tipo,
+                    categoria: p.categoria
+                };
+            });
+
+            // Merge with existing CASE_DATA (from data.js) which has documentos, pruebas_urls, pruebas_meta, archivos_crudos
+            if (typeof CASE_DATA !== 'undefined') {
+                CASE_DATA.capitulos = capitulos;
+                CASE_DATA.hechos = hechos;
+                CASE_DATA.pruebas_catalogo = pruebas_catalogo;
+            } else {
+                window.CASE_DATA = {
+                    capitulos,
+                    hechos,
+                    pruebas_catalogo,
+                    documentos: {},
+                    pruebas_urls: {},
+                    pruebas_meta: {},
+                    archivos_crudos: []
+                };
+            }
+
+            console.log(`[Supabase] Data loaded: ${capitulos.length} capitulos, ${Object.keys(hechos).length} hechos, ${Object.keys(pruebas_catalogo).length} pruebas`);
+        } catch (err) {
+            console.error('[Supabase] Error loading data:', err);
+            console.log('[Supabase] Falling back to static data.js');
+        }
+    }
+
+    // Load data from Supabase before rendering
+    await loadFromSupabase();
+
     const DOM = {
         tabs: document.querySelectorAll('.tab-btn'),
         panes: document.querySelectorAll('.tab-pane'),
@@ -95,15 +215,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         let docBtn = '';
+        const citaEncoded = frag.cita ? frag.cita.replace(/"/g, '&quot;').substring(0, 120) : '';
         if (frag.fuente && frag.linea) {
             const docObj = CASE_DATA.documentos[frag.fuente];
             const docName = docObj ? docObj.titulo : frag.fuente;
             const url = docObj ? `${docObj.archivo_html}#L${frag.linea}` : `docs/${frag.fuente}.html#L${frag.linea}`;
-            docBtn = `<button class="btn-doc highlight-doc-btn ver-doc-inline" data-url="${url}" data-title="${docName}">Ver en ${docName} (línea ${frag.linea})</button>`;
+            docBtn = `<button class="btn-doc highlight-doc-btn ver-doc-inline" data-url="${url}" data-title="${docName}" data-cita="${citaEncoded}">🔗 Ver en ${docName} (línea ${frag.linea})</button>`;
         } else if (frag.fuente) {
             const docObj = CASE_DATA.documentos[frag.fuente];
-            if (docObj) {
-                docBtn = `<button class="btn-doc highlight-doc-btn ver-doc-inline" data-url="${docObj.archivo_html}" data-title="${docObj.titulo}">Abrir ${docObj.titulo}</button>`;
+            if (docObj && docObj.archivo_html) {
+                docBtn = `<button class="btn-doc highlight-doc-btn ver-doc-inline" data-url="${docObj.archivo_html}" data-title="${docObj.titulo}" data-cita="${citaEncoded}">🔗 Ver en ${docObj.titulo}</button>`;
             }
         }
 
@@ -139,6 +260,38 @@ document.addEventListener('DOMContentLoaded', () => {
         return links || `<span class="ev-no-link">Archivo no disponible digitalmente</span>`;
     }
 
+    // --- Render TIMELINE (strip horizontal en sidebar Hechos) ---
+    function renderTimeline() {
+        const tl = [
+            { fecha: 'Nov 2023', label: 'Primer contacto', capId: 'cap-2', tipo: 'neutral' },
+            { fecha: 'Ene 2024', label: 'Reunión presencial', capId: 'cap-2', tipo: 'neutral' },
+            { fecha: 'Feb 2024', label: 'Propuesta 30%', capId: 'cap-2', tipo: 'neutral' },
+            { fecha: 'Mar 2024', label: 'Acuerdo 20%', capId: 'cap-2', tipo: 'key' },
+            { fecha: 'Abr 2024', label: 'Sociedad de hecho', capId: 'cap-2', tipo: 'key' },
+            { fecha: 'Abr 2024', label: 'Subdirector', capId: 'cap-2', tipo: 'key' },
+            { fecha: 'May 2024', label: 'Primer pago', capId: 'cap-4', tipo: 'neutral' },
+            { fecha: 'Jun 2024', label: 'SOPs', capId: 'cap-3', tipo: 'neutral' },
+            { fecha: 'Jul 2024', label: 'Acuerdo manuscrito', capId: 'cap-8', tipo: 'neutral' },
+            { fecha: 'Ene 2025', label: 'Mera formalidad', capId: 'cap-5', tipo: 'key' },
+            { fecha: 'Jul 2025', label: 'Exige deberes socio', capId: 'cap-16', tipo: 'danger' },
+            { fecha: 'Ago 2025', label: 'Grabación — confesión', capId: 'cap-9', tipo: 'danger' },
+            { fecha: 'Ago 2025', label: 'Último pago', capId: 'cap-9', tipo: 'danger' },
+            { fecha: 'Oct 2025', label: 'Copyright claims', capId: 'cap-11', tipo: 'danger' },
+            { fecha: 'Feb 2026', label: 'No conciliación', capId: 'cap-12', tipo: 'key' },
+        ];
+
+        const items = tl.map(item => `
+            <div class="tl-strip-item tl-strip-${item.tipo}" data-cap="${item.capId}" title="${item.label}">
+                <span class="tl-strip-dot"></span>
+                <span class="tl-strip-date">${item.fecha}</span>
+                <span class="tl-strip-label">${item.label}</span>
+            </div>`).join('');
+
+        return `<div class="hechos-timeline-strip">
+            <div class="tl-strip-track">${items}</div>
+        </div>`;
+    }
+
     // --- Render HECHOS ---
     function renderHechos() {
         if (!CASE_DATA || !CASE_DATA.capitulos) return;
@@ -147,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
         CASE_DATA.capitulos.forEach(capitulo => {
             const hCount = capitulo.hechos.length;
             html += `
-            <div class="chapter-block" id="${capitulo.id}">
+            <div class="chapter-block" id="cap-${capitulo.numero}" data-id="${capitulo.id}">
                 <div class="chapter-header" onclick="this.parentElement.classList.toggle('expanded')">
                     <span>CAPÍTULO ${capitulo.numero}: ${capitulo.titulo}</span>
                     <span class="chapter-meta"><span class="chapter-count">${hCount} hecho${hCount !== 1 ? 's' : ''}</span> <span class="indicator">▼</span></span>
@@ -252,7 +405,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const strengthLabels = ['', 'Baja', 'Media', 'Media-Alta', 'Alta', 'Muy Alta'];
 
                 html += `
-                <div class="hecho-card" id="${h.id}">
+                <div class="hecho-card" id="hecho-${h.numero}" data-id="${h.id}">
                     <div class="hecho-header" onclick="this.parentElement.classList.toggle('expanded')">
                         <span class="h-num">${(h.numero < 10 ? '0' : '') + h.numero}</span>
                         <span class="h-title">${title}</span>
@@ -272,7 +425,31 @@ document.addEventListener('DOMContentLoaded', () => {
             html += `</div></div>`;
         });
 
+        // Inject timeline strip before the accordion
+        const timelineEl = document.getElementById('hechos-timeline');
+        if (timelineEl) timelineEl.outerHTML = renderTimeline();
+        else {
+            const strip = document.createElement('div');
+            strip.id = 'hechos-timeline';
+            strip.innerHTML = renderTimeline();
+            DOM.hechosContainer.parentElement.insertBefore(strip.firstElementChild, DOM.hechosContainer);
+        }
+
         DOM.hechosContainer.innerHTML = html;
+
+        // Click handler for timeline strip items
+        document.querySelector('.hechos-timeline-strip')?.addEventListener('click', (e) => {
+            const item = e.target.closest('.tl-strip-item');
+            if (!item) return;
+            const capId = item.dataset.cap;
+            const capEl = document.getElementById(capId);
+            if (!capEl) return;
+            capEl.classList.add('expanded');
+            setTimeout(() => capEl.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+            // Highlight briefly
+            capEl.style.outline = '2px solid #2563eb';
+            setTimeout(() => { capEl.style.outline = ''; }, 1500);
+        });
     }
 
     // --- Render PRUEBAS (Catálogo Premium) ---
@@ -383,13 +560,13 @@ document.addEventListener('DOMContentLoaded', () => {
     DOM.globalSearch.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
-        // Buscar en hechos
+        // Buscar en hechos (textContent incluye elementos colapsados con display:none)
         const chapters = document.querySelectorAll('.chapter-block');
         chapters.forEach(chapter => {
             let hasVisible = false;
             const hechos = chapter.querySelectorAll('.hecho-card');
             hechos.forEach(hecho => {
-                const text = hecho.innerText.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                const text = hecho.textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
                 if (text.includes(query)) {
                     hecho.style.display = '';
                     hasVisible = true;
@@ -409,7 +586,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Buscar en pruebas
         document.querySelectorAll('.prueba-card-premium').forEach(card => {
-            const text = card.innerText.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            const text = card.textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             const activeFilter = document.querySelector('.filter-btn.active');
             const filterCat = activeFilter ? activeFilter.dataset.filter : 'all';
             const catMatch = filterCat === 'all' || card.dataset.cat === filterCat;
@@ -423,10 +600,47 @@ document.addEventListener('DOMContentLoaded', () => {
         // Buscar en documentos
         const docs = document.querySelectorAll('#documentos-list li');
         docs.forEach(doc => {
-            const text = doc.innerText.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            const text = doc.textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             doc.style.display = text.includes(query) ? '' : 'none';
         });
     });
+
+    // --- RENDER TIMELINE INTERACTIVO (Resumen) ---
+    function renderTimelineInteractive() {
+        const tl = [
+            { fecha: 'Nov 2023', cap: 2, titulo: 'Primer contacto Oscar–Pedro', desc: 'Encuentro en Startup Day Uninorte para discutir la colaboración inicial.', tipo: 'neutral' },
+            { fecha: 'Mar 2024', cap: 2, titulo: 'Acuerdo 20%', desc: 'Se pacta que Pedro reciba el 20% de los ingresos netos de ParetoMed.', tipo: 'neutral' },
+            { fecha: 'Abr 2024', cap: 2, titulo: 'Sociedad de hecho conformada', desc: 'Constitución verbal de la sociedad basada en la suma de esfuerzos y reparto de utilidades.', tipo: 'highlight' },
+            { fecha: 'May 2024', cap: 4, titulo: 'Primer pago a Pedro', desc: 'Transferencia por concepto de utilidades ascendente a $1.453.160.', tipo: 'neutral' },
+            { fecha: 'Jul 2024', cap: 8, titulo: 'Manuscrito "Acuerdo de Socios"', desc: 'Documento impreso con notas manuscritas de Oscar admitiendo el estatus de socio no contratable de Pedro.', tipo: 'neutral' },
+            { fecha: 'Ene 2025', cap: 5, titulo: '"La firma es mera formalidad"', desc: 'Confesión en audio revelando que no firman por temas contables y que Pedro "es su socio, no alguien contratado".', tipo: 'highlight' },
+            { fecha: 'Jul 2025', cap: 16, titulo: 'Oscar exige deberes de socio', desc: 'Reprimenda por audios donde Oscar exige lealtad societaria y dedicación exclusiva a Pedro, probando control jerárquico horizontal.', tipo: 'danger' },
+            { fecha: 'Ago 2025', cap: 1, titulo: 'Último pago y grabación clave', desc: 'Último pago de utilidades. Llamada telefónica de 34 min con múltiples confesiones extrajudiciales por parte de Oscar.', tipo: 'danger' },
+            { fecha: 'Oct 2025', cap: 11, titulo: 'Copyright claims de PI', desc: 'Pedro notifica el cese de licencia sobre su propiedad intelectual y ejerce acciones por DMCA.', tipo: 'danger' },
+            { fecha: 'Feb 2026', cap: 12, titulo: 'Constancia de No Conciliación', desc: 'Agotamiento del requisito de procedibilidad en Centro de Conciliación. Vía judicial abierta.', tipo: 'highlight' }
+        ];
+
+        let html = '';
+        tl.forEach(item => {
+            html += `
+            <details class="resumen-tl-item atl-${item.tipo}">
+                <summary class="resumen-tl-summary">
+                    <div class="rtl-header">
+                        <span class="rtl-date">${item.fecha}</span>
+                        <span class="rtl-title">${item.titulo}</span>
+                    </div>
+                    <span class="rtl-icon">▼</span>
+                </summary>
+                <div class="resumen-tl-content">
+                    <p class="rtl-desc">${item.desc}</p>
+                    <button class="btn-jump-hecho" data-cap="cap-${item.cap}">
+                        <span class="jump-icon">↳</span> Ver hechos y evidencia de esta etapa
+                    </button>
+                </div>
+            </details>`;
+        });
+        return html;
+    }
 
     // --- Render RESUMEN EJECUTIVO ---
     function renderResumen() {
@@ -455,39 +669,40 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
 
             <div class="resumen-section">
-                <h3>Línea de Tiempo Clave</h3>
-                <div class="timeline-compact">
-                    <div class="tl-item"><span class="tl-date">Nov 2023</span><span class="tl-event">Primer contacto Oscar–Pedro en Startup Day Uninorte</span></div>
-                    <div class="tl-item"><span class="tl-date">Ene 2024</span><span class="tl-event">Propuesta de colaboración y reunión presencial</span></div>
-                    <div class="tl-item"><span class="tl-date">Feb 2024</span><span class="tl-event">Pedro propone 30% en vesting (future stock)</span></div>
-                    <div class="tl-item"><span class="tl-date">Mar 2024</span><span class="tl-event">Acuerdo definitivo: Pedro recibe 20% de ingresos netos</span></div>
-                    <div class="tl-item tl-highlight"><span class="tl-date">Abr 2024</span><span class="tl-event">Constitución verbal de la sociedad de hecho</span></div>
-                    <div class="tl-item"><span class="tl-date">Abr 2024</span><span class="tl-event">Carta de recomendación: Pedro como "Subdirector Académico"</span></div>
-                    <div class="tl-item"><span class="tl-date">May 2024</span><span class="tl-event">Primer pago documentado a Pedro ($1.453.160)</span></div>
-                    <div class="tl-item"><span class="tl-date">Jul 2024</span><span class="tl-event">Acuerdo de Socios impreso con notas manuscritas de Oscar</span></div>
-                    <div class="tl-item tl-highlight"><span class="tl-date">Ene 2025</span><span class="tl-event">Oscar: firma es "mera formalidad", busca socio "no contratado"</span></div>
-                    <div class="tl-item tl-danger"><span class="tl-date">Jul 2025</span><span class="tl-event">Oscar exige deberes de socio sobre herramienta de Pedro</span></div>
-                    <div class="tl-item tl-danger"><span class="tl-date">Ago 2025</span><span class="tl-event">Último pago a Pedro. Grabación: confesión de sociedad</span></div>
-                    <div class="tl-item"><span class="tl-date">Ago 2025</span><span class="tl-event">Oscar propone Contrato de Cuentas en Participación (no firmado)</span></div>
-                    <div class="tl-item"><span class="tl-date">Ago 2025</span><span class="tl-event">Pedro notifica cese de explotación de su PI</span></div>
-                    <div class="tl-item"><span class="tl-date">Oct 2025</span><span class="tl-event">Pedro ejerce copyright claims en YouTube/TikTok</span></div>
-                    <div class="tl-item tl-highlight"><span class="tl-date">Feb 2026</span><span class="tl-event">Constancia de NO Conciliación — Vía judicial expedita</span></div>
+                <h3>Línea de Tiempo Interactiva</h3>
+                <div class="timeline-interactive" id="resumen-timeline">
+                    ${renderTimelineInteractive()}
                 </div>
             </div>
 
             <div class="resumen-section">
                 <h3>Pruebas Más Contundentes</h3>
-                <div class="top-evidence">
-                    <div class="te-item te-confesion"><span class="te-badge badge-confesion">CONFESIÓN</span><div class="te-content"><strong>[P-01] Grabación telefónica 14/08/2025</strong><p>Oscar admite la sociedad, el pacto de acciones, y que sus propios abogados confirmaron la existencia de sociedad de hecho.</p></div></div>
-                    <div class="te-item te-confesion"><span class="te-badge badge-confesion">CONFESIÓN</span><div class="te-content"><strong>[P-50] Audios 13/07/2025</strong><p>Oscar exige deberes de socio: "tu eres socio, no es que vas a sacar tu aplicación propia".</p></div></div>
-                    <div class="te-item te-firmado"><span class="te-badge badge-firmado">DOC. FIRMADO</span><div class="te-content"><strong>[P-11] Carta de Recomendación 27/04/2024</strong><p>Oscar nombra a Pedro "Subdirector Académico y Comercial" — cargo directivo incompatible con prestación de servicios.</p></div></div>
-                    <div class="te-item te-admision"><span class="te-badge badge-admision">ADMISIÓN</span><div class="te-content"><strong>[P-09] Nota manuscrita en Acuerdo de Socios</strong><p>Oscar admite que el 20% "no se justifican por una labor que es contratable".</p></div></div>
-                    <div class="te-item te-admision"><span class="te-badge badge-admision">ADMISIÓN</span><div class="te-content"><strong>[P-41] Audio 08/01/2025</strong><p>"La firma como una mera formalidad" + "no alguien contratado, sino alguien que sepa que eso es suyo".</p></div></div>
-                    <div class="te-item"><span class="te-badge badge-posterior">ALTERACIÓN</span><div class="te-content"><strong>[P-06/P-07] Google Doc modificado</strong><p>Cambio de "acciones" por "utilidades" por usuario anónimo evidencia mala fe.</p></div></div>
-                    <div class="te-item te-financiero"><span class="te-badge badge-cert">FINANCIERO</span><div class="te-content"><strong>[P-36/P-37] 14 transferencias ($99.3M)</strong><p>Montos variables ($1.4M a $16.7M) = 20% de utilidades netas. Inconsistente con honorarios fijos.</p></div></div>
-                    <div class="te-item te-financiero"><span class="te-badge badge-cert">FINANCIERO</span><div class="te-content"><strong>[P-42] 376 comprobantes ($579M)</strong><p>Ingresos brutos documentados. Pedro recibió el 19.52% ≈ 20% pactado.</p></div></div>
-                    <div class="te-item"><span class="te-badge badge-cert">CERTIFICACIÓN</span><div class="te-content"><strong>[P-22/P-23] DNDA — 238 obras</strong><p>Pedro registrado como AUTOR/DIRECTOR/PRODUCTOR; Oscar como INTÉRPRETE.</p></div></div>
-                    <div class="te-item"><span class="te-badge">PROCESAL</span><div class="te-content"><strong>[P-19] Constancia de No Conciliación</strong><p>Agotamiento del requisito de procedibilidad. Vía judicial expedita.</p></div></div>
+                    ${[
+                        {id:'P-01', cls:'te-confesion', badgeCls:'badge-confesion', badge:'CONFESIÓN', title:'[P-01] Grabación telefónica 14/08/2025', desc:'Oscar admite la sociedad, el pacto de acciones, y que sus propios abogados confirmaron la existencia de sociedad de hecho.', cita:'existencia de sociedad de hecho'},
+                        {id:'P-50', cls:'te-confesion', badgeCls:'badge-confesion', badge:'CONFESIÓN', title:'[P-50] Audios 13/07/2025', desc:'Oscar exige deberes de socio: "tu eres socio, no es que vas a sacar tu aplicación propia".', cita:'tu eres socio, no es que vas a sacar tu aplicación propia'},
+                        {id:'P-11', cls:'te-firmado', badgeCls:'badge-firmado', badge:'DOC. FIRMADO', title:'[P-11] Carta de Recomendación 27/04/2024', desc:'Oscar nombra a Pedro "Subdirector Académico y Comercial" — cargo directivo incompatible con prestación de servicios.', cita:'Subdirector Académico y Comercial'},
+                        {id:'P-09', cls:'te-admision', badgeCls:'badge-admision', badge:'ADMISIÓN', title:'[P-09] Nota manuscrita en Acuerdo de Socios', desc:'Oscar admite que el 20% "no se justifican por una labor que es contratable".', cita:'no se justifican por una labor que es contratable'},
+                        {id:'P-41', cls:'te-admision', badgeCls:'badge-admision', badge:'ADMISIÓN', title:'[P-41] Audio 08/01/2025', desc:'"La firma como una mera formalidad" + "no alguien contratado, sino alguien que sepa que eso es suyo".', cita:'sino alguien que sepa que eso es suyo'},
+                        {id:'P-06', cls:'', badgeCls:'badge-posterior', badge:'ALTERACIÓN', title:'[P-06/P-07] Google Doc modificado', desc:'Cambio de "acciones" por "utilidades" por usuario anónimo evidencia mala fe.', cita:'utilidades'},
+                        {id:'P-36', cls:'te-financiero', badgeCls:'badge-cert', badge:'FINANCIERO', title:'[P-36/P-37] 14 transferencias ($99.3M)', desc:'Montos variables ($1.4M a $16.7M) = 20% de utilidades netas. Inconsistente con honorarios fijos.', cita:'1.4'},
+                        {id:'P-42', cls:'te-financiero', badgeCls:'badge-cert', badge:'FINANCIERO', title:'[P-42] 376 comprobantes ($579M)', desc:'Ingresos brutos documentados. Pedro recibió el 19.52% ≈ 20% pactado.', cita:'20'},
+                        {id:'P-22', cls:'', badgeCls:'badge-cert', badge:'CERTIFICACIÓN', title:'[P-22/P-23] DNDA — 238 obras', desc:'Pedro registrado como AUTOR/DIRECTOR/PRODUCTOR; Oscar como INTÉRPRETE.', cita:'PRODUCTOR'},
+                        {id:'P-19', cls:'', badgeCls:'', badge:'PROCESAL', title:'[P-19] Constancia de No Conciliación', desc:'Agotamiento del requisito de procedibilidad. Vía judicial expedita.', cita:'Agotamiento'}
+                    ].map(p => `
+                    <details class="te-details ${p.cls}">
+                        <summary class="te-summary">
+                            <span class="te-badge ${p.badgeCls}">${p.badge}</span>
+                            <div class="te-content-header"><strong>${p.title}</strong></div>
+                            <span class="rtl-icon" style="margin-left: auto;">▼</span>
+                        </summary>
+                        <div class="te-content-hidden">
+                            <p>${p.desc}</p>
+                            <button class="btn-jump-prueba" data-prueba="${p.id}" data-title="${p.title}" data-cita="${p.cita}" style="background:transparent; color: var(--accent-blue); border: 1px solid #cbd5e1; padding: 6px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; transition: all 0.2s;">
+                                <span class="jump-icon">↳</span> Ver Prueba en Visor
+                            </button>
+                        </div>
+                    </details>
+                    `).join('')}
                 </div>
             </div>
 
@@ -510,6 +725,71 @@ document.addEventListener('DOMContentLoaded', () => {
     renderPruebas();
     renderDocumentos();
     renderResumen();
+
+    // Event listener para saltar a hechos desde la línea de tiempo interactiva
+    document.addEventListener('click', (e) => {
+        const jumpBtn = e.target.closest('.btn-jump-hecho');
+        if (jumpBtn) {
+            const capId = jumpBtn.dataset.cap;
+            // Activar la pestaña Hechos
+            document.querySelector('[data-target="tab-hechos"]').click();
+            
+            // Pausa breve para permitir la transición de visibilidad del DOM
+            setTimeout(() => {
+                const capEl = document.getElementById(capId);
+                if (capEl) {
+                    capEl.open = true; // Expande el elemento <details> nativo
+                    capEl.classList.add('expanded');
+                    capEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Resaltar visualmente el capítulo al que saltamos
+                    capEl.style.outline = '3px solid #2563eb';
+                    capEl.style.transition = 'outline 0.3s ease';
+                    setTimeout(() => { capEl.style.outline = 'none'; }, 2000);
+                }
+            }, 100);
+        }
+    });
+
+    // Event listener para saltar a visor de Pruebas desde Resumen
+    document.addEventListener('click', (e) => {
+        const jumpPruebaBtn = e.target.closest('.btn-jump-prueba');
+        if (jumpPruebaBtn) {
+            const pid = jumpPruebaBtn.dataset.prueba;
+            const pTitle = jumpPruebaBtn.dataset.title;
+            const pCita = jumpPruebaBtn.dataset.cita || null;
+            let pUrl = null;
+            
+            const pidKey = pid.split('/')[0];
+            
+            // 1. Intentar desde pruebas_urls (mapeo directo a HTML)
+            if (CASE_DATA.pruebas_urls && CASE_DATA.pruebas_urls[pidKey]) {
+                const mapping = CASE_DATA.pruebas_urls[pidKey];
+                pUrl = mapping.html || (mapping.raw ? mapping.raw : null);
+            } 
+            
+            // 2. Fallbacks especiales (P-50 es crucial y a veces falta en data.js)
+            if (!pUrl && pidKey === 'P-50') pUrl = 'docs/transcripciones.html';
+            
+            // 3. Intentar desde catálogo si aún no hay URL
+            if (!pUrl && CASE_DATA.pruebas_catalogo) {
+                const cat = CASE_DATA.pruebas_catalogo;
+                const doc = cat[pid] || cat[pidKey];
+                if (doc && doc.archivo_url) pUrl = doc.archivo_url;
+            }
+            
+            document.querySelector('[data-target="tab-pruebas"]').click();
+            
+            setTimeout(() => {
+                if (pUrl) {
+                    openInPruebasViewer(pUrl, pTitle, pCita);
+                    pruebasSplit.classList.add('viewer-open');
+                } else {
+                    console.error("No se encontró URL para la prueba:", pid);
+                    alert("No se encontró el archivo para la prueba " + pid);
+                }
+            }, 150);
+        }
+    });
 
     // --- LÓGICA DE VISOR INLINE ---
     const viewerIframe = document.getElementById('doc-iframe');
@@ -549,7 +829,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!btn) return;
         e.preventDefault();
         e.stopPropagation();
-        openInViewer(btn.getAttribute('data-url'), btn.getAttribute('data-title') || 'Documento');
+        const cita = btn.getAttribute('data-cita') || null;
+        openInViewer(btn.getAttribute('data-url'), btn.getAttribute('data-title') || 'Documento', cita);
         const parentCard = btn.closest('.hecho-card');
         document.querySelectorAll('.hecho-card').forEach(c => c.classList.remove('active-fact'));
         if (parentCard) parentCard.classList.add('active-fact');
@@ -581,88 +862,133 @@ document.addEventListener('DOMContentLoaded', () => {
         doc.head.appendChild(style);
     }
 
-    // --- Helper: scroll + highlight a line inside an iframe, with retry for large files ---
-    function scrollToLineWithRetry(iframe, hash, attempt) {
+    // --- Helper: find best matching element for a cita string in the iframe doc ---
+    function findCitaElement(doc, cita) {
+        if (!cita) return null;
+        // Limpiar espacios extra, saltos de línea y normalizar para búsqueda robusta
+        const needle = cita.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, ' ').trim().substring(0, 40);
+        
+        // Prefer specific line containers; fall back to any element
+        const selectors = ['.chat-line', '.doc-line', 'p', 'tr', 'li', 'span', 'div'];
+        for (const sel of selectors) {
+            const els = doc.querySelectorAll(sel);
+            for (const el of els) {
+                // Saltar divs muy grandes que contienen a toda la página
+                if (sel === 'div' && el.children.length > 5) continue;
+                
+                const t = el.textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, ' ');
+                if (t.includes(needle)) return el;
+            }
+        }
+        return null;
+    }
+
+    // --- Helper: scroll + highlight inside an iframe, by line id or cita text ---
+    function scrollToLineWithRetry(iframe, hash, cita, attempt) {
         attempt = attempt || 1;
-        var maxAttempts = 6;       // retries: 300, 800, 1500, 2500, 4000, 6000 ms
-        var delays = [300, 800, 1500, 2500, 4000, 6000];
+        const maxAttempts = 6;
+        const delays = [300, 800, 1500, 2500, 4000, 6000];
 
         try {
-            var doc = iframe.contentDocument || iframe.contentWindow.document;
-            if (!doc) {
-                console.warn('[DEBUG] iframe.contentDocument is null (attempt ' + attempt + ')');
-                if (attempt < maxAttempts) {
-                    setTimeout(function() { scrollToLineWithRetry(iframe, hash, attempt + 1); }, delays[attempt]);
-                }
+            const win = iframe.contentWindow;
+            const doc = win ? win.document : iframe.contentDocument;
+            if (!doc || !doc.body) {
+                if (attempt < maxAttempts)
+                    setTimeout(() => scrollToLineWithRetry(iframe, hash, cita, attempt + 1), delays[attempt - 1]);
                 return;
             }
 
-            // Remove previous highlights
-            doc.querySelectorAll('.ev-highlight-active').forEach(function(el) {
-                el.classList.remove('ev-highlight-active');
-            });
-
+            // Clear previous highlights
+            doc.querySelectorAll('.ev-highlight-active').forEach(el => el.classList.remove('ev-highlight-active'));
             injectHighlightCSS(doc);
 
-            var target = doc.getElementById(hash);
+            let target = hash ? doc.getElementById(hash) : null;
+            let foundNatively = false;
+
+            if (!target && cita) {
+                // Native search (selection jump) - Funciona como Ctrl+F en Chrome!
+                try {
+                    const sel = win.getSelection();
+                    sel.removeAllRanges();
+                    foundNatively = win.find(cita, false, false, true, false, false, false);
+                    if (!foundNatively) {
+                        const needle = cita.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 40);
+                        if (needle !== cita) foundNatively = win.find(needle, false, false, true, false, false, false);
+                    }
+                    
+                    if (foundNatively) {
+                        try {
+                            const range = win.getSelection().getRangeAt(0);
+                            const span = doc.createElement('span');
+                            span.className = 'ev-highlight-active';
+                            range.surroundContents(span);
+                            target = span;
+                        } catch(err) {} 
+                    }
+                } catch(e) {}
+                
+                // Fallback clásico si la API falla
+                if (!target && !foundNatively) target = findCitaElement(doc, cita);
+            }
+
             if (target) {
-                console.log('[DEBUG] Target found on attempt ' + attempt + ':', hash);
-                target.classList.add('ev-highlight-active');
-                setTimeout(function() {
+                if (!foundNatively) target.classList.add('ev-highlight-active');
+                setTimeout(() => {
                     target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }, 200);
-            } else if (attempt < maxAttempts) {
-                console.log('[DEBUG] Target "' + hash + '" not found yet, retry ' + attempt + '/' + maxAttempts);
-                setTimeout(function() { scrollToLineWithRetry(iframe, hash, attempt + 1); }, delays[attempt]);
-            } else {
-                console.warn('[DEBUG] Target "' + hash + '" not found after ' + maxAttempts + ' attempts');
+                }, 300);
+            } else if (!foundNatively && attempt < maxAttempts) {
+                setTimeout(() => scrollToLineWithRetry(iframe, hash, cita, attempt + 1), delays[attempt - 1]);
             }
         } catch (e) {
-            console.error('[DEBUG] Cross-origin or access error:', e);
+            // Cross-origin — silent fail
         }
     }
     // --- Visor de Pruebas: abrir documento ---
-    function openInPruebasViewer(url, title) {
-        // Ensure .html extension is present
+    function openInPruebasViewer(url, title, cita) {
+        if (!url) return;
         if (url && !url.includes('.') && url.includes('docs/')) {
             const parts = url.split('#');
             url = parts[0] + '.html' + (parts[1] ? '#' + parts[1] : '');
         }
-        console.log('[DEBUG] openInPruebasViewer called with url:', url);
 
         const { base: baseUrl, hash } = splitUrlHash(url);
 
+        let nativeSearchUrl = url;
+        if (cita) {
+            const citaClean = cita.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 70);
+            nativeSearchUrl = baseUrl + '#:~:text=' + encodeURIComponent(citaClean);
+        }
+
         pvTitleText.textContent = title;
-        pvNewtabBtn.href = url;
+        pvNewtabBtn.href = nativeSearchUrl;
         pvNewtabBtn.style.display = 'inline-block';
-        pvDownloadBtn.href = url;
+        pvDownloadBtn.href = baseUrl; // Descarga el archivo base sin fragmentos
+        const fileName = (title || 'Prueba').replace(/[^a-z0-9]/gi, '_').substring(0, 50) + (baseUrl.endsWith('.pdf') ? '.pdf' : '.html');
+        pvDownloadBtn.setAttribute('download', fileName);
         pvDownloadBtn.style.display = 'inline-block';
 
         const currentSrc = pvIframe.getAttribute('data-current-doc') || '';
         const isSameDoc = currentSrc === baseUrl;
 
         if (isSameDoc) {
-            console.log('[DEBUG] Pruebas: same doc, scrolling directly');
             pvPlaceholder.style.display = 'none';
             pvIframe.style.display = 'block';
-            if (hash) scrollToLineWithRetry(pvIframe, hash);
+            scrollToLineWithRetry(pvIframe, hash, cita);
         } else {
-            console.log('[DEBUG] Pruebas: loading new document:', baseUrl);
             pvPlaceholder.innerHTML = '<div class="placeholder-icon rotating">⏳</div><h3>Cargando...</h3>';
             pvPlaceholder.style.display = 'flex';
             pvIframe.style.display = 'none';
             pvIframe.onerror = () => {
-                console.error('[DEBUG] Pruebas iframe onerror for:', baseUrl);
-                pvPlaceholder.innerHTML = '<div class="placeholder-icon">❌</div><h3>Error al cargar</h3><p>' + baseUrl + '</p>';
+                pvPlaceholder.innerHTML = '<div class="placeholder-icon">❌</div><h3>Error al cargar</h3>';
             };
             pvIframe.onload = () => {
-                console.log('[DEBUG] Pruebas iframe onload fired');
                 pvPlaceholder.style.display = 'none';
                 pvIframe.style.display = 'block';
                 pvIframe.setAttribute('data-current-doc', baseUrl);
-                if (hash) scrollToLineWithRetry(pvIframe, hash);
+                scrollToLineWithRetry(pvIframe, hash, cita);
             };
-            pvIframe.src = baseUrl;
+            // Usamos la URL base para el iframe para máxima estabilidad
+            pvIframe.src = url; 
         }
     }
 
@@ -683,8 +1009,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const url = btn.getAttribute('data-url');
         const title = btn.getAttribute('data-title') || 'Documento';
+        const cita = btn.getAttribute('data-cita') || null;
 
-        openInPruebasViewer(url, title);
+        openInPruebasViewer(url, title, cita);
         pruebasSplit.classList.add('viewer-open');
 
         // Marcar card activa
@@ -693,48 +1020,50 @@ document.addEventListener('DOMContentLoaded', () => {
         if (parentCard) parentCard.classList.add('active-prueba');
     });
 
-    function openInViewer(url, title) {
-        // Ensure .html extension is present
+    function openInViewer(url, title, cita) {
+        if (!url) return;
         if (url && !url.includes('.') && url.includes('docs/')) {
             const parts = url.split('#');
             url = parts[0] + '.html' + (parts[1] ? '#' + parts[1] : '');
         }
-        console.log('[DEBUG] openInViewer called with url:', url, 'title:', title);
 
         const { base: baseUrl, hash } = splitUrlHash(url);
 
+        let nativeSearchUrl = url;
+        if (cita) {
+            const citaClean = cita.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 70);
+            nativeSearchUrl = baseUrl + '#:~:text=' + encodeURIComponent(citaClean);
+        }
+
         viewerTitleText.textContent = title;
-        viewerNewtabBtn.href = url;
+        viewerNewtabBtn.href = nativeSearchUrl;
         viewerNewtabBtn.style.display = 'inline-block';
-        viewerDownloadBtn.href = url;
+        viewerDownloadBtn.href = baseUrl; // Descarga el archivo base sin fragmentos
+        const fileName = (title || 'Prueba').replace(/[^a-z0-9]/gi, '_').substring(0, 50) + (baseUrl.endsWith('.pdf') ? '.pdf' : '.html');
+        viewerDownloadBtn.setAttribute('download', fileName);
         viewerDownloadBtn.style.display = 'inline-block';
 
-        // Check if same document is already loaded (compare against resolved absolute URL)
         const currentSrc = viewerIframe.getAttribute('data-current-doc') || '';
-        const isSameDoc = currentSrc === baseUrl;
+        const isSameDoc = (currentSrc === baseUrl);
 
         if (isSameDoc) {
-            console.log('[DEBUG] Same doc already loaded, scrolling directly');
             viewerPlaceholder.style.display = 'none';
             viewerIframe.style.display = 'block';
-            if (hash) scrollToLineWithRetry(viewerIframe, hash);
+            scrollToLineWithRetry(viewerIframe, hash, cita);
         } else {
-            console.log('[DEBUG] Loading new document:', baseUrl);
             viewerPlaceholder.innerHTML = '<div class="placeholder-icon rotating">⏳</div><h3>Cargando Evidencia...</h3>';
             viewerPlaceholder.style.display = 'flex';
             viewerIframe.style.display = 'none';
             viewerIframe.onerror = () => {
-                console.error('[DEBUG] iframe onerror fired for:', baseUrl);
-                viewerPlaceholder.innerHTML = '<div class="placeholder-icon">❌</div><h3>Error al cargar documento</h3><p>No se pudo cargar: ' + baseUrl + '</p>';
+                viewerPlaceholder.innerHTML = '<div class="placeholder-icon">❌</div><h3>Error al cargar documento</h3>';
             };
             viewerIframe.onload = () => {
-                console.log('[DEBUG] iframe onload fired for:', baseUrl);
                 viewerPlaceholder.style.display = 'none';
                 viewerIframe.style.display = 'block';
                 viewerIframe.setAttribute('data-current-doc', baseUrl);
-                if (hash) scrollToLineWithRetry(viewerIframe, hash);
+                scrollToLineWithRetry(viewerIframe, hash, cita);
             };
-            viewerIframe.src = baseUrl;
+            viewerIframe.src = url;
         }
     }
 

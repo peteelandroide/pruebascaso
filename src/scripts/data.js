@@ -2640,7 +2640,7 @@ const CASE_DATA = {
       "multipleraw": null
     },
     "P-10": {
-      "html": null,
+      "html": "docs/BORRADOR ACUERDO ORIGINAL DE PEDRO FECHADO 6 DE FEBRERO 2024.html",
       "raw": null,
       "multipleraw": null
     },
@@ -2690,7 +2690,7 @@ const CASE_DATA = {
     },
     "P-19": {
       "html": null,
-      "raw": null,
+      "raw": "assets/CONSTANCIA DE NO CONCILIACIÓN N° 00-1844 REGISTRADA.pdf",
       "multipleraw": null
     },
     "P-20": {
@@ -2727,22 +2727,22 @@ const CASE_DATA = {
       ]
     },
     "P-26": {
-      "html": null,
+      "html": "docs/SOP SEGUIMIENTO PARETOMED REDACTADO POR PEDRO.html",
       "raw": null,
       "multipleraw": null
     },
     "P-27": {
-      "html": null,
+      "html": "docs/Explicación de metodología fechado 14 de mayo 2024.html",
       "raw": null,
       "multipleraw": null
     },
     "P-28": {
-      "html": null,
+      "html": "docs/Reels y guiones 2025.html",
       "raw": null,
       "multipleraw": null
     },
     "P-29": {
-      "html": null,
+      "html": "docs/Reels Julio 2024.html",
       "raw": null,
       "multipleraw": null
     },
@@ -2762,7 +2762,7 @@ const CASE_DATA = {
       "multipleraw": null
     },
     "P-33": {
-      "html": null,
+      "html": "docs/Bitácora transcripción chat con Adriana asesora de ventas paretomed.html",
       "raw": null,
       "multipleraw": null
     },
@@ -2772,12 +2772,12 @@ const CASE_DATA = {
       "multipleraw": null
     },
     "P-35": {
-      "html": null,
+      "html": "docs/20251111 PEDRO VERGARA - Solicitud de conciliación por antiguos abogados EF LEGAL nunca radicada ni enviada.html",
       "raw": null,
       "multipleraw": null
     },
     "P-36": {
-      "html": null,
+      "html": "docs/COMPROBANTES_PARETOMED_ANALISIS.html",
       "raw": null,
       "multipleraw": [
         "assets/PAGOS 1.jpeg",
@@ -2787,7 +2787,7 @@ const CASE_DATA = {
       ]
     },
     "P-37": {
-      "html": null,
+      "html": "docs/COMPROBANTES_PARETOMED_ANALISIS.html",
       "raw": null,
       "multipleraw": null
     },

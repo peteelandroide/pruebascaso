@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node build/convert-docs.js && node build/normalize-filenames.js && node build/sync-src.js",
     "sync": "node build/sync-src.js",
+    "dev": "npm run build && npm run serve",
     "serve": "cd dist && python -m http.server 8080",
     "audit": "node build/audit-dist.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +16,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@supabase/supabase-js": "^2.103.0",
     "glob": "^13.0.6",
     "mammoth": "^1.12.0",
     "markdown-it": "^14.1.1",

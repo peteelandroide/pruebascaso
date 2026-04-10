@@ -42,11 +42,12 @@ for (const [key, doc] of Object.entries(CASE_DATA.documentos)) {
 }
 console.log(`  Found: ${foundDocs}/${Object.keys(CASE_DATA.documentos).length}`);
 
-// 4. Check all prueba_urls html paths
+// 4. Check all pruebas_urls html paths
 console.log('\n--- Prueba URLs (html) ---');
 let missingPruebas = [];
 let foundPruebas = 0;
-for (const [key, urls] of Object.entries(CASE_DATA.prueba_urls || {})) {
+const pruebasUrls = CASE_DATA.pruebas_urls || {};
+for (const [key, urls] of Object.entries(pruebasUrls)) {
     if (urls.html) {
         const fullPath = path.join(DIST, urls.html);
         const exists = fs.existsSync(fullPath);
@@ -57,16 +58,21 @@ for (const [key, urls] of Object.entries(CASE_DATA.prueba_urls || {})) {
             foundPruebas++;
         }
     }
+    if (urls.raw) {
+        const fp = path.join(DIST, urls.raw);
+        if (!fs.existsSync(fp)) console.log(`  ✗ MISSING RAW: [${key}] ${urls.raw}`);
+    }
     if (urls.multipleraw) {
         urls.multipleraw.forEach((r, i) => {
             const fp = path.join(DIST, r);
             if (!fs.existsSync(fp)) {
-                console.log(`  ✗ MISSING RAW: [${key}] annexo ${i+1}: ${r}`);
+                console.log(`  ✗ MISSING RAW: [${key}] anexo ${i+1}: ${r}`);
             }
         });
     }
 }
-console.log(`  Found: ${foundPruebas}/${Object.keys(CASE_DATA.prueba_urls || {}).length}`);
+const withHtml = Object.values(pruebasUrls).filter(u => u.html).length;
+console.log(`  Found: ${foundPruebas}/${withHtml} (pruebas with html link)`);
 
 // 5. Check fragment fuentes point to valid documentos
 console.log('\n--- Fragment fuentes → documentos mapping ---');
@@ -89,6 +95,11 @@ console.log('\n--- Orphan files in dist/docs/ ---');
 const docsDir = path.join(DIST, 'docs');
 const docsOnDisk = fs.readdirSync(docsDir);
 const referencedFiles = new Set(Object.values(CASE_DATA.documentos).map(d => path.basename(d.archivo_html)));
+// Also consider pruebas_urls html paths as referenced
+Object.values(CASE_DATA.pruebas_urls || {}).forEach(u => {
+    if (u.html) referencedFiles.add(path.basename(u.html));
+    if (u.multipleraw) u.multipleraw.forEach(r => referencedFiles.add(path.basename(r)));
+});
 docsOnDisk.forEach(f => {
     if (!referencedFiles.has(f)) {
         console.log(`  ? Unreferenced: ${f}`);
