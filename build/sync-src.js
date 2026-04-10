@@ -8,7 +8,8 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const pairs = [
     { src: 'src/scripts', dest: 'dist/scripts' },
-    { src: 'src/styles',  dest: 'dist/styles'  }
+    { src: 'src/styles',  dest: 'dist/styles'  },
+    { src: 'src/index.html', dest: 'dist/index.html' }
 ];
 
 let copied = 0;
