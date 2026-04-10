@@ -15,18 +15,27 @@ const pairs = [
 let copied = 0;
 
 pairs.forEach(({ src, dest }) => {
-    const srcDir = path.join(ROOT, src);
-    const destDir = path.join(ROOT, dest);
-    if (!fs.existsSync(srcDir)) return;
-    if (!fs.existsSync(destDir)) fs.mkdirSync(destDir, { recursive: true });
+    const srcPath = path.join(ROOT, src);
+    const destPath = path.join(ROOT, dest);
+    if (!fs.existsSync(srcPath)) return;
 
-    fs.readdirSync(srcDir).forEach(file => {
-        const srcFile = path.join(srcDir, file);
-        if (fs.statSync(srcFile).isDirectory()) return;
-        fs.copyFileSync(srcFile, path.join(destDir, file));
+    const stat = fs.statSync(srcPath);
+    if (stat.isDirectory()) {
+        if (!fs.existsSync(destPath)) fs.mkdirSync(destPath, { recursive: true });
+        fs.readdirSync(srcPath).forEach(file => {
+            const sFile = path.join(srcPath, file);
+            if (fs.statSync(sFile).isDirectory()) return;
+            fs.copyFileSync(sFile, path.join(destPath, file));
+            copied++;
+            console.log('[SYNC] ' + src + '/' + file + ' -> ' + dest + '/' + file);
+        });
+    } else {
+        const parentDest = path.dirname(destPath);
+        if (!fs.existsSync(parentDest)) fs.mkdirSync(parentDest, { recursive: true });
+        fs.copyFileSync(srcPath, destPath);
         copied++;
-        console.log('[SYNC] ' + src + '/' + file + ' -> ' + dest + '/' + file);
-    });
+        console.log('[SYNC] ' + src + ' -> ' + dest);
+    }
 });
 
 console.log('[SYNC] Done — ' + copied + ' files copied.');
