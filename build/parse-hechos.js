@@ -93,7 +93,7 @@ function parseHechos() {
     }
 
     // Buscar Hechos
-    const hechoMatch = line.match(/^\*\*HECHO ([A-ZÁÉÍÓÚ ]+)\.\*\*/i);
+    const hechoMatch = line.match(/^\*\*HECHO ([A-ZÁÉÍÓÚ ]+?)(?:\s+\([^)]+\))?\.\*\*/i);
     if (hechoMatch) {
       // Guardar anterior si existe
       if (currentHecho) {
@@ -102,10 +102,12 @@ function parseHechos() {
       }
 
       const ordinalStr = hechoMatch[1].trim().toUpperCase();
-      const numOriginal = ordinalMap[ordinalStr] || idxHechoGeneral;
+      const mappedOrdinal = ordinalMap[ordinalStr];
+      const preferredNumber = mappedOrdinal || idxHechoGeneral;
+      const numOriginal = result.hechos[`hecho-${preferredNumber}`] ? idxHechoGeneral : preferredNumber;
       const hId = `hecho-${numOriginal}`;
       
-      idxHechoGeneral = numOriginal + 1; // mantener secuencial en caso de falla
+      idxHechoGeneral = Math.max(idxHechoGeneral, numOriginal) + 1; // mantener secuencial incluso si el ordinal del documento repite números
 
       // El resumen será toda la primera oración o línea de contexto
       let resumenStr = line.replace(/^\*\*HECHO [A-ZÁÉÍÓÚ ]+\.\*\*\s*/i, "").trim();

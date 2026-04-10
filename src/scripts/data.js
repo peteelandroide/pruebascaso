@@ -37,7 +37,8 @@ const CASE_DATA = {
         "hecho-16",
         "hecho-17",
         "hecho-18",
-        "hecho-19"
+        "hecho-19",
+        "hecho-20"
       ]
     },
     {
@@ -45,9 +46,9 @@ const CASE_DATA = {
       "numero": "IV",
       "titulo": "REPARTO DE UTILIDADES",
       "hechos": [
-        "hecho-18",
-        "hecho-19",
-        "hecho-20"
+        "hecho-21",
+        "hecho-22",
+        "hecho-23"
       ]
     },
     {
@@ -55,11 +56,11 @@ const CASE_DATA = {
       "numero": "V",
       "titulo": "AFFECTIO SOCIETATIS - VOLUNTAD DE SER SOCIOS",
       "hechos": [
-        "hecho-21",
-        "hecho-22",
-        "hecho-23",
         "hecho-24",
-        "hecho-25"
+        "hecho-25",
+        "hecho-26",
+        "hecho-27",
+        "hecho-28"
       ]
     },
     {
@@ -67,9 +68,9 @@ const CASE_DATA = {
       "numero": "VI",
       "titulo": "EXPLOTACION CONJUNTA DEL NEGOCIO",
       "hechos": [
-        "hecho-26",
-        "hecho-27",
-        "hecho-28"
+        "hecho-29",
+        "hecho-30",
+        "hecho-31"
       ]
     },
     {
@@ -77,7 +78,7 @@ const CASE_DATA = {
       "numero": "VII",
       "titulo": "DURACION DE LA SOCIEDAD DE HECHO",
       "hechos": [
-        "hecho-29"
+        "hecho-32"
       ]
     },
     {
@@ -85,10 +86,10 @@ const CASE_DATA = {
       "numero": "VIII",
       "titulo": "INTENTOS DE FORMALIZACION Y MALA FE DEL DEMANDADO",
       "hechos": [
-        "hecho-30",
-        "hecho-31",
-        "hecho-32",
-        "hecho-33"
+        "hecho-33",
+        "hecho-34",
+        "hecho-35",
+        "hecho-36"
       ]
     },
     {
@@ -96,8 +97,8 @@ const CASE_DATA = {
       "numero": "IX",
       "titulo": "RUPTURA DE LA RELACION",
       "hechos": [
-        "hecho-34",
-        "hecho-35"
+        "hecho-37",
+        "hecho-38"
       ]
     },
     {
@@ -105,9 +106,9 @@ const CASE_DATA = {
       "numero": "X",
       "titulo": "OFERTAS DE TRANSACCION FRUSTRADAS",
       "hechos": [
-        "hecho-36",
-        "hecho-37",
-        "hecho-38"
+        "hecho-39",
+        "hecho-40",
+        "hecho-41"
       ]
     },
     {
@@ -115,8 +116,8 @@ const CASE_DATA = {
       "numero": "XI",
       "titulo": "ACTOS POST-RUPTURA DEL DEMANDADO",
       "hechos": [
-        "hecho-39",
-        "hecho-40"
+        "hecho-42",
+        "hecho-43"
       ]
     },
     {
@@ -124,8 +125,8 @@ const CASE_DATA = {
       "numero": "XII",
       "titulo": "AGOTAMIENTO DE LA ETAPA CONCILIATORIA",
       "hechos": [
-        "hecho-41",
-        "hecho-42"
+        "hecho-44",
+        "hecho-45"
       ]
     },
     {
@@ -133,10 +134,10 @@ const CASE_DATA = {
       "numero": "XIII",
       "titulo": "CUANTIA Y PRETENSION ECONOMICA",
       "hechos": [
-        "hecho-43",
-        "hecho-44",
-        "hecho-45",
-        "hecho-46"
+        "hecho-46",
+        "hecho-47",
+        "hecho-48",
+        "hecho-49"
       ]
     },
     {
@@ -144,12 +145,12 @@ const CASE_DATA = {
       "numero": "XIV",
       "titulo": "HECHOS ADICIONALES (CORROBORADOS 08/04/2026)",
       "hechos": [
-        "hecho-47",
-        "hecho-48",
-        "hecho-49",
         "hecho-50",
         "hecho-51",
-        "hecho-52"
+        "hecho-52",
+        "hecho-53",
+        "hecho-54",
+        "hecho-55"
       ]
     },
     {
@@ -157,12 +158,12 @@ const CASE_DATA = {
       "numero": "XV",
       "titulo": "HALLAZGOS FINANCIEROS — COMPROBANTES DE ESTUDIANTES (08/04/2026)",
       "hechos": [
-        "hecho-53",
-        "hecho-54",
-        "hecho-55",
         "hecho-56",
         "hecho-57",
-        "hecho-58"
+        "hecho-58",
+        "hecho-59",
+        "hecho-60",
+        "hecho-61"
       ]
     },
     {
@@ -170,12 +171,12 @@ const CASE_DATA = {
       "numero": "XVI",
       "titulo": "HECHOS ADICIONALES — DEBERES DE SOCIO, APORTES METODOLOGICOS, MANIOBRAS POST-RUPTURA (08/04/2026)",
       "hechos": [
-        "hecho-59",
-        "hecho-60",
-        "hecho-61",
         "hecho-62",
         "hecho-63",
-        "hecho-64"
+        "hecho-64",
+        "hecho-65",
+        "hecho-66",
+        "hecho-67"
       ]
     }
   ],
@@ -319,7 +320,7 @@ const CASE_DATA = {
       "fragmentos_clave": [
         {
           "cita": "yo te presento a mi socio",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
@@ -327,7 +328,7 @@ const CASE_DATA = {
         },
         {
           "cita": "nos conocimos en un evento de emprendimiento",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
@@ -351,7 +352,7 @@ const CASE_DATA = {
       "fragmentos_clave": [
         {
           "cita": "te presento a mi socio",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
@@ -405,7 +406,7 @@ const CASE_DATA = {
         },
         {
           "cita": "estructura que tiene 90% de seguridad... tributaria",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
@@ -661,9 +662,9 @@ const CASE_DATA = {
       "id": "hecho-18",
       "numero": 18,
       "ordinal": "DECIMOCTAVO",
-      "capitulo": "cap-4",
-      "resumen": "Desde el primer mes de operacion conjunta (mayo 2024), Oscar calculaba el porcentaje de Pedro sobre la **ganancia neta** del negocio, desglosando ingresos y egresos antes de aplicar el 20%. El 7 de mayo de 2024, Oscar envio la primera liquidacion det...",
-      "texto_completo": "**HECHO DECIMOCTAVO.** Desde el primer mes de operacion conjunta (mayo 2024), Oscar calculaba el porcentaje de Pedro sobre la **ganancia neta** del negocio, desglosando ingresos y egresos antes de aplicar el 20%. El 7 de mayo de 2024, Oscar envio la primera liquidacion detallada: *\"Ingresos: 10,889,303. Egresos: 3,872,653. Ganancia: 7,016,650. Porcentaje de Pedro: 7,016,650 x 0,20 = 1,403,330\"*. **[P-02, P-13]**",
+      "capitulo": "cap-3",
+      "resumen": "Pedro creo los canales digitales de TikTok y YouTube de ParetoMed. El 28 de marzo de 2024, Pedro propuso en el chat de trabajo: *\"Crear cuentas @paretomed para titk tok y youtube y facebook\"*. Oscar le proporciono las credenciales del correo instituc...",
+      "texto_completo": "**HECHO DECIMOCTAVO.** Pedro creo los canales digitales de TikTok y YouTube de ParetoMed. El 28 de marzo de 2024, Pedro propuso en el chat de trabajo: *\"Crear cuentas @paretomed para titk tok y youtube y facebook\"*. Oscar le proporciono las credenciales del correo institucional: *\"Crea el canal de YouTube con esta cuenta\"* (29/03/2024). El 1 de abril de 2024, Pedro confirmo: *\"ya estan creados los canales de YouTube y tiktok\"*. La creacion de los canales oficiales del negocio es un acto fundacional que excede las funciones de un simple prestador de servicios externo y evidencia que Pedro construia la infraestructura digital del negocio como propia. **[P-02, P-04]**",
       "fragmentos_clave": [
         {
           "cita": "Crear cuentas @paretomed para titk tok y youtube y facebook",
@@ -701,15 +702,15 @@ const CASE_DATA = {
       "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Creación de canales digitales de ParetoMed",
-      "texto_completo_html": "<p><strong>HECHO DECIMOCTAVO.</strong> Desde el primer mes de operacion conjunta (mayo 2024), Oscar calculaba el porcentaje de Pedro sobre la <strong>ganancia neta</strong> del negocio, desglosando ingresos y egresos antes de aplicar el 20%. El 7 de mayo de 2024, Oscar envio la primera liquidacion detallada: <em>&quot;Ingresos: 10,889,303. Egresos: 3,872,653. Ganancia: 7,016,650. Porcentaje de Pedro: 7,016,650 x 0,20 = 1,403,330&quot;</em>. <strong>[P-02, P-13]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO DECIMOCTAVO.</strong> Pedro creo los canales digitales de TikTok y YouTube de ParetoMed. El 28 de marzo de 2024, Pedro propuso en el chat de trabajo: <em>&quot;Crear cuentas @paretomed para titk tok y youtube y facebook&quot;</em>. Oscar le proporciono las credenciales del correo institucional: <em>&quot;Crea el canal de YouTube con esta cuenta&quot;</em> (29/03/2024). El 1 de abril de 2024, Pedro confirmo: <em>&quot;ya estan creados los canales de YouTube y tiktok&quot;</em>. La creacion de los canales oficiales del negocio es un acto fundacional que excede las funciones de un simple prestador de servicios externo y evidencia que Pedro construia la infraestructura digital del negocio como propia. <strong>[P-02, P-04]</strong></p>\n"
     },
     "hecho-19": {
       "id": "hecho-19",
       "numero": 19,
       "ordinal": "DECIMONOVENO",
-      "capitulo": "cap-4",
-      "resumen": "Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan **14 transferencias bancarias** de la cuenta de ...",
-      "texto_completo": "**HECHO DECIMONOVENO.** Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan **14 transferencias bancarias** de la cuenta de OSCAR MALDONADO a la cuenta Bancolombia **4483 de Pedro Vergara, por un total de $99.319.834 COP:\n\n### Transferencias 2024:\n| Fecha transferencia | Monto | Observacion |\n|---------------------|-------|-------------|\n| 07/05/2024 | $1.403.330 | Correspondiente a mayo 2024 |\n| 07/06/2024 | $1.695.423 | Correspondiente a junio 2024 |\n| 01/07/2024 | $4.381.509 | Correspondiente a julio 2024 |\n| 05/08/2024 | $6.315.738 | Correspondiente a agosto 2024 |\n| 19/08/2024 | $100.000 | Pago adicional agosto 2024 |\n| 03/09/2024 | $4.190.223 | Correspondiente a septiembre 2024 |\n| 04/10/2024 | $6.280.685 | Correspondiente a octubre 2024 |\n| **Subtotal 2024** | **$24.366.908** | |\n\n### Transferencias 2025:\n| Fecha transferencia | Monto | Observacion |\n|---------------------|-------|-------------|\n| 05/02/2025 | $16.726.760 | Correspondiente a enero 2025 (20% de $83.633.800 de rentabilidad) |\n| 06/03/2025 | $13.422.192 | Correspondiente a febrero 2025 |\n| 03/04/2025 | $10.865.364 | Correspondiente a marzo 2025 |\n| 09/05/2025 | $12.700.000 | Correspondiente a abril 2025 |\n| 06/06/2025 | $8.298.000 | Correspondiente a mayo 2025 |\n| 02/07/2025 | $5.490.610 | Correspondiente a junio 2025 |\n| 05/08/2025 | $7.450.000 | Correspondiente a julio 2025 |\n| **Subtotal 2025** | **$74.952.926** | |\n\n| **TOTAL GENERAL** | **$99.319.834** | **14 transferencias documentadas** |\n\nLas cuentas de cobro NO dicen \"prestacion de servicios\". El objeto es generico: \"gestion de redes y campanas publicitarias paretomed_1\". Las transferencias estan acreditadas con capturas de pantalla de mensajes SMS de Bancolombia. **[P-12, P-13, P-02, P-36, PAGOS 1-4]**",
+      "capitulo": "cap-3",
+      "resumen": "La edicion audiovisual se realizaba con el software CapCut (version escritorio y movil). Oscar reconocio que Pedro tenia conocimiento superior en edicion: *\"los que aprendi fueron Da Vinci Resolve y Capcut para escritorio\"* (04/01/2024), a lo que Ped...",
+      "texto_completo": "**HECHO DECIMONOVENO.** La edicion audiovisual se realizaba con el software CapCut (version escritorio y movil). Oscar reconocio que Pedro tenia conocimiento superior en edicion: *\"los que aprendi fueron Da Vinci Resolve y Capcut para escritorio\"* (04/01/2024), a lo que Pedro respondio: *\"Da vinci resolve es muy bueno pero siento que para empezar es muy complicado, capcut de escritorio es mas amigable y es bueno para aprender hasta edicion avanzada\"*. Pedro asumia el control de calidad de las ediciones: *\"Oscar trate de editarlo pa que lo subieras ahorita y no me gusto el capcut de movil no tiene buenas funciones para mejorar el audio y los subtitulos\"* (23/03/2024). La edicion de cada videoclase de una hora demandaba entre 2 y 3 horas de trabajo de post-produccion (correccion, B-roll, transiciones, subtitulos), lo cual constituia una dedicacion de tiempo completo junto con las demas funciones de Pedro. **[P-02]**",
       "fragmentos_clave": [
         {
           "cita": "los que aprendi fueron Da Vinci Resolve y Capcut para escritorio",
@@ -736,18 +737,20 @@ const CASE_DATA = {
           "relevancia": "Pedro asume control de calidad de ediciones — liderazgo técnico propio de socio"
         }
       ],
-      "pruebas": [],
+      "pruebas": [
+        "P-02"
+      ],
       "nota_abogado": null,
       "titulo_corto": "Edición audiovisual y control de calidad",
-      "texto_completo_html": "<p><strong>HECHO DECIMONOVENO.</strong> Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan <strong>14 transferencias bancarias</strong> de la cuenta de OSCAR MALDONADO a la cuenta Bancolombia **4483 de Pedro Vergara, por un total de $99.319.834 COP:</p>\n<h3>Transferencias 2024:</h3>\n<table>\n<thead>\n<tr>\n<th>Fecha transferencia</th>\n<th>Monto</th>\n<th>Observacion</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>07/05/2024</td>\n<td>$1.403.330</td>\n<td>Correspondiente a mayo 2024</td>\n</tr>\n<tr>\n<td>07/06/2024</td>\n<td>$1.695.423</td>\n<td>Correspondiente a junio 2024</td>\n</tr>\n<tr>\n<td>01/07/2024</td>\n<td>$4.381.509</td>\n<td>Correspondiente a julio 2024</td>\n</tr>\n<tr>\n<td>05/08/2024</td>\n<td>$6.315.738</td>\n<td>Correspondiente a agosto 2024</td>\n</tr>\n<tr>\n<td>19/08/2024</td>\n<td>$100.000</td>\n<td>Pago adicional agosto 2024</td>\n</tr>\n<tr>\n<td>03/09/2024</td>\n<td>$4.190.223</td>\n<td>Correspondiente a septiembre 2024</td>\n</tr>\n<tr>\n<td>04/10/2024</td>\n<td>$6.280.685</td>\n<td>Correspondiente a octubre 2024</td>\n</tr>\n<tr>\n<td><strong>Subtotal 2024</strong></td>\n<td><strong>$24.366.908</strong></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>Transferencias 2025:</h3>\n<table>\n<thead>\n<tr>\n<th>Fecha transferencia</th>\n<th>Monto</th>\n<th>Observacion</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>05/02/2025</td>\n<td>$16.726.760</td>\n<td>Correspondiente a enero 2025 (20% de $83.633.800 de rentabilidad)</td>\n</tr>\n<tr>\n<td>06/03/2025</td>\n<td>$13.422.192</td>\n<td>Correspondiente a febrero 2025</td>\n</tr>\n<tr>\n<td>03/04/2025</td>\n<td>$10.865.364</td>\n<td>Correspondiente a marzo 2025</td>\n</tr>\n<tr>\n<td>09/05/2025</td>\n<td>$12.700.000</td>\n<td>Correspondiente a abril 2025</td>\n</tr>\n<tr>\n<td>06/06/2025</td>\n<td>$8.298.000</td>\n<td>Correspondiente a mayo 2025</td>\n</tr>\n<tr>\n<td>02/07/2025</td>\n<td>$5.490.610</td>\n<td>Correspondiente a junio 2025</td>\n</tr>\n<tr>\n<td>05/08/2025</td>\n<td>$7.450.000</td>\n<td>Correspondiente a julio 2025</td>\n</tr>\n<tr>\n<td><strong>Subtotal 2025</strong></td>\n<td><strong>$74.952.926</strong></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>| <strong>TOTAL GENERAL</strong> | <strong>$99.319.834</strong> | <strong>14 transferencias documentadas</strong> |</p>\n<p>Las cuentas de cobro NO dicen &quot;prestacion de servicios&quot;. El objeto es generico: &quot;gestion de redes y campanas publicitarias paretomed_1&quot;. Las transferencias estan acreditadas con capturas de pantalla de mensajes SMS de Bancolombia. <strong>[P-12, P-13, P-02, P-36, PAGOS 1-4]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO DECIMONOVENO.</strong> La edicion audiovisual se realizaba con el software CapCut (version escritorio y movil). Oscar reconocio que Pedro tenia conocimiento superior en edicion: <em>&quot;los que aprendi fueron Da Vinci Resolve y Capcut para escritorio&quot;</em> (04/01/2024), a lo que Pedro respondio: <em>&quot;Da vinci resolve es muy bueno pero siento que para empezar es muy complicado, capcut de escritorio es mas amigable y es bueno para aprender hasta edicion avanzada&quot;</em>. Pedro asumia el control de calidad de las ediciones: <em>&quot;Oscar trate de editarlo pa que lo subieras ahorita y no me gusto el capcut de movil no tiene buenas funciones para mejorar el audio y los subtitulos&quot;</em> (23/03/2024). La edicion de cada videoclase de una hora demandaba entre 2 y 3 horas de trabajo de post-produccion (correccion, B-roll, transiciones, subtitulos), lo cual constituia una dedicacion de tiempo completo junto con las demas funciones de Pedro. <strong>[P-02]</strong></p>\n"
     },
     "hecho-20": {
       "id": "hecho-20",
       "numero": 20,
       "ordinal": "VIGESIMO",
-      "capitulo": "cap-4",
-      "resumen": "Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorarios fijos por prest...",
-      "texto_completo": "**HECHO VIGESIMO.** Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorarios fijos por prestacion de servicios y solo se explica como participacion proporcional (20%) en utilidades variables. Esta misma variabilidad se observa en las facturas emitidas por Pedro a traves de Doctor Flight S.A.S. **[P-16]**, donde los montos facturados fluctuaban mensualmente en funcion de las utilidades del negocio — reforzando que el pago era proporcional a la rentabilidad, no una tarifa fija. Si se proyecta que Pedro recibia el 20%, los ingresos netos del negocio durante este periodo serian de aproximadamente **$496.599.170 COP** ($99.319.834 / 0.20). **[P-36, PAGOS 1-4, P-16]**\n\n---",
+      "capitulo": "cap-3",
+      "resumen": "**HECHO VIGESIMO (antes DECIMOSEPTIMO).** Pedro registro ante la Direccion Nacional de Derecho de Autor (DNDA) un total de **238 obras audiovisuales unicas** (476 registros, ya que cada obra se registra como Autor/Director y como Productor), creadas ...",
+      "texto_completo": "**HECHO VIGESIMO (antes DECIMOSEPTIMO).** Pedro registro ante la Direccion Nacional de Derecho de Autor (DNDA) un total de **238 obras audiovisuales unicas** (476 registros, ya que cada obra se registra como Autor/Director y como Productor), creadas en el marco de la sociedad de hecho. Los registros fueron realizados entre el 2 de septiembre y el 8 de octubre de 2025. En todos los certificados de registro, Pedro aparece como **AUTOR, DIRECTOR y PRODUCTOR**, mientras que Oscar Maldonado aparece unicamente como **ARTISTA/INTERPRETE/EJECUTANTE**. Las obras comprenden clases medicas, preguntas explicadas, contenido comercial y testimonios de estudiantes para el programa PARETOMED. El certificado fue emitido el 28 de octubre de 2025 por la Jefe de la Oficina de Registro, Maria Fernanda Cardenas Nieves. **[P-22, P-23]**\n\n> **NOTA PARA EL ABOGADO (co-autoria):** Oscar tiene un argumento legitimo de co-autoria sobre el contenido medico/guiones (~85% Oscar en guiones). Sin embargo, la distincion juridica clave es: contenido intelectual medico (Oscar) vs. obra audiovisual final (Pedro como director, editor y productor). El registro DNDA refleja esta distincion: Pedro = AUTOR/DIRECTOR/PRODUCTOR de la obra audiovisual; Oscar = ARTISTA/INTERPRETE/EJECUTANTE. La co-autoria NO otorga uso libre sin consentimiento del otro co-autor (art. 18 Ley 23/1982). El retiro de consentimiento de Pedro es valido incluso en obras co-autorales. Se recomienda no exagerar la pretension de PI como si Pedro fuera autor unico del contenido, sino enfatizar que es autor de la obra audiovisual y que Oscar no puede explotar las obras sin su consentimiento.\n\n---",
       "fragmentos_clave": [
         {
           "cita": "238 obras audiovisuales unicas, 476 registros",
@@ -766,24 +769,22 @@ const CASE_DATA = {
           "relevancia": "Oscar reconoce que las obras creadas por Pedro son de ParetoMed — confesión que confirma el carácter societario del aporte intelectual — P-50"
         }
       ],
-      "pruebas": [
-        "P-16"
-      ],
+      "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Registro DNDA — 238 obras audiovisuales",
-      "texto_completo_html": "<p><strong>HECHO VIGESIMO.</strong> Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorarios fijos por prestacion de servicios y solo se explica como participacion proporcional (20%) en utilidades variables. Esta misma variabilidad se observa en las facturas emitidas por Pedro a traves de Doctor Flight S.A.S. <strong>[P-16]</strong>, donde los montos facturados fluctuaban mensualmente en funcion de las utilidades del negocio — reforzando que el pago era proporcional a la rentabilidad, no una tarifa fija. Si se proyecta que Pedro recibia el 20%, los ingresos netos del negocio durante este periodo serian de aproximadamente <strong>$496.599.170 COP</strong> ($99.319.834 / 0.20). <strong>[P-36, PAGOS 1-4, P-16]</strong></p>\n<hr>\n"
+      "texto_completo_html": "<p><strong>HECHO VIGESIMO (antes DECIMOSEPTIMO).</strong> Pedro registro ante la Direccion Nacional de Derecho de Autor (DNDA) un total de <strong>238 obras audiovisuales unicas</strong> (476 registros, ya que cada obra se registra como Autor/Director y como Productor), creadas en el marco de la sociedad de hecho. Los registros fueron realizados entre el 2 de septiembre y el 8 de octubre de 2025. En todos los certificados de registro, Pedro aparece como <strong>AUTOR, DIRECTOR y PRODUCTOR</strong>, mientras que Oscar Maldonado aparece unicamente como <strong>ARTISTA/INTERPRETE/EJECUTANTE</strong>. Las obras comprenden clases medicas, preguntas explicadas, contenido comercial y testimonios de estudiantes para el programa PARETOMED. El certificado fue emitido el 28 de octubre de 2025 por la Jefe de la Oficina de Registro, Maria Fernanda Cardenas Nieves. <strong>[P-22, P-23]</strong></p>\n<blockquote>\n<p><strong>NOTA PARA EL ABOGADO (co-autoria):</strong> Oscar tiene un argumento legitimo de co-autoria sobre el contenido medico/guiones (~85% Oscar en guiones). Sin embargo, la distincion juridica clave es: contenido intelectual medico (Oscar) vs. obra audiovisual final (Pedro como director, editor y productor). El registro DNDA refleja esta distincion: Pedro = AUTOR/DIRECTOR/PRODUCTOR de la obra audiovisual; Oscar = ARTISTA/INTERPRETE/EJECUTANTE. La co-autoria NO otorga uso libre sin consentimiento del otro co-autor (art. 18 Ley 23/1982). El retiro de consentimiento de Pedro es valido incluso en obras co-autorales. Se recomienda no exagerar la pretension de PI como si Pedro fuera autor unico del contenido, sino enfatizar que es autor de la obra audiovisual y que Oscar no puede explotar las obras sin su consentimiento.</p>\n</blockquote>\n<hr>\n"
     },
     "hecho-21": {
       "id": "hecho-21",
       "numero": 21,
-      "ordinal": "VIGESIMOPRIMERO",
-      "capitulo": "cap-5",
-      "resumen": "Oscar Maldonado reconocio expresamente la existencia de la sociedad en grabacion telefonica del 14 de agosto de 2025: *\"O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente\"*. En la m...",
-      "texto_completo": "**HECHO VIGESIMOPRIMERO.** Oscar Maldonado reconocio expresamente la existencia de la sociedad en grabacion telefonica del 14 de agosto de 2025: *\"O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente\"*. En la misma grabacion, Oscar admitio que presento a Pedro como socio ante terceros: *\"como te presente yo con el man de alla de Coventus, le dije ey te presento a mi socio\"*. **[P-01]**",
+      "ordinal": "DECIMOCTAVO",
+      "capitulo": "cap-4",
+      "resumen": "Desde el primer mes de operacion conjunta (mayo 2024), Oscar calculaba el porcentaje de Pedro sobre la **ganancia neta** del negocio, desglosando ingresos y egresos antes de aplicar el 20%. El 7 de mayo de 2024, Oscar envio la primera liquidacion det...",
+      "texto_completo": "**HECHO DECIMOCTAVO.** Desde el primer mes de operacion conjunta (mayo 2024), Oscar calculaba el porcentaje de Pedro sobre la **ganancia neta** del negocio, desglosando ingresos y egresos antes de aplicar el 20%. El 7 de mayo de 2024, Oscar envio la primera liquidacion detallada: *\"Ingresos: 10,889,303. Egresos: 3,872,653. Ganancia: 7,016,650. Porcentaje de Pedro: 7,016,650 x 0,20 = 1,403,330\"*. **[P-02, P-13]**",
       "fragmentos_clave": [
         {
           "cita": "O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
@@ -791,31 +792,29 @@ const CASE_DATA = {
         },
         {
           "cita": "como te presente yo con el man de alla de Coventus, le dije ey te presento a mi socio",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
           "relevancia": "Oscar admite conducta societaria ante terceros — P-01. Presentar a alguien como 'socio' públicamente es reconocimiento inequívoco de affectio societatis"
         }
       ],
-      "pruebas": [
-        "P-01"
-      ],
+      "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Confesión: \"nos llamábamos socios\"",
-      "texto_completo_html": "<p><strong>HECHO VIGESIMOPRIMERO.</strong> Oscar Maldonado reconocio expresamente la existencia de la sociedad en grabacion telefonica del 14 de agosto de 2025: <em>&quot;O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente&quot;</em>. En la misma grabacion, Oscar admitio que presento a Pedro como socio ante terceros: <em>&quot;como te presente yo con el man de alla de Coventus, le dije ey te presento a mi socio&quot;</em>. <strong>[P-01]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO DECIMOCTAVO.</strong> Desde el primer mes de operacion conjunta (mayo 2024), Oscar calculaba el porcentaje de Pedro sobre la <strong>ganancia neta</strong> del negocio, desglosando ingresos y egresos antes de aplicar el 20%. El 7 de mayo de 2024, Oscar envio la primera liquidacion detallada: <em>&quot;Ingresos: 10,889,303. Egresos: 3,872,653. Ganancia: 7,016,650. Porcentaje de Pedro: 7,016,650 x 0,20 = 1,403,330&quot;</em>. <strong>[P-02, P-13]</strong></p>\n"
     },
     "hecho-22": {
       "id": "hecho-22",
       "numero": 22,
-      "ordinal": "VIGESIMOSEGUNDO",
-      "capitulo": "cap-5",
-      "resumen": "En la misma grabacion, Oscar reconocio que el pacto incluia acciones: *\"si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente\"*. Y admitio que consulto a sus propios asesores legales y...",
-      "texto_completo": "**HECHO VIGESIMOSEGUNDO.** En la misma grabacion, Oscar reconocio que el pacto incluia acciones: *\"si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente\"*. Y admitio que consulto a sus propios asesores legales y contables sobre la situacion: *\"yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron, ey... si que sociedad de hecho con el man, pero tu puedes cortarlo\"*. Aun cuando Oscar alega que sus asesores le dijeron que podia \"cortarlo\", el hecho mismo de que Oscar consultara abogados sobre una \"sociedad de hecho\" demuestra que Oscar RECONOCIA que existia una sociedad de hecho que requeria asesoria legal para terminar. Si no hubiera sociedad, no habria nada que \"cortar.\" **[P-01]**",
+      "ordinal": "DECIMONOVENO",
+      "capitulo": "cap-4",
+      "resumen": "Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan **14 transferencias bancarias** de la cuenta de ...",
+      "texto_completo": "**HECHO DECIMONOVENO.** Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan **14 transferencias bancarias** de la cuenta de OSCAR MALDONADO a la cuenta Bancolombia **4483 de Pedro Vergara, por un total de $99.319.834 COP:\n\n### Transferencias 2024:\n| Fecha transferencia | Monto | Observacion |\n|---------------------|-------|-------------|\n| 07/05/2024 | $1.403.330 | Correspondiente a mayo 2024 |\n| 07/06/2024 | $1.695.423 | Correspondiente a junio 2024 |\n| 01/07/2024 | $4.381.509 | Correspondiente a julio 2024 |\n| 05/08/2024 | $6.315.738 | Correspondiente a agosto 2024 |\n| 19/08/2024 | $100.000 | Pago adicional agosto 2024 |\n| 03/09/2024 | $4.190.223 | Correspondiente a septiembre 2024 |\n| 04/10/2024 | $6.280.685 | Correspondiente a octubre 2024 |\n| **Subtotal 2024** | **$24.366.908** | |\n\n### Transferencias 2025:\n| Fecha transferencia | Monto | Observacion |\n|---------------------|-------|-------------|\n| 05/02/2025 | $16.726.760 | Correspondiente a enero 2025 (20% de $83.633.800 de rentabilidad) |\n| 06/03/2025 | $13.422.192 | Correspondiente a febrero 2025 |\n| 03/04/2025 | $10.865.364 | Correspondiente a marzo 2025 |\n| 09/05/2025 | $12.700.000 | Correspondiente a abril 2025 |\n| 06/06/2025 | $8.298.000 | Correspondiente a mayo 2025 |\n| 02/07/2025 | $5.490.610 | Correspondiente a junio 2025 |\n| 05/08/2025 | $7.450.000 | Correspondiente a julio 2025 |\n| **Subtotal 2025** | **$74.952.926** | |\n\n| **TOTAL GENERAL** | **$99.319.834** | **14 transferencias documentadas** |\n\nLas cuentas de cobro NO dicen \"prestacion de servicios\". El objeto es generico: \"gestion de redes y campanas publicitarias paretomed_1\". Las transferencias estan acreditadas con capturas de pantalla de mensajes SMS de Bancolombia. **[P-12, P-13, P-02, P-36, PAGOS 1-4]**",
       "fragmentos_clave": [
         {
           "cita": "si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
@@ -823,27 +822,25 @@ const CASE_DATA = {
         },
         {
           "cita": "yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron, ey... si que sociedad de hecho con el man, pero tu puedes cortarlo",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
           "relevancia": "DEVASTADOR: Los propios asesores de Oscar confirmaron la sociedad de hecho — P-01. Si sus abogados y contadores lo reconocieron, el demandado no puede negarlo en juicio"
         }
       ],
-      "pruebas": [
-        "P-01"
-      ],
+      "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Confesión: \"ibas a formar parte de la SAS\"",
-      "texto_completo_html": "<p><strong>HECHO VIGESIMOSEGUNDO.</strong> En la misma grabacion, Oscar reconocio que el pacto incluia acciones: <em>&quot;si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente&quot;</em>. Y admitio que consulto a sus propios asesores legales y contables sobre la situacion: <em>&quot;yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron, ey... si que sociedad de hecho con el man, pero tu puedes cortarlo&quot;</em>. Aun cuando Oscar alega que sus asesores le dijeron que podia &quot;cortarlo&quot;, el hecho mismo de que Oscar consultara abogados sobre una &quot;sociedad de hecho&quot; demuestra que Oscar RECONOCIA que existia una sociedad de hecho que requeria asesoria legal para terminar. Si no hubiera sociedad, no habria nada que &quot;cortar.&quot; <strong>[P-01]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO DECIMONOVENO.</strong> Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan <strong>14 transferencias bancarias</strong> de la cuenta de OSCAR MALDONADO a la cuenta Bancolombia **4483 de Pedro Vergara, por un total de $99.319.834 COP:</p>\n<h3>Transferencias 2024:</h3>\n<table>\n<thead>\n<tr>\n<th>Fecha transferencia</th>\n<th>Monto</th>\n<th>Observacion</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>07/05/2024</td>\n<td>$1.403.330</td>\n<td>Correspondiente a mayo 2024</td>\n</tr>\n<tr>\n<td>07/06/2024</td>\n<td>$1.695.423</td>\n<td>Correspondiente a junio 2024</td>\n</tr>\n<tr>\n<td>01/07/2024</td>\n<td>$4.381.509</td>\n<td>Correspondiente a julio 2024</td>\n</tr>\n<tr>\n<td>05/08/2024</td>\n<td>$6.315.738</td>\n<td>Correspondiente a agosto 2024</td>\n</tr>\n<tr>\n<td>19/08/2024</td>\n<td>$100.000</td>\n<td>Pago adicional agosto 2024</td>\n</tr>\n<tr>\n<td>03/09/2024</td>\n<td>$4.190.223</td>\n<td>Correspondiente a septiembre 2024</td>\n</tr>\n<tr>\n<td>04/10/2024</td>\n<td>$6.280.685</td>\n<td>Correspondiente a octubre 2024</td>\n</tr>\n<tr>\n<td><strong>Subtotal 2024</strong></td>\n<td><strong>$24.366.908</strong></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>Transferencias 2025:</h3>\n<table>\n<thead>\n<tr>\n<th>Fecha transferencia</th>\n<th>Monto</th>\n<th>Observacion</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>05/02/2025</td>\n<td>$16.726.760</td>\n<td>Correspondiente a enero 2025 (20% de $83.633.800 de rentabilidad)</td>\n</tr>\n<tr>\n<td>06/03/2025</td>\n<td>$13.422.192</td>\n<td>Correspondiente a febrero 2025</td>\n</tr>\n<tr>\n<td>03/04/2025</td>\n<td>$10.865.364</td>\n<td>Correspondiente a marzo 2025</td>\n</tr>\n<tr>\n<td>09/05/2025</td>\n<td>$12.700.000</td>\n<td>Correspondiente a abril 2025</td>\n</tr>\n<tr>\n<td>06/06/2025</td>\n<td>$8.298.000</td>\n<td>Correspondiente a mayo 2025</td>\n</tr>\n<tr>\n<td>02/07/2025</td>\n<td>$5.490.610</td>\n<td>Correspondiente a junio 2025</td>\n</tr>\n<tr>\n<td>05/08/2025</td>\n<td>$7.450.000</td>\n<td>Correspondiente a julio 2025</td>\n</tr>\n<tr>\n<td><strong>Subtotal 2025</strong></td>\n<td><strong>$74.952.926</strong></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>| <strong>TOTAL GENERAL</strong> | <strong>$99.319.834</strong> | <strong>14 transferencias documentadas</strong> |</p>\n<p>Las cuentas de cobro NO dicen &quot;prestacion de servicios&quot;. El objeto es generico: &quot;gestion de redes y campanas publicitarias paretomed_1&quot;. Las transferencias estan acreditadas con capturas de pantalla de mensajes SMS de Bancolombia. <strong>[P-12, P-13, P-02, P-36, PAGOS 1-4]</strong></p>\n"
     },
     "hecho-23": {
       "id": "hecho-23",
       "numero": 23,
-      "ordinal": "VIGESIMOTERCERO",
-      "capitulo": "cap-5",
-      "resumen": "Oscar manifesto en multiples ocasiones por WhatsApp su voluntad de formalizar la sociedad existente: (a) el 1 de julio de 2024: *\"tenemos que reunirnos para que hablemos bien de las condiciones que necesito para que legalicemos la cosa\"*; (b) el 28 d...",
-      "texto_completo": "**HECHO VIGESIMOTERCERO.** Oscar manifesto en multiples ocasiones por WhatsApp su voluntad de formalizar la sociedad existente: (a) el 1 de julio de 2024: *\"tenemos que reunirnos para que hablemos bien de las condiciones que necesito para que legalicemos la cosa\"*; (b) el 28 de noviembre de 2024: *\"le pedi a mi papa que es abogado que le pegara una revisada... tu sabes que yo voy pa' lante con la sociedad\"*; (c) el 13 de enero de 2025: *\"lo que vamos a hacer es constituir la SAS y ahi iriamos como socios\"*. **[P-02]**",
+      "ordinal": "VIGESIMO",
+      "capitulo": "cap-4",
+      "resumen": "Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorarios fijos por prest...",
+      "texto_completo": "**HECHO VIGESIMO.** Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorarios fijos por prestacion de servicios y solo se explica como participacion proporcional (20%) en utilidades variables. Esta misma variabilidad se observa en las facturas emitidas por Pedro a traves de Doctor Flight S.A.S. **[P-16]**, donde los montos facturados fluctuaban mensualmente en funcion de las utilidades del negocio — reforzando que el pago era proporcional a la rentabilidad, no una tarifa fija. Si se proyecta que Pedro recibia el 20%, los ingresos netos del negocio durante este periodo serian de aproximadamente **$496.599.170 COP** ($99.319.834 / 0.20). **[P-36, PAGOS 1-4, P-16]**\n\n---",
       "fragmentos_clave": [
         {
           "cita": "tenemos que reunirnos para que hablemos bien de las condiciones que necesito para que legalicemos la cosa",
@@ -871,19 +868,19 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-02"
+        "P-16"
       ],
       "nota_abogado": null,
       "titulo_corto": "Oscar promete formalizar la sociedad",
-      "texto_completo_html": "<p><strong>HECHO VIGESIMOTERCERO.</strong> Oscar manifesto en multiples ocasiones por WhatsApp su voluntad de formalizar la sociedad existente: (a) el 1 de julio de 2024: <em>&quot;tenemos que reunirnos para que hablemos bien de las condiciones que necesito para que legalicemos la cosa&quot;</em>; (b) el 28 de noviembre de 2024: <em>&quot;le pedi a mi papa que es abogado que le pegara una revisada... tu sabes que yo voy pa' lante con la sociedad&quot;</em>; (c) el 13 de enero de 2025: <em>&quot;lo que vamos a hacer es constituir la SAS y ahi iriamos como socios&quot;</em>. <strong>[P-02]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO VIGESIMO.</strong> Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorarios fijos por prestacion de servicios y solo se explica como participacion proporcional (20%) en utilidades variables. Esta misma variabilidad se observa en las facturas emitidas por Pedro a traves de Doctor Flight S.A.S. <strong>[P-16]</strong>, donde los montos facturados fluctuaban mensualmente en funcion de las utilidades del negocio — reforzando que el pago era proporcional a la rentabilidad, no una tarifa fija. Si se proyecta que Pedro recibia el 20%, los ingresos netos del negocio durante este periodo serian de aproximadamente <strong>$496.599.170 COP</strong> ($99.319.834 / 0.20). <strong>[P-36, PAGOS 1-4, P-16]</strong></p>\n<hr>\n"
     },
     "hecho-24": {
       "id": "hecho-24",
       "numero": 24,
-      "ordinal": "VIGESIMOCUARTO",
+      "ordinal": "VIGESIMOPRIMERO",
       "capitulo": "cap-5",
-      "resumen": "Pedro reivindico constantemente su calidad de socio. El 18 de julio de 2025: *\"yo soy socio, no trabajador tuyo... si quieres un vale que haga todo lo que tu digas... vas a tener que contratarlo\"*. El 23 de julio de 2025: *\"no deberias poder tomar de...",
-      "texto_completo": "**HECHO VIGESIMOCUARTO.** Pedro reivindico constantemente su calidad de socio. El 18 de julio de 2025: *\"yo soy socio, no trabajador tuyo... si quieres un vale que haga todo lo que tu digas... vas a tener que contratarlo\"*. El 23 de julio de 2025: *\"no deberias poder tomar decisiones sin compartirmelas y recibir mi opinion antes, porque para algo es una sociedad\"*. Significativamente, cuando Pedro afirmo su calidad de socio, Oscar NO lo nego en su respuesta posterior ese mismo dia, sino que desvio la conversacion hacia otros temas — lo que constituye un reconocimiento tacito por omision de la calidad de socio invocada por Pedro. **[P-02]**",
+      "resumen": "Oscar Maldonado reconocio expresamente la existencia de la sociedad en grabacion telefonica del 14 de agosto de 2025: *\"O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente\"*. En la m...",
+      "texto_completo": "**HECHO VIGESIMOPRIMERO.** Oscar Maldonado reconocio expresamente la existencia de la sociedad en grabacion telefonica del 14 de agosto de 2025: *\"O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente\"*. En la misma grabacion, Oscar admitio que presento a Pedro como socio ante terceros: *\"como te presente yo con el man de alla de Coventus, le dije ey te presento a mi socio\"*. **[P-01]**",
       "fragmentos_clave": [
         {
           "cita": "yo soy socio, no trabajador tuyo... si quieres un vale que haga todo lo que tu digas... vas a tener que contratarlo",
@@ -903,19 +900,19 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-02"
+        "P-01"
       ],
       "nota_abogado": null,
       "titulo_corto": "Pedro reivindica su calidad de socio",
-      "texto_completo_html": "<p><strong>HECHO VIGESIMOCUARTO.</strong> Pedro reivindico constantemente su calidad de socio. El 18 de julio de 2025: <em>&quot;yo soy socio, no trabajador tuyo... si quieres un vale que haga todo lo que tu digas... vas a tener que contratarlo&quot;</em>. El 23 de julio de 2025: <em>&quot;no deberias poder tomar decisiones sin compartirmelas y recibir mi opinion antes, porque para algo es una sociedad&quot;</em>. Significativamente, cuando Pedro afirmo su calidad de socio, Oscar NO lo nego en su respuesta posterior ese mismo dia, sino que desvio la conversacion hacia otros temas — lo que constituye un reconocimiento tacito por omision de la calidad de socio invocada por Pedro. <strong>[P-02]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO VIGESIMOPRIMERO.</strong> Oscar Maldonado reconocio expresamente la existencia de la sociedad en grabacion telefonica del 14 de agosto de 2025: <em>&quot;O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente&quot;</em>. En la misma grabacion, Oscar admitio que presento a Pedro como socio ante terceros: <em>&quot;como te presente yo con el man de alla de Coventus, le dije ey te presento a mi socio&quot;</em>. <strong>[P-01]</strong></p>\n"
     },
     "hecho-25": {
       "id": "hecho-25",
       "numero": 25,
-      "ordinal": "VIGESIMOQUINTO",
+      "ordinal": "VIGESIMOSEGUNDO",
       "capitulo": "cap-5",
-      "resumen": "En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar escribio de su puno y letra las siguientes notas: (a) *\"20% de las utilidades no se justifican por una labor que es contratable. La idea, como se ...",
-      "texto_completo": "**HECHO VIGESIMOQUINTO.** En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar escribio de su puno y letra las siguientes notas: (a) *\"20% de las utilidades no se justifican por una labor que es contratable. La idea, como se planteo en las discusiones verbales iniciales, es que ademas trabaje para impulsar con nuevas ideas y trabajar DE LLENO en esta\"*; (b) *\"Recordar lo que propuse en el acuerdo inicial e informal donde especificaba: 'Funciones que Pedro considere necesarias para el crecimiento de la empresa'\"*; (c) *\"las ideas, vision, estrategia y trabajo para el crecimiento de la empresa son las que justifican la participacion accionaria.\"* Con estas notas, Oscar reconocio TEXTUALMENTE tres cosas: (i) que lo que Pedro hacia NO ERA una simple prestacion de servicios contratable; (ii) que EXISTIERON **discusiones verbales iniciales** y un **acuerdo inicial e informal** previos al documento escrito — es decir, el pacto verbal que constituyo la sociedad de hecho; y (iii) que la participacion de Pedro se justificaba por su rol estrategico, no por labores operativas. **[P-09]**\n\n---",
+      "resumen": "En la misma grabacion, Oscar reconocio que el pacto incluia acciones: *\"si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente\"*. Y admitio que consulto a sus propios asesores legales y...",
+      "texto_completo": "**HECHO VIGESIMOSEGUNDO.** En la misma grabacion, Oscar reconocio que el pacto incluia acciones: *\"si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente\"*. Y admitio que consulto a sus propios asesores legales y contables sobre la situacion: *\"yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron, ey... si que sociedad de hecho con el man, pero tu puedes cortarlo\"*. Aun cuando Oscar alega que sus asesores le dijeron que podia \"cortarlo\", el hecho mismo de que Oscar consultara abogados sobre una \"sociedad de hecho\" demuestra que Oscar RECONOCIA que existia una sociedad de hecho que requeria asesoria legal para terminar. Si no hubiera sociedad, no habria nada que \"cortar.\" **[P-01]**",
       "fragmentos_clave": [
         {
           "cita": "20% de las utilidades no se justifican por una labor que es contratable. La idea, como se planteo en las discusiones verbales iniciales, es que ademas trabaje para impulsar con nuevas ideas y trabajar DE LLENO en esta",
@@ -943,19 +940,19 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-09"
+        "P-01"
       ],
       "nota_abogado": null,
       "titulo_corto": "Nota manuscrita: \"no es labor contratable\"",
-      "texto_completo_html": "<p><strong>HECHO VIGESIMOQUINTO.</strong> En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar escribio de su puno y letra las siguientes notas: (a) <em>&quot;20% de las utilidades no se justifican por una labor que es contratable. La idea, como se planteo en las discusiones verbales iniciales, es que ademas trabaje para impulsar con nuevas ideas y trabajar DE LLENO en esta&quot;</em>; (b) <em>&quot;Recordar lo que propuse en el acuerdo inicial e informal donde especificaba: 'Funciones que Pedro considere necesarias para el crecimiento de la empresa'&quot;</em>; (c) <em>&quot;las ideas, vision, estrategia y trabajo para el crecimiento de la empresa son las que justifican la participacion accionaria.&quot;</em> Con estas notas, Oscar reconocio TEXTUALMENTE tres cosas: (i) que lo que Pedro hacia NO ERA una simple prestacion de servicios contratable; (ii) que EXISTIERON <strong>discusiones verbales iniciales</strong> y un <strong>acuerdo inicial e informal</strong> previos al documento escrito — es decir, el pacto verbal que constituyo la sociedad de hecho; y (iii) que la participacion de Pedro se justificaba por su rol estrategico, no por labores operativas. <strong>[P-09]</strong></p>\n<hr>\n"
+      "texto_completo_html": "<p><strong>HECHO VIGESIMOSEGUNDO.</strong> En la misma grabacion, Oscar reconocio que el pacto incluia acciones: <em>&quot;si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente&quot;</em>. Y admitio que consulto a sus propios asesores legales y contables sobre la situacion: <em>&quot;yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron, ey... si que sociedad de hecho con el man, pero tu puedes cortarlo&quot;</em>. Aun cuando Oscar alega que sus asesores le dijeron que podia &quot;cortarlo&quot;, el hecho mismo de que Oscar consultara abogados sobre una &quot;sociedad de hecho&quot; demuestra que Oscar RECONOCIA que existia una sociedad de hecho que requeria asesoria legal para terminar. Si no hubiera sociedad, no habria nada que &quot;cortar.&quot; <strong>[P-01]</strong></p>\n"
     },
     "hecho-26": {
       "id": "hecho-26",
       "numero": 26,
-      "ordinal": "VIGESIMOSEXTO",
-      "capitulo": "cap-6",
-      "resumen": "Pedro participaba activamente en decisiones estrategicas propias de un socio, no de un empleado o contratista: (a) **gestion de personal:** evaluo el desempeno de la asesora de ventas Adriana y propuso su reemplazo, propuso la incorporacion de un ven...",
-      "texto_completo": "**HECHO VIGESIMOSEXTO.** Pedro participaba activamente en decisiones estrategicas propias de un socio, no de un empleado o contratista: (a) **gestion de personal:** evaluo el desempeno de la asesora de ventas Adriana y propuso su reemplazo, propuso la incorporacion de un vendedor adicional (Paul), participo en la induccion de Isabella; (b) **estrategia de producto:** propuso organizar el programa en ciclos de 3 meses (90 dias) para resolver la dificultad de sincronicidad entre estudiantes, creo grupos de estudio semanales (posteriormente reemplazados por talleres dominicales ~agosto 2024), diseno sistema de simulacros pre y post estudio; (c) **marketing y ventas:** manejaba presupuesto de pauta en Meta, decidia que campanas activar o desactivar, configuraba pixel de Meta, entrenaba directamente a la asesora de ventas; (d) **decisiones de producto:** participaba en evaluacion de pasarelas de pago (Wompi, Bold) y co-definia precios del programa con Oscar. **[P-02, P-03, P-33, P-34]**",
+      "ordinal": "VIGESIMOTERCERO",
+      "capitulo": "cap-5",
+      "resumen": "Oscar manifesto en multiples ocasiones por WhatsApp su voluntad de formalizar la sociedad existente: (a) el 1 de julio de 2024: *\"tenemos que reunirnos para que hablemos bien de las condiciones que necesito para que legalicemos la cosa\"*; (b) el 28 d...",
+      "texto_completo": "**HECHO VIGESIMOTERCERO.** Oscar manifesto en multiples ocasiones por WhatsApp su voluntad de formalizar la sociedad existente: (a) el 1 de julio de 2024: *\"tenemos que reunirnos para que hablemos bien de las condiciones que necesito para que legalicemos la cosa\"*; (b) el 28 de noviembre de 2024: *\"le pedi a mi papa que es abogado que le pegara una revisada... tu sabes que yo voy pa' lante con la sociedad\"*; (c) el 13 de enero de 2025: *\"lo que vamos a hacer es constituir la SAS y ahi iriamos como socios\"*. **[P-02]**",
       "fragmentos_clave": [
         {
           "cita": "uds me diran como la ven",
@@ -982,18 +979,20 @@ const CASE_DATA = {
           "relevancia": "Pedro evalúa y decide sobre el personal del negocio — función directiva propia de socio — P-02, P-34"
         }
       ],
-      "pruebas": [],
+      "pruebas": [
+        "P-02"
+      ],
       "nota_abogado": null,
       "titulo_corto": "Co-decisiones estratégicas documentadas",
-      "texto_completo_html": "<p><strong>HECHO VIGESIMOSEXTO.</strong> Pedro participaba activamente en decisiones estrategicas propias de un socio, no de un empleado o contratista: (a) <strong>gestion de personal:</strong> evaluo el desempeno de la asesora de ventas Adriana y propuso su reemplazo, propuso la incorporacion de un vendedor adicional (Paul), participo en la induccion de Isabella; (b) <strong>estrategia de producto:</strong> propuso organizar el programa en ciclos de 3 meses (90 dias) para resolver la dificultad de sincronicidad entre estudiantes, creo grupos de estudio semanales (posteriormente reemplazados por talleres dominicales ~agosto 2024), diseno sistema de simulacros pre y post estudio; (c) <strong>marketing y ventas:</strong> manejaba presupuesto de pauta en Meta, decidia que campanas activar o desactivar, configuraba pixel de Meta, entrenaba directamente a la asesora de ventas; (d) <strong>decisiones de producto:</strong> participaba en evaluacion de pasarelas de pago (Wompi, Bold) y co-definia precios del programa con Oscar. <strong>[P-02, P-03, P-33, P-34]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO VIGESIMOTERCERO.</strong> Oscar manifesto en multiples ocasiones por WhatsApp su voluntad de formalizar la sociedad existente: (a) el 1 de julio de 2024: <em>&quot;tenemos que reunirnos para que hablemos bien de las condiciones que necesito para que legalicemos la cosa&quot;</em>; (b) el 28 de noviembre de 2024: <em>&quot;le pedi a mi papa que es abogado que le pegara una revisada... tu sabes que yo voy pa' lante con la sociedad&quot;</em>; (c) el 13 de enero de 2025: <em>&quot;lo que vamos a hacer es constituir la SAS y ahi iriamos como socios&quot;</em>. <strong>[P-02]</strong></p>\n"
     },
     "hecho-27": {
       "id": "hecho-27",
       "numero": 27,
-      "ordinal": "VIGESIMOSEPTIMO",
-      "capitulo": "cap-6",
-      "resumen": "La co-direccion del negocio se evidencia en al menos 7 reuniones documentadas en 2025:",
-      "texto_completo": "**HECHO VIGESIMOSEPTIMO.** La co-direccion del negocio se evidencia en al menos 7 reuniones documentadas en 2025:\n\n| Fecha | Tema | Rol de Pedro |\n|-------|------|-------------|\n| 16 mayo | Discrepancia de leads | Lidera cambio de campanas WhatsApp a formularios |\n| 11 junio | Estructura comercial | Supervisa presupuesto publicitario, entrena asesora, propone nuevo vendedor |\n| 13 junio | Proceso de ventas | Diagnostica baja asistencia a citas, propone mejoras |\n| 16 junio | Optimizacion | Impulsa cobro por semana de prueba, optimiza CRM |\n| 27 junio | Modelo de negocio | Evalua modelo hibrido con consultor externo como co-decisor |\n| 14 julio | Producto y tecnologia | Debate sobre herramientas tecnologicas, reestructura presentacion de ventas |\n| 18 julio | Roles y estructura | Reafirma calidad de socio ante Oscar |\n\n**[P-34]**",
+      "ordinal": "VIGESIMOCUARTO",
+      "capitulo": "cap-5",
+      "resumen": "Pedro reivindico constantemente su calidad de socio. El 18 de julio de 2025: *\"yo soy socio, no trabajador tuyo... si quieres un vale que haga todo lo que tu digas... vas a tener que contratarlo\"*. El 23 de julio de 2025: *\"no deberias poder tomar de...",
+      "texto_completo": "**HECHO VIGESIMOCUARTO.** Pedro reivindico constantemente su calidad de socio. El 18 de julio de 2025: *\"yo soy socio, no trabajador tuyo... si quieres un vale que haga todo lo que tu digas... vas a tener que contratarlo\"*. El 23 de julio de 2025: *\"no deberias poder tomar decisiones sin compartirmelas y recibir mi opinion antes, porque para algo es una sociedad\"*. Significativamente, cuando Pedro afirmo su calidad de socio, Oscar NO lo nego en su respuesta posterior ese mismo dia, sino que desvio la conversacion hacia otros temas — lo que constituye un reconocimiento tacito por omision de la calidad de socio invocada por Pedro. **[P-02]**",
       "fragmentos_clave": [
         {
           "cita": "Lidera cambio de campanas WhatsApp a formularios",
@@ -1021,19 +1020,19 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-34"
+        "P-02"
       ],
       "nota_abogado": null,
       "titulo_corto": "Siete reuniones documentadas en 2025",
-      "texto_completo_html": "<p><strong>HECHO VIGESIMOSEPTIMO.</strong> La co-direccion del negocio se evidencia en al menos 7 reuniones documentadas en 2025:</p>\n<table>\n<thead>\n<tr>\n<th>Fecha</th>\n<th>Tema</th>\n<th>Rol de Pedro</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>16 mayo</td>\n<td>Discrepancia de leads</td>\n<td>Lidera cambio de campanas WhatsApp a formularios</td>\n</tr>\n<tr>\n<td>11 junio</td>\n<td>Estructura comercial</td>\n<td>Supervisa presupuesto publicitario, entrena asesora, propone nuevo vendedor</td>\n</tr>\n<tr>\n<td>13 junio</td>\n<td>Proceso de ventas</td>\n<td>Diagnostica baja asistencia a citas, propone mejoras</td>\n</tr>\n<tr>\n<td>16 junio</td>\n<td>Optimizacion</td>\n<td>Impulsa cobro por semana de prueba, optimiza CRM</td>\n</tr>\n<tr>\n<td>27 junio</td>\n<td>Modelo de negocio</td>\n<td>Evalua modelo hibrido con consultor externo como co-decisor</td>\n</tr>\n<tr>\n<td>14 julio</td>\n<td>Producto y tecnologia</td>\n<td>Debate sobre herramientas tecnologicas, reestructura presentacion de ventas</td>\n</tr>\n<tr>\n<td>18 julio</td>\n<td>Roles y estructura</td>\n<td>Reafirma calidad de socio ante Oscar</td>\n</tr>\n</tbody>\n</table>\n<p><strong>[P-34]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO VIGESIMOCUARTO.</strong> Pedro reivindico constantemente su calidad de socio. El 18 de julio de 2025: <em>&quot;yo soy socio, no trabajador tuyo... si quieres un vale que haga todo lo que tu digas... vas a tener que contratarlo&quot;</em>. El 23 de julio de 2025: <em>&quot;no deberias poder tomar decisiones sin compartirmelas y recibir mi opinion antes, porque para algo es una sociedad&quot;</em>. Significativamente, cuando Pedro afirmo su calidad de socio, Oscar NO lo nego en su respuesta posterior ese mismo dia, sino que desvio la conversacion hacia otros temas — lo que constituye un reconocimiento tacito por omision de la calidad de socio invocada por Pedro. <strong>[P-02]</strong></p>\n"
     },
     "hecho-28": {
       "id": "hecho-28",
       "numero": 28,
-      "ordinal": "VIGESIMOCTAVO",
-      "capitulo": "cap-6",
-      "resumen": "El negocio genero ingresos totales de **$709.010.075 COP** en 15 meses de operacion conjunta (junio 2024 - agosto 2025), con un promedio mensual de $47.267.338 COP. El mejor mes fue noviembre de 2024, cuando Oscar anuncio al equipo: *\"$108.456.900 en...",
-      "texto_completo": "**HECHO VIGESIMOCTAVO.** El negocio genero ingresos totales de **$709.010.075 COP** en 15 meses de operacion conjunta (junio 2024 - agosto 2025), con un promedio mensual de $47.267.338 COP. El mejor mes fue noviembre de 2024, cuando Oscar anuncio al equipo: *\"$108.456.900 en ventas a fecha de hoy\"*. En enero 2025, las ventas fueron de $94.427.575 COP. **[P-02, P-03]**\n\n---",
+      "ordinal": "VIGESIMOQUINTO",
+      "capitulo": "cap-5",
+      "resumen": "En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar escribio de su puno y letra las siguientes notas: (a) *\"20% de las utilidades no se justifican por una labor que es contratable. La idea, como se ...",
+      "texto_completo": "**HECHO VIGESIMOQUINTO.** En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar escribio de su puno y letra las siguientes notas: (a) *\"20% de las utilidades no se justifican por una labor que es contratable. La idea, como se planteo en las discusiones verbales iniciales, es que ademas trabaje para impulsar con nuevas ideas y trabajar DE LLENO en esta\"*; (b) *\"Recordar lo que propuse en el acuerdo inicial e informal donde especificaba: 'Funciones que Pedro considere necesarias para el crecimiento de la empresa'\"*; (c) *\"las ideas, vision, estrategia y trabajo para el crecimiento de la empresa son las que justifican la participacion accionaria.\"* Con estas notas, Oscar reconocio TEXTUALMENTE tres cosas: (i) que lo que Pedro hacia NO ERA una simple prestacion de servicios contratable; (ii) que EXISTIERON **discusiones verbales iniciales** y un **acuerdo inicial e informal** previos al documento escrito — es decir, el pacto verbal que constituyo la sociedad de hecho; y (iii) que la participacion de Pedro se justificaba por su rol estrategico, no por labores operativas. **[P-09]**\n\n---",
       "fragmentos_clave": [
         {
           "cita": "$108.456.900 en ventas a fecha de hoy",
@@ -1044,18 +1043,20 @@ const CASE_DATA = {
           "relevancia": "Oscar anuncia récord de ventas al equipo — ingresos reales del negocio documentados — P-03"
         }
       ],
-      "pruebas": [],
+      "pruebas": [
+        "P-09"
+      ],
       "nota_abogado": null,
       "titulo_corto": "$709M en ingresos — 15 meses de operación",
-      "texto_completo_html": "<p><strong>HECHO VIGESIMOCTAVO.</strong> El negocio genero ingresos totales de <strong>$709.010.075 COP</strong> en 15 meses de operacion conjunta (junio 2024 - agosto 2025), con un promedio mensual de $47.267.338 COP. El mejor mes fue noviembre de 2024, cuando Oscar anuncio al equipo: <em>&quot;$108.456.900 en ventas a fecha de hoy&quot;</em>. En enero 2025, las ventas fueron de $94.427.575 COP. <strong>[P-02, P-03]</strong></p>\n<hr>\n"
+      "texto_completo_html": "<p><strong>HECHO VIGESIMOQUINTO.</strong> En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar escribio de su puno y letra las siguientes notas: (a) <em>&quot;20% de las utilidades no se justifican por una labor que es contratable. La idea, como se planteo en las discusiones verbales iniciales, es que ademas trabaje para impulsar con nuevas ideas y trabajar DE LLENO en esta&quot;</em>; (b) <em>&quot;Recordar lo que propuse en el acuerdo inicial e informal donde especificaba: 'Funciones que Pedro considere necesarias para el crecimiento de la empresa'&quot;</em>; (c) <em>&quot;las ideas, vision, estrategia y trabajo para el crecimiento de la empresa son las que justifican la participacion accionaria.&quot;</em> Con estas notas, Oscar reconocio TEXTUALMENTE tres cosas: (i) que lo que Pedro hacia NO ERA una simple prestacion de servicios contratable; (ii) que EXISTIERON <strong>discusiones verbales iniciales</strong> y un <strong>acuerdo inicial e informal</strong> previos al documento escrito — es decir, el pacto verbal que constituyo la sociedad de hecho; y (iii) que la participacion de Pedro se justificaba por su rol estrategico, no por labores operativas. <strong>[P-09]</strong></p>\n<hr>\n"
     },
     "hecho-29": {
       "id": "hecho-29",
       "numero": 29,
-      "ordinal": "VIGESIMONOVENO",
-      "capitulo": "cap-7",
-      "resumen": "La sociedad de hecho opero por aproximadamente **16 meses**: desde el 15 de abril de 2024 (fecha en que Pedro recordo a Oscar el inicio de los pagos y solicitaron definir presupuesto de publicidad) hasta el 28 de agosto de 2025 (fecha en que Oscar ac...",
-      "texto_completo": "**HECHO VIGESIMONOVENO.** La sociedad de hecho opero por aproximadamente **16 meses**: desde el 15 de abril de 2024 (fecha en que Pedro recordo a Oscar el inicio de los pagos y solicitaron definir presupuesto de publicidad) hasta el 28 de agosto de 2025 (fecha en que Oscar acepto formalmente la terminacion de la relacion propuesta por Pedro). **[P-02]**\n\n---",
+      "ordinal": "VIGESIMOSEXTO",
+      "capitulo": "cap-6",
+      "resumen": "Pedro participaba activamente en decisiones estrategicas propias de un socio, no de un empleado o contratista: (a) **gestion de personal:** evaluo el desempeno de la asesora de ventas Adriana y propuso su reemplazo, propuso la incorporacion de un ven...",
+      "texto_completo": "**HECHO VIGESIMOSEXTO.** Pedro participaba activamente en decisiones estrategicas propias de un socio, no de un empleado o contratista: (a) **gestion de personal:** evaluo el desempeno de la asesora de ventas Adriana y propuso su reemplazo, propuso la incorporacion de un vendedor adicional (Paul), participo en la induccion de Isabella; (b) **estrategia de producto:** propuso organizar el programa en ciclos de 3 meses (90 dias) para resolver la dificultad de sincronicidad entre estudiantes, creo grupos de estudio semanales (posteriormente reemplazados por talleres dominicales ~agosto 2024), diseno sistema de simulacros pre y post estudio; (c) **marketing y ventas:** manejaba presupuesto de pauta en Meta, decidia que campanas activar o desactivar, configuraba pixel de Meta, entrenaba directamente a la asesora de ventas; (d) **decisiones de producto:** participaba en evaluacion de pasarelas de pago (Wompi, Bold) y co-definia precios del programa con Oscar. **[P-02, P-03, P-33, P-34]**",
       "fragmentos_clave": [
         {
           "cita": "pilas con el acuerdo que estamos demorados",
@@ -1074,20 +1075,18 @@ const CASE_DATA = {
           "relevancia": "Pedro reitera el plazo transcurrido y reclama acciones — 9 meses de operación sin formalizar — P-02"
         }
       ],
-      "pruebas": [
-        "P-02"
-      ],
+      "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Duración: 16 meses de sociedad de hecho",
-      "texto_completo_html": "<p><strong>HECHO VIGESIMONOVENO.</strong> La sociedad de hecho opero por aproximadamente <strong>16 meses</strong>: desde el 15 de abril de 2024 (fecha en que Pedro recordo a Oscar el inicio de los pagos y solicitaron definir presupuesto de publicidad) hasta el 28 de agosto de 2025 (fecha en que Oscar acepto formalmente la terminacion de la relacion propuesta por Pedro). <strong>[P-02]</strong></p>\n<hr>\n"
+      "texto_completo_html": "<p><strong>HECHO VIGESIMOSEXTO.</strong> Pedro participaba activamente en decisiones estrategicas propias de un socio, no de un empleado o contratista: (a) <strong>gestion de personal:</strong> evaluo el desempeno de la asesora de ventas Adriana y propuso su reemplazo, propuso la incorporacion de un vendedor adicional (Paul), participo en la induccion de Isabella; (b) <strong>estrategia de producto:</strong> propuso organizar el programa en ciclos de 3 meses (90 dias) para resolver la dificultad de sincronicidad entre estudiantes, creo grupos de estudio semanales (posteriormente reemplazados por talleres dominicales ~agosto 2024), diseno sistema de simulacros pre y post estudio; (c) <strong>marketing y ventas:</strong> manejaba presupuesto de pauta en Meta, decidia que campanas activar o desactivar, configuraba pixel de Meta, entrenaba directamente a la asesora de ventas; (d) <strong>decisiones de producto:</strong> participaba en evaluacion de pasarelas de pago (Wompi, Bold) y co-definia precios del programa con Oscar. <strong>[P-02, P-03, P-33, P-34]</strong></p>\n"
     },
     "hecho-30": {
       "id": "hecho-30",
       "numero": 30,
-      "ordinal": "TRIGESIMO",
-      "capitulo": "cap-8",
-      "resumen": "Pedro presiono reiteradamente para formalizar la sociedad: (a) el 15 de julio de 2024, Pedro solicito el borrador del acuerdo; (b) el 28 de noviembre de 2024, Pedro solicito firmar y Oscar pidio tiempo porque su padre (abogado) estaba revisando: *\"no...",
-      "texto_completo": "**HECHO TRIGESIMO.** Pedro presiono reiteradamente para formalizar la sociedad: (a) el 15 de julio de 2024, Pedro solicito el borrador del acuerdo; (b) el 28 de noviembre de 2024, Pedro solicito firmar y Oscar pidio tiempo porque su padre (abogado) estaba revisando: *\"no vayas a pensar que te estoy mamando gallo\"*; (c) el 3 de enero de 2025, Pedro: *\"pilas con el acuerdo que estamos demorados\"*; (d) el 8 de enero de 2025, Pedro: *\"Ya ha pasado buen tiempo compadre... el objetivo desde un principio no era solo % de ganancia neta sino acciones en la empresa\"*. La demora sistematica en la formalizacion fue atribuible a Oscar, no a Pedro. **[P-02]**",
+      "ordinal": "VIGESIMOSEPTIMO",
+      "capitulo": "cap-6",
+      "resumen": "La co-direccion del negocio se evidencia en al menos 7 reuniones documentadas en 2025:",
+      "texto_completo": "**HECHO VIGESIMOSEPTIMO.** La co-direccion del negocio se evidencia en al menos 7 reuniones documentadas en 2025:\n\n| Fecha | Tema | Rol de Pedro |\n|-------|------|-------------|\n| 16 mayo | Discrepancia de leads | Lidera cambio de campanas WhatsApp a formularios |\n| 11 junio | Estructura comercial | Supervisa presupuesto publicitario, entrena asesora, propone nuevo vendedor |\n| 13 junio | Proceso de ventas | Diagnostica baja asistencia a citas, propone mejoras |\n| 16 junio | Optimizacion | Impulsa cobro por semana de prueba, optimiza CRM |\n| 27 junio | Modelo de negocio | Evalua modelo hibrido con consultor externo como co-decisor |\n| 14 julio | Producto y tecnologia | Debate sobre herramientas tecnologicas, reestructura presentacion de ventas |\n| 18 julio | Roles y estructura | Reafirma calidad de socio ante Oscar |\n\n**[P-34]**",
       "fragmentos_clave": [
         {
           "cita": "pilas con el acuerdo que estamos demorados",
@@ -1115,19 +1114,19 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-02"
+        "P-34"
       ],
       "nota_abogado": null,
       "titulo_corto": "Pedro presiona reiteradamente para formalizar",
-      "texto_completo_html": "<p><strong>HECHO TRIGESIMO.</strong> Pedro presiono reiteradamente para formalizar la sociedad: (a) el 15 de julio de 2024, Pedro solicito el borrador del acuerdo; (b) el 28 de noviembre de 2024, Pedro solicito firmar y Oscar pidio tiempo porque su padre (abogado) estaba revisando: <em>&quot;no vayas a pensar que te estoy mamando gallo&quot;</em>; (c) el 3 de enero de 2025, Pedro: <em>&quot;pilas con el acuerdo que estamos demorados&quot;</em>; (d) el 8 de enero de 2025, Pedro: <em>&quot;Ya ha pasado buen tiempo compadre... el objetivo desde un principio no era solo % de ganancia neta sino acciones en la empresa&quot;</em>. La demora sistematica en la formalizacion fue atribuible a Oscar, no a Pedro. <strong>[P-02]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO VIGESIMOSEPTIMO.</strong> La co-direccion del negocio se evidencia en al menos 7 reuniones documentadas en 2025:</p>\n<table>\n<thead>\n<tr>\n<th>Fecha</th>\n<th>Tema</th>\n<th>Rol de Pedro</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>16 mayo</td>\n<td>Discrepancia de leads</td>\n<td>Lidera cambio de campanas WhatsApp a formularios</td>\n</tr>\n<tr>\n<td>11 junio</td>\n<td>Estructura comercial</td>\n<td>Supervisa presupuesto publicitario, entrena asesora, propone nuevo vendedor</td>\n</tr>\n<tr>\n<td>13 junio</td>\n<td>Proceso de ventas</td>\n<td>Diagnostica baja asistencia a citas, propone mejoras</td>\n</tr>\n<tr>\n<td>16 junio</td>\n<td>Optimizacion</td>\n<td>Impulsa cobro por semana de prueba, optimiza CRM</td>\n</tr>\n<tr>\n<td>27 junio</td>\n<td>Modelo de negocio</td>\n<td>Evalua modelo hibrido con consultor externo como co-decisor</td>\n</tr>\n<tr>\n<td>14 julio</td>\n<td>Producto y tecnologia</td>\n<td>Debate sobre herramientas tecnologicas, reestructura presentacion de ventas</td>\n</tr>\n<tr>\n<td>18 julio</td>\n<td>Roles y estructura</td>\n<td>Reafirma calidad de socio ante Oscar</td>\n</tr>\n</tbody>\n</table>\n<p><strong>[P-34]</strong></p>\n"
     },
     "hecho-31": {
       "id": "hecho-31",
       "numero": 31,
-      "ordinal": "TRIGESIMOPRIMERO",
-      "capitulo": "cap-8",
-      "resumen": "Existieron multiples borradores de acuerdo que confirman la naturaleza societaria: (a) el Acuerdo de Socios Original (inicios 2024) contemplaba **\"20% de las acciones\"** de la empresa; (b) el Acuerdo de Socios propuesto por Oscar en version SAS inclu...",
-      "texto_completo": "**HECHO TRIGESIMOPRIMERO.** Existieron multiples borradores de acuerdo que confirman la naturaleza societaria: (a) el Acuerdo de Socios Original (inicios 2024) contemplaba **\"20% de las acciones\"** de la empresa; (b) el Acuerdo de Socios propuesto por Oscar en version SAS incluia participacion del 20%, funciones detalladas de Pedro y asiento en consejo de administracion; (c) el Acuerdo de Socios con Aportes de Ambos (julio 2024) con notas manuscritas de Oscar. Ninguno se firmo por dilacion de Oscar. **[P-06, P-08, P-09]**\n\n### B. Alteracion documental",
+      "ordinal": "VIGESIMOCTAVO",
+      "capitulo": "cap-6",
+      "resumen": "El negocio genero ingresos totales de **$709.010.075 COP** en 15 meses de operacion conjunta (junio 2024 - agosto 2025), con un promedio mensual de $47.267.338 COP. El mejor mes fue noviembre de 2024, cuando Oscar anuncio al equipo: *\"$108.456.900 en...",
+      "texto_completo": "**HECHO VIGESIMOCTAVO.** El negocio genero ingresos totales de **$709.010.075 COP** en 15 meses de operacion conjunta (junio 2024 - agosto 2025), con un promedio mensual de $47.267.338 COP. El mejor mes fue noviembre de 2024, cuando Oscar anuncio al equipo: *\"$108.456.900 en ventas a fecha de hoy\"*. En enero 2025, las ventas fueron de $94.427.575 COP. **[P-02, P-03]**\n\n---",
       "fragmentos_clave": [
         {
           "cita": "20% de las acciones",
@@ -1149,15 +1148,15 @@ const CASE_DATA = {
       "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Múltiples borradores de acuerdo nunca firmados",
-      "texto_completo_html": "<p><strong>HECHO TRIGESIMOPRIMERO.</strong> Existieron multiples borradores de acuerdo que confirman la naturaleza societaria: (a) el Acuerdo de Socios Original (inicios 2024) contemplaba <strong>&quot;20% de las acciones&quot;</strong> de la empresa; (b) el Acuerdo de Socios propuesto por Oscar en version SAS incluia participacion del 20%, funciones detalladas de Pedro y asiento en consejo de administracion; (c) el Acuerdo de Socios con Aportes de Ambos (julio 2024) con notas manuscritas de Oscar. Ninguno se firmo por dilacion de Oscar. <strong>[P-06, P-08, P-09]</strong></p>\n<h3>B. Alteracion documental</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO VIGESIMOCTAVO.</strong> El negocio genero ingresos totales de <strong>$709.010.075 COP</strong> en 15 meses de operacion conjunta (junio 2024 - agosto 2025), con un promedio mensual de $47.267.338 COP. El mejor mes fue noviembre de 2024, cuando Oscar anuncio al equipo: <em>&quot;$108.456.900 en ventas a fecha de hoy&quot;</em>. En enero 2025, las ventas fueron de $94.427.575 COP. <strong>[P-02, P-03]</strong></p>\n<hr>\n"
     },
     "hecho-32": {
       "id": "hecho-32",
       "numero": 32,
-      "ordinal": "TRIGESIMOSEGUNDO",
-      "capitulo": "cap-8",
-      "resumen": "Aproximadamente 10 dias antes del 14 de agosto de 2025, un \"usuario anonimo\" modifico el borrador del acuerdo de socios en Google Docs, reemplazando la palabra **\"acciones\"** por **\"utilidades\"**. Pedro descubrio el cambio mediante el historial de ve...",
-      "texto_completo": "**HECHO TRIGESIMOSEGUNDO.** Aproximadamente 10 dias antes del 14 de agosto de 2025, un \"usuario anonimo\" modifico el borrador del acuerdo de socios en Google Docs, reemplazando la palabra **\"acciones\"** por **\"utilidades\"**. Pedro descubrio el cambio mediante el historial de versiones y confronto a Oscar: *\"le tachaste acciones por utilidades, creo que no hay evidencia mas clara que eso... a ojo inexperto no tiene ninguna caracteristica de buena fe\"*. Oscar respondio: *\"Compa, y de esto no fue mala intencion. Simplemente es un borrador que nunca se firmo\"*. Posteriormente, Oscar intento equiparar ambos conceptos: *\"acciones de una sociedad que gestiona un bien, en este caso es igual a utilidades\"*, lo que contradice la necesidad del cambio. **[P-06, P-07, P-02]**\n\n### C. Intentos de reclasificacion de la relacion",
+      "ordinal": "VIGESIMONOVENO",
+      "capitulo": "cap-7",
+      "resumen": "La sociedad de hecho opero por aproximadamente **16 meses**: desde el 15 de abril de 2024 (fecha en que Pedro recordo a Oscar el inicio de los pagos y solicitaron definir presupuesto de publicidad) hasta el 28 de agosto de 2025 (fecha en que Oscar ac...",
+      "texto_completo": "**HECHO VIGESIMONOVENO.** La sociedad de hecho opero por aproximadamente **16 meses**: desde el 15 de abril de 2024 (fecha en que Pedro recordo a Oscar el inicio de los pagos y solicitaron definir presupuesto de publicidad) hasta el 28 de agosto de 2025 (fecha en que Oscar acepto formalmente la terminacion de la relacion propuesta por Pedro). **[P-02]**\n\n---",
       "fragmentos_clave": [
         {
           "cita": "le tachaste acciones por utilidades, creo que no hay evidencia mas clara que eso... a ojo inexperto no tiene ninguna caracteristica de buena fe",
@@ -1184,18 +1183,20 @@ const CASE_DATA = {
           "relevancia": "Oscar intenta equiparar acciones con utilidades — argumento internamente contradictorio: si fueran lo mismo, no habría necesidad de cambiar el texto"
         }
       ],
-      "pruebas": [],
+      "pruebas": [
+        "P-02"
+      ],
       "nota_abogado": null,
       "titulo_corto": "Alteración documental — \"acciones\" por \"utilidades\"",
-      "texto_completo_html": "<p><strong>HECHO TRIGESIMOSEGUNDO.</strong> Aproximadamente 10 dias antes del 14 de agosto de 2025, un &quot;usuario anonimo&quot; modifico el borrador del acuerdo de socios en Google Docs, reemplazando la palabra <strong>&quot;acciones&quot;</strong> por <strong>&quot;utilidades&quot;</strong>. Pedro descubrio el cambio mediante el historial de versiones y confronto a Oscar: <em>&quot;le tachaste acciones por utilidades, creo que no hay evidencia mas clara que eso... a ojo inexperto no tiene ninguna caracteristica de buena fe&quot;</em>. Oscar respondio: <em>&quot;Compa, y de esto no fue mala intencion. Simplemente es un borrador que nunca se firmo&quot;</em>. Posteriormente, Oscar intento equiparar ambos conceptos: <em>&quot;acciones de una sociedad que gestiona un bien, en este caso es igual a utilidades&quot;</em>, lo que contradice la necesidad del cambio. <strong>[P-06, P-07, P-02]</strong></p>\n<h3>C. Intentos de reclasificacion de la relacion</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO VIGESIMONOVENO.</strong> La sociedad de hecho opero por aproximadamente <strong>16 meses</strong>: desde el 15 de abril de 2024 (fecha en que Pedro recordo a Oscar el inicio de los pagos y solicitaron definir presupuesto de publicidad) hasta el 28 de agosto de 2025 (fecha en que Oscar acepto formalmente la terminacion de la relacion propuesta por Pedro). <strong>[P-02]</strong></p>\n<hr>\n"
     },
     "hecho-33": {
       "id": "hecho-33",
       "numero": 33,
-      "ordinal": "TRIGESIMOTERCERO",
+      "ordinal": "TRIGESIMO",
       "capitulo": "cap-8",
-      "resumen": "El 22 de agosto de 2025, Oscar entrego un **Contrato de Cuentas en Participacion** (nunca firmado) en el que intenta reclasificar a Pedro como \"Socio Oculto\" y a si mismo como \"Socio Gestor\". El contrato incluye una clausula que niega expresamente la...",
-      "texto_completo": "**HECHO TRIGESIMOTERCERO.** El 22 de agosto de 2025, Oscar entrego un **Contrato de Cuentas en Participacion** (nunca firmado) en el que intenta reclasificar a Pedro como \"Socio Oculto\" y a si mismo como \"Socio Gestor\". El contrato incluye una clausula que niega expresamente la sociedad de hecho: *\"No es el interes de las Partes constituir una persona juridica distinta de estas individualmente consideradas, ni una sociedad de hecho\"*. Sin embargo, contradictoriamente: (i) utiliza terminologia societaria (\"Socio Gestor\", \"Socio Oculto\", \"aportes\", \"participacion\"); (ii) reconoce que Pedro aportaba \"experiencia en manejo de redes, edicion de videos, redaccion de guiones, grabacion de videoclases, asesoria en creacion de contenido y marketing, gestion de cuentas, optimizacion del tunel de ventas\"; y (iii) reconoce el derecho de Pedro al \"20% de las utilidades\". Si no existiera sociedad, no seria necesario negarla expresamente. **[P-14]**\n\n---",
+      "resumen": "Pedro presiono reiteradamente para formalizar la sociedad: (a) el 15 de julio de 2024, Pedro solicito el borrador del acuerdo; (b) el 28 de noviembre de 2024, Pedro solicito firmar y Oscar pidio tiempo porque su padre (abogado) estaba revisando: *\"no...",
+      "texto_completo": "**HECHO TRIGESIMO.** Pedro presiono reiteradamente para formalizar la sociedad: (a) el 15 de julio de 2024, Pedro solicito el borrador del acuerdo; (b) el 28 de noviembre de 2024, Pedro solicito firmar y Oscar pidio tiempo porque su padre (abogado) estaba revisando: *\"no vayas a pensar que te estoy mamando gallo\"*; (c) el 3 de enero de 2025, Pedro: *\"pilas con el acuerdo que estamos demorados\"*; (d) el 8 de enero de 2025, Pedro: *\"Ya ha pasado buen tiempo compadre... el objetivo desde un principio no era solo % de ganancia neta sino acciones en la empresa\"*. La demora sistematica en la formalizacion fue atribuible a Oscar, no a Pedro. **[P-02]**",
       "fragmentos_clave": [
         {
           "cita": "No es el interes de las Partes constituir una persona juridica distinta de estas individualmente consideradas, ni una sociedad de hecho",
@@ -1207,23 +1208,23 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-14"
+        "P-02"
       ],
       "nota_abogado": null,
       "titulo_corto": "Contrato de Cuentas en Participación niega sociedad",
-      "texto_completo_html": "<p><strong>HECHO TRIGESIMOTERCERO.</strong> El 22 de agosto de 2025, Oscar entrego un <strong>Contrato de Cuentas en Participacion</strong> (nunca firmado) en el que intenta reclasificar a Pedro como &quot;Socio Oculto&quot; y a si mismo como &quot;Socio Gestor&quot;. El contrato incluye una clausula que niega expresamente la sociedad de hecho: <em>&quot;No es el interes de las Partes constituir una persona juridica distinta de estas individualmente consideradas, ni una sociedad de hecho&quot;</em>. Sin embargo, contradictoriamente: (i) utiliza terminologia societaria (&quot;Socio Gestor&quot;, &quot;Socio Oculto&quot;, &quot;aportes&quot;, &quot;participacion&quot;); (ii) reconoce que Pedro aportaba &quot;experiencia en manejo de redes, edicion de videos, redaccion de guiones, grabacion de videoclases, asesoria en creacion de contenido y marketing, gestion de cuentas, optimizacion del tunel de ventas&quot;; y (iii) reconoce el derecho de Pedro al &quot;20% de las utilidades&quot;. Si no existiera sociedad, no seria necesario negarla expresamente. <strong>[P-14]</strong></p>\n<hr>\n"
+      "texto_completo_html": "<p><strong>HECHO TRIGESIMO.</strong> Pedro presiono reiteradamente para formalizar la sociedad: (a) el 15 de julio de 2024, Pedro solicito el borrador del acuerdo; (b) el 28 de noviembre de 2024, Pedro solicito firmar y Oscar pidio tiempo porque su padre (abogado) estaba revisando: <em>&quot;no vayas a pensar que te estoy mamando gallo&quot;</em>; (c) el 3 de enero de 2025, Pedro: <em>&quot;pilas con el acuerdo que estamos demorados&quot;</em>; (d) el 8 de enero de 2025, Pedro: <em>&quot;Ya ha pasado buen tiempo compadre... el objetivo desde un principio no era solo % de ganancia neta sino acciones en la empresa&quot;</em>. La demora sistematica en la formalizacion fue atribuible a Oscar, no a Pedro. <strong>[P-02]</strong></p>\n"
     },
     "hecho-34": {
       "id": "hecho-34",
       "numero": 34,
-      "ordinal": "TRIGESIMOCUARTO",
-      "capitulo": "cap-9",
-      "resumen": "El 14 de agosto de 2025, tras descubrir la alteracion documental, Pedro propuso terminar la relacion por perdida de confianza. En la misma fecha, durante la grabacion de llamada telefonica, Oscar hizo las admisiones consignadas en los hechos vigesimo...",
-      "texto_completo": "**HECHO TRIGESIMOCUARTO.** El 14 de agosto de 2025, tras descubrir la alteracion documental, Pedro propuso terminar la relacion por perdida de confianza. En la misma fecha, durante la grabacion de llamada telefonica, Oscar hizo las admisiones consignadas en los hechos vigesimoprimero y vigesimosegundo de este escrito, incluyendo que sus propios abogados y contadores le confirmaron la existencia de la sociedad de hecho. **[P-01, P-02]**",
+      "ordinal": "TRIGESIMOPRIMERO",
+      "capitulo": "cap-8",
+      "resumen": "Existieron multiples borradores de acuerdo que confirman la naturaleza societaria: (a) el Acuerdo de Socios Original (inicios 2024) contemplaba **\"20% de las acciones\"** de la empresa; (b) el Acuerdo de Socios propuesto por Oscar en version SAS inclu...",
+      "texto_completo": "**HECHO TRIGESIMOPRIMERO.** Existieron multiples borradores de acuerdo que confirman la naturaleza societaria: (a) el Acuerdo de Socios Original (inicios 2024) contemplaba **\"20% de las acciones\"** de la empresa; (b) el Acuerdo de Socios propuesto por Oscar en version SAS incluia participacion del 20%, funciones detalladas de Pedro y asiento en consejo de administracion; (c) el Acuerdo de Socios con Aportes de Ambos (julio 2024) con notas manuscritas de Oscar. Ninguno se firmo por dilacion de Oscar. **[P-06, P-08, P-09]**\n\n### B. Alteracion documental",
       "fragmentos_clave": [
         {
           "cita": "O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
@@ -1231,7 +1232,7 @@ const CASE_DATA = {
         },
         {
           "cita": "los abogados y contadores me dijeron, ey... si que sociedad de hecho con el man, pero tu puedes cortarlo",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
@@ -1241,15 +1242,15 @@ const CASE_DATA = {
       "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Ruptura — 14 de agosto de 2025",
-      "texto_completo_html": "<p><strong>HECHO TRIGESIMOCUARTO.</strong> El 14 de agosto de 2025, tras descubrir la alteracion documental, Pedro propuso terminar la relacion por perdida de confianza. En la misma fecha, durante la grabacion de llamada telefonica, Oscar hizo las admisiones consignadas en los hechos vigesimoprimero y vigesimosegundo de este escrito, incluyendo que sus propios abogados y contadores le confirmaron la existencia de la sociedad de hecho. <strong>[P-01, P-02]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO TRIGESIMOPRIMERO.</strong> Existieron multiples borradores de acuerdo que confirman la naturaleza societaria: (a) el Acuerdo de Socios Original (inicios 2024) contemplaba <strong>&quot;20% de las acciones&quot;</strong> de la empresa; (b) el Acuerdo de Socios propuesto por Oscar en version SAS incluia participacion del 20%, funciones detalladas de Pedro y asiento en consejo de administracion; (c) el Acuerdo de Socios con Aportes de Ambos (julio 2024) con notas manuscritas de Oscar. Ninguno se firmo por dilacion de Oscar. <strong>[P-06, P-08, P-09]</strong></p>\n<h3>B. Alteracion documental</h3>\n"
     },
     "hecho-35": {
       "id": "hecho-35",
       "numero": 35,
-      "ordinal": "TRIGESIMOQUINTO",
-      "capitulo": "cap-9",
-      "resumen": "El 28 de agosto de 2025, Oscar acepto formalmente la terminacion de la relacion. El 29 de agosto de 2025, Pedro envio la **Notificacion Formal de Cese de Explotacion**, solicitando a Oscar *\"se abstenga de continuar con la explotacion de los activos ...",
-      "texto_completo": "**HECHO TRIGESIMOQUINTO.** El 28 de agosto de 2025, Oscar acepto formalmente la terminacion de la relacion. El 29 de agosto de 2025, Pedro envio la **Notificacion Formal de Cese de Explotacion**, solicitando a Oscar *\"se abstenga de continuar con la explotacion de los activos intangibles incluyendo pero no limitandose a metodos, contenido estatico, propiedad intelectual, videoclases, reels, videos comerciales entre otros aportados por mi persona o por mi empresa, DOCTOR FLIGHT S.A.S.\"* **[P-02, P-18]**\n\n---",
+      "ordinal": "TRIGESIMOSEGUNDO",
+      "capitulo": "cap-8",
+      "resumen": "Aproximadamente 10 dias antes del 14 de agosto de 2025, un \"usuario anonimo\" modifico el borrador del acuerdo de socios en Google Docs, reemplazando la palabra **\"acciones\"** por **\"utilidades\"**. Pedro descubrio el cambio mediante el historial de ve...",
+      "texto_completo": "**HECHO TRIGESIMOSEGUNDO.** Aproximadamente 10 dias antes del 14 de agosto de 2025, un \"usuario anonimo\" modifico el borrador del acuerdo de socios en Google Docs, reemplazando la palabra **\"acciones\"** por **\"utilidades\"**. Pedro descubrio el cambio mediante el historial de versiones y confronto a Oscar: *\"le tachaste acciones por utilidades, creo que no hay evidencia mas clara que eso... a ojo inexperto no tiene ninguna caracteristica de buena fe\"*. Oscar respondio: *\"Compa, y de esto no fue mala intencion. Simplemente es un borrador que nunca se firmo\"*. Posteriormente, Oscar intento equiparar ambos conceptos: *\"acciones de una sociedad que gestiona un bien, en este caso es igual a utilidades\"*, lo que contradice la necesidad del cambio. **[P-06, P-07, P-02]**\n\n### C. Intentos de reclasificacion de la relacion",
       "fragmentos_clave": [
         {
           "cita": "se abstenga de continuar con la explotacion de los activos intangibles incluyendo pero no limitandose a metodos, contenido estatico, propiedad intelectual, videoclases, reels, videos comerciales",
@@ -1263,15 +1264,15 @@ const CASE_DATA = {
       "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Notificación formal de cese de explotación",
-      "texto_completo_html": "<p><strong>HECHO TRIGESIMOQUINTO.</strong> El 28 de agosto de 2025, Oscar acepto formalmente la terminacion de la relacion. El 29 de agosto de 2025, Pedro envio la <strong>Notificacion Formal de Cese de Explotacion</strong>, solicitando a Oscar <em>&quot;se abstenga de continuar con la explotacion de los activos intangibles incluyendo pero no limitandose a metodos, contenido estatico, propiedad intelectual, videoclases, reels, videos comerciales entre otros aportados por mi persona o por mi empresa, DOCTOR FLIGHT S.A.S.&quot;</em> <strong>[P-02, P-18]</strong></p>\n<hr>\n"
+      "texto_completo_html": "<p><strong>HECHO TRIGESIMOSEGUNDO.</strong> Aproximadamente 10 dias antes del 14 de agosto de 2025, un &quot;usuario anonimo&quot; modifico el borrador del acuerdo de socios en Google Docs, reemplazando la palabra <strong>&quot;acciones&quot;</strong> por <strong>&quot;utilidades&quot;</strong>. Pedro descubrio el cambio mediante el historial de versiones y confronto a Oscar: <em>&quot;le tachaste acciones por utilidades, creo que no hay evidencia mas clara que eso... a ojo inexperto no tiene ninguna caracteristica de buena fe&quot;</em>. Oscar respondio: <em>&quot;Compa, y de esto no fue mala intencion. Simplemente es un borrador que nunca se firmo&quot;</em>. Posteriormente, Oscar intento equiparar ambos conceptos: <em>&quot;acciones de una sociedad que gestiona un bien, en este caso es igual a utilidades&quot;</em>, lo que contradice la necesidad del cambio. <strong>[P-06, P-07, P-02]</strong></p>\n<h3>C. Intentos de reclasificacion de la relacion</h3>\n"
     },
     "hecho-36": {
       "id": "hecho-36",
       "numero": 36,
-      "ordinal": "TRIGESIMOSEXTO",
-      "capitulo": "cap-10",
-      "resumen": "Aproximadamente el 12 de septiembre de 2025, Oscar presento una propuesta de **Contrato de Transaccion** en la que ofrecio $40.000.000 COP como \"suma transaccional\", declaro la inexistencia de sociedad de hecho, exigio que toda la propiedad intelectu...",
-      "texto_completo": "**HECHO TRIGESIMOSEXTO.** Aproximadamente el 12 de septiembre de 2025, Oscar presento una propuesta de **Contrato de Transaccion** en la que ofrecio $40.000.000 COP como \"suma transaccional\", declaro la inexistencia de sociedad de hecho, exigio que toda la propiedad intelectual le pertenecia exclusivamente, impuso no competencia por 2 anos con clausula penal, efecto de cosa juzgada, confidencialidad indefinida y renuncia de Pedro a toda reclamacion judicial. **[P-15]**",
+      "ordinal": "TRIGESIMOTERCERO",
+      "capitulo": "cap-8",
+      "resumen": "El 22 de agosto de 2025, Oscar entrego un **Contrato de Cuentas en Participacion** (nunca firmado) en el que intenta reclasificar a Pedro como \"Socio Oculto\" y a si mismo como \"Socio Gestor\". El contrato incluye una clausula que niega expresamente la...",
+      "texto_completo": "**HECHO TRIGESIMOTERCERO.** El 22 de agosto de 2025, Oscar entrego un **Contrato de Cuentas en Participacion** (nunca firmado) en el que intenta reclasificar a Pedro como \"Socio Oculto\" y a si mismo como \"Socio Gestor\". El contrato incluye una clausula que niega expresamente la sociedad de hecho: *\"No es el interes de las Partes constituir una persona juridica distinta de estas individualmente consideradas, ni una sociedad de hecho\"*. Sin embargo, contradictoriamente: (i) utiliza terminologia societaria (\"Socio Gestor\", \"Socio Oculto\", \"aportes\", \"participacion\"); (ii) reconoce que Pedro aportaba \"experiencia en manejo de redes, edicion de videos, redaccion de guiones, grabacion de videoclases, asesoria en creacion de contenido y marketing, gestion de cuentas, optimizacion del tunel de ventas\"; y (iii) reconoce el derecho de Pedro al \"20% de las utilidades\". Si no existiera sociedad, no seria necesario negarla expresamente. **[P-14]**\n\n---",
       "fragmentos_clave": [
         {
           "cita": "suma transaccional",
@@ -1291,19 +1292,19 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-15"
+        "P-14"
       ],
       "nota_abogado": null,
       "titulo_corto": "Oferta de Oscar — $40M por renunciar a todo",
-      "texto_completo_html": "<p><strong>HECHO TRIGESIMOSEXTO.</strong> Aproximadamente el 12 de septiembre de 2025, Oscar presento una propuesta de <strong>Contrato de Transaccion</strong> en la que ofrecio $40.000.000 COP como &quot;suma transaccional&quot;, declaro la inexistencia de sociedad de hecho, exigio que toda la propiedad intelectual le pertenecia exclusivamente, impuso no competencia por 2 anos con clausula penal, efecto de cosa juzgada, confidencialidad indefinida y renuncia de Pedro a toda reclamacion judicial. <strong>[P-15]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO TRIGESIMOTERCERO.</strong> El 22 de agosto de 2025, Oscar entrego un <strong>Contrato de Cuentas en Participacion</strong> (nunca firmado) en el que intenta reclasificar a Pedro como &quot;Socio Oculto&quot; y a si mismo como &quot;Socio Gestor&quot;. El contrato incluye una clausula que niega expresamente la sociedad de hecho: <em>&quot;No es el interes de las Partes constituir una persona juridica distinta de estas individualmente consideradas, ni una sociedad de hecho&quot;</em>. Sin embargo, contradictoriamente: (i) utiliza terminologia societaria (&quot;Socio Gestor&quot;, &quot;Socio Oculto&quot;, &quot;aportes&quot;, &quot;participacion&quot;); (ii) reconoce que Pedro aportaba &quot;experiencia en manejo de redes, edicion de videos, redaccion de guiones, grabacion de videoclases, asesoria en creacion de contenido y marketing, gestion de cuentas, optimizacion del tunel de ventas&quot;; y (iii) reconoce el derecho de Pedro al &quot;20% de las utilidades&quot;. Si no existiera sociedad, no seria necesario negarla expresamente. <strong>[P-14]</strong></p>\n<hr>\n"
     },
     "hecho-37": {
       "id": "hecho-37",
       "numero": 37,
-      "ordinal": "TRIGESIMOSEPTIMO",
-      "capitulo": "cap-10",
-      "resumen": "El 14 de octubre de 2025, Pedro, a traves de DOCTOR FLIGHT S.A.S., envio una **contrapropuesta de transaccion** por **$300.000.000 COP** ($270M + $30M de facturas pendientes de agosto-octubre 2025). Esta contrapropuesta reconocia en su Consideracion ...",
-      "texto_completo": "**HECHO TRIGESIMOSEPTIMO.** El 14 de octubre de 2025, Pedro, a traves de DOCTOR FLIGHT S.A.S., envio una **contrapropuesta de transaccion** por **$300.000.000 COP** ($270M + $30M de facturas pendientes de agosto-octubre 2025). Esta contrapropuesta reconocia en su Consideracion TERCERA una *\"relacion contractual cuyo objeto consistio en la explotacion economica conjunta del Programa\"* y en su Consideracion SEXTA que las partes tenian derecho a *\"tomar decisiones conjuntas\"* con una distribucion 80/20. La clausula de no competencia era mucho mas limitada que la de Oscar, restringida solo a reproducir las \"Obras\" especificas por 2 anos. **[P-16]**",
+      "ordinal": "TRIGESIMOCUARTO",
+      "capitulo": "cap-9",
+      "resumen": "El 14 de agosto de 2025, tras descubrir la alteracion documental, Pedro propuso terminar la relacion por perdida de confianza. En la misma fecha, durante la grabacion de llamada telefonica, Oscar hizo las admisiones consignadas en los hechos vigesimo...",
+      "texto_completo": "**HECHO TRIGESIMOCUARTO.** El 14 de agosto de 2025, tras descubrir la alteracion documental, Pedro propuso terminar la relacion por perdida de confianza. En la misma fecha, durante la grabacion de llamada telefonica, Oscar hizo las admisiones consignadas en los hechos vigesimoprimero y vigesimosegundo de este escrito, incluyendo que sus propios abogados y contadores le confirmaron la existencia de la sociedad de hecho. **[P-01, P-02]**",
       "fragmentos_clave": [
         {
           "cita": "relacion contractual cuyo objeto consistio en la explotacion economica conjunta del Programa",
@@ -1322,20 +1323,18 @@ const CASE_DATA = {
           "relevancia": "La contrapropuesta describe el derecho a 'tomar decisiones conjuntas' con distribución 80/20 — lenguaje societario — P-16"
         }
       ],
-      "pruebas": [
-        "P-16"
-      ],
+      "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Contrapropuesta de Pedro — $300M",
-      "texto_completo_html": "<p><strong>HECHO TRIGESIMOSEPTIMO.</strong> El 14 de octubre de 2025, Pedro, a traves de DOCTOR FLIGHT S.A.S., envio una <strong>contrapropuesta de transaccion</strong> por <strong>$300.000.000 COP</strong> ($270M + $30M de facturas pendientes de agosto-octubre 2025). Esta contrapropuesta reconocia en su Consideracion TERCERA una <em>&quot;relacion contractual cuyo objeto consistio en la explotacion economica conjunta del Programa&quot;</em> y en su Consideracion SEXTA que las partes tenian derecho a <em>&quot;tomar decisiones conjuntas&quot;</em> con una distribucion 80/20. La clausula de no competencia era mucho mas limitada que la de Oscar, restringida solo a reproducir las &quot;Obras&quot; especificas por 2 anos. <strong>[P-16]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO TRIGESIMOCUARTO.</strong> El 14 de agosto de 2025, tras descubrir la alteracion documental, Pedro propuso terminar la relacion por perdida de confianza. En la misma fecha, durante la grabacion de llamada telefonica, Oscar hizo las admisiones consignadas en los hechos vigesimoprimero y vigesimosegundo de este escrito, incluyendo que sus propios abogados y contadores le confirmaron la existencia de la sociedad de hecho. <strong>[P-01, P-02]</strong></p>\n"
     },
     "hecho-38": {
       "id": "hecho-38",
       "numero": 38,
-      "ordinal": "TRIGESIMOCTAVO",
-      "capitulo": "cap-10",
-      "resumen": "Las partes no lograron acuerdo alguno. La diferencia entre las ofertas evidencia la brecha: Oscar ofrecio $40M (3.3% del patrimonio estimado de $1,200M), mientras Pedro pretendia $300M (25%). **[P-15, P-16, P-17]**",
-      "texto_completo": "**HECHO TRIGESIMOCTAVO.** Las partes no lograron acuerdo alguno. La diferencia entre las ofertas evidencia la brecha: Oscar ofrecio $40M (3.3% del patrimonio estimado de $1,200M), mientras Pedro pretendia $300M (25%). **[P-15, P-16, P-17]**\n\n---",
+      "ordinal": "TRIGESIMOQUINTO",
+      "capitulo": "cap-9",
+      "resumen": "El 28 de agosto de 2025, Oscar acepto formalmente la terminacion de la relacion. El 29 de agosto de 2025, Pedro envio la **Notificacion Formal de Cese de Explotacion**, solicitando a Oscar *\"se abstenga de continuar con la explotacion de los activos ...",
+      "texto_completo": "**HECHO TRIGESIMOQUINTO.** El 28 de agosto de 2025, Oscar acepto formalmente la terminacion de la relacion. El 29 de agosto de 2025, Pedro envio la **Notificacion Formal de Cese de Explotacion**, solicitando a Oscar *\"se abstenga de continuar con la explotacion de los activos intangibles incluyendo pero no limitandose a metodos, contenido estatico, propiedad intelectual, videoclases, reels, videos comerciales entre otros aportados por mi persona o por mi empresa, DOCTOR FLIGHT S.A.S.\"* **[P-02, P-18]**\n\n---",
       "fragmentos_clave": [
         {
           "cita": "Oscar ofrecio $40M (3.3% del patrimonio estimado de $1,200M), mientras Pedro pretendia $300M (25%)",
@@ -1349,19 +1348,19 @@ const CASE_DATA = {
       "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Fracaso de negociación transaccional",
-      "texto_completo_html": "<p><strong>HECHO TRIGESIMOCTAVO.</strong> Las partes no lograron acuerdo alguno. La diferencia entre las ofertas evidencia la brecha: Oscar ofrecio $40M (3.3% del patrimonio estimado de $1,200M), mientras Pedro pretendia $300M (25%). <strong>[P-15, P-16, P-17]</strong></p>\n<hr>\n"
+      "texto_completo_html": "<p><strong>HECHO TRIGESIMOQUINTO.</strong> El 28 de agosto de 2025, Oscar acepto formalmente la terminacion de la relacion. El 29 de agosto de 2025, Pedro envio la <strong>Notificacion Formal de Cese de Explotacion</strong>, solicitando a Oscar <em>&quot;se abstenga de continuar con la explotacion de los activos intangibles incluyendo pero no limitandose a metodos, contenido estatico, propiedad intelectual, videoclases, reels, videos comerciales entre otros aportados por mi persona o por mi empresa, DOCTOR FLIGHT S.A.S.&quot;</em> <strong>[P-02, P-18]</strong></p>\n<hr>\n"
     },
     "hecho-39": {
       "id": "hecho-39",
       "numero": 39,
-      "ordinal": "TRIGESIMONOVENO",
-      "capitulo": "cap-11",
-      "resumen": "El 15 de octubre de 2025, Oscar constituyo unilateralmente la sociedad **NETMED S.A.S.** por documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del 100% de las acciones. En la grabacion...",
-      "texto_completo": "**HECHO TRIGESIMONOVENO.** El 15 de octubre de 2025, Oscar constituyo unilateralmente la sociedad **NETMED S.A.S.** por documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del 100% de las acciones. En la grabacion del 14 de agosto de 2025, Oscar admitio que pretendia licenciar ParetoMed a esta SAS, excluyendo a Pedro. La constitucion de esta sociedad despues de la ruptura sugiere un vehiculo para canalizar los activos de la sociedad de hecho sin incluir al demandante. **[P-24, P-01]**",
+      "ordinal": "TRIGESIMOSEXTO",
+      "capitulo": "cap-10",
+      "resumen": "Aproximadamente el 12 de septiembre de 2025, Oscar presento una propuesta de **Contrato de Transaccion** en la que ofrecio $40.000.000 COP como \"suma transaccional\", declaro la inexistencia de sociedad de hecho, exigio que toda la propiedad intelectu...",
+      "texto_completo": "**HECHO TRIGESIMOSEXTO.** Aproximadamente el 12 de septiembre de 2025, Oscar presento una propuesta de **Contrato de Transaccion** en la que ofrecio $40.000.000 COP como \"suma transaccional\", declaro la inexistencia de sociedad de hecho, exigio que toda la propiedad intelectual le pertenecia exclusivamente, impuso no competencia por 2 anos con clausula penal, efecto de cosa juzgada, confidencialidad indefinida y renuncia de Pedro a toda reclamacion judicial. **[P-15]**",
       "fragmentos_clave": [
         {
           "cita": "yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron... sociedad de hecho con el man no puedes cortarlo... presenteme una forma en que yo pueda mantenerme con el pero tambien pueda crear lo otro",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
@@ -1376,18 +1375,20 @@ const CASE_DATA = {
           "relevancia": "ParetoMed migra formalmente a NETMED sin incluir a Pedro — P-24, P-52. Transferencia unilateral de activos de la sociedad de hecho"
         }
       ],
-      "pruebas": [],
+      "pruebas": [
+        "P-15"
+      ],
       "nota_abogado": null,
       "titulo_corto": "NETMED S.A.S. — vehículo post-ruptura de Oscar",
-      "texto_completo_html": "<p><strong>HECHO TRIGESIMONOVENO.</strong> El 15 de octubre de 2025, Oscar constituyo unilateralmente la sociedad <strong>NETMED S.A.S.</strong> por documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del 100% de las acciones. En la grabacion del 14 de agosto de 2025, Oscar admitio que pretendia licenciar ParetoMed a esta SAS, excluyendo a Pedro. La constitucion de esta sociedad despues de la ruptura sugiere un vehiculo para canalizar los activos de la sociedad de hecho sin incluir al demandante. <strong>[P-24, P-01]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO TRIGESIMOSEXTO.</strong> Aproximadamente el 12 de septiembre de 2025, Oscar presento una propuesta de <strong>Contrato de Transaccion</strong> en la que ofrecio $40.000.000 COP como &quot;suma transaccional&quot;, declaro la inexistencia de sociedad de hecho, exigio que toda la propiedad intelectual le pertenecia exclusivamente, impuso no competencia por 2 anos con clausula penal, efecto de cosa juzgada, confidencialidad indefinida y renuncia de Pedro a toda reclamacion judicial. <strong>[P-15]</strong></p>\n"
     },
     "hecho-40": {
       "id": "hecho-40",
       "numero": 40,
-      "ordinal": "CUADRAGESIMO",
-      "capitulo": "cap-11",
-      "resumen": "Oscar renovo la matricula del establecimiento comercial PARETOMED el 9 de agosto de 2025, estando la sociedad de hecho en plena crisis, sin consultar ni informar a Pedro. Segun certificado de Camara de Comercio, ParetoMed declara activos vinculados d...",
-      "texto_completo": "**HECHO CUADRAGESIMO.** Oscar renovo la matricula del establecimiento comercial PARETOMED el 9 de agosto de 2025, estando la sociedad de hecho en plena crisis, sin consultar ni informar a Pedro. Segun certificado de Camara de Comercio, ParetoMed declara activos vinculados de apenas $20.000.000 COP, cifra manifiestamente subvalorada frente a los ingresos reales de $709.010.075 COP generados en 15 meses de operacion. **[P-20]**\n\n---",
+      "ordinal": "TRIGESIMOSEPTIMO",
+      "capitulo": "cap-10",
+      "resumen": "El 14 de octubre de 2025, Pedro, a traves de DOCTOR FLIGHT S.A.S., envio una **contrapropuesta de transaccion** por **$300.000.000 COP** ($270M + $30M de facturas pendientes de agosto-octubre 2025). Esta contrapropuesta reconocia en su Consideracion ...",
+      "texto_completo": "**HECHO TRIGESIMOSEPTIMO.** El 14 de octubre de 2025, Pedro, a traves de DOCTOR FLIGHT S.A.S., envio una **contrapropuesta de transaccion** por **$300.000.000 COP** ($270M + $30M de facturas pendientes de agosto-octubre 2025). Esta contrapropuesta reconocia en su Consideracion TERCERA una *\"relacion contractual cuyo objeto consistio en la explotacion economica conjunta del Programa\"* y en su Consideracion SEXTA que las partes tenian derecho a *\"tomar decisiones conjuntas\"* con una distribucion 80/20. La clausula de no competencia era mucho mas limitada que la de Oscar, restringida solo a reproducir las \"Obras\" especificas por 2 anos. **[P-16]**",
       "fragmentos_clave": [
         {
           "cita": "activos vinculados declarados de $20.000.000 COP",
@@ -1407,19 +1408,19 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-20"
+        "P-16"
       ],
       "nota_abogado": null,
       "titulo_corto": "Renovación unilateral de matrícula mercantil",
-      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMO.</strong> Oscar renovo la matricula del establecimiento comercial PARETOMED el 9 de agosto de 2025, estando la sociedad de hecho en plena crisis, sin consultar ni informar a Pedro. Segun certificado de Camara de Comercio, ParetoMed declara activos vinculados de apenas $20.000.000 COP, cifra manifiestamente subvalorada frente a los ingresos reales de $709.010.075 COP generados en 15 meses de operacion. <strong>[P-20]</strong></p>\n<hr>\n"
+      "texto_completo_html": "<p><strong>HECHO TRIGESIMOSEPTIMO.</strong> El 14 de octubre de 2025, Pedro, a traves de DOCTOR FLIGHT S.A.S., envio una <strong>contrapropuesta de transaccion</strong> por <strong>$300.000.000 COP</strong> ($270M + $30M de facturas pendientes de agosto-octubre 2025). Esta contrapropuesta reconocia en su Consideracion TERCERA una <em>&quot;relacion contractual cuyo objeto consistio en la explotacion economica conjunta del Programa&quot;</em> y en su Consideracion SEXTA que las partes tenian derecho a <em>&quot;tomar decisiones conjuntas&quot;</em> con una distribucion 80/20. La clausula de no competencia era mucho mas limitada que la de Oscar, restringida solo a reproducir las &quot;Obras&quot; especificas por 2 anos. <strong>[P-16]</strong></p>\n"
     },
     "hecho-41": {
       "id": "hecho-41",
       "numero": 41,
-      "ordinal": "CUADRAGESIMOPRIMERO",
-      "capitulo": "cap-12",
-      "resumen": "El 11 de febrero de 2026, se radico solicitud de conciliacion N 013-2026 ante el Centro de Conciliacion de la Corporacion Lonja de Propiedad Raiz de Barranquilla. **[P-19]**",
-      "texto_completo": "**HECHO CUADRAGESIMOPRIMERO.** El 11 de febrero de 2026, se radico solicitud de conciliacion N 013-2026 ante el Centro de Conciliacion de la Corporacion Lonja de Propiedad Raiz de Barranquilla. **[P-19]**",
+      "ordinal": "TRIGESIMOCTAVO",
+      "capitulo": "cap-10",
+      "resumen": "Las partes no lograron acuerdo alguno. La diferencia entre las ofertas evidencia la brecha: Oscar ofrecio $40M (3.3% del patrimonio estimado de $1,200M), mientras Pedro pretendia $300M (25%). **[P-15, P-16, P-17]**",
+      "texto_completo": "**HECHO TRIGESIMOCTAVO.** Las partes no lograron acuerdo alguno. La diferencia entre las ofertas evidencia la brecha: Oscar ofrecio $40M (3.3% del patrimonio estimado de $1,200M), mientras Pedro pretendia $300M (25%). **[P-15, P-16, P-17]**\n\n---",
       "fragmentos_clave": [
         {
           "cita": "solicitud de conciliacion N 013-2026 ante el Centro de Conciliacion de la Corporacion Lonja de Propiedad Raiz de Barranquilla",
@@ -1430,20 +1431,18 @@ const CASE_DATA = {
           "relevancia": "Agotamiento del requisito de procedibilidad — P-19. Primer acto procesal formal del caso"
         }
       ],
-      "pruebas": [
-        "P-19"
-      ],
+      "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Solicitud de conciliación extrajudicial",
-      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOPRIMERO.</strong> El 11 de febrero de 2026, se radico solicitud de conciliacion N 013-2026 ante el Centro de Conciliacion de la Corporacion Lonja de Propiedad Raiz de Barranquilla. <strong>[P-19]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO TRIGESIMOCTAVO.</strong> Las partes no lograron acuerdo alguno. La diferencia entre las ofertas evidencia la brecha: Oscar ofrecio $40M (3.3% del patrimonio estimado de $1,200M), mientras Pedro pretendia $300M (25%). <strong>[P-15, P-16, P-17]</strong></p>\n<hr>\n"
     },
     "hecho-42": {
       "id": "hecho-42",
       "numero": 42,
-      "ordinal": "CUADRAGESIMOSEGUNDO",
-      "capitulo": "cap-12",
-      "resumen": "El 20 de febrero de 2026, se expidio la **CONSTANCIA DE NO CONCILIACION N 00-1844**. El Conciliador Francisco Daniel Ramirez Carreno (CC 19.334.946, T.P. 30.770) dejo constancia de que las partes no llegaron a acuerdo. Las pretensiones presentadas in...",
-      "texto_completo": "**HECHO CUADRAGESIMOSEGUNDO.** El 20 de febrero de 2026, se expidio la **CONSTANCIA DE NO CONCILIACION N 00-1844**. El Conciliador Francisco Daniel Ramirez Carreno (CC 19.334.946, T.P. 30.770) dejo constancia de que las partes no llegaron a acuerdo. Las pretensiones presentadas incluyeron: (1) liquidacion de la sociedad comercial de hecho, valorando activos intangibles, marca, software y comunidad; (2) pago del 20% del valor total; (3) reconocimiento de utilidades acordadas. **Queda expedita la via judicial.** **[P-19]**\n\n---",
+      "ordinal": "TRIGESIMONOVENO",
+      "capitulo": "cap-11",
+      "resumen": "El 15 de octubre de 2025, Oscar constituyo unilateralmente la sociedad **NETMED S.A.S.** por documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del 100% de las acciones. En la grabacion...",
+      "texto_completo": "**HECHO TRIGESIMONOVENO.** El 15 de octubre de 2025, Oscar constituyo unilateralmente la sociedad **NETMED S.A.S.** por documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del 100% de las acciones. En la grabacion del 14 de agosto de 2025, Oscar admitio que pretendia licenciar ParetoMed a esta SAS, excluyendo a Pedro. La constitucion de esta sociedad despues de la ruptura sugiere un vehiculo para canalizar los activos de la sociedad de hecho sin incluir al demandante. **[P-24, P-01]**",
       "fragmentos_clave": [
         {
           "cita": "CONSTANCIA DE NO CONCILIACION N 00-1844",
@@ -1454,20 +1453,18 @@ const CASE_DATA = {
           "relevancia": "Constancia oficial: las partes no llegaron a acuerdo — P-19. Habilita la vía judicial. Conciliador registrado: T.P. 30.770"
         }
       ],
-      "pruebas": [
-        "P-19"
-      ],
+      "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Constancia de no conciliación — vía judicial expedita",
-      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOSEGUNDO.</strong> El 20 de febrero de 2026, se expidio la <strong>CONSTANCIA DE NO CONCILIACION N 00-1844</strong>. El Conciliador Francisco Daniel Ramirez Carreno (CC 19.334.946, T.P. 30.770) dejo constancia de que las partes no llegaron a acuerdo. Las pretensiones presentadas incluyeron: (1) liquidacion de la sociedad comercial de hecho, valorando activos intangibles, marca, software y comunidad; (2) pago del 20% del valor total; (3) reconocimiento de utilidades acordadas. <strong>Queda expedita la via judicial.</strong> <strong>[P-19]</strong></p>\n<hr>\n"
+      "texto_completo_html": "<p><strong>HECHO TRIGESIMONOVENO.</strong> El 15 de octubre de 2025, Oscar constituyo unilateralmente la sociedad <strong>NETMED S.A.S.</strong> por documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del 100% de las acciones. En la grabacion del 14 de agosto de 2025, Oscar admitio que pretendia licenciar ParetoMed a esta SAS, excluyendo a Pedro. La constitucion de esta sociedad despues de la ruptura sugiere un vehiculo para canalizar los activos de la sociedad de hecho sin incluir al demandante. <strong>[P-24, P-01]</strong></p>\n"
     },
     "hecho-43": {
       "id": "hecho-43",
       "numero": 43,
-      "ordinal": "CUADRAGESIMOTERCERO",
-      "capitulo": "cap-13",
-      "resumen": "Segun el Anexo de Valoracion elaborado en agosto de 2025, el patrimonio de PARETOMED se estima en $1.200.000.000 COP, compuesto por: (a) fondo de comercio y proyeccion de ingresos: $905.000.000 (basado en proyeccion de 19 meses a $47.267.338/mes); (b...",
-      "texto_completo": "**HECHO CUADRAGESIMOTERCERO.** Segun el Anexo de Valoracion elaborado en agosto de 2025, el patrimonio de PARETOMED se estima en $1.200.000.000 COP, compuesto por: (a) fondo de comercio y proyeccion de ingresos: $905.000.000 (basado en proyeccion de 19 meses a $47.267.338/mes); (b) cuenta Instagram @Paretomed1 con 51.700 seguidores (segunda mas grande del nicho en Colombia): $250.000.000; (c) base de clientes activos (360 estudiantes): $45.000.000. **[P-17]**",
+      "ordinal": "CUADRAGESIMO",
+      "capitulo": "cap-11",
+      "resumen": "Oscar renovo la matricula del establecimiento comercial PARETOMED el 9 de agosto de 2025, estando la sociedad de hecho en plena crisis, sin consultar ni informar a Pedro. Segun certificado de Camara de Comercio, ParetoMed declara activos vinculados d...",
+      "texto_completo": "**HECHO CUADRAGESIMO.** Oscar renovo la matricula del establecimiento comercial PARETOMED el 9 de agosto de 2025, estando la sociedad de hecho en plena crisis, sin consultar ni informar a Pedro. Segun certificado de Camara de Comercio, ParetoMed declara activos vinculados de apenas $20.000.000 COP, cifra manifiestamente subvalorada frente a los ingresos reales de $709.010.075 COP generados en 15 meses de operacion. **[P-20]**\n\n---",
       "fragmentos_clave": [
         {
           "cita": "$108.456.900 en ventas a fecha de hoy",
@@ -1487,19 +1484,19 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-17"
+        "P-20"
       ],
       "nota_abogado": null,
       "titulo_corto": "Valoración del patrimonio — $1,200M estimados",
-      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOTERCERO.</strong> Segun el Anexo de Valoracion elaborado en agosto de 2025, el patrimonio de PARETOMED se estima en $1.200.000.000 COP, compuesto por: (a) fondo de comercio y proyeccion de ingresos: $905.000.000 (basado en proyeccion de 19 meses a $47.267.338/mes); (b) cuenta Instagram @Paretomed1 con 51.700 seguidores (segunda mas grande del nicho en Colombia): $250.000.000; (c) base de clientes activos (360 estudiantes): $45.000.000. <strong>[P-17]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMO.</strong> Oscar renovo la matricula del establecimiento comercial PARETOMED el 9 de agosto de 2025, estando la sociedad de hecho en plena crisis, sin consultar ni informar a Pedro. Segun certificado de Camara de Comercio, ParetoMed declara activos vinculados de apenas $20.000.000 COP, cifra manifiestamente subvalorada frente a los ingresos reales de $709.010.075 COP generados en 15 meses de operacion. <strong>[P-20]</strong></p>\n<hr>\n"
     },
     "hecho-44": {
       "id": "hecho-44",
       "numero": 44,
-      "ordinal": "CUADRAGESIMOCUARTO",
-      "capitulo": "cap-13",
-      "resumen": "La participacion del 20% de Pedro en el patrimonio estimado asciende a **$240.000.000 COP**. Esta cifra es congruente con tres valoraciones realizadas por el demandante y sus asesores: (a) $240M por Anexo de Valoracion para liquidacion de sociedad; (...",
-      "texto_completo": "**HECHO CUADRAGESIMOCUARTO.** La participacion del 20% de Pedro en el patrimonio estimado asciende a **$240.000.000 COP**. Esta cifra es congruente con tres valoraciones realizadas por el demandante y sus asesores: (a) $240M por Anexo de Valoracion para liquidacion de sociedad; (b) $300M por contrapropuesta de Dr. Flight S.A.S.; (c) $330M por estimacion de la firma EF Legal basada exclusivamente en derechos de autor. Si bien las tres valoraciones provienen del lado del demandante, el monto definitivo debera ser determinado por el peritaje de valoracion que se solicita al despacho. **[P-17, P-16, P-35]**",
+      "ordinal": "CUADRAGESIMOPRIMERO",
+      "capitulo": "cap-12",
+      "resumen": "El 11 de febrero de 2026, se radico solicitud de conciliacion N 013-2026 ante el Centro de Conciliacion de la Corporacion Lonja de Propiedad Raiz de Barranquilla. **[P-19]**",
+      "texto_completo": "**HECHO CUADRAGESIMOPRIMERO.** El 11 de febrero de 2026, se radico solicitud de conciliacion N 013-2026 ante el Centro de Conciliacion de la Corporacion Lonja de Propiedad Raiz de Barranquilla. **[P-19]**",
       "fragmentos_clave": [
         {
           "cita": "20% de las utilidades no se justifican por una labor que es contratable",
@@ -1518,18 +1515,20 @@ const CASE_DATA = {
           "relevancia": "Pretensión económica principal: $240M por el 20% del patrimonio — P-17. Coherente con valoraciones de $300M (Dr. Flight) y $330M (EF Legal)"
         }
       ],
-      "pruebas": [],
+      "pruebas": [
+        "P-19"
+      ],
       "nota_abogado": null,
       "titulo_corto": "Participación de Pedro — 20% = $240M",
-      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOCUARTO.</strong> La participacion del 20% de Pedro en el patrimonio estimado asciende a <strong>$240.000.000 COP</strong>. Esta cifra es congruente con tres valoraciones realizadas por el demandante y sus asesores: (a) $240M por Anexo de Valoracion para liquidacion de sociedad; (b) $300M por contrapropuesta de Dr. Flight S.A.S.; (c) $330M por estimacion de la firma EF Legal basada exclusivamente en derechos de autor. Si bien las tres valoraciones provienen del lado del demandante, el monto definitivo debera ser determinado por el peritaje de valoracion que se solicita al despacho. <strong>[P-17, P-16, P-35]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOPRIMERO.</strong> El 11 de febrero de 2026, se radico solicitud de conciliacion N 013-2026 ante el Centro de Conciliacion de la Corporacion Lonja de Propiedad Raiz de Barranquilla. <strong>[P-19]</strong></p>\n"
     },
     "hecho-45": {
       "id": "hecho-45",
       "numero": 45,
-      "ordinal": "CUADRAGESIMOQUINTO",
-      "capitulo": "cap-13",
-      "resumen": "Segun las transferencias bancarias documentadas, Pedro recibio pagos hasta julio de 2025 (transferencia del 05/08/2025 por $7.450.000, que cubria el mes de julio). Oscar continuo explotando PARETOMED de manera unilateral despues de la ruptura y **sig...",
-      "texto_completo": "**HECHO CUADRAGESIMOQUINTO.** Segun las transferencias bancarias documentadas, Pedro recibio pagos hasta julio de 2025 (transferencia del 05/08/2025 por $7.450.000, que cubria el mes de julio). Oscar continuo explotando PARETOMED de manera unilateral despues de la ruptura y **sigue operando el negocio a la fecha de presentacion de esta demanda**. La secuencia de eventos post-ruptura fue: (a) Pedro notifico el cese de explotacion de su PI el 29/08/2025 [P-18]; (b) Oscar retiro el contenido de Pedro de Instagram a mediados de octubre 2025, tras la contrapropuesta de Pedro; (c) Oscar bajo de la plataforma las videoclases grabadas por Pedro y continuo con las que el tenia pregrabadas antes de la sociedad; (d) en los primeros dias de octubre 2025, Pedro ejercio reclamaciones de copyright sobre los canales de YouTube y TikTok de ParetoMed; (e) Oscar mantuvo la totalidad de los Reels de Pedro en la pagina de Facebook de ParetoMed hasta febrero de 2026, retirandolos solo despues de la presentacion de la solicitud de conciliacion; (f) ParetoMed continua operando con la metodologia co-desarrollada (ciclos de 90 dias, simulacros pre y post estudio, sistema de acompanamiento, talleres dominicales) y generando ingresos de aproximadamente $50.000.000 mensuales segun los KPIs mas recientes. Las utilidades correspondientes al periodo agosto 2025 en adelante no fueron pagadas a Pedro. **[P-16, P-18, P-36, P-37, P-43]**",
+      "ordinal": "CUADRAGESIMOSEGUNDO",
+      "capitulo": "cap-12",
+      "resumen": "El 20 de febrero de 2026, se expidio la **CONSTANCIA DE NO CONCILIACION N 00-1844**. El Conciliador Francisco Daniel Ramirez Carreno (CC 19.334.946, T.P. 30.770) dejo constancia de que las partes no llegaron a acuerdo. Las pretensiones presentadas in...",
+      "texto_completo": "**HECHO CUADRAGESIMOSEGUNDO.** El 20 de febrero de 2026, se expidio la **CONSTANCIA DE NO CONCILIACION N 00-1844**. El Conciliador Francisco Daniel Ramirez Carreno (CC 19.334.946, T.P. 30.770) dejo constancia de que las partes no llegaron a acuerdo. Las pretensiones presentadas incluyeron: (1) liquidacion de la sociedad comercial de hecho, valorando activos intangibles, marca, software y comunidad; (2) pago del 20% del valor total; (3) reconocimiento de utilidades acordadas. **Queda expedita la via judicial.** **[P-19]**\n\n---",
       "fragmentos_clave": [
         {
           "cita": "agosto 2025: $52.790.000; septiembre 2025: $52.640.800; octubre 2025: $64.057.500. Total periodo post-ruptura: $169.488.300 COP",
@@ -1549,19 +1548,19 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-18"
+        "P-19"
       ],
       "nota_abogado": null,
       "titulo_corto": "Utilidades post-ruptura no pagadas a Pedro",
-      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOQUINTO.</strong> Segun las transferencias bancarias documentadas, Pedro recibio pagos hasta julio de 2025 (transferencia del 05/08/2025 por $7.450.000, que cubria el mes de julio). Oscar continuo explotando PARETOMED de manera unilateral despues de la ruptura y <strong>sigue operando el negocio a la fecha de presentacion de esta demanda</strong>. La secuencia de eventos post-ruptura fue: (a) Pedro notifico el cese de explotacion de su PI el 29/08/2025 [P-18]; (b) Oscar retiro el contenido de Pedro de Instagram a mediados de octubre 2025, tras la contrapropuesta de Pedro; (c) Oscar bajo de la plataforma las videoclases grabadas por Pedro y continuo con las que el tenia pregrabadas antes de la sociedad; (d) en los primeros dias de octubre 2025, Pedro ejercio reclamaciones de copyright sobre los canales de YouTube y TikTok de ParetoMed; (e) Oscar mantuvo la totalidad de los Reels de Pedro en la pagina de Facebook de ParetoMed hasta febrero de 2026, retirandolos solo despues de la presentacion de la solicitud de conciliacion; (f) ParetoMed continua operando con la metodologia co-desarrollada (ciclos de 90 dias, simulacros pre y post estudio, sistema de acompanamiento, talleres dominicales) y generando ingresos de aproximadamente $50.000.000 mensuales segun los KPIs mas recientes. Las utilidades correspondientes al periodo agosto 2025 en adelante no fueron pagadas a Pedro. <strong>[P-16, P-18, P-36, P-37, P-43]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOSEGUNDO.</strong> El 20 de febrero de 2026, se expidio la <strong>CONSTANCIA DE NO CONCILIACION N 00-1844</strong>. El Conciliador Francisco Daniel Ramirez Carreno (CC 19.334.946, T.P. 30.770) dejo constancia de que las partes no llegaron a acuerdo. Las pretensiones presentadas incluyeron: (1) liquidacion de la sociedad comercial de hecho, valorando activos intangibles, marca, software y comunidad; (2) pago del 20% del valor total; (3) reconocimiento de utilidades acordadas. <strong>Queda expedita la via judicial.</strong> <strong>[P-19]</strong></p>\n<hr>\n"
     },
     "hecho-46": {
       "id": "hecho-46",
       "numero": 46,
-      "ordinal": "CUADRAGESIMOSEXTO",
+      "ordinal": "CUADRAGESIMOTERCERO",
       "capitulo": "cap-13",
-      "resumen": "El total de pagos recibidos por Pedro asciende a **$99.319.834 COP** en 14 transferencias bancarias entre mayo de 2024 y agosto de 2025, acreditadas con capturas de pantalla de mensajes SMS de Bancolombia. Si estos pagos representan el 20% de las uti...",
-      "texto_completo": "**HECHO CUADRAGESIMOSEXTO.** El total de pagos recibidos por Pedro asciende a **$99.319.834 COP** en 14 transferencias bancarias entre mayo de 2024 y agosto de 2025, acreditadas con capturas de pantalla de mensajes SMS de Bancolombia. Si estos pagos representan el 20% de las utilidades netas, la ganancia neta total del negocio durante dicho periodo fue de aproximadamente **$496.599.170 COP**. Esta cifra es inferior a los ingresos brutos reportados de $709.010.075 COP, lo que es coherente con la existencia de costos operativos. **[P-36, P-37]**\n\n---\n\n## NOTA PARA LOS ABOGADOS: RESUMEN DE LAS PRUEBAS MAS CONTUNDENTES\n\nLas siguientes pruebas son las de mayor poder probatorio:\n\n1. **[P-01] Grabacion telefonica 14/08/2025:** Confesion extrajudicial de Oscar admitiendo la sociedad, el pacto de acciones, y que sus propios abogados y contadores confirmaron la existencia de sociedad de hecho.\n\n2. **[P-11] Carta de Recomendacion firmada por Oscar (27/04/2024):** Documento firmado por el demandado que nombra a Pedro \"Subdirector Academico y Comercial\" - cargo directivo incompatible con prestacion de servicios.\n\n3. **[P-09] Nota manuscrita de Oscar en Acuerdo de Socios:** Oscar admite que el 20% \"no se justifican por una labor que es contratable\".\n\n4. **[P-06 y P-07] Alteracion del Google Doc:** El cambio de \"acciones\" por \"utilidades\" por usuario anonimo evidencia mala fe.\n\n5. **[P-22 y P-23] Certificados DNDA (238 obras):** Pedro registrado como AUTOR/DIRECTOR/PRODUCTOR; Oscar solo como INTERPRETE. Invierte la narrativa de que la PI pertenece exclusivamente a Oscar.\n\n6. **[P-12 y P-13] Cuentas de cobro y liquidaciones:** Los montos variables (de $1.4M a $16.7M) calculados como 20% de ganancia neta son inconsistentes con honorarios fijos de servicios.\n\n7. **[P-14] Contrato de Cuentas en Participacion (Oscar, 22/08/2025):** Usa terminologia de \"socios\" mientras simultaneamente niega la sociedad de hecho, lo cual es contradictorio.\n\n8. **[P-25, P-26] SOPs creados por Pedro:** Demuestran que Pedro diseno la infraestructura operativa del negocio, funcion de socio/director.\n\n9. **[P-19] Constancia de No Conciliacion:** Acredita el agotamiento del requisito de procedibilidad.\n\n10. **[P-20] Certificado Camara de Comercio ParetoMed:** Activos declarados de solo $20M vs. ingresos reales de $709M, evidencia subvaloracion.\n\n11. **[P-50] Audios 13/07/2025 — Oscar exige deberes de socio sobre herramienta tecnologica:** Oscar reclama a Pedro obligaciones propias de un socio respecto a una herramienta tecnologica desarrollada por Pedro (*\"como le vas a licenciar eso a una empresa de la cual eres socio\"*). Paradojicamente, al exigirle deberes societarios, Oscar RECONOCE que Pedro es socio con obligaciones fiduciarias hacia el negocio. Confesion extrajudicial devastadora.\n\n---",
+      "resumen": "Segun el Anexo de Valoracion elaborado en agosto de 2025, el patrimonio de PARETOMED se estima en $1.200.000.000 COP, compuesto por: (a) fondo de comercio y proyeccion de ingresos: $905.000.000 (basado en proyeccion de 19 meses a $47.267.338/mes); (b...",
+      "texto_completo": "**HECHO CUADRAGESIMOTERCERO.** Segun el Anexo de Valoracion elaborado en agosto de 2025, el patrimonio de PARETOMED se estima en $1.200.000.000 COP, compuesto por: (a) fondo de comercio y proyeccion de ingresos: $905.000.000 (basado en proyeccion de 19 meses a $47.267.338/mes); (b) cuenta Instagram @Paretomed1 con 51.700 seguidores (segunda mas grande del nicho en Colombia): $250.000.000; (c) base de clientes activos (360 estudiantes): $45.000.000. **[P-17]**",
       "fragmentos_clave": [
         {
           "cita": "14 transferencias bancarias de la cuenta de OSCAR MALDONADO a la cuenta Bancolombia **4483 de Pedro Vergara, por un total de $99.319.834 COP",
@@ -1573,25 +1572,19 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-01",
-        "P-11",
-        "P-09",
-        "P-14",
-        "P-19",
-        "P-20",
-        "P-50"
+        "P-17"
       ],
       "nota_abogado": null,
       "titulo_corto": "Total pagos documentados — $99.3M en 14 transferencias",
-      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOSEXTO.</strong> El total de pagos recibidos por Pedro asciende a <strong>$99.319.834 COP</strong> en 14 transferencias bancarias entre mayo de 2024 y agosto de 2025, acreditadas con capturas de pantalla de mensajes SMS de Bancolombia. Si estos pagos representan el 20% de las utilidades netas, la ganancia neta total del negocio durante dicho periodo fue de aproximadamente <strong>$496.599.170 COP</strong>. Esta cifra es inferior a los ingresos brutos reportados de $709.010.075 COP, lo que es coherente con la existencia de costos operativos. <strong>[P-36, P-37]</strong></p>\n<hr>\n<h2>NOTA PARA LOS ABOGADOS: RESUMEN DE LAS PRUEBAS MAS CONTUNDENTES</h2>\n<p>Las siguientes pruebas son las de mayor poder probatorio:</p>\n<ol>\n<li>\n<p><strong>[P-01] Grabacion telefonica 14/08/2025:</strong> Confesion extrajudicial de Oscar admitiendo la sociedad, el pacto de acciones, y que sus propios abogados y contadores confirmaron la existencia de sociedad de hecho.</p>\n</li>\n<li>\n<p><strong>[P-11] Carta de Recomendacion firmada por Oscar (27/04/2024):</strong> Documento firmado por el demandado que nombra a Pedro &quot;Subdirector Academico y Comercial&quot; - cargo directivo incompatible con prestacion de servicios.</p>\n</li>\n<li>\n<p><strong>[P-09] Nota manuscrita de Oscar en Acuerdo de Socios:</strong> Oscar admite que el 20% &quot;no se justifican por una labor que es contratable&quot;.</p>\n</li>\n<li>\n<p><strong>[P-06 y P-07] Alteracion del Google Doc:</strong> El cambio de &quot;acciones&quot; por &quot;utilidades&quot; por usuario anonimo evidencia mala fe.</p>\n</li>\n<li>\n<p><strong>[P-22 y P-23] Certificados DNDA (238 obras):</strong> Pedro registrado como AUTOR/DIRECTOR/PRODUCTOR; Oscar solo como INTERPRETE. Invierte la narrativa de que la PI pertenece exclusivamente a Oscar.</p>\n</li>\n<li>\n<p><strong>[P-12 y P-13] Cuentas de cobro y liquidaciones:</strong> Los montos variables (de $1.4M a $16.7M) calculados como 20% de ganancia neta son inconsistentes con honorarios fijos de servicios.</p>\n</li>\n<li>\n<p><strong>[P-14] Contrato de Cuentas en Participacion (Oscar, 22/08/2025):</strong> Usa terminologia de &quot;socios&quot; mientras simultaneamente niega la sociedad de hecho, lo cual es contradictorio.</p>\n</li>\n<li>\n<p><strong>[P-25, P-26] SOPs creados por Pedro:</strong> Demuestran que Pedro diseno la infraestructura operativa del negocio, funcion de socio/director.</p>\n</li>\n<li>\n<p><strong>[P-19] Constancia de No Conciliacion:</strong> Acredita el agotamiento del requisito de procedibilidad.</p>\n</li>\n<li>\n<p><strong>[P-20] Certificado Camara de Comercio ParetoMed:</strong> Activos declarados de solo $20M vs. ingresos reales de $709M, evidencia subvaloracion.</p>\n</li>\n<li>\n<p><strong>[P-50] Audios 13/07/2025 — Oscar exige deberes de socio sobre herramienta tecnologica:</strong> Oscar reclama a Pedro obligaciones propias de un socio respecto a una herramienta tecnologica desarrollada por Pedro (<em>&quot;como le vas a licenciar eso a una empresa de la cual eres socio&quot;</em>). Paradojicamente, al exigirle deberes societarios, Oscar RECONOCE que Pedro es socio con obligaciones fiduciarias hacia el negocio. Confesion extrajudicial devastadora.</p>\n</li>\n</ol>\n<hr>\n"
+      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOTERCERO.</strong> Segun el Anexo de Valoracion elaborado en agosto de 2025, el patrimonio de PARETOMED se estima en $1.200.000.000 COP, compuesto por: (a) fondo de comercio y proyeccion de ingresos: $905.000.000 (basado en proyeccion de 19 meses a $47.267.338/mes); (b) cuenta Instagram @Paretomed1 con 51.700 seguidores (segunda mas grande del nicho en Colombia): $250.000.000; (c) base de clientes activos (360 estudiantes): $45.000.000. <strong>[P-17]</strong></p>\n"
     },
     "hecho-47": {
       "id": "hecho-47",
       "numero": 47,
-      "ordinal": "CUADRAGESIMSEPTIMO",
-      "capitulo": "cap-14",
-      "resumen": "El 8 de enero de 2025, Oscar Maldonado declaro en nota de voz de WhatsApp que la firma del acuerdo de socios era una **\"mera formalidad\"**, lo que constituye un reconocimiento de que la sociedad ya existia de facto sin necesidad del documento escrito...",
-      "texto_completo": "**HECHO CUADRAGESIMSEPTIMO.** El 8 de enero de 2025, Oscar Maldonado declaro en nota de voz de WhatsApp que la firma del acuerdo de socios era una **\"mera formalidad\"**, lo que constituye un reconocimiento de que la sociedad ya existia de facto sin necesidad del documento escrito. Sus palabras textuales fueron: *\"yo siempre he visto el tema de la firma como una mera formalidad. O sea yo pensaba que ya todo ese tema estaba hablado\"* (PTT-20250108-WA0003). En un segundo audio del mismo dia, Oscar reitero: *\"para mi el afirme es mas como un formalismo, ¿no? Listo\"* y agrego una declaracion aun mas contundente sobre la naturaleza de la relacion: *\"yo necesitaria tener a alguien que tenga pertenencia, ¿si? No alguien contratado, sino alguien que sepa que eso es suyo tambien y que este pendiente de todo\"* (PTT-20250108-WA0012). Con esta ultima frase, Oscar reconocio TEXTUALMENTE que lo que buscaba en Pedro NO era un contratista, sino un socio con sentido de pertenencia y propiedad sobre el negocio. Adicionalmente, Oscar revelo que su plan a futuro dependia de Pedro como socio permanente: *\"mi plan es para que ya en 2026 yo comenzare el fellow. Entonces, ahi yo necesitaria tener a alguien... coordinando todo\"*. **[P-05, P-41]**",
+      "ordinal": "CUADRAGESIMOCUARTO",
+      "capitulo": "cap-13",
+      "resumen": "La participacion del 20% de Pedro en el patrimonio estimado asciende a **$240.000.000 COP**. Esta cifra es congruente con tres valoraciones realizadas por el demandante y sus asesores: (a) $240M por Anexo de Valoracion para liquidacion de sociedad; (...",
+      "texto_completo": "**HECHO CUADRAGESIMOCUARTO.** La participacion del 20% de Pedro en el patrimonio estimado asciende a **$240.000.000 COP**. Esta cifra es congruente con tres valoraciones realizadas por el demandante y sus asesores: (a) $240M por Anexo de Valoracion para liquidacion de sociedad; (b) $300M por contrapropuesta de Dr. Flight S.A.S.; (c) $330M por estimacion de la firma EF Legal basada exclusivamente en derechos de autor. Si bien las tres valoraciones provienen del lado del demandante, el monto definitivo debera ser determinado por el peritaje de valoracion que se solicita al despacho. **[P-17, P-16, P-35]**",
       "fragmentos_clave": [
         {
           "cita": "yo siempre he visto el tema de la firma como una mera formalidad. O sea yo pensaba que ya todo ese tema estaba hablado",
@@ -1629,15 +1622,15 @@ const CASE_DATA = {
       "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "\"La firma es una mera formalidad\" — confesión",
-      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMSEPTIMO.</strong> El 8 de enero de 2025, Oscar Maldonado declaro en nota de voz de WhatsApp que la firma del acuerdo de socios era una <strong>&quot;mera formalidad&quot;</strong>, lo que constituye un reconocimiento de que la sociedad ya existia de facto sin necesidad del documento escrito. Sus palabras textuales fueron: <em>&quot;yo siempre he visto el tema de la firma como una mera formalidad. O sea yo pensaba que ya todo ese tema estaba hablado&quot;</em> (PTT-20250108-WA0003). En un segundo audio del mismo dia, Oscar reitero: <em>&quot;para mi el afirme es mas como un formalismo, ¿no? Listo&quot;</em> y agrego una declaracion aun mas contundente sobre la naturaleza de la relacion: <em>&quot;yo necesitaria tener a alguien que tenga pertenencia, ¿si? No alguien contratado, sino alguien que sepa que eso es suyo tambien y que este pendiente de todo&quot;</em> (PTT-20250108-WA0012). Con esta ultima frase, Oscar reconocio TEXTUALMENTE que lo que buscaba en Pedro NO era un contratista, sino un socio con sentido de pertenencia y propiedad sobre el negocio. Adicionalmente, Oscar revelo que su plan a futuro dependia de Pedro como socio permanente: <em>&quot;mi plan es para que ya en 2026 yo comenzare el fellow. Entonces, ahi yo necesitaria tener a alguien... coordinando todo&quot;</em>. <strong>[P-05, P-41]</strong></p>\n"
+      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOCUARTO.</strong> La participacion del 20% de Pedro en el patrimonio estimado asciende a <strong>$240.000.000 COP</strong>. Esta cifra es congruente con tres valoraciones realizadas por el demandante y sus asesores: (a) $240M por Anexo de Valoracion para liquidacion de sociedad; (b) $300M por contrapropuesta de Dr. Flight S.A.S.; (c) $330M por estimacion de la firma EF Legal basada exclusivamente en derechos de autor. Si bien las tres valoraciones provienen del lado del demandante, el monto definitivo debera ser determinado por el peritaje de valoracion que se solicita al despacho. <strong>[P-17, P-16, P-35]</strong></p>\n"
     },
     "hecho-48": {
       "id": "hecho-48",
       "numero": 48,
-      "ordinal": "CUADRAGESIMOCTAVO",
-      "capitulo": "cap-14",
-      "resumen": "El 7 de agosto de 2025, se produjo un incidente contable que evidencia la conducta de Pedro como socio y no como contratista. Oscar informo a Pedro que en la liquidacion de julio habia omitido descontar los pagos de las colaboradoras Lina y Kendy, lo...",
-      "texto_completo": "**HECHO CUADRAGESIMOCTAVO.** El 7 de agosto de 2025, se produjo un incidente contable que evidencia la conducta de Pedro como socio y no como contratista. Oscar informo a Pedro que en la liquidacion de julio habia omitido descontar los pagos de las colaboradoras Lina y Kendy, lo que resulto en un excedente de $500.000 COP a favor de Pedro. Oscar: *\"en los egresos de julio no meti el pago de Lina ni Kendy. Fresco que vamos a dejar asi, yo cargo con eso\"*. Pedro, en lugar de aceptar el beneficio como lo haria un contratista que simplemente cobra lo que le pagan, mostro disposicion inmediata de asumir la perdida: *\"Yo puedo devolverte los 500 o dartelos como credito en algun servicio aparte que favorezca a Paretomed\"* y enfatizo: *\"es una empresa no una caridad y la responsabilidad de lo que se haga despues del error no cae solo en ti\"*. Finalmente, Pedro utilizo una expresion que sintetiza la relacion: **\"Somos un equipo papa\"**. La disposicion de Pedro de asumir perdidas y su referencia al negocio como responsabilidad compartida son conductas propias de un socio, no de un prestador de servicios que simplemente factura y cobra. **[P-02]**\n\n### Para Capitulo VI: Explotacion Conjunta del Negocio",
+      "ordinal": "CUADRAGESIMOQUINTO",
+      "capitulo": "cap-13",
+      "resumen": "Segun las transferencias bancarias documentadas, Pedro recibio pagos hasta julio de 2025 (transferencia del 05/08/2025 por $7.450.000, que cubria el mes de julio). Oscar continuo explotando PARETOMED de manera unilateral despues de la ruptura y **sig...",
+      "texto_completo": "**HECHO CUADRAGESIMOQUINTO.** Segun las transferencias bancarias documentadas, Pedro recibio pagos hasta julio de 2025 (transferencia del 05/08/2025 por $7.450.000, que cubria el mes de julio). Oscar continuo explotando PARETOMED de manera unilateral despues de la ruptura y **sigue operando el negocio a la fecha de presentacion de esta demanda**. La secuencia de eventos post-ruptura fue: (a) Pedro notifico el cese de explotacion de su PI el 29/08/2025 [P-18]; (b) Oscar retiro el contenido de Pedro de Instagram a mediados de octubre 2025, tras la contrapropuesta de Pedro; (c) Oscar bajo de la plataforma las videoclases grabadas por Pedro y continuo con las que el tenia pregrabadas antes de la sociedad; (d) en los primeros dias de octubre 2025, Pedro ejercio reclamaciones de copyright sobre los canales de YouTube y TikTok de ParetoMed; (e) Oscar mantuvo la totalidad de los Reels de Pedro en la pagina de Facebook de ParetoMed hasta febrero de 2026, retirandolos solo despues de la presentacion de la solicitud de conciliacion; (f) ParetoMed continua operando con la metodologia co-desarrollada (ciclos de 90 dias, simulacros pre y post estudio, sistema de acompanamiento, talleres dominicales) y generando ingresos de aproximadamente $50.000.000 mensuales segun los KPIs mas recientes. Las utilidades correspondientes al periodo agosto 2025 en adelante no fueron pagadas a Pedro. **[P-16, P-18, P-36, P-37, P-43]**",
       "fragmentos_clave": [
         {
           "cita": "en los egresos de julio no meti el pago de Lina ni Kendy. Fresco que vamos a dejar asi, yo cargo con eso",
@@ -1673,19 +1666,19 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-02"
+        "P-18"
       ],
       "nota_abogado": null,
       "titulo_corto": "Incidente contable — \"somos un equipo\"",
-      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOCTAVO.</strong> El 7 de agosto de 2025, se produjo un incidente contable que evidencia la conducta de Pedro como socio y no como contratista. Oscar informo a Pedro que en la liquidacion de julio habia omitido descontar los pagos de las colaboradoras Lina y Kendy, lo que resulto en un excedente de $500.000 COP a favor de Pedro. Oscar: <em>&quot;en los egresos de julio no meti el pago de Lina ni Kendy. Fresco que vamos a dejar asi, yo cargo con eso&quot;</em>. Pedro, en lugar de aceptar el beneficio como lo haria un contratista que simplemente cobra lo que le pagan, mostro disposicion inmediata de asumir la perdida: <em>&quot;Yo puedo devolverte los 500 o dartelos como credito en algun servicio aparte que favorezca a Paretomed&quot;</em> y enfatizo: <em>&quot;es una empresa no una caridad y la responsabilidad de lo que se haga despues del error no cae solo en ti&quot;</em>. Finalmente, Pedro utilizo una expresion que sintetiza la relacion: <strong>&quot;Somos un equipo papa&quot;</strong>. La disposicion de Pedro de asumir perdidas y su referencia al negocio como responsabilidad compartida son conductas propias de un socio, no de un prestador de servicios que simplemente factura y cobra. <strong>[P-02]</strong></p>\n<h3>Para Capitulo VI: Explotacion Conjunta del Negocio</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOQUINTO.</strong> Segun las transferencias bancarias documentadas, Pedro recibio pagos hasta julio de 2025 (transferencia del 05/08/2025 por $7.450.000, que cubria el mes de julio). Oscar continuo explotando PARETOMED de manera unilateral despues de la ruptura y <strong>sigue operando el negocio a la fecha de presentacion de esta demanda</strong>. La secuencia de eventos post-ruptura fue: (a) Pedro notifico el cese de explotacion de su PI el 29/08/2025 [P-18]; (b) Oscar retiro el contenido de Pedro de Instagram a mediados de octubre 2025, tras la contrapropuesta de Pedro; (c) Oscar bajo de la plataforma las videoclases grabadas por Pedro y continuo con las que el tenia pregrabadas antes de la sociedad; (d) en los primeros dias de octubre 2025, Pedro ejercio reclamaciones de copyright sobre los canales de YouTube y TikTok de ParetoMed; (e) Oscar mantuvo la totalidad de los Reels de Pedro en la pagina de Facebook de ParetoMed hasta febrero de 2026, retirandolos solo despues de la presentacion de la solicitud de conciliacion; (f) ParetoMed continua operando con la metodologia co-desarrollada (ciclos de 90 dias, simulacros pre y post estudio, sistema de acompanamiento, talleres dominicales) y generando ingresos de aproximadamente $50.000.000 mensuales segun los KPIs mas recientes. Las utilidades correspondientes al periodo agosto 2025 en adelante no fueron pagadas a Pedro. <strong>[P-16, P-18, P-36, P-37, P-43]</strong></p>\n"
     },
     "hecho-49": {
       "id": "hecho-49",
       "numero": 49,
-      "ordinal": "CUADRAGESIMONOVENO",
-      "capitulo": "cap-14",
-      "resumen": "Pedro participaba activamente en la **co-determinacion de los precios** del programa ParetoMed, funcion estrategica reservada a socios o directivos. Se acreditan al menos tres instancias documentadas: (a) el 21 de marzo de 2025, Pedro propuso una est...",
-      "texto_completo": "**HECHO CUADRAGESIMONOVENO.** Pedro participaba activamente en la **co-determinacion de los precios** del programa ParetoMed, funcion estrategica reservada a socios o directivos. Se acreditan al menos tres instancias documentadas: (a) el 21 de marzo de 2025, Pedro propuso una estructura de precios en el grupo de equipo y la asesora de ventas Adriana respondio: *\"Me gusta tu idea... tu idea esta genial\"*, esperando confirmacion de ambos: *\"uds me diran como la ven\"* (refiriendose a Pedro y Oscar como co-decisores) **[P-03]**; (b) el 17 de julio de 2025, tras una negociacion directa entre Pedro y Oscar sobre el valor del programa de 6 meses, Oscar concluyo: *\"Entonces dejalo en 2,850,000\"* y Pedro procedio a implementar: *\"Ok... ya te organizo algo rapido y lo explico\"* **[P-02]**; (c) en audio del 28 de julio de 2025, ambos negociaron la reduccion de cuotas de $850.000 a *\"650, 7 algo\"* como estrategia conjunta **[P-05]**. Un contratista de marketing no define los precios del producto de su cliente; un socio comercial si lo hace. **[P-02, P-03, P-05, P-40]**\n\n### Para Capitulo IX: Ruptura de la Relacion",
+      "ordinal": "CUADRAGESIMOSEXTO",
+      "capitulo": "cap-13",
+      "resumen": "El total de pagos recibidos por Pedro asciende a **$99.319.834 COP** en 14 transferencias bancarias entre mayo de 2024 y agosto de 2025, acreditadas con capturas de pantalla de mensajes SMS de Bancolombia. Si estos pagos representan el 20% de las uti...",
+      "texto_completo": "**HECHO CUADRAGESIMOSEXTO.** El total de pagos recibidos por Pedro asciende a **$99.319.834 COP** en 14 transferencias bancarias entre mayo de 2024 y agosto de 2025, acreditadas con capturas de pantalla de mensajes SMS de Bancolombia. Si estos pagos representan el 20% de las utilidades netas, la ganancia neta total del negocio durante dicho periodo fue de aproximadamente **$496.599.170 COP**. Esta cifra es inferior a los ingresos brutos reportados de $709.010.075 COP, lo que es coherente con la existencia de costos operativos. **[P-36, P-37]**\n\n---\n\n## NOTA PARA LOS ABOGADOS: RESUMEN DE LAS PRUEBAS MAS CONTUNDENTES\n\nLas siguientes pruebas son las de mayor poder probatorio:\n\n1. **[P-01] Grabacion telefonica 14/08/2025:** Confesion extrajudicial de Oscar admitiendo la sociedad, el pacto de acciones, y que sus propios abogados y contadores confirmaron la existencia de sociedad de hecho.\n\n2. **[P-11] Carta de Recomendacion firmada por Oscar (27/04/2024):** Documento firmado por el demandado que nombra a Pedro \"Subdirector Academico y Comercial\" - cargo directivo incompatible con prestacion de servicios.\n\n3. **[P-09] Nota manuscrita de Oscar en Acuerdo de Socios:** Oscar admite que el 20% \"no se justifican por una labor que es contratable\".\n\n4. **[P-06 y P-07] Alteracion del Google Doc:** El cambio de \"acciones\" por \"utilidades\" por usuario anonimo evidencia mala fe.\n\n5. **[P-22 y P-23] Certificados DNDA (238 obras):** Pedro registrado como AUTOR/DIRECTOR/PRODUCTOR; Oscar solo como INTERPRETE. Invierte la narrativa de que la PI pertenece exclusivamente a Oscar.\n\n6. **[P-12 y P-13] Cuentas de cobro y liquidaciones:** Los montos variables (de $1.4M a $16.7M) calculados como 20% de ganancia neta son inconsistentes con honorarios fijos de servicios.\n\n7. **[P-14] Contrato de Cuentas en Participacion (Oscar, 22/08/2025):** Usa terminologia de \"socios\" mientras simultaneamente niega la sociedad de hecho, lo cual es contradictorio.\n\n8. **[P-25, P-26] SOPs creados por Pedro:** Demuestran que Pedro diseno la infraestructura operativa del negocio, funcion de socio/director.\n\n9. **[P-19] Constancia de No Conciliacion:** Acredita el agotamiento del requisito de procedibilidad.\n\n10. **[P-20] Certificado Camara de Comercio ParetoMed:** Activos declarados de solo $20M vs. ingresos reales de $709M, evidencia subvaloracion.\n\n11. **[P-50] Audios 13/07/2025 — Oscar exige deberes de socio sobre herramienta tecnologica:** Oscar reclama a Pedro obligaciones propias de un socio respecto a una herramienta tecnologica desarrollada por Pedro (*\"como le vas a licenciar eso a una empresa de la cual eres socio\"*). Paradojicamente, al exigirle deberes societarios, Oscar RECONOCE que Pedro es socio con obligaciones fiduciarias hacia el negocio. Confesion extrajudicial devastadora.\n\n---",
       "fragmentos_clave": [
         {
           "cita": "uds me diran como la ven",
@@ -1713,21 +1706,25 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-03",
-        "P-02",
-        "P-05"
+        "P-01",
+        "P-11",
+        "P-09",
+        "P-14",
+        "P-19",
+        "P-20",
+        "P-50"
       ],
       "nota_abogado": null,
       "titulo_corto": "Co-determinación de precios del programa",
-      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMONOVENO.</strong> Pedro participaba activamente en la <strong>co-determinacion de los precios</strong> del programa ParetoMed, funcion estrategica reservada a socios o directivos. Se acreditan al menos tres instancias documentadas: (a) el 21 de marzo de 2025, Pedro propuso una estructura de precios en el grupo de equipo y la asesora de ventas Adriana respondio: <em>&quot;Me gusta tu idea... tu idea esta genial&quot;</em>, esperando confirmacion de ambos: <em>&quot;uds me diran como la ven&quot;</em> (refiriendose a Pedro y Oscar como co-decisores) <strong>[P-03]</strong>; (b) el 17 de julio de 2025, tras una negociacion directa entre Pedro y Oscar sobre el valor del programa de 6 meses, Oscar concluyo: <em>&quot;Entonces dejalo en 2,850,000&quot;</em> y Pedro procedio a implementar: <em>&quot;Ok... ya te organizo algo rapido y lo explico&quot;</em> <strong>[P-02]</strong>; (c) en audio del 28 de julio de 2025, ambos negociaron la reduccion de cuotas de $850.000 a <em>&quot;650, 7 algo&quot;</em> como estrategia conjunta <strong>[P-05]</strong>. Un contratista de marketing no define los precios del producto de su cliente; un socio comercial si lo hace. <strong>[P-02, P-03, P-05, P-40]</strong></p>\n<h3>Para Capitulo IX: Ruptura de la Relacion</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOSEXTO.</strong> El total de pagos recibidos por Pedro asciende a <strong>$99.319.834 COP</strong> en 14 transferencias bancarias entre mayo de 2024 y agosto de 2025, acreditadas con capturas de pantalla de mensajes SMS de Bancolombia. Si estos pagos representan el 20% de las utilidades netas, la ganancia neta total del negocio durante dicho periodo fue de aproximadamente <strong>$496.599.170 COP</strong>. Esta cifra es inferior a los ingresos brutos reportados de $709.010.075 COP, lo que es coherente con la existencia de costos operativos. <strong>[P-36, P-37]</strong></p>\n<hr>\n<h2>NOTA PARA LOS ABOGADOS: RESUMEN DE LAS PRUEBAS MAS CONTUNDENTES</h2>\n<p>Las siguientes pruebas son las de mayor poder probatorio:</p>\n<ol>\n<li>\n<p><strong>[P-01] Grabacion telefonica 14/08/2025:</strong> Confesion extrajudicial de Oscar admitiendo la sociedad, el pacto de acciones, y que sus propios abogados y contadores confirmaron la existencia de sociedad de hecho.</p>\n</li>\n<li>\n<p><strong>[P-11] Carta de Recomendacion firmada por Oscar (27/04/2024):</strong> Documento firmado por el demandado que nombra a Pedro &quot;Subdirector Academico y Comercial&quot; - cargo directivo incompatible con prestacion de servicios.</p>\n</li>\n<li>\n<p><strong>[P-09] Nota manuscrita de Oscar en Acuerdo de Socios:</strong> Oscar admite que el 20% &quot;no se justifican por una labor que es contratable&quot;.</p>\n</li>\n<li>\n<p><strong>[P-06 y P-07] Alteracion del Google Doc:</strong> El cambio de &quot;acciones&quot; por &quot;utilidades&quot; por usuario anonimo evidencia mala fe.</p>\n</li>\n<li>\n<p><strong>[P-22 y P-23] Certificados DNDA (238 obras):</strong> Pedro registrado como AUTOR/DIRECTOR/PRODUCTOR; Oscar solo como INTERPRETE. Invierte la narrativa de que la PI pertenece exclusivamente a Oscar.</p>\n</li>\n<li>\n<p><strong>[P-12 y P-13] Cuentas de cobro y liquidaciones:</strong> Los montos variables (de $1.4M a $16.7M) calculados como 20% de ganancia neta son inconsistentes con honorarios fijos de servicios.</p>\n</li>\n<li>\n<p><strong>[P-14] Contrato de Cuentas en Participacion (Oscar, 22/08/2025):</strong> Usa terminologia de &quot;socios&quot; mientras simultaneamente niega la sociedad de hecho, lo cual es contradictorio.</p>\n</li>\n<li>\n<p><strong>[P-25, P-26] SOPs creados por Pedro:</strong> Demuestran que Pedro diseno la infraestructura operativa del negocio, funcion de socio/director.</p>\n</li>\n<li>\n<p><strong>[P-19] Constancia de No Conciliacion:</strong> Acredita el agotamiento del requisito de procedibilidad.</p>\n</li>\n<li>\n<p><strong>[P-20] Certificado Camara de Comercio ParetoMed:</strong> Activos declarados de solo $20M vs. ingresos reales de $709M, evidencia subvaloracion.</p>\n</li>\n<li>\n<p><strong>[P-50] Audios 13/07/2025 — Oscar exige deberes de socio sobre herramienta tecnologica:</strong> Oscar reclama a Pedro obligaciones propias de un socio respecto a una herramienta tecnologica desarrollada por Pedro (<em>&quot;como le vas a licenciar eso a una empresa de la cual eres socio&quot;</em>). Paradojicamente, al exigirle deberes societarios, Oscar RECONOCE que Pedro es socio con obligaciones fiduciarias hacia el negocio. Confesion extrajudicial devastadora.</p>\n</li>\n</ol>\n<hr>\n"
     },
     "hecho-50": {
       "id": "hecho-50",
       "numero": 50,
-      "ordinal": "QUINCUAGESIMO",
+      "ordinal": "CUADRAGESIMSEPTIMO",
       "capitulo": "cap-14",
-      "resumen": "Tras la aceptacion de la terminacion el 28 de agosto de 2025, Oscar procedio a **remover unilateralmente los accesos** de Pedro a las herramientas digitales del negocio. Oscar cerro las sesiones del correo institucional paretomed@gmail.com (un antece...",
-      "texto_completo": "**HECHO QUINCUAGESIMO.** Tras la aceptacion de la terminacion el 28 de agosto de 2025, Oscar procedio a **remover unilateralmente los accesos** de Pedro a las herramientas digitales del negocio. Oscar cerro las sesiones del correo institucional paretomed@gmail.com (un antecedente de esto ocurrio el 1 de agosto de 2025, cuando Pedro reporto: *\"me sacaron de la cuenta de paretomed@gmail.com\"* y Oscar alego: *\"Es que estaba revisando y vi muchos dispositivos y computadores con esa cuenta abierta y cerre varios. No fue mala intencion\"*) **[P-02]**. Tras la ruptura definitiva, Oscar removio a Pedro del correo institucional, de los grupos de WhatsApp del equipo de trabajo, y de las cuentas de redes sociales (Instagram, TikTok, YouTube) que Pedro habia ayudado a crear y gestionar durante 16 meses. La exclusion unilateral de Pedro de todas las herramientas del negocio evidencia que Oscar trato de apropiarse del control total de activos que habian sido gestionados conjuntamente. **[P-02, P-18]**\n\n### Para Capitulo XI: Actos Post-Ruptura del Demandado",
+      "resumen": "El 8 de enero de 2025, Oscar Maldonado declaro en nota de voz de WhatsApp que la firma del acuerdo de socios era una **\"mera formalidad\"**, lo que constituye un reconocimiento de que la sociedad ya existia de facto sin necesidad del documento escrito...",
+      "texto_completo": "**HECHO CUADRAGESIMSEPTIMO.** El 8 de enero de 2025, Oscar Maldonado declaro en nota de voz de WhatsApp que la firma del acuerdo de socios era una **\"mera formalidad\"**, lo que constituye un reconocimiento de que la sociedad ya existia de facto sin necesidad del documento escrito. Sus palabras textuales fueron: *\"yo siempre he visto el tema de la firma como una mera formalidad. O sea yo pensaba que ya todo ese tema estaba hablado\"* (PTT-20250108-WA0003). En un segundo audio del mismo dia, Oscar reitero: *\"para mi el afirme es mas como un formalismo, ¿no? Listo\"* y agrego una declaracion aun mas contundente sobre la naturaleza de la relacion: *\"yo necesitaria tener a alguien que tenga pertenencia, ¿si? No alguien contratado, sino alguien que sepa que eso es suyo tambien y que este pendiente de todo\"* (PTT-20250108-WA0012). Con esta ultima frase, Oscar reconocio TEXTUALMENTE que lo que buscaba en Pedro NO era un contratista, sino un socio con sentido de pertenencia y propiedad sobre el negocio. Adicionalmente, Oscar revelo que su plan a futuro dependia de Pedro como socio permanente: *\"mi plan es para que ya en 2026 yo comenzare el fellow. Entonces, ahi yo necesitaria tener a alguien... coordinando todo\"*. **[P-05, P-41]**",
       "fragmentos_clave": [
         {
           "cita": "me sacaron de la cuenta de paretomed@gmail.com",
@@ -1746,20 +1743,18 @@ const CASE_DATA = {
           "relevancia": "Oscar justifica el cierre de sesiones — la explicación revela que Pedro tenía acceso como co-gestor, no como usuario externo"
         }
       ],
-      "pruebas": [
-        "P-02"
-      ],
+      "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Remoción unilateral de accesos digitales",
-      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMO.</strong> Tras la aceptacion de la terminacion el 28 de agosto de 2025, Oscar procedio a <strong>remover unilateralmente los accesos</strong> de Pedro a las herramientas digitales del negocio. Oscar cerro las sesiones del correo institucional <a href=\"mailto:paretomed@gmail.com\">paretomed@gmail.com</a> (un antecedente de esto ocurrio el 1 de agosto de 2025, cuando Pedro reporto: <em>&quot;me sacaron de la cuenta de <a href=\"mailto:paretomed@gmail.com\">paretomed@gmail.com</a>&quot;</em> y Oscar alego: <em>&quot;Es que estaba revisando y vi muchos dispositivos y computadores con esa cuenta abierta y cerre varios. No fue mala intencion&quot;</em>) <strong>[P-02]</strong>. Tras la ruptura definitiva, Oscar removio a Pedro del correo institucional, de los grupos de WhatsApp del equipo de trabajo, y de las cuentas de redes sociales (Instagram, TikTok, YouTube) que Pedro habia ayudado a crear y gestionar durante 16 meses. La exclusion unilateral de Pedro de todas las herramientas del negocio evidencia que Oscar trato de apropiarse del control total de activos que habian sido gestionados conjuntamente. <strong>[P-02, P-18]</strong></p>\n<h3>Para Capitulo XI: Actos Post-Ruptura del Demandado</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMSEPTIMO.</strong> El 8 de enero de 2025, Oscar Maldonado declaro en nota de voz de WhatsApp que la firma del acuerdo de socios era una <strong>&quot;mera formalidad&quot;</strong>, lo que constituye un reconocimiento de que la sociedad ya existia de facto sin necesidad del documento escrito. Sus palabras textuales fueron: <em>&quot;yo siempre he visto el tema de la firma como una mera formalidad. O sea yo pensaba que ya todo ese tema estaba hablado&quot;</em> (PTT-20250108-WA0003). En un segundo audio del mismo dia, Oscar reitero: <em>&quot;para mi el afirme es mas como un formalismo, ¿no? Listo&quot;</em> y agrego una declaracion aun mas contundente sobre la naturaleza de la relacion: <em>&quot;yo necesitaria tener a alguien que tenga pertenencia, ¿si? No alguien contratado, sino alguien que sepa que eso es suyo tambien y que este pendiente de todo&quot;</em> (PTT-20250108-WA0012). Con esta ultima frase, Oscar reconocio TEXTUALMENTE que lo que buscaba en Pedro NO era un contratista, sino un socio con sentido de pertenencia y propiedad sobre el negocio. Adicionalmente, Oscar revelo que su plan a futuro dependia de Pedro como socio permanente: <em>&quot;mi plan es para que ya en 2026 yo comenzare el fellow. Entonces, ahi yo necesitaria tener a alguien... coordinando todo&quot;</em>. <strong>[P-05, P-41]</strong></p>\n"
     },
     "hecho-51": {
       "id": "hecho-51",
       "numero": 51,
-      "ordinal": "QUINCUAGESIMOPRIMERO",
+      "ordinal": "CUADRAGESIMOCTAVO",
       "capitulo": "cap-14",
-      "resumen": "ParetoMed continuo explotando despues de la ruptura la metodologia, estructura comercial, procesos de ventas y canales digitales que fueron construidos o sustancialmente mejorados por Pedro durante los 16 meses de operacion conjunta. Si bien Oscar gr...",
-      "texto_completo": "**HECHO QUINCUAGESIMOPRIMERO.** ParetoMed continuo explotando despues de la ruptura la metodologia, estructura comercial, procesos de ventas y canales digitales que fueron construidos o sustancialmente mejorados por Pedro durante los 16 meses de operacion conjunta. Si bien Oscar grabo nuevas videoclases con otro editor para reemplazar el material audiovisual de Pedro (aproximadamente desde octubre 2025), los elementos intangibles aportados por Pedro permanecieron en uso: (a) la estructura de \"programa\" con ciclos de 90 dias, simulacros pre y post estudio, y talleres dominicales (evolucion de los grupos de estudio semanales disenados por Pedro); (b) los procedimientos estandar de operacion (SOPs) creados por Pedro; (c) la cuenta de Instagram @Paretomed1 con 51.700 seguidores, cuyo crecimiento fue impulsado por la estrategia de contenido de Pedro; (d) los canales de TikTok y YouTube creados por Pedro; (e) los flujos de trabajo y automatizaciones de ventas estructurados durante la operacion conjunta. Estos activos intangibles forman parte del patrimonio de la sociedad de hecho y no pueden ser apropiados unilateralmente por Oscar. **[P-02, P-03, P-25, P-26, P-27]**\n\n### Para Capitulo V: Affectio Societatis (complemento - testigos)",
+      "resumen": "El 7 de agosto de 2025, se produjo un incidente contable que evidencia la conducta de Pedro como socio y no como contratista. Oscar informo a Pedro que en la liquidacion de julio habia omitido descontar los pagos de las colaboradoras Lina y Kendy, lo...",
+      "texto_completo": "**HECHO CUADRAGESIMOCTAVO.** El 7 de agosto de 2025, se produjo un incidente contable que evidencia la conducta de Pedro como socio y no como contratista. Oscar informo a Pedro que en la liquidacion de julio habia omitido descontar los pagos de las colaboradoras Lina y Kendy, lo que resulto en un excedente de $500.000 COP a favor de Pedro. Oscar: *\"en los egresos de julio no meti el pago de Lina ni Kendy. Fresco que vamos a dejar asi, yo cargo con eso\"*. Pedro, en lugar de aceptar el beneficio como lo haria un contratista que simplemente cobra lo que le pagan, mostro disposicion inmediata de asumir la perdida: *\"Yo puedo devolverte los 500 o dartelos como credito en algun servicio aparte que favorezca a Paretomed\"* y enfatizo: *\"es una empresa no una caridad y la responsabilidad de lo que se haga despues del error no cae solo en ti\"*. Finalmente, Pedro utilizo una expresion que sintetiza la relacion: **\"Somos un equipo papa\"**. La disposicion de Pedro de asumir perdidas y su referencia al negocio como responsabilidad compartida son conductas propias de un socio, no de un prestador de servicios que simplemente factura y cobra. **[P-02]**\n\n### Para Capitulo VI: Explotacion Conjunta del Negocio",
       "fragmentos_clave": [
         {
           "cita": "la estructura de 'programa' con ciclos de 90 dias, simulacros pre y post estudio, y talleres dominicales",
@@ -1778,18 +1773,20 @@ const CASE_DATA = {
           "relevancia": "Oscar reconoce autoría metodológica de Pedro en reunión documentada — P-34. Los simulacros son el diferenciador principal del programa que sigue generando ingresos"
         }
       ],
-      "pruebas": [],
+      "pruebas": [
+        "P-02"
+      ],
       "nota_abogado": null,
       "titulo_corto": "Explotación post-ruptura de activos compartidos",
-      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOPRIMERO.</strong> ParetoMed continuo explotando despues de la ruptura la metodologia, estructura comercial, procesos de ventas y canales digitales que fueron construidos o sustancialmente mejorados por Pedro durante los 16 meses de operacion conjunta. Si bien Oscar grabo nuevas videoclases con otro editor para reemplazar el material audiovisual de Pedro (aproximadamente desde octubre 2025), los elementos intangibles aportados por Pedro permanecieron en uso: (a) la estructura de &quot;programa&quot; con ciclos de 90 dias, simulacros pre y post estudio, y talleres dominicales (evolucion de los grupos de estudio semanales disenados por Pedro); (b) los procedimientos estandar de operacion (SOPs) creados por Pedro; (c) la cuenta de Instagram @Paretomed1 con 51.700 seguidores, cuyo crecimiento fue impulsado por la estrategia de contenido de Pedro; (d) los canales de TikTok y YouTube creados por Pedro; (e) los flujos de trabajo y automatizaciones de ventas estructurados durante la operacion conjunta. Estos activos intangibles forman parte del patrimonio de la sociedad de hecho y no pueden ser apropiados unilateralmente por Oscar. <strong>[P-02, P-03, P-25, P-26, P-27]</strong></p>\n<h3>Para Capitulo V: Affectio Societatis (complemento - testigos)</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMOCTAVO.</strong> El 7 de agosto de 2025, se produjo un incidente contable que evidencia la conducta de Pedro como socio y no como contratista. Oscar informo a Pedro que en la liquidacion de julio habia omitido descontar los pagos de las colaboradoras Lina y Kendy, lo que resulto en un excedente de $500.000 COP a favor de Pedro. Oscar: <em>&quot;en los egresos de julio no meti el pago de Lina ni Kendy. Fresco que vamos a dejar asi, yo cargo con eso&quot;</em>. Pedro, en lugar de aceptar el beneficio como lo haria un contratista que simplemente cobra lo que le pagan, mostro disposicion inmediata de asumir la perdida: <em>&quot;Yo puedo devolverte los 500 o dartelos como credito en algun servicio aparte que favorezca a Paretomed&quot;</em> y enfatizo: <em>&quot;es una empresa no una caridad y la responsabilidad de lo que se haga despues del error no cae solo en ti&quot;</em>. Finalmente, Pedro utilizo una expresion que sintetiza la relacion: <strong>&quot;Somos un equipo papa&quot;</strong>. La disposicion de Pedro de asumir perdidas y su referencia al negocio como responsabilidad compartida son conductas propias de un socio, no de un prestador de servicios que simplemente factura y cobra. <strong>[P-02]</strong></p>\n<h3>Para Capitulo VI: Explotacion Conjunta del Negocio</h3>\n"
     },
     "hecho-52": {
       "id": "hecho-52",
       "numero": 52,
-      "ordinal": "QUINCUAGESIMOSEGUNDO",
+      "ordinal": "CUADRAGESIMONOVENO",
       "capitulo": "cap-14",
-      "resumen": "La dinamica de sociedad entre Pedro y Oscar era presenciada habitualmente por terceros que pueden dar testimonio. Las reuniones de trabajo se realizaban en la oficina de Pedro, donde sus trabajadores Efrain (fotografo) y Paul (comunicador social) est...",
-      "texto_completo": "**HECHO QUINCUAGESIMOSEGUNDO.** La dinamica de sociedad entre Pedro y Oscar era presenciada habitualmente por terceros que pueden dar testimonio. Las reuniones de trabajo se realizaban en la oficina de Pedro, donde sus trabajadores Efrain (fotografo) y Paul (comunicador social) estaban presentes y podian escuchar las discusiones estrategicas, la toma de decisiones conjunta y el trato entre socios. Adicionalmente, la asesora de ventas Adriana interactuaba con ambos en el grupo de WhatsApp del equipo como co-directores del negocio, recibiendo instrucciones tanto de Oscar como de Pedro y consultando a ambos para decisiones comerciales: *\"uds me diran como la ven\"* (21/03/2025), refiriendose a Pedro y Oscar indistintamente como decisores. Estos testigos pueden acreditar la explotacion conjunta del negocio y el trato de socios entre las partes. **[P-02, P-03, P-39]**\n\n---",
+      "resumen": "Pedro participaba activamente en la **co-determinacion de los precios** del programa ParetoMed, funcion estrategica reservada a socios o directivos. Se acreditan al menos tres instancias documentadas: (a) el 21 de marzo de 2025, Pedro propuso una est...",
+      "texto_completo": "**HECHO CUADRAGESIMONOVENO.** Pedro participaba activamente en la **co-determinacion de los precios** del programa ParetoMed, funcion estrategica reservada a socios o directivos. Se acreditan al menos tres instancias documentadas: (a) el 21 de marzo de 2025, Pedro propuso una estructura de precios en el grupo de equipo y la asesora de ventas Adriana respondio: *\"Me gusta tu idea... tu idea esta genial\"*, esperando confirmacion de ambos: *\"uds me diran como la ven\"* (refiriendose a Pedro y Oscar como co-decisores) **[P-03]**; (b) el 17 de julio de 2025, tras una negociacion directa entre Pedro y Oscar sobre el valor del programa de 6 meses, Oscar concluyo: *\"Entonces dejalo en 2,850,000\"* y Pedro procedio a implementar: *\"Ok... ya te organizo algo rapido y lo explico\"* **[P-02]**; (c) en audio del 28 de julio de 2025, ambos negociaron la reduccion de cuotas de $850.000 a *\"650, 7 algo\"* como estrategia conjunta **[P-05]**. Un contratista de marketing no define los precios del producto de su cliente; un socio comercial si lo hace. **[P-02, P-03, P-05, P-40]**\n\n### Para Capitulo IX: Ruptura de la Relacion",
       "fragmentos_clave": [
         {
           "cita": "uds me diran como la ven",
@@ -1800,18 +1797,22 @@ const CASE_DATA = {
           "relevancia": "Terceros trataban a ambos como co-directores del negocio — P-03. La percepción externa refuerza la existencia de sociedad de hecho ante cualquier observador razonable"
         }
       ],
-      "pruebas": [],
+      "pruebas": [
+        "P-03",
+        "P-02",
+        "P-05"
+      ],
       "nota_abogado": null,
       "titulo_corto": "Testigos de la dinámica societaria",
-      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOSEGUNDO.</strong> La dinamica de sociedad entre Pedro y Oscar era presenciada habitualmente por terceros que pueden dar testimonio. Las reuniones de trabajo se realizaban en la oficina de Pedro, donde sus trabajadores Efrain (fotografo) y Paul (comunicador social) estaban presentes y podian escuchar las discusiones estrategicas, la toma de decisiones conjunta y el trato entre socios. Adicionalmente, la asesora de ventas Adriana interactuaba con ambos en el grupo de WhatsApp del equipo como co-directores del negocio, recibiendo instrucciones tanto de Oscar como de Pedro y consultando a ambos para decisiones comerciales: <em>&quot;uds me diran como la ven&quot;</em> (21/03/2025), refiriendose a Pedro y Oscar indistintamente como decisores. Estos testigos pueden acreditar la explotacion conjunta del negocio y el trato de socios entre las partes. <strong>[P-02, P-03, P-39]</strong></p>\n<hr>\n"
+      "texto_completo_html": "<p><strong>HECHO CUADRAGESIMONOVENO.</strong> Pedro participaba activamente en la <strong>co-determinacion de los precios</strong> del programa ParetoMed, funcion estrategica reservada a socios o directivos. Se acreditan al menos tres instancias documentadas: (a) el 21 de marzo de 2025, Pedro propuso una estructura de precios en el grupo de equipo y la asesora de ventas Adriana respondio: <em>&quot;Me gusta tu idea... tu idea esta genial&quot;</em>, esperando confirmacion de ambos: <em>&quot;uds me diran como la ven&quot;</em> (refiriendose a Pedro y Oscar como co-decisores) <strong>[P-03]</strong>; (b) el 17 de julio de 2025, tras una negociacion directa entre Pedro y Oscar sobre el valor del programa de 6 meses, Oscar concluyo: <em>&quot;Entonces dejalo en 2,850,000&quot;</em> y Pedro procedio a implementar: <em>&quot;Ok... ya te organizo algo rapido y lo explico&quot;</em> <strong>[P-02]</strong>; (c) en audio del 28 de julio de 2025, ambos negociaron la reduccion de cuotas de $850.000 a <em>&quot;650, 7 algo&quot;</em> como estrategia conjunta <strong>[P-05]</strong>. Un contratista de marketing no define los precios del producto de su cliente; un socio comercial si lo hace. <strong>[P-02, P-03, P-05, P-40]</strong></p>\n<h3>Para Capitulo IX: Ruptura de la Relacion</h3>\n"
     },
     "hecho-53": {
       "id": "hecho-53",
       "numero": 53,
-      "ordinal": "QUINCUAGESIMOTERCERO",
-      "capitulo": "cap-15",
-      "resumen": "Entre febrero de 2024 y septiembre de 2025, se documentaron **376 comprobantes de pago** de estudiantes del programa ParetoMed, correspondientes a transacciones procesadas a traves de las plataformas Bold (190 pagos, $331.646.650), Bancolombia (106 p...",
-      "texto_completo": "**HECHO QUINCUAGESIMOTERCERO.** Entre febrero de 2024 y septiembre de 2025, se documentaron **376 comprobantes de pago** de estudiantes del programa ParetoMed, correspondientes a transacciones procesadas a traves de las plataformas Bold (190 pagos, $331.646.650), Bancolombia (106 pagos, $134.101.446), PSE-Wompi (27 pagos, $44.909.150), Boton Bancolombia (8 pagos, $16.535.000), BBVA (8 pagos, $11.205.000), Scotiabank (3 pagos, $6.732.000) y otras plataformas no identificadas (30 pagos, $34.088.250). El **total de ingresos brutos documentados** asciende a **$579.217.496 COP**, con 372 de 376 pagos con monto valido (99%) y 371 de 376 con confianza alta o media en la extraccion de datos (98.7%). El promedio por pago fue de $1.557.036 COP. Estos comprobantes obran como prueba [P-42] en formato Excel y CSV con detalle de fecha, monto, plataforma y referencia de cada transaccion. **[P-42]**\n\n### B. Analisis de consistencia: comprobantes vs. transferencias a Pedro",
+      "ordinal": "QUINCUAGESIMO",
+      "capitulo": "cap-14",
+      "resumen": "Tras la aceptacion de la terminacion el 28 de agosto de 2025, Oscar procedio a **remover unilateralmente los accesos** de Pedro a las herramientas digitales del negocio. Oscar cerro las sesiones del correo institucional paretomed@gmail.com (un antece...",
+      "texto_completo": "**HECHO QUINCUAGESIMO.** Tras la aceptacion de la terminacion el 28 de agosto de 2025, Oscar procedio a **remover unilateralmente los accesos** de Pedro a las herramientas digitales del negocio. Oscar cerro las sesiones del correo institucional paretomed@gmail.com (un antecedente de esto ocurrio el 1 de agosto de 2025, cuando Pedro reporto: *\"me sacaron de la cuenta de paretomed@gmail.com\"* y Oscar alego: *\"Es que estaba revisando y vi muchos dispositivos y computadores con esa cuenta abierta y cerre varios. No fue mala intencion\"*) **[P-02]**. Tras la ruptura definitiva, Oscar removio a Pedro del correo institucional, de los grupos de WhatsApp del equipo de trabajo, y de las cuentas de redes sociales (Instagram, TikTok, YouTube) que Pedro habia ayudado a crear y gestionar durante 16 meses. La exclusion unilateral de Pedro de todas las herramientas del negocio evidencia que Oscar trato de apropiarse del control total de activos que habian sido gestionados conjuntamente. **[P-02, P-18]**\n\n### Para Capitulo XI: Actos Post-Ruptura del Demandado",
       "fragmentos_clave": [
         {
           "cita": "376 comprobantes de pago de estudiantes del programa ParetoMed, correspondientes a transacciones procesadas a traves de las plataformas Bold (190 pagos, $331.646.650), Bancolombia (106 pagos, $134.101.446)",
@@ -1831,19 +1832,19 @@ const CASE_DATA = {
         }
       ],
       "pruebas": [
-        "P-42"
+        "P-02"
       ],
       "nota_abogado": null,
       "titulo_corto": "376 comprobantes — $579M en ingresos documentados",
-      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOTERCERO.</strong> Entre febrero de 2024 y septiembre de 2025, se documentaron <strong>376 comprobantes de pago</strong> de estudiantes del programa ParetoMed, correspondientes a transacciones procesadas a traves de las plataformas Bold (190 pagos, $331.646.650), Bancolombia (106 pagos, $134.101.446), PSE-Wompi (27 pagos, $44.909.150), Boton Bancolombia (8 pagos, $16.535.000), BBVA (8 pagos, $11.205.000), Scotiabank (3 pagos, $6.732.000) y otras plataformas no identificadas (30 pagos, $34.088.250). El <strong>total de ingresos brutos documentados</strong> asciende a <strong>$579.217.496 COP</strong>, con 372 de 376 pagos con monto valido (99%) y 371 de 376 con confianza alta o media en la extraccion de datos (98.7%). El promedio por pago fue de $1.557.036 COP. Estos comprobantes obran como prueba [P-42] en formato Excel y CSV con detalle de fecha, monto, plataforma y referencia de cada transaccion. <strong>[P-42]</strong></p>\n<h3>B. Analisis de consistencia: comprobantes vs. transferencias a Pedro</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMO.</strong> Tras la aceptacion de la terminacion el 28 de agosto de 2025, Oscar procedio a <strong>remover unilateralmente los accesos</strong> de Pedro a las herramientas digitales del negocio. Oscar cerro las sesiones del correo institucional <a href=\"mailto:paretomed@gmail.com\">paretomed@gmail.com</a> (un antecedente de esto ocurrio el 1 de agosto de 2025, cuando Pedro reporto: <em>&quot;me sacaron de la cuenta de <a href=\"mailto:paretomed@gmail.com\">paretomed@gmail.com</a>&quot;</em> y Oscar alego: <em>&quot;Es que estaba revisando y vi muchos dispositivos y computadores con esa cuenta abierta y cerre varios. No fue mala intencion&quot;</em>) <strong>[P-02]</strong>. Tras la ruptura definitiva, Oscar removio a Pedro del correo institucional, de los grupos de WhatsApp del equipo de trabajo, y de las cuentas de redes sociales (Instagram, TikTok, YouTube) que Pedro habia ayudado a crear y gestionar durante 16 meses. La exclusion unilateral de Pedro de todas las herramientas del negocio evidencia que Oscar trato de apropiarse del control total de activos que habian sido gestionados conjuntamente. <strong>[P-02, P-18]</strong></p>\n<h3>Para Capitulo XI: Actos Post-Ruptura del Demandado</h3>\n"
     },
     "hecho-54": {
       "id": "hecho-54",
       "numero": 54,
-      "ordinal": "QUINCUAGESIMOCUARTO",
-      "capitulo": "cap-15",
-      "resumen": "El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: Pedro recibio $99.419.834 COP (excluyendo $100.000 de consultoria Coventus), lo que equivale al **19.52%** de los $509.900.000 ...",
-      "texto_completo": "**HECHO QUINCUAGESIMOCUARTO.** El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: Pedro recibio $99.419.834 COP (excluyendo $100.000 de consultoria Coventus), lo que equivale al **19.52%** de los $509.900.000 documentados en comprobantes para el periodo comparable (abril 2024 - agosto 2025). Ese porcentaje es virtualmente identico al 20% pactado. Sin embargo, un margen de costos de apenas 2.4% seria absurdo para cualquier negocio, lo que demuestra que los 376 comprobantes son una **muestra parcial** de los ingresos totales — Adriana (asesora de ventas) tenia instruccion de enviar comprobantes a Pedro pero no los envio todos. **[P-42, P-36, P-37]**\n\n### C. Proyeccion de ingresos reales del negocio",
+      "ordinal": "QUINCUAGESIMOPRIMERO",
+      "capitulo": "cap-14",
+      "resumen": "ParetoMed continuo explotando despues de la ruptura la metodologia, estructura comercial, procesos de ventas y canales digitales que fueron construidos o sustancialmente mejorados por Pedro durante los 16 meses de operacion conjunta. Si bien Oscar gr...",
+      "texto_completo": "**HECHO QUINCUAGESIMOPRIMERO.** ParetoMed continuo explotando despues de la ruptura la metodologia, estructura comercial, procesos de ventas y canales digitales que fueron construidos o sustancialmente mejorados por Pedro durante los 16 meses de operacion conjunta. Si bien Oscar grabo nuevas videoclases con otro editor para reemplazar el material audiovisual de Pedro (aproximadamente desde octubre 2025), los elementos intangibles aportados por Pedro permanecieron en uso: (a) la estructura de \"programa\" con ciclos de 90 dias, simulacros pre y post estudio, y talleres dominicales (evolucion de los grupos de estudio semanales disenados por Pedro); (b) los procedimientos estandar de operacion (SOPs) creados por Pedro; (c) la cuenta de Instagram @Paretomed1 con 51.700 seguidores, cuyo crecimiento fue impulsado por la estrategia de contenido de Pedro; (d) los canales de TikTok y YouTube creados por Pedro; (e) los flujos de trabajo y automatizaciones de ventas estructurados durante la operacion conjunta. Estos activos intangibles forman parte del patrimonio de la sociedad de hecho y no pueden ser apropiados unilateralmente por Oscar. **[P-02, P-03, P-25, P-26, P-27]**\n\n### Para Capitulo V: Affectio Societatis (complemento - testigos)",
       "fragmentos_clave": [
         {
           "cita": "Pedro recibio $99.419.834 COP (excluyendo $100.000 de consultoria Coventus), lo que equivale al 19.52% de los $509.900.000 documentados en comprobantes para el periodo comparable",
@@ -1865,15 +1866,15 @@ const CASE_DATA = {
       "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Consistencia estadística: 19.52% ≈ 20% pactado",
-      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOCUARTO.</strong> El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: Pedro recibio $99.419.834 COP (excluyendo $100.000 de consultoria Coventus), lo que equivale al <strong>19.52%</strong> de los $509.900.000 documentados en comprobantes para el periodo comparable (abril 2024 - agosto 2025). Ese porcentaje es virtualmente identico al 20% pactado. Sin embargo, un margen de costos de apenas 2.4% seria absurdo para cualquier negocio, lo que demuestra que los 376 comprobantes son una <strong>muestra parcial</strong> de los ingresos totales — Adriana (asesora de ventas) tenia instruccion de enviar comprobantes a Pedro pero no los envio todos. <strong>[P-42, P-36, P-37]</strong></p>\n<h3>C. Proyeccion de ingresos reales del negocio</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOPRIMERO.</strong> ParetoMed continuo explotando despues de la ruptura la metodologia, estructura comercial, procesos de ventas y canales digitales que fueron construidos o sustancialmente mejorados por Pedro durante los 16 meses de operacion conjunta. Si bien Oscar grabo nuevas videoclases con otro editor para reemplazar el material audiovisual de Pedro (aproximadamente desde octubre 2025), los elementos intangibles aportados por Pedro permanecieron en uso: (a) la estructura de &quot;programa&quot; con ciclos de 90 dias, simulacros pre y post estudio, y talleres dominicales (evolucion de los grupos de estudio semanales disenados por Pedro); (b) los procedimientos estandar de operacion (SOPs) creados por Pedro; (c) la cuenta de Instagram @Paretomed1 con 51.700 seguidores, cuyo crecimiento fue impulsado por la estrategia de contenido de Pedro; (d) los canales de TikTok y YouTube creados por Pedro; (e) los flujos de trabajo y automatizaciones de ventas estructurados durante la operacion conjunta. Estos activos intangibles forman parte del patrimonio de la sociedad de hecho y no pueden ser apropiados unilateralmente por Oscar. <strong>[P-02, P-03, P-25, P-26, P-27]</strong></p>\n<h3>Para Capitulo V: Affectio Societatis (complemento - testigos)</h3>\n"
     },
     "hecho-55": {
       "id": "hecho-55",
       "numero": 55,
-      "ordinal": "QUINCUAGESIMOQUINTO",
-      "capitulo": "cap-15",
-      "resumen": "Si Pedro recibio $99.419.834 COP como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reales del negocio se estiman en aproximadamente **...",
-      "texto_completo": "**HECHO QUINCUAGESIMOQUINTO.** Si Pedro recibio $99.419.834 COP como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reales del negocio se estiman en aproximadamente **$765.000.000 COP** ($99.419.834 / 0.20 / 0.65). Los comprobantes documentados ($579.217.496) capturan aproximadamente el 75% de esos ingresos. La diferencia de ~$186.000.000 corresponde a pagos de estudiantes cuyos comprobantes no fueron enviados por Adriana, recuperacion de cartera, cuotas en mora pagadas posteriormente y ventas no reportadas por la asesora. Esta proyeccion es consistente con los KPIs de Oscar para 2025, que reportaban ventas totales de entre $46M y $97M mensuales. **[P-42, P-02, P-13]**\n\n### D. Negativa de Oscar a rendir cuentas y exhibir su contabilidad personal",
+      "ordinal": "QUINCUAGESIMOSEGUNDO",
+      "capitulo": "cap-14",
+      "resumen": "La dinamica de sociedad entre Pedro y Oscar era presenciada habitualmente por terceros que pueden dar testimonio. Las reuniones de trabajo se realizaban en la oficina de Pedro, donde sus trabajadores Efrain (fotografo) y Paul (comunicador social) est...",
+      "texto_completo": "**HECHO QUINCUAGESIMOSEGUNDO.** La dinamica de sociedad entre Pedro y Oscar era presenciada habitualmente por terceros que pueden dar testimonio. Las reuniones de trabajo se realizaban en la oficina de Pedro, donde sus trabajadores Efrain (fotografo) y Paul (comunicador social) estaban presentes y podian escuchar las discusiones estrategicas, la toma de decisiones conjunta y el trato entre socios. Adicionalmente, la asesora de ventas Adriana interactuaba con ambos en el grupo de WhatsApp del equipo como co-directores del negocio, recibiendo instrucciones tanto de Oscar como de Pedro y consultando a ambos para decisiones comerciales: *\"uds me diran como la ven\"* (21/03/2025), refiriendose a Pedro y Oscar indistintamente como decisores. Estos testigos pueden acreditar la explotacion conjunta del negocio y el trato de socios entre las partes. **[P-02, P-03, P-39]**\n\n---",
       "fragmentos_clave": [
         {
           "cita": "Si Pedro recibio $99.419.834 COP como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reales del negocio se estiman en aproximadamente $765.000.000 COP",
@@ -1895,15 +1896,15 @@ const CASE_DATA = {
       "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Proyección de ingresos reales — $765M estimados",
-      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOQUINTO.</strong> Si Pedro recibio $99.419.834 COP como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reales del negocio se estiman en aproximadamente <strong>$765.000.000 COP</strong> ($99.419.834 / 0.20 / 0.65). Los comprobantes documentados ($579.217.496) capturan aproximadamente el 75% de esos ingresos. La diferencia de ~$186.000.000 corresponde a pagos de estudiantes cuyos comprobantes no fueron enviados por Adriana, recuperacion de cartera, cuotas en mora pagadas posteriormente y ventas no reportadas por la asesora. Esta proyeccion es consistente con los KPIs de Oscar para 2025, que reportaban ventas totales de entre $46M y $97M mensuales. <strong>[P-42, P-02, P-13]</strong></p>\n<h3>D. Negativa de Oscar a rendir cuentas y exhibir su contabilidad personal</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOSEGUNDO.</strong> La dinamica de sociedad entre Pedro y Oscar era presenciada habitualmente por terceros que pueden dar testimonio. Las reuniones de trabajo se realizaban en la oficina de Pedro, donde sus trabajadores Efrain (fotografo) y Paul (comunicador social) estaban presentes y podian escuchar las discusiones estrategicas, la toma de decisiones conjunta y el trato entre socios. Adicionalmente, la asesora de ventas Adriana interactuaba con ambos en el grupo de WhatsApp del equipo como co-directores del negocio, recibiendo instrucciones tanto de Oscar como de Pedro y consultando a ambos para decisiones comerciales: <em>&quot;uds me diran como la ven&quot;</em> (21/03/2025), refiriendose a Pedro y Oscar indistintamente como decisores. Estos testigos pueden acreditar la explotacion conjunta del negocio y el trato de socios entre las partes. <strong>[P-02, P-03, P-39]</strong></p>\n<hr>\n"
     },
     "hecho-56": {
       "id": "hecho-56",
       "numero": 56,
-      "ordinal": "QUINCUAGESIMOSEXTO",
+      "ordinal": "QUINCUAGESIMOTERCERO",
       "capitulo": "cap-15",
-      "resumen": "El 28 de febrero de 2025, Oscar revelo en el chat de WhatsApp la existencia de una **hoja de calculo personal** con la contabilidad detallada del negocio, distinta de los consolidados que compartia con Pedro: *\"yo me guio de la hoja de calculo person...",
-      "texto_completo": "**HECHO QUINCUAGESIMOSEXTO.** El 28 de febrero de 2025, Oscar revelo en el chat de WhatsApp la existencia de una **hoja de calculo personal** con la contabilidad detallada del negocio, distinta de los consolidados que compartia con Pedro: *\"yo me guio de la hoja de calculo personal mia\"*. Pedro solicito acceso a esta hoja de calculo y Oscar se nego. El 5 de agosto de 2025, cuando Pedro pidio el ultimo consolidado, Oscar respondio con hostilidad: *\"Joda, no tengo porque hacerlo y me ofende que me lo pidas\"*, lo que constituye una negativa expresa a rendir cuentas a su socio. Esta negativa es contraria al deber de informacion entre socios (articulo 504 del Codigo de Comercio) y genera un indicio grave de que la contabilidad interna de Oscar podria revelar ingresos superiores a los reportados en los consolidados compartidos con Pedro. La existencia de esta hoja de calculo debe ser objeto de exhibicion de documentos (articulo 265 CGP) en el proceso. **[P-02, P-13]**\n\n### E. Diferencia entre facturacion de servicios (Avanz) y participacion societaria (ParetoMed)",
+      "resumen": "Entre febrero de 2024 y septiembre de 2025, se documentaron **376 comprobantes de pago** de estudiantes del programa ParetoMed, correspondientes a transacciones procesadas a traves de las plataformas Bold (190 pagos, $331.646.650), Bancolombia (106 p...",
+      "texto_completo": "**HECHO QUINCUAGESIMOTERCERO.** Entre febrero de 2024 y septiembre de 2025, se documentaron **376 comprobantes de pago** de estudiantes del programa ParetoMed, correspondientes a transacciones procesadas a traves de las plataformas Bold (190 pagos, $331.646.650), Bancolombia (106 pagos, $134.101.446), PSE-Wompi (27 pagos, $44.909.150), Boton Bancolombia (8 pagos, $16.535.000), BBVA (8 pagos, $11.205.000), Scotiabank (3 pagos, $6.732.000) y otras plataformas no identificadas (30 pagos, $34.088.250). El **total de ingresos brutos documentados** asciende a **$579.217.496 COP**, con 372 de 376 pagos con monto valido (99%) y 371 de 376 con confianza alta o media en la extraccion de datos (98.7%). El promedio por pago fue de $1.557.036 COP. Estos comprobantes obran como prueba [P-42] en formato Excel y CSV con detalle de fecha, monto, plataforma y referencia de cada transaccion. **[P-42]**\n\n### B. Analisis de consistencia: comprobantes vs. transferencias a Pedro",
       "fragmentos_clave": [
         {
           "cita": "yo me guio de la hoja de calculo personal mia",
@@ -1922,18 +1923,20 @@ const CASE_DATA = {
           "relevancia": "Oscar se niega expresamente a rendir cuentas — P-48. Esta negativa viola el deber de información entre socios (art. 504 C. de Co.) y genera indicio grave de contabilidad oculta"
         }
       ],
-      "pruebas": [],
+      "pruebas": [
+        "P-42"
+      ],
       "nota_abogado": null,
       "titulo_corto": "Oscar oculta contabilidad y se niega a rendir cuentas",
-      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOSEXTO.</strong> El 28 de febrero de 2025, Oscar revelo en el chat de WhatsApp la existencia de una <strong>hoja de calculo personal</strong> con la contabilidad detallada del negocio, distinta de los consolidados que compartia con Pedro: <em>&quot;yo me guio de la hoja de calculo personal mia&quot;</em>. Pedro solicito acceso a esta hoja de calculo y Oscar se nego. El 5 de agosto de 2025, cuando Pedro pidio el ultimo consolidado, Oscar respondio con hostilidad: <em>&quot;Joda, no tengo porque hacerlo y me ofende que me lo pidas&quot;</em>, lo que constituye una negativa expresa a rendir cuentas a su socio. Esta negativa es contraria al deber de informacion entre socios (articulo 504 del Codigo de Comercio) y genera un indicio grave de que la contabilidad interna de Oscar podria revelar ingresos superiores a los reportados en los consolidados compartidos con Pedro. La existencia de esta hoja de calculo debe ser objeto de exhibicion de documentos (articulo 265 CGP) en el proceso. <strong>[P-02, P-13]</strong></p>\n<h3>E. Diferencia entre facturacion de servicios (Avanz) y participacion societaria (ParetoMed)</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOTERCERO.</strong> Entre febrero de 2024 y septiembre de 2025, se documentaron <strong>376 comprobantes de pago</strong> de estudiantes del programa ParetoMed, correspondientes a transacciones procesadas a traves de las plataformas Bold (190 pagos, $331.646.650), Bancolombia (106 pagos, $134.101.446), PSE-Wompi (27 pagos, $44.909.150), Boton Bancolombia (8 pagos, $16.535.000), BBVA (8 pagos, $11.205.000), Scotiabank (3 pagos, $6.732.000) y otras plataformas no identificadas (30 pagos, $34.088.250). El <strong>total de ingresos brutos documentados</strong> asciende a <strong>$579.217.496 COP</strong>, con 372 de 376 pagos con monto valido (99%) y 371 de 376 con confianza alta o media en la extraccion de datos (98.7%). El promedio por pago fue de $1.557.036 COP. Estos comprobantes obran como prueba [P-42] en formato Excel y CSV con detalle de fecha, monto, plataforma y referencia de cada transaccion. <strong>[P-42]</strong></p>\n<h3>B. Analisis de consistencia: comprobantes vs. transferencias a Pedro</h3>\n"
     },
     "hecho-57": {
       "id": "hecho-57",
       "numero": 57,
-      "ordinal": "QUINCUAGESIMOSEPTIMO",
+      "ordinal": "QUINCUAGESIMOCUARTO",
       "capitulo": "cap-15",
-      "resumen": "La comparacion entre la facturacion de Pedro a AVANZ FINANZAS & SEGUROS LTDA (NIT 901286973-7) y la facturacion a Oscar/ParetoMed demuestra que Pedro distinguia perfectamente entre una relacion de prestacion de servicios y una relacion societaria. Co...",
-      "texto_completo": "**HECHO QUINCUAGESIMOSEPTIMO.** La comparacion entre la facturacion de Pedro a AVANZ FINANZAS & SEGUROS LTDA (NIT 901286973-7) y la facturacion a Oscar/ParetoMed demuestra que Pedro distinguia perfectamente entre una relacion de prestacion de servicios y una relacion societaria. Con Avanz, Pedro facturaba con concepto especifico de *\"Creacion de contenido / guiones comerciales, produccion y edicion de videos publicitarios para redes sociales\"*, a tarifa fija por entregable ($1.680.672 + adicionales), con cesion de derechos de autor implicita. Con Oscar/ParetoMed, la facturacion era radicalmente distinta: concepto generico de *\"COMISION\"* o *\"Gestion de redes y campanas\"*, monto variable calculado sobre el 20% de utilidades netas (sin entregables especificos facturados), y el **75% de los pagos ($74.900.000) se hicieron SIN factura ni cuenta de cobro**. Si la relacion con ParetoMed fuera una simple prestacion de servicios de contenido, Pedro habria facturado exactamente igual que con Avanz — tarifa fija, concepto de creacion de contenido, con cesion de derechos. No lo hizo porque NO era eso: era participacion de socio industrial en utilidades. **[P-42, FE1 a FE15 (facturas a Avanz), FE3, FE4, FE5, P-12]**\n\n### F. Utilidades post-ruptura documentadas con KPIs del demandado",
+      "resumen": "El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: Pedro recibio $99.419.834 COP (excluyendo $100.000 de consultoria Coventus), lo que equivale al **19.52%** de los $509.900.000 ...",
+      "texto_completo": "**HECHO QUINCUAGESIMOCUARTO.** El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: Pedro recibio $99.419.834 COP (excluyendo $100.000 de consultoria Coventus), lo que equivale al **19.52%** de los $509.900.000 documentados en comprobantes para el periodo comparable (abril 2024 - agosto 2025). Ese porcentaje es virtualmente identico al 20% pactado. Sin embargo, un margen de costos de apenas 2.4% seria absurdo para cualquier negocio, lo que demuestra que los 376 comprobantes son una **muestra parcial** de los ingresos totales — Adriana (asesora de ventas) tenia instruccion de enviar comprobantes a Pedro pero no los envio todos. **[P-42, P-36, P-37]**\n\n### C. Proyeccion de ingresos reales del negocio",
       "fragmentos_clave": [
         {
           "cita": "con Avanz, Pedro facturaba con concepto especifico de 'Creacion de contenido / guiones comerciales, produccion y edicion de videos publicitarios para redes sociales', a tarifa fija por entregable ($1.680.672 + adicionales)",
@@ -1955,15 +1958,15 @@ const CASE_DATA = {
       "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Facturación Avanz vs ParetoMed — dos modelos distintos",
-      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOSEPTIMO.</strong> La comparacion entre la facturacion de Pedro a AVANZ FINANZAS &amp; SEGUROS LTDA (NIT 901286973-7) y la facturacion a Oscar/ParetoMed demuestra que Pedro distinguia perfectamente entre una relacion de prestacion de servicios y una relacion societaria. Con Avanz, Pedro facturaba con concepto especifico de <em>&quot;Creacion de contenido / guiones comerciales, produccion y edicion de videos publicitarios para redes sociales&quot;</em>, a tarifa fija por entregable ($1.680.672 + adicionales), con cesion de derechos de autor implicita. Con Oscar/ParetoMed, la facturacion era radicalmente distinta: concepto generico de <em>&quot;COMISION&quot;</em> o <em>&quot;Gestion de redes y campanas&quot;</em>, monto variable calculado sobre el 20% de utilidades netas (sin entregables especificos facturados), y el <strong>75% de los pagos ($74.900.000) se hicieron SIN factura ni cuenta de cobro</strong>. Si la relacion con ParetoMed fuera una simple prestacion de servicios de contenido, Pedro habria facturado exactamente igual que con Avanz — tarifa fija, concepto de creacion de contenido, con cesion de derechos. No lo hizo porque NO era eso: era participacion de socio industrial en utilidades. <strong>[P-42, FE1 a FE15 (facturas a Avanz), FE3, FE4, FE5, P-12]</strong></p>\n<h3>F. Utilidades post-ruptura documentadas con KPIs del demandado</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOCUARTO.</strong> El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: Pedro recibio $99.419.834 COP (excluyendo $100.000 de consultoria Coventus), lo que equivale al <strong>19.52%</strong> de los $509.900.000 documentados en comprobantes para el periodo comparable (abril 2024 - agosto 2025). Ese porcentaje es virtualmente identico al 20% pactado. Sin embargo, un margen de costos de apenas 2.4% seria absurdo para cualquier negocio, lo que demuestra que los 376 comprobantes son una <strong>muestra parcial</strong> de los ingresos totales — Adriana (asesora de ventas) tenia instruccion de enviar comprobantes a Pedro pero no los envio todos. <strong>[P-42, P-36, P-37]</strong></p>\n<h3>C. Proyeccion de ingresos reales del negocio</h3>\n"
     },
     "hecho-58": {
       "id": "hecho-58",
       "numero": 58,
-      "ordinal": "QUINCUAGESIMOCTAVO",
+      "ordinal": "QUINCUAGESIMOQUINTO",
       "capitulo": "cap-15",
-      "resumen": "Los KPIs de ventas de ParetoMed para 2025, contenidos en la hoja de calculo \"Copia de KPIS 2025.xlsx\" (archivo del demandado en poder del demandante), documentan que Oscar continuo explotando el negocio despues de la ruptura con los siguientes ingres...",
-      "texto_completo": "**HECHO QUINCUAGESIMOCTAVO.** Los KPIs de ventas de ParetoMed para 2025, contenidos en la hoja de calculo \"Copia de KPIS 2025.xlsx\" (archivo del demandado en poder del demandante), documentan que Oscar continuo explotando el negocio despues de la ruptura con los siguientes ingresos: agosto 2025: $52.790.000; septiembre 2025: $52.640.800; octubre 2025: $64.057.500. Total periodo post-ruptura: **$169.488.300 COP**. Aplicando el margen de ganancia del 65% documentado en los consolidados de Oscar y la participacion del 20% pactada, las utilidades adeudadas a Pedro por este periodo ascienden a **$22.033.479 COP**. El negocio continuo operando hasta al menos diciembre 2025 (noviembre: $84.102.500; diciembre: $46.050.000), periodo cuyas utilidades tambien podrian ser reclamables. La ultima transferencia de Oscar a Pedro ($7.450.000 del 05/08/2025) cubria el mes de julio 2025, por lo que agosto en adelante se adeuda integramente. **[P-43, P-02]**\n\n---",
+      "resumen": "Si Pedro recibio $99.419.834 COP como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reales del negocio se estiman en aproximadamente **...",
+      "texto_completo": "**HECHO QUINCUAGESIMOQUINTO.** Si Pedro recibio $99.419.834 COP como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reales del negocio se estiman en aproximadamente **$765.000.000 COP** ($99.419.834 / 0.20 / 0.65). Los comprobantes documentados ($579.217.496) capturan aproximadamente el 75% de esos ingresos. La diferencia de ~$186.000.000 corresponde a pagos de estudiantes cuyos comprobantes no fueron enviados por Adriana, recuperacion de cartera, cuotas en mora pagadas posteriormente y ventas no reportadas por la asesora. Esta proyeccion es consistente con los KPIs de Oscar para 2025, que reportaban ventas totales de entre $46M y $97M mensuales. **[P-42, P-02, P-13]**\n\n### D. Negativa de Oscar a rendir cuentas y exhibir su contabilidad personal",
       "fragmentos_clave": [
         {
           "cita": "agosto 2025: $52.790.000; septiembre 2025: $52.640.800; octubre 2025: $64.057.500. Total periodo post-ruptura: $169.488.300 COP",
@@ -1985,15 +1988,15 @@ const CASE_DATA = {
       "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "KPIs post-ruptura — $169M en ventas sin pagar a Pedro",
-      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOCTAVO.</strong> Los KPIs de ventas de ParetoMed para 2025, contenidos en la hoja de calculo &quot;Copia de KPIS 2025.xlsx&quot; (archivo del demandado en poder del demandante), documentan que Oscar continuo explotando el negocio despues de la ruptura con los siguientes ingresos: agosto 2025: $52.790.000; septiembre 2025: $52.640.800; octubre 2025: $64.057.500. Total periodo post-ruptura: <strong>$169.488.300 COP</strong>. Aplicando el margen de ganancia del 65% documentado en los consolidados de Oscar y la participacion del 20% pactada, las utilidades adeudadas a Pedro por este periodo ascienden a <strong>$22.033.479 COP</strong>. El negocio continuo operando hasta al menos diciembre 2025 (noviembre: $84.102.500; diciembre: $46.050.000), periodo cuyas utilidades tambien podrian ser reclamables. La ultima transferencia de Oscar a Pedro ($7.450.000 del 05/08/2025) cubria el mes de julio 2025, por lo que agosto en adelante se adeuda integramente. <strong>[P-43, P-02]</strong></p>\n<hr>\n"
+      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOQUINTO.</strong> Si Pedro recibio $99.419.834 COP como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reales del negocio se estiman en aproximadamente <strong>$765.000.000 COP</strong> ($99.419.834 / 0.20 / 0.65). Los comprobantes documentados ($579.217.496) capturan aproximadamente el 75% de esos ingresos. La diferencia de ~$186.000.000 corresponde a pagos de estudiantes cuyos comprobantes no fueron enviados por Adriana, recuperacion de cartera, cuotas en mora pagadas posteriormente y ventas no reportadas por la asesora. Esta proyeccion es consistente con los KPIs de Oscar para 2025, que reportaban ventas totales de entre $46M y $97M mensuales. <strong>[P-42, P-02, P-13]</strong></p>\n<h3>D. Negativa de Oscar a rendir cuentas y exhibir su contabilidad personal</h3>\n"
     },
     "hecho-59": {
       "id": "hecho-59",
       "numero": 59,
-      "ordinal": "QUINCUAGESIMONOVENO",
-      "capitulo": "cap-16",
-      "resumen": "El 13 de julio de 2025, Oscar Maldonado exigio a Pedro obligaciones propias de un socio respecto a una herramienta tecnologica desarrollada por Pedro, declarando en audios de WhatsApp: *\"tu eres socio, no es que vas a sacar tu aplicacion propia... te...",
-      "texto_completo": "**HECHO QUINCUAGESIMONOVENO.** El 13 de julio de 2025, Oscar Maldonado exigio a Pedro obligaciones propias de un socio respecto a una herramienta tecnologica desarrollada por Pedro, declarando en audios de WhatsApp: *\"tu eres socio, no es que vas a sacar tu aplicacion propia... tenemos el acuerdo de que lo que desarrolles es para ParetoMed porque tu eres socio\"* (PTT-20250713-WA0007). En un audio posterior del mismo dia, Oscar reitero: *\"si tu desarrollas una aplicacion, tu eres socio para esto... papi, tu lo desarrollaste siendo socio de ParetoMed... yo creo que ahi no hay cabida, no hay duda\"* (PTT-20250713-WA0009). Estas declaraciones constituyen un reconocimiento inequivoco de la sociedad de hecho apenas UN MES antes de la ruptura: Oscar no solo llamaba socio a Pedro, sino que le EXIGIA obligaciones fiduciarias propias de un socio (que lo desarrollado beneficiara a la sociedad). **[P-05, P-02]**\n\n### B. Oscar reconocio aportes metodologicos de Pedro",
+      "ordinal": "QUINCUAGESIMOSEXTO",
+      "capitulo": "cap-15",
+      "resumen": "El 28 de febrero de 2025, Oscar revelo en el chat de WhatsApp la existencia de una **hoja de calculo personal** con la contabilidad detallada del negocio, distinta de los consolidados que compartia con Pedro: *\"yo me guio de la hoja de calculo person...",
+      "texto_completo": "**HECHO QUINCUAGESIMOSEXTO.** El 28 de febrero de 2025, Oscar revelo en el chat de WhatsApp la existencia de una **hoja de calculo personal** con la contabilidad detallada del negocio, distinta de los consolidados que compartia con Pedro: *\"yo me guio de la hoja de calculo personal mia\"*. Pedro solicito acceso a esta hoja de calculo y Oscar se nego. El 5 de agosto de 2025, cuando Pedro pidio el ultimo consolidado, Oscar respondio con hostilidad: *\"Joda, no tengo porque hacerlo y me ofende que me lo pidas\"*, lo que constituye una negativa expresa a rendir cuentas a su socio. Esta negativa es contraria al deber de informacion entre socios (articulo 504 del Codigo de Comercio) y genera un indicio grave de que la contabilidad interna de Oscar podria revelar ingresos superiores a los reportados en los consolidados compartidos con Pedro. La existencia de esta hoja de calculo debe ser objeto de exhibicion de documentos (articulo 265 CGP) en el proceso. **[P-02, P-13]**\n\n### E. Diferencia entre facturacion de servicios (Avanz) y participacion societaria (ParetoMed)",
       "fragmentos_clave": [
         {
           "cita": "tu eres socio, no es que vas a sacar tu aplicacion propia... tenemos el acuerdo de que lo que desarrolles es para ParetoMed porque tu eres socio",
@@ -2015,15 +2018,15 @@ const CASE_DATA = {
       "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "\"Eres socio — lo que desarrolles es para ParetoMed\"",
-      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMONOVENO.</strong> El 13 de julio de 2025, Oscar Maldonado exigio a Pedro obligaciones propias de un socio respecto a una herramienta tecnologica desarrollada por Pedro, declarando en audios de WhatsApp: <em>&quot;tu eres socio, no es que vas a sacar tu aplicacion propia... tenemos el acuerdo de que lo que desarrolles es para ParetoMed porque tu eres socio&quot;</em> (PTT-20250713-WA0007). En un audio posterior del mismo dia, Oscar reitero: <em>&quot;si tu desarrollas una aplicacion, tu eres socio para esto... papi, tu lo desarrollaste siendo socio de ParetoMed... yo creo que ahi no hay cabida, no hay duda&quot;</em> (PTT-20250713-WA0009). Estas declaraciones constituyen un reconocimiento inequivoco de la sociedad de hecho apenas UN MES antes de la ruptura: Oscar no solo llamaba socio a Pedro, sino que le EXIGIA obligaciones fiduciarias propias de un socio (que lo desarrollado beneficiara a la sociedad). <strong>[P-05, P-02]</strong></p>\n<h3>B. Oscar reconocio aportes metodologicos de Pedro</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOSEXTO.</strong> El 28 de febrero de 2025, Oscar revelo en el chat de WhatsApp la existencia de una <strong>hoja de calculo personal</strong> con la contabilidad detallada del negocio, distinta de los consolidados que compartia con Pedro: <em>&quot;yo me guio de la hoja de calculo personal mia&quot;</em>. Pedro solicito acceso a esta hoja de calculo y Oscar se nego. El 5 de agosto de 2025, cuando Pedro pidio el ultimo consolidado, Oscar respondio con hostilidad: <em>&quot;Joda, no tengo porque hacerlo y me ofende que me lo pidas&quot;</em>, lo que constituye una negativa expresa a rendir cuentas a su socio. Esta negativa es contraria al deber de informacion entre socios (articulo 504 del Codigo de Comercio) y genera un indicio grave de que la contabilidad interna de Oscar podria revelar ingresos superiores a los reportados en los consolidados compartidos con Pedro. La existencia de esta hoja de calculo debe ser objeto de exhibicion de documentos (articulo 265 CGP) en el proceso. <strong>[P-02, P-13]</strong></p>\n<h3>E. Diferencia entre facturacion de servicios (Avanz) y participacion societaria (ParetoMed)</h3>\n"
     },
     "hecho-60": {
       "id": "hecho-60",
       "numero": 60,
-      "ordinal": "SEXAGESIMO",
-      "capitulo": "cap-16",
-      "resumen": "En la reunion del 14 de julio de 2025, Oscar Maldonado reconocio expresamente que elementos centrales de la metodologia actual de ParetoMed fueron ideados por Pedro: (a) Oscar *\"confirmo que la idea de los simulacros pre y post estudio, con objetivos...",
-      "texto_completo": "**HECHO SEXAGESIMO.** En la reunion del 14 de julio de 2025, Oscar Maldonado reconocio expresamente que elementos centrales de la metodologia actual de ParetoMed fueron ideados por Pedro: (a) Oscar *\"confirmo que la idea de los simulacros pre y post estudio, con objetivos diferentes y la incorporacion de preguntas nuevas al final del simulacro, fue de Pedro Vergara\"*; (b) *\"la idea de enviar mensajes post-simulacro fue de Pedro Vergara\"*; (c) Pedro afirmo que *\"la idea de tener un grupo de WhatsApp para la comunicacion entre estudiantes tambien fue suya\"* sin contradiccion de Oscar; (d) *\"La decision de abordar un modulo por semana surgio de una conversacion entre ambos\"*. En chat del 12 de julio de 2025, Pedro le recordo a Oscar: *\"convertir el simulacro final que tu tenias en un simulacro pre, hacer el post justificado que nacio del grupo de estudio si fueron ideas mias que mejoraron\"* el programa. Oscar respondio: *\"Si reconozco.\"* Adicionalmente, el 11 de abril de 2025, Oscar reconocio: *\"lo de las tutorias ha sido una excelente idea y te he dejado llevarlo como has querido.\"* Estos aportes transformaron la metodologia de ParetoMed de un simple curso pregrabado a un programa estructurado con ciclos de 90 dias, acompanamiento personalizado y evaluacion continua — elementos que constituyen el principal diferenciador comercial del negocio y que justifican el precio de $2.850.000 por estudiante. **[P-34, P-02]**\n\n### C. Contrato de Cuentas en Participacion predatado",
+      "ordinal": "QUINCUAGESIMOSEPTIMO",
+      "capitulo": "cap-15",
+      "resumen": "La comparacion entre la facturacion de Pedro a AVANZ FINANZAS & SEGUROS LTDA (NIT 901286973-7) y la facturacion a Oscar/ParetoMed demuestra que Pedro distinguia perfectamente entre una relacion de prestacion de servicios y una relacion societaria. Co...",
+      "texto_completo": "**HECHO QUINCUAGESIMOSEPTIMO.** La comparacion entre la facturacion de Pedro a AVANZ FINANZAS & SEGUROS LTDA (NIT 901286973-7) y la facturacion a Oscar/ParetoMed demuestra que Pedro distinguia perfectamente entre una relacion de prestacion de servicios y una relacion societaria. Con Avanz, Pedro facturaba con concepto especifico de *\"Creacion de contenido / guiones comerciales, produccion y edicion de videos publicitarios para redes sociales\"*, a tarifa fija por entregable ($1.680.672 + adicionales), con cesion de derechos de autor implicita. Con Oscar/ParetoMed, la facturacion era radicalmente distinta: concepto generico de *\"COMISION\"* o *\"Gestion de redes y campanas\"*, monto variable calculado sobre el 20% de utilidades netas (sin entregables especificos facturados), y el **75% de los pagos ($74.900.000) se hicieron SIN factura ni cuenta de cobro**. Si la relacion con ParetoMed fuera una simple prestacion de servicios de contenido, Pedro habria facturado exactamente igual que con Avanz — tarifa fija, concepto de creacion de contenido, con cesion de derechos. No lo hizo porque NO era eso: era participacion de socio industrial en utilidades. **[P-42, FE1 a FE15 (facturas a Avanz), FE3, FE4, FE5, P-12]**\n\n### F. Utilidades post-ruptura documentadas con KPIs del demandado",
       "fragmentos_clave": [
         {
           "cita": "Si reconozco.",
@@ -2045,15 +2048,15 @@ const CASE_DATA = {
       "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Oscar reconoce aportes metodológicos de Pedro",
-      "texto_completo_html": "<p><strong>HECHO SEXAGESIMO.</strong> En la reunion del 14 de julio de 2025, Oscar Maldonado reconocio expresamente que elementos centrales de la metodologia actual de ParetoMed fueron ideados por Pedro: (a) Oscar <em>&quot;confirmo que la idea de los simulacros pre y post estudio, con objetivos diferentes y la incorporacion de preguntas nuevas al final del simulacro, fue de Pedro Vergara&quot;</em>; (b) <em>&quot;la idea de enviar mensajes post-simulacro fue de Pedro Vergara&quot;</em>; (c) Pedro afirmo que <em>&quot;la idea de tener un grupo de WhatsApp para la comunicacion entre estudiantes tambien fue suya&quot;</em> sin contradiccion de Oscar; (d) <em>&quot;La decision de abordar un modulo por semana surgio de una conversacion entre ambos&quot;</em>. En chat del 12 de julio de 2025, Pedro le recordo a Oscar: <em>&quot;convertir el simulacro final que tu tenias en un simulacro pre, hacer el post justificado que nacio del grupo de estudio si fueron ideas mias que mejoraron&quot;</em> el programa. Oscar respondio: <em>&quot;Si reconozco.&quot;</em> Adicionalmente, el 11 de abril de 2025, Oscar reconocio: <em>&quot;lo de las tutorias ha sido una excelente idea y te he dejado llevarlo como has querido.&quot;</em> Estos aportes transformaron la metodologia de ParetoMed de un simple curso pregrabado a un programa estructurado con ciclos de 90 dias, acompanamiento personalizado y evaluacion continua — elementos que constituyen el principal diferenciador comercial del negocio y que justifican el precio de $2.850.000 por estudiante. <strong>[P-34, P-02]</strong></p>\n<h3>C. Contrato de Cuentas en Participacion predatado</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOSEPTIMO.</strong> La comparacion entre la facturacion de Pedro a AVANZ FINANZAS &amp; SEGUROS LTDA (NIT 901286973-7) y la facturacion a Oscar/ParetoMed demuestra que Pedro distinguia perfectamente entre una relacion de prestacion de servicios y una relacion societaria. Con Avanz, Pedro facturaba con concepto especifico de <em>&quot;Creacion de contenido / guiones comerciales, produccion y edicion de videos publicitarios para redes sociales&quot;</em>, a tarifa fija por entregable ($1.680.672 + adicionales), con cesion de derechos de autor implicita. Con Oscar/ParetoMed, la facturacion era radicalmente distinta: concepto generico de <em>&quot;COMISION&quot;</em> o <em>&quot;Gestion de redes y campanas&quot;</em>, monto variable calculado sobre el 20% de utilidades netas (sin entregables especificos facturados), y el <strong>75% de los pagos ($74.900.000) se hicieron SIN factura ni cuenta de cobro</strong>. Si la relacion con ParetoMed fuera una simple prestacion de servicios de contenido, Pedro habria facturado exactamente igual que con Avanz — tarifa fija, concepto de creacion de contenido, con cesion de derechos. No lo hizo porque NO era eso: era participacion de socio industrial en utilidades. <strong>[P-42, FE1 a FE15 (facturas a Avanz), FE3, FE4, FE5, P-12]</strong></p>\n<h3>F. Utilidades post-ruptura documentadas con KPIs del demandado</h3>\n"
     },
     "hecho-61": {
       "id": "hecho-61",
       "numero": 61,
-      "ordinal": "SEXAGESIMOPRIMERO",
-      "capitulo": "cap-16",
-      "resumen": "El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en agosto de 2025, pero su encabezado dice textualmente: *\"El dia 1 de [espacio en blanco] de 2024\"* — con el mes sin completar. Esta predatacion constituye un intento de redefini...",
-      "texto_completo": "**HECHO SEXAGESIMOPRIMERO.** El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en agosto de 2025, pero su encabezado dice textualmente: *\"El dia 1 de [espacio en blanco] de 2024\"* — con el mes sin completar. Esta predatacion constituye un intento de redefinir retroactivamente la naturaleza de la relacion societaria. En la grabacion del 14 de agosto de 2025, Oscar revelo que este contrato fue disenado por su abogada como una *\"estructura que tiene 90% de seguridad... tributaria\"* para *\"no pagar tanto impuesto\"*. El proposito real del contrato no era reflejar la relacion existente sino crear un instrumento retroactivo que eliminara los derechos de Pedro sobre el patrimonio social. **[P-14, P-01]**\n\n### D. Patron de clausulas anticompetencia en todos los contratos de Oscar",
+      "ordinal": "QUINCUAGESIMOCTAVO",
+      "capitulo": "cap-15",
+      "resumen": "Los KPIs de ventas de ParetoMed para 2025, contenidos en la hoja de calculo \"Copia de KPIS 2025.xlsx\" (archivo del demandado en poder del demandante), documentan que Oscar continuo explotando el negocio despues de la ruptura con los siguientes ingres...",
+      "texto_completo": "**HECHO QUINCUAGESIMOCTAVO.** Los KPIs de ventas de ParetoMed para 2025, contenidos en la hoja de calculo \"Copia de KPIS 2025.xlsx\" (archivo del demandado en poder del demandante), documentan que Oscar continuo explotando el negocio despues de la ruptura con los siguientes ingresos: agosto 2025: $52.790.000; septiembre 2025: $52.640.800; octubre 2025: $64.057.500. Total periodo post-ruptura: **$169.488.300 COP**. Aplicando el margen de ganancia del 65% documentado en los consolidados de Oscar y la participacion del 20% pactada, las utilidades adeudadas a Pedro por este periodo ascienden a **$22.033.479 COP**. El negocio continuo operando hasta al menos diciembre 2025 (noviembre: $84.102.500; diciembre: $46.050.000), periodo cuyas utilidades tambien podrian ser reclamables. La ultima transferencia de Oscar a Pedro ($7.450.000 del 05/08/2025) cubria el mes de julio 2025, por lo que agosto en adelante se adeuda integramente. **[P-43, P-02]**\n\n---",
       "fragmentos_clave": [
         {
           "cita": "El dia 1 de [espacio en blanco] de 2024",
@@ -2065,27 +2068,25 @@ const CASE_DATA = {
         },
         {
           "cita": "estructura que tiene 90% de seguridad... tributaria",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
           "relevancia": "Oscar revela que el Contrato de Cuentas en Participación fue diseñado por su abogada para beneficio fiscal, no para reflejar la relación real — P-01"
         }
       ],
-      "pruebas": [
-        "P-14"
-      ],
+      "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Contrato predatado con mes en blanco",
-      "texto_completo_html": "<p><strong>HECHO SEXAGESIMOPRIMERO.</strong> El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en agosto de 2025, pero su encabezado dice textualmente: <em>&quot;El dia 1 de [espacio en blanco] de 2024&quot;</em> — con el mes sin completar. Esta predatacion constituye un intento de redefinir retroactivamente la naturaleza de la relacion societaria. En la grabacion del 14 de agosto de 2025, Oscar revelo que este contrato fue disenado por su abogada como una <em>&quot;estructura que tiene 90% de seguridad... tributaria&quot;</em> para <em>&quot;no pagar tanto impuesto&quot;</em>. El proposito real del contrato no era reflejar la relacion existente sino crear un instrumento retroactivo que eliminara los derechos de Pedro sobre el patrimonio social. <strong>[P-14, P-01]</strong></p>\n<h3>D. Patron de clausulas anticompetencia en todos los contratos de Oscar</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMOCTAVO.</strong> Los KPIs de ventas de ParetoMed para 2025, contenidos en la hoja de calculo &quot;Copia de KPIS 2025.xlsx&quot; (archivo del demandado en poder del demandante), documentan que Oscar continuo explotando el negocio despues de la ruptura con los siguientes ingresos: agosto 2025: $52.790.000; septiembre 2025: $52.640.800; octubre 2025: $64.057.500. Total periodo post-ruptura: <strong>$169.488.300 COP</strong>. Aplicando el margen de ganancia del 65% documentado en los consolidados de Oscar y la participacion del 20% pactada, las utilidades adeudadas a Pedro por este periodo ascienden a <strong>$22.033.479 COP</strong>. El negocio continuo operando hasta al menos diciembre 2025 (noviembre: $84.102.500; diciembre: $46.050.000), periodo cuyas utilidades tambien podrian ser reclamables. La ultima transferencia de Oscar a Pedro ($7.450.000 del 05/08/2025) cubria el mes de julio 2025, por lo que agosto en adelante se adeuda integramente. <strong>[P-43, P-02]</strong></p>\n<hr>\n"
     },
     "hecho-62": {
       "id": "hecho-62",
       "numero": 62,
-      "ordinal": "SEXAGESIMOSEGUNDO",
+      "ordinal": "QUINCUAGESIMONOVENO",
       "capitulo": "cap-16",
-      "resumen": "Todos los contratos propuestos por Oscar incluian clausulas de no competencia dirigidas a restringir la actividad profesional de Pedro: (a) el Acuerdo de Socios propuesto en version SAS incluia una restriccion de **5 anos** que prohibia a Pedro *\"com...",
-      "texto_completo": "**HECHO SEXAGESIMOSEGUNDO.** Todos los contratos propuestos por Oscar incluian clausulas de no competencia dirigidas a restringir la actividad profesional de Pedro: (a) el Acuerdo de Socios propuesto en version SAS incluia una restriccion de **5 anos** que prohibia a Pedro *\"comenzar una empresa/emprendimiento/negocio que entre en competencia directa con Paretomed\"* en todo el sector de *\"educacion medica virtual\"* [P-08]; (b) el 13 de enero de 2025, Oscar informo que estaba modificando los estatutos para incluir *\"la clausula de no competencia\"* [P-02]; (c) el Contrato de Transaccion de septiembre 2025 incluia una restriccion de **2 anos** con clausula penal equivalente al 20% de todos los pagos recibidos (~$20.000.000) [P-15]. Las clausulas de no competencia de largo alcance solo se justifican frente a un socio con conocimiento interno del negocio, no frente a un prestador de servicios externo — un contratista de marketing no es un competidor potencial que requiera restriccion por 5 anos. **[P-08, P-15, P-02]**\n\n### E. NETMED S.A.S. — Vehiculo post-ruptura",
+      "resumen": "El 13 de julio de 2025, Oscar Maldonado exigio a Pedro obligaciones propias de un socio respecto a una herramienta tecnologica desarrollada por Pedro, declarando en audios de WhatsApp: *\"tu eres socio, no es que vas a sacar tu aplicacion propia... te...",
+      "texto_completo": "**HECHO QUINCUAGESIMONOVENO.** El 13 de julio de 2025, Oscar Maldonado exigio a Pedro obligaciones propias de un socio respecto a una herramienta tecnologica desarrollada por Pedro, declarando en audios de WhatsApp: *\"tu eres socio, no es que vas a sacar tu aplicacion propia... tenemos el acuerdo de que lo que desarrolles es para ParetoMed porque tu eres socio\"* (PTT-20250713-WA0007). En un audio posterior del mismo dia, Oscar reitero: *\"si tu desarrollas una aplicacion, tu eres socio para esto... papi, tu lo desarrollaste siendo socio de ParetoMed... yo creo que ahi no hay cabida, no hay duda\"* (PTT-20250713-WA0009). Estas declaraciones constituyen un reconocimiento inequivoco de la sociedad de hecho apenas UN MES antes de la ruptura: Oscar no solo llamaba socio a Pedro, sino que le EXIGIA obligaciones fiduciarias propias de un socio (que lo desarrollado beneficiara a la sociedad). **[P-05, P-02]**\n\n### B. Oscar reconocio aportes metodologicos de Pedro",
       "fragmentos_clave": [
         {
           "cita": "comenzar una empresa/emprendimiento/negocio que entre en competencia directa con Paretomed",
@@ -2104,26 +2105,22 @@ const CASE_DATA = {
           "relevancia": "Oscar incluye anticompetencia en estatutos de SAS propuesta — P-02. Patrón sistemático: todos los borradores incluyen anticompetencia de largo alcance"
         }
       ],
-      "pruebas": [
-        "P-08",
-        "P-02",
-        "P-15"
-      ],
+      "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "Cláusulas anticompetencia de 5 años — solo para socios",
-      "texto_completo_html": "<p><strong>HECHO SEXAGESIMOSEGUNDO.</strong> Todos los contratos propuestos por Oscar incluian clausulas de no competencia dirigidas a restringir la actividad profesional de Pedro: (a) el Acuerdo de Socios propuesto en version SAS incluia una restriccion de <strong>5 anos</strong> que prohibia a Pedro <em>&quot;comenzar una empresa/emprendimiento/negocio que entre en competencia directa con Paretomed&quot;</em> en todo el sector de <em>&quot;educacion medica virtual&quot;</em> [P-08]; (b) el 13 de enero de 2025, Oscar informo que estaba modificando los estatutos para incluir <em>&quot;la clausula de no competencia&quot;</em> [P-02]; (c) el Contrato de Transaccion de septiembre 2025 incluia una restriccion de <strong>2 anos</strong> con clausula penal equivalente al 20% de todos los pagos recibidos (~$20.000.000) [P-15]. Las clausulas de no competencia de largo alcance solo se justifican frente a un socio con conocimiento interno del negocio, no frente a un prestador de servicios externo — un contratista de marketing no es un competidor potencial que requiera restriccion por 5 anos. <strong>[P-08, P-15, P-02]</strong></p>\n<h3>E. NETMED S.A.S. — Vehiculo post-ruptura</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO QUINCUAGESIMONOVENO.</strong> El 13 de julio de 2025, Oscar Maldonado exigio a Pedro obligaciones propias de un socio respecto a una herramienta tecnologica desarrollada por Pedro, declarando en audios de WhatsApp: <em>&quot;tu eres socio, no es que vas a sacar tu aplicacion propia... tenemos el acuerdo de que lo que desarrolles es para ParetoMed porque tu eres socio&quot;</em> (PTT-20250713-WA0007). En un audio posterior del mismo dia, Oscar reitero: <em>&quot;si tu desarrollas una aplicacion, tu eres socio para esto... papi, tu lo desarrollaste siendo socio de ParetoMed... yo creo que ahi no hay cabida, no hay duda&quot;</em> (PTT-20250713-WA0009). Estas declaraciones constituyen un reconocimiento inequivoco de la sociedad de hecho apenas UN MES antes de la ruptura: Oscar no solo llamaba socio a Pedro, sino que le EXIGIA obligaciones fiduciarias propias de un socio (que lo desarrollado beneficiara a la sociedad). <strong>[P-05, P-02]</strong></p>\n<h3>B. Oscar reconocio aportes metodologicos de Pedro</h3>\n"
     },
     "hecho-63": {
       "id": "hecho-63",
       "numero": 63,
-      "ordinal": "SEXAGESIMOTERCERO",
+      "ordinal": "SEXAGESIMO",
       "capitulo": "cap-16",
-      "resumen": "El 15 de octubre de 2025, Oscar Maldonado constituyo la sociedad **NETMED S.A.S.** (NIT 902.004.012-9, Matricula 926.784) mediante documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del...",
-      "texto_completo": "**HECHO SEXAGESIMOTERCERO.** El 15 de octubre de 2025, Oscar Maldonado constituyo la sociedad **NETMED S.A.S.** (NIT 902.004.012-9, Matricula 926.784) mediante documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del 100% de las acciones. La actividad economica registrada es CIIU 6201 (desarrollo de sistemas informaticos). En la grabacion del 14 de agosto de 2025, Oscar admitio el proposito: *\"yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron... sociedad de hecho con el man no puedes cortarlo... presenteme una forma en que yo pueda mantenerme con el pero tambien pueda crear lo otro... y ahi fue donde seria el contrato de cuentas en participacion\"*. La politica de privacidad actual del sitio web de ParetoMed ya aparece a nombre de NETMED S.A.S. en lugar de Oscar Maldonado persona natural. Sin embargo, en febrero de 2026, la asesora de ventas Adriana continua enviando a interesados el numero de cuenta personal de Oscar Maldonado (no de NETMED) para el pago del programa, lo que evidencia que la transferencia de operaciones a NETMED es formal pero no real. **[P-24, P-01, P-49]**\n\n### F. Estructura tributaria disenada para evadir",
+      "resumen": "En la reunion del 14 de julio de 2025, Oscar Maldonado reconocio expresamente que elementos centrales de la metodologia actual de ParetoMed fueron ideados por Pedro: (a) Oscar *\"confirmo que la idea de los simulacros pre y post estudio, con objetivos...",
+      "texto_completo": "**HECHO SEXAGESIMO.** En la reunion del 14 de julio de 2025, Oscar Maldonado reconocio expresamente que elementos centrales de la metodologia actual de ParetoMed fueron ideados por Pedro: (a) Oscar *\"confirmo que la idea de los simulacros pre y post estudio, con objetivos diferentes y la incorporacion de preguntas nuevas al final del simulacro, fue de Pedro Vergara\"*; (b) *\"la idea de enviar mensajes post-simulacro fue de Pedro Vergara\"*; (c) Pedro afirmo que *\"la idea de tener un grupo de WhatsApp para la comunicacion entre estudiantes tambien fue suya\"* sin contradiccion de Oscar; (d) *\"La decision de abordar un modulo por semana surgio de una conversacion entre ambos\"*. En chat del 12 de julio de 2025, Pedro le recordo a Oscar: *\"convertir el simulacro final que tu tenias en un simulacro pre, hacer el post justificado que nacio del grupo de estudio si fueron ideas mias que mejoraron\"* el programa. Oscar respondio: *\"Si reconozco.\"* Adicionalmente, el 11 de abril de 2025, Oscar reconocio: *\"lo de las tutorias ha sido una excelente idea y te he dejado llevarlo como has querido.\"* Estos aportes transformaron la metodologia de ParetoMed de un simple curso pregrabado a un programa estructurado con ciclos de 90 dias, acompanamiento personalizado y evaluacion continua — elementos que constituyen el principal diferenciador comercial del negocio y que justifican el precio de $2.850.000 por estudiante. **[P-34, P-02]**\n\n### C. Contrato de Cuentas en Participacion predatado",
       "fragmentos_clave": [
         {
           "cita": "yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron... sociedad de hecho con el man no puedes cortarlo... presenteme una forma en que yo pueda mantenerme con el pero tambien pueda crear lo otro",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
@@ -2133,15 +2130,15 @@ const CASE_DATA = {
       "pruebas": [],
       "nota_abogado": null,
       "titulo_corto": "NETMED: vehículo diseñado para escapar la sociedad",
-      "texto_completo_html": "<p><strong>HECHO SEXAGESIMOTERCERO.</strong> El 15 de octubre de 2025, Oscar Maldonado constituyo la sociedad <strong>NETMED S.A.S.</strong> (NIT 902.004.012-9, Matricula 926.784) mediante documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del 100% de las acciones. La actividad economica registrada es CIIU 6201 (desarrollo de sistemas informaticos). En la grabacion del 14 de agosto de 2025, Oscar admitio el proposito: <em>&quot;yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron... sociedad de hecho con el man no puedes cortarlo... presenteme una forma en que yo pueda mantenerme con el pero tambien pueda crear lo otro... y ahi fue donde seria el contrato de cuentas en participacion&quot;</em>. La politica de privacidad actual del sitio web de ParetoMed ya aparece a nombre de NETMED S.A.S. en lugar de Oscar Maldonado persona natural. Sin embargo, en febrero de 2026, la asesora de ventas Adriana continua enviando a interesados el numero de cuenta personal de Oscar Maldonado (no de NETMED) para el pago del programa, lo que evidencia que la transferencia de operaciones a NETMED es formal pero no real. <strong>[P-24, P-01, P-49]</strong></p>\n<h3>F. Estructura tributaria disenada para evadir</h3>\n"
+      "texto_completo_html": "<p><strong>HECHO SEXAGESIMO.</strong> En la reunion del 14 de julio de 2025, Oscar Maldonado reconocio expresamente que elementos centrales de la metodologia actual de ParetoMed fueron ideados por Pedro: (a) Oscar <em>&quot;confirmo que la idea de los simulacros pre y post estudio, con objetivos diferentes y la incorporacion de preguntas nuevas al final del simulacro, fue de Pedro Vergara&quot;</em>; (b) <em>&quot;la idea de enviar mensajes post-simulacro fue de Pedro Vergara&quot;</em>; (c) Pedro afirmo que <em>&quot;la idea de tener un grupo de WhatsApp para la comunicacion entre estudiantes tambien fue suya&quot;</em> sin contradiccion de Oscar; (d) <em>&quot;La decision de abordar un modulo por semana surgio de una conversacion entre ambos&quot;</em>. En chat del 12 de julio de 2025, Pedro le recordo a Oscar: <em>&quot;convertir el simulacro final que tu tenias en un simulacro pre, hacer el post justificado que nacio del grupo de estudio si fueron ideas mias que mejoraron&quot;</em> el programa. Oscar respondio: <em>&quot;Si reconozco.&quot;</em> Adicionalmente, el 11 de abril de 2025, Oscar reconocio: <em>&quot;lo de las tutorias ha sido una excelente idea y te he dejado llevarlo como has querido.&quot;</em> Estos aportes transformaron la metodologia de ParetoMed de un simple curso pregrabado a un programa estructurado con ciclos de 90 dias, acompanamiento personalizado y evaluacion continua — elementos que constituyen el principal diferenciador comercial del negocio y que justifican el precio de $2.850.000 por estudiante. <strong>[P-34, P-02]</strong></p>\n<h3>C. Contrato de Cuentas en Participacion predatado</h3>\n"
     },
     "hecho-64": {
       "id": "hecho-64",
       "numero": 64,
-      "ordinal": "SEXAGESIMOCUARTO",
+      "ordinal": "SEXAGESIMOPRIMERO",
       "capitulo": "cap-16",
-      "resumen": "El 10 de julio de 2025, Oscar revelo en chat de WhatsApp un plan tributario consistente en crear una LLC en Estados Unidos y una SAS en Colombia que le prestara servicios: *\"la idea es crear una SAS aca en Colombia que le preste servicios a la LLC en...",
-      "texto_completo": "**HECHO SEXAGESIMOCUARTO.** El 10 de julio de 2025, Oscar revelo en chat de WhatsApp un plan tributario consistente en crear una LLC en Estados Unidos y una SAS en Colombia que le prestara servicios: *\"la idea es crear una SAS aca en Colombia que le preste servicios a la LLC en EUA. Por la naturaleza de los servicios estaria exento de IVA\"*. En la grabacion del 14 de agosto, Oscar amplio: *\"la vamos a presentar como una empresa de cloud hosting... ya no va a ser una empresa educativa... y ahi no pago tanto impuesto\"*. Esta estructura fue disenada para reducir la carga impositiva del negocio, y el Contrato de Cuentas en Participacion formaba parte de la misma estrategia: *\"creamos alguna estructura que tiene 90% de seguridad... tributaria\"*. El hecho de que Oscar reestructurara el negocio para evadir impuestos mientras dilataba la formalizacion de la sociedad con Pedro evidencia que sus prioridades eran fiscales y no la proteccion de los derechos de su socio. **[P-02, P-01]**",
+      "resumen": "El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en agosto de 2025, pero su encabezado dice textualmente: *\"El dia 1 de [espacio en blanco] de 2024\"* — con el mes sin completar. Esta predatacion constituye un intento de redefini...",
+      "texto_completo": "**HECHO SEXAGESIMOPRIMERO.** El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en agosto de 2025, pero su encabezado dice textualmente: *\"El dia 1 de [espacio en blanco] de 2024\"* — con el mes sin completar. Esta predatacion constituye un intento de redefinir retroactivamente la naturaleza de la relacion societaria. En la grabacion del 14 de agosto de 2025, Oscar revelo que este contrato fue disenado por su abogada como una *\"estructura que tiene 90% de seguridad... tributaria\"* para *\"no pagar tanto impuesto\"*. El proposito real del contrato no era reflejar la relacion existente sino crear un instrumento retroactivo que eliminara los derechos de Pedro sobre el patrimonio social. **[P-14, P-01]**\n\n### D. Patron de clausulas anticompetencia en todos los contratos de Oscar",
       "fragmentos_clave": [
         {
           "cita": "la idea es crear una SAS aca en Colombia que le preste servicios a la LLC en EUA. Por la naturaleza de los servicios estaria exento de IVA",
@@ -2153,16 +2150,58 @@ const CASE_DATA = {
         },
         {
           "cita": "la vamos a presentar como una empresa de cloud hosting... ya no va a ser una empresa educativa... y ahi no pago tanto impuesto",
-          "fuente": "transcripciones",
+          "fuente": "grabacion-llamada-oscar-250814",
           "linea": null,
           "fecha": "14/08/2025",
           "autor": "Oscar Maldonado",
           "relevancia": "Oscar admite en grabación que la reclasificación de ParetoMed como 'cloud hosting' era una estrategia para reducir impuestos — P-01. El demandado usa su propio discurso como evidencia de mala fe"
         }
       ],
-      "pruebas": [],
+      "pruebas": [
+        "P-14"
+      ],
       "nota_abogado": null,
       "titulo_corto": "Plan de evasión fiscal — LLC en Estados Unidos",
+      "texto_completo_html": "<p><strong>HECHO SEXAGESIMOPRIMERO.</strong> El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en agosto de 2025, pero su encabezado dice textualmente: <em>&quot;El dia 1 de [espacio en blanco] de 2024&quot;</em> — con el mes sin completar. Esta predatacion constituye un intento de redefinir retroactivamente la naturaleza de la relacion societaria. En la grabacion del 14 de agosto de 2025, Oscar revelo que este contrato fue disenado por su abogada como una <em>&quot;estructura que tiene 90% de seguridad... tributaria&quot;</em> para <em>&quot;no pagar tanto impuesto&quot;</em>. El proposito real del contrato no era reflejar la relacion existente sino crear un instrumento retroactivo que eliminara los derechos de Pedro sobre el patrimonio social. <strong>[P-14, P-01]</strong></p>\n<h3>D. Patron de clausulas anticompetencia en todos los contratos de Oscar</h3>\n"
+    },
+    "hecho-65": {
+      "id": "hecho-65",
+      "numero": 65,
+      "ordinal": "SEXAGESIMOSEGUNDO",
+      "capitulo": "cap-16",
+      "resumen": "Todos los contratos propuestos por Oscar incluian clausulas de no competencia dirigidas a restringir la actividad profesional de Pedro: (a) el Acuerdo de Socios propuesto en version SAS incluia una restriccion de **5 anos** que prohibia a Pedro *\"com...",
+      "texto_completo": "**HECHO SEXAGESIMOSEGUNDO.** Todos los contratos propuestos por Oscar incluian clausulas de no competencia dirigidas a restringir la actividad profesional de Pedro: (a) el Acuerdo de Socios propuesto en version SAS incluia una restriccion de **5 anos** que prohibia a Pedro *\"comenzar una empresa/emprendimiento/negocio que entre en competencia directa con Paretomed\"* en todo el sector de *\"educacion medica virtual\"* [P-08]; (b) el 13 de enero de 2025, Oscar informo que estaba modificando los estatutos para incluir *\"la clausula de no competencia\"* [P-02]; (c) el Contrato de Transaccion de septiembre 2025 incluia una restriccion de **2 anos** con clausula penal equivalente al 20% de todos los pagos recibidos (~$20.000.000) [P-15]. Las clausulas de no competencia de largo alcance solo se justifican frente a un socio con conocimiento interno del negocio, no frente a un prestador de servicios externo — un contratista de marketing no es un competidor potencial que requiera restriccion por 5 anos. **[P-08, P-15, P-02]**\n\n### E. NETMED S.A.S. — Vehiculo post-ruptura",
+      "fragmentos_clave": [],
+      "pruebas": [
+        "P-08",
+        "P-02",
+        "P-15"
+      ],
+      "nota_abogado": null,
+      "texto_completo_html": "<p><strong>HECHO SEXAGESIMOSEGUNDO.</strong> Todos los contratos propuestos por Oscar incluian clausulas de no competencia dirigidas a restringir la actividad profesional de Pedro: (a) el Acuerdo de Socios propuesto en version SAS incluia una restriccion de <strong>5 anos</strong> que prohibia a Pedro <em>&quot;comenzar una empresa/emprendimiento/negocio que entre en competencia directa con Paretomed&quot;</em> en todo el sector de <em>&quot;educacion medica virtual&quot;</em> [P-08]; (b) el 13 de enero de 2025, Oscar informo que estaba modificando los estatutos para incluir <em>&quot;la clausula de no competencia&quot;</em> [P-02]; (c) el Contrato de Transaccion de septiembre 2025 incluia una restriccion de <strong>2 anos</strong> con clausula penal equivalente al 20% de todos los pagos recibidos (~$20.000.000) [P-15]. Las clausulas de no competencia de largo alcance solo se justifican frente a un socio con conocimiento interno del negocio, no frente a un prestador de servicios externo — un contratista de marketing no es un competidor potencial que requiera restriccion por 5 anos. <strong>[P-08, P-15, P-02]</strong></p>\n<h3>E. NETMED S.A.S. — Vehiculo post-ruptura</h3>\n"
+    },
+    "hecho-66": {
+      "id": "hecho-66",
+      "numero": 66,
+      "ordinal": "SEXAGESIMOTERCERO",
+      "capitulo": "cap-16",
+      "resumen": "El 15 de octubre de 2025, Oscar Maldonado constituyo la sociedad **NETMED S.A.S.** (NIT 902.004.012-9, Matricula 926.784) mediante documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del...",
+      "texto_completo": "**HECHO SEXAGESIMOTERCERO.** El 15 de octubre de 2025, Oscar Maldonado constituyo la sociedad **NETMED S.A.S.** (NIT 902.004.012-9, Matricula 926.784) mediante documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del 100% de las acciones. La actividad economica registrada es CIIU 6201 (desarrollo de sistemas informaticos). En la grabacion del 14 de agosto de 2025, Oscar admitio el proposito: *\"yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron... sociedad de hecho con el man no puedes cortarlo... presenteme una forma en que yo pueda mantenerme con el pero tambien pueda crear lo otro... y ahi fue donde seria el contrato de cuentas en participacion\"*. La politica de privacidad actual del sitio web de ParetoMed ya aparece a nombre de NETMED S.A.S. en lugar de Oscar Maldonado persona natural. Sin embargo, en febrero de 2026, la asesora de ventas Adriana continua enviando a interesados el numero de cuenta personal de Oscar Maldonado (no de NETMED) para el pago del programa, lo que evidencia que la transferencia de operaciones a NETMED es formal pero no real. **[P-24, P-01, P-49]**\n\n### F. Estructura tributaria disenada para evadir",
+      "fragmentos_clave": [],
+      "pruebas": [],
+      "nota_abogado": null,
+      "texto_completo_html": "<p><strong>HECHO SEXAGESIMOTERCERO.</strong> El 15 de octubre de 2025, Oscar Maldonado constituyo la sociedad <strong>NETMED S.A.S.</strong> (NIT 902.004.012-9, Matricula 926.784) mediante documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del 100% de las acciones. La actividad economica registrada es CIIU 6201 (desarrollo de sistemas informaticos). En la grabacion del 14 de agosto de 2025, Oscar admitio el proposito: <em>&quot;yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron... sociedad de hecho con el man no puedes cortarlo... presenteme una forma en que yo pueda mantenerme con el pero tambien pueda crear lo otro... y ahi fue donde seria el contrato de cuentas en participacion&quot;</em>. La politica de privacidad actual del sitio web de ParetoMed ya aparece a nombre de NETMED S.A.S. en lugar de Oscar Maldonado persona natural. Sin embargo, en febrero de 2026, la asesora de ventas Adriana continua enviando a interesados el numero de cuenta personal de Oscar Maldonado (no de NETMED) para el pago del programa, lo que evidencia que la transferencia de operaciones a NETMED es formal pero no real. <strong>[P-24, P-01, P-49]</strong></p>\n<h3>F. Estructura tributaria disenada para evadir</h3>\n"
+    },
+    "hecho-67": {
+      "id": "hecho-67",
+      "numero": 67,
+      "ordinal": "SEXAGESIMOCUARTO",
+      "capitulo": "cap-16",
+      "resumen": "El 10 de julio de 2025, Oscar revelo en chat de WhatsApp un plan tributario consistente en crear una LLC en Estados Unidos y una SAS en Colombia que le prestara servicios: *\"la idea es crear una SAS aca en Colombia que le preste servicios a la LLC en...",
+      "texto_completo": "**HECHO SEXAGESIMOCUARTO.** El 10 de julio de 2025, Oscar revelo en chat de WhatsApp un plan tributario consistente en crear una LLC en Estados Unidos y una SAS en Colombia que le prestara servicios: *\"la idea es crear una SAS aca en Colombia que le preste servicios a la LLC en EUA. Por la naturaleza de los servicios estaria exento de IVA\"*. En la grabacion del 14 de agosto, Oscar amplio: *\"la vamos a presentar como una empresa de cloud hosting... ya no va a ser una empresa educativa... y ahi no pago tanto impuesto\"*. Esta estructura fue disenada para reducir la carga impositiva del negocio, y el Contrato de Cuentas en Participacion formaba parte de la misma estrategia: *\"creamos alguna estructura que tiene 90% de seguridad... tributaria\"*. El hecho de que Oscar reestructurara el negocio para evadir impuestos mientras dilataba la formalizacion de la sociedad con Pedro evidencia que sus prioridades eran fiscales y no la proteccion de los derechos de su socio. **[P-02, P-01]**",
+      "fragmentos_clave": [],
+      "pruebas": [],
+      "nota_abogado": null,
       "texto_completo_html": "<p><strong>HECHO SEXAGESIMOCUARTO.</strong> El 10 de julio de 2025, Oscar revelo en chat de WhatsApp un plan tributario consistente en crear una LLC en Estados Unidos y una SAS en Colombia que le prestara servicios: <em>&quot;la idea es crear una SAS aca en Colombia que le preste servicios a la LLC en EUA. Por la naturaleza de los servicios estaria exento de IVA&quot;</em>. En la grabacion del 14 de agosto, Oscar amplio: <em>&quot;la vamos a presentar como una empresa de cloud hosting... ya no va a ser una empresa educativa... y ahi no pago tanto impuesto&quot;</em>. Esta estructura fue disenada para reducir la carga impositiva del negocio, y el Contrato de Cuentas en Participacion formaba parte de la misma estrategia: <em>&quot;creamos alguna estructura que tiene 90% de seguridad... tributaria&quot;</em>. El hecho de que Oscar reestructurara el negocio para evadir impuestos mientras dilataba la formalizacion de la sociedad con Pedro evidencia que sus prioridades eran fiscales y no la proteccion de los derechos de su socio. <strong>[P-02, P-01]</strong></p>\n"
     }
   },
@@ -2454,148 +2493,184 @@ const CASE_DATA = {
       "archivo_html": "docs/transcripciones.html",
       "tipo": "transcripcion"
     },
+    "grabacion-llamada-oscar-250814": {
+      "id": "grabacion-llamada-oscar-250814",
+      "titulo": "Grabación telefónica Oscar 14/08/2025 — prueba reina",
+      "archivo_html": "docs/grabacion-llamada-oscar-paretomed-250814-184648-original.html",
+      "tipo": "transcripcion"
+    },
     "chat-primo": {
       "id": "chat-primo",
       "titulo": "Chat: Contacto ParetoMed (Feb 2026)",
       "archivo_html": "docs/chat-primo.html",
       "tipo": "chat"
     },
-    "doc-solicitud-conciliacion": {
-      "id": "doc-solicitud-conciliacion",
-      "titulo": "Solicitud de Conciliación (EF Legal, nunca radicada)",
-      "archivo_html": "docs/20251111 PEDRO VERGARA - Solicitud de conciliación por antiguos abogados EF LEGAL nunca radicada ni enviada.html",
+    "doc-carta-recomendacion": {
+      "id": "doc-carta-recomendacion",
+      "titulo": "Carta de recomendación firmada",
+      "archivo_html": "docs/paretomed-educacion-medica-carta-de-recomendacion.html",
       "tipo": "documento"
     },
     "doc-borrador-acuerdo-pedro": {
       "id": "doc-borrador-acuerdo-pedro",
-      "titulo": "Borrador Acuerdo Original de Pedro (Feb 2024)",
-      "archivo_html": "docs/BORRADOR ACUERDO ORIGINAL DE PEDRO FECHADO 6 DE FEBRERO 2024.html",
+      "titulo": "Borrador acuerdo original de Pedro (06/02/2024)",
+      "archivo_html": "docs/borrador-acuerdo-original-de-pedro-fechado-6-de-febrero-2024.html",
       "tipo": "documento"
-    },
-    "doc-borrador-demanda-2": {
-      "id": "doc-borrador-demanda-2",
-      "titulo": "Borrador de Demanda v2",
-      "archivo_html": "docs/BORRADOR DEMANDA 2.html",
-      "tipo": "documento"
-    },
-    "doc-bitacora-adriana": {
-      "id": "doc-bitacora-adriana",
-      "titulo": "Bitácora chat con Adriana (asesora de ventas)",
-      "archivo_html": "docs/Bitácora transcripción chat con Adriana asesora de ventas paretomed.html",
-      "tipo": "chat"
-    },
-    "doc-comprobantes-analisis": {
-      "id": "doc-comprobantes-analisis",
-      "titulo": "Comprobantes ParetoMed — Análisis",
-      "archivo_html": "docs/COMPROBANTES_PARETOMED_ANALISIS.html",
-      "tipo": "financiero"
-    },
-    "doc-crm-sheets": {
-      "id": "doc-crm-sheets",
-      "titulo": "CRM Sheets Campaña",
-      "archivo_html": "docs/CRM SHEETS CAMPAÑA.html",
-      "tipo": "financiero"
-    },
-    "doc-cuentas-cobro": {
-      "id": "doc-cuentas-cobro",
-      "titulo": "Cuentas de Cobro Pedro Vergara",
-      "archivo_html": "docs/CUENTAS DE COBRO PEDRO VERGARA.html",
-      "tipo": "financiero"
     },
     "doc-contrato-cp": {
       "id": "doc-contrato-cp",
-      "titulo": "Contrato de Cuentas en Participación (nunca firmado)",
-      "archivo_html": "docs/Contrato de Cuentas en Participación Paretomed  APORTADO POR OSCAR VIERNES 22 DE AGOSTO 2025 NUNCA FIRMADO.html",
+      "titulo": "Contrato de Cuentas en Participación",
+      "archivo_html": "docs/contrato-de-cuentas-en-participacion-paretomed-aportado-por-oscar-viernes-22-de-agosto-2025-nunca-firmado.html",
       "tipo": "documento"
     },
-    "doc-contrato-transaccion": {
-      "id": "doc-contrato-transaccion",
-      "titulo": "Contrato de Transacción Dr. Flight",
-      "archivo_html": "docs/Contrato de Transacción Dr. Flight 141025.html",
-      "tipo": "documento"
-    },
-    "doc-reels-abril": {
-      "id": "doc-reels-abril",
-      "titulo": "Documento de Reels (28 abril)",
-      "archivo_html": "docs/Copia de Documento de Reels - 28 de abril, 14_12.html",
-      "tipo": "documento"
-    },
-    "doc-kpis-2025": {
-      "id": "doc-kpis-2025",
-      "titulo": "KPIs 2025",
-      "archivo_html": "docs/Copia de KPIS 2025 .html",
-      "tipo": "financiero"
-    },
-    "doc-reels-oct-dic": {
-      "id": "doc-reels-oct-dic",
-      "titulo": "Reels Octubre - Noviembre - Diciembre",
-      "archivo_html": "docs/Copia de Reels Octubre - Noviembre - Diciembre.html",
-      "tipo": "documento"
-    },
-    "doc-metodologia": {
-      "id": "doc-metodologia",
-      "titulo": "Explicación de Metodología (14 mayo 2024)",
-      "archivo_html": "docs/Explicación de metodología fechado 14 de mayo 2024.html",
-      "tipo": "documento"
-    },
-    "doc-carta-recomendacion": {
-      "id": "doc-carta-recomendacion",
-      "titulo": "Carta de Recomendación ParetoMed",
-      "archivo_html": "docs/Paretomed - Educación Médica carta de recomendación.html",
+    "doc-camara-comercio-doctor-flight": {
+      "id": "doc-camara-comercio-doctor-flight",
+      "titulo": "Certificado Cámara de Comercio Doctor Flight S.A.S.",
+      "archivo_html": "assets/certificado-empresa-pedro.pdf",
       "tipo": "certificacion"
     },
-    "doc-planificador-reels": {
-      "id": "doc-planificador-reels",
-      "titulo": "Planificador de Reels/Videos",
-      "archivo_html": "docs/Planificador de Reels_Videos.html",
-      "tipo": "documento"
-    },
-    "doc-reels-julio": {
-      "id": "doc-reels-julio",
-      "titulo": "Reels Julio 2024",
-      "archivo_html": "docs/Reels Julio 2024.html",
-      "tipo": "documento"
-    },
-    "doc-reels-septiembre": {
-      "id": "doc-reels-septiembre",
-      "titulo": "Reels Septiembre 2024",
-      "archivo_html": "docs/Reels septiembre 2024.html",
+    "doc-sop-reunion": {
+      "id": "doc-sop-reunion",
+      "titulo": "SOP Reunión 1:1",
+      "archivo_html": "docs/sop-reunion-1-1-redactado-5-de-junio-2024-por-pedro.html",
       "tipo": "documento"
     },
     "doc-reels-guiones": {
       "id": "doc-reels-guiones",
-      "titulo": "Reels y Guiones 2025",
-      "archivo_html": "docs/Reels y guiones 2025.html",
+      "titulo": "Reels y guiones 2025",
+      "archivo_html": "docs/reels-y-guiones-2025.html",
       "tipo": "documento"
     },
-    "doc-sop-reunion": {
-      "id": "doc-sop-reunion",
-      "titulo": "SOP Reunión 1:1 (Redactado por Pedro, Jun 2024)",
-      "archivo_html": "docs/SOP REUNION 1_1 REDACTADO 5 DE JUNIO 2024 POR PEDRO.html",
+    "doc-certificado-dnda": {
+      "id": "doc-certificado-dnda",
+      "titulo": "Certificado DNDA de obras",
+      "archivo_html": "assets/certificado-obras-pedro-vergara.pdf",
+      "tipo": "certificacion"
+    },
+    "doc-acuerdo-aportes": {
+      "id": "doc-acuerdo-aportes",
+      "titulo": "Acuerdo con aportes de ambos y notas manuscritas",
+      "archivo_html": "docs/acuerdo-socios-original-con-aportes-de-ambos-nunca-firmado-aportado-en-julio-2024.html",
       "tipo": "documento"
     },
-    "doc-sop-seguimiento": {
-      "id": "doc-sop-seguimiento",
-      "titulo": "SOP Seguimiento ParetoMed (por Pedro)",
-      "archivo_html": "docs/SOP SEGUIMIENTO PARETOMED REDACTADO POR PEDRO.html",
+    "doc-hechos": {
+      "id": "doc-hechos",
+      "titulo": "Hechos demanda ParetoMed 2026",
+      "archivo_html": "raw_source/hechos-demanda-paretomed-2026.md",
+      "tipo": "markdown"
+    },
+    "doc-reuniones": {
+      "id": "doc-reuniones",
+      "titulo": "Investigación demanda ParetoMed 2026",
+      "archivo_html": "raw_source/investigacion-demanda-paretomed-2026.md",
+      "tipo": "markdown"
+    },
+    "doc-acuerdo-original": {
+      "id": "doc-acuerdo-original",
+      "titulo": "Acuerdo de socios original",
+      "archivo_html": "docs/acuerdo-socios-original-con-aportes-de-ambos-nunca-firmado.html",
       "tipo": "documento"
     },
-    "doc-acuerdo-socios-julio": {
-      "id": "doc-acuerdo-socios-julio",
-      "titulo": "Acuerdo de Socios (con aportes, julio 2024, nunca firmado)",
-      "archivo_html": "docs/acuerdo socios ORIGINAL CON APORTES DE AMBOS NUNCA FIRMADO APORTADO EN JULIO 2024.html",
+    "doc-acuerdo-sas": {
+      "id": "doc-acuerdo-sas",
+      "titulo": "Hechos demanda ParetoMed 2026",
+      "archivo_html": "raw_source/hechos-demanda-paretomed-2026.md",
+      "tipo": "markdown"
+    },
+    "doc-transaccion-oscar": {
+      "id": "doc-transaccion-oscar",
+      "titulo": "Contrato de transacción propuesto por Oscar",
+      "archivo_html": "assets/contrato-de-transaccion-no-10-09-2025.pdf",
       "tipo": "documento"
     },
-    "doc-acuerdo-socios-original": {
-      "id": "doc-acuerdo-socios-original",
-      "titulo": "Acuerdo de Socios Original (nunca firmado)",
-      "archivo_html": "docs/acuerdo socios ORIGINAL CON APORTES DE AMBOS NUNCA FIRMADO.html",
+    "doc-transaccion-pedro": {
+      "id": "doc-transaccion-pedro",
+      "titulo": "Contrapropuesta de transacción Doctor Flight",
+      "archivo_html": "docs/contrato-de-transaccion-dr-flight-141025.html",
       "tipo": "documento"
+    },
+    "doc-politica-web": {
+      "id": "doc-politica-web",
+      "titulo": "Documento ejecutivo para abogado Toledo",
+      "archivo_html": "raw_source/documento-ejecutivo-para-abogado-toledo.md",
+      "tipo": "markdown"
+    },
+    "doc-camara-comercio": {
+      "id": "doc-camara-comercio",
+      "titulo": "Certificado Cámara de Comercio ParetoMed",
+      "archivo_html": "assets/certificado-oscar.pdf",
+      "tipo": "certificacion"
+    },
+    "doc-constancia-conciliacion": {
+      "id": "doc-constancia-conciliacion",
+      "titulo": "Constancia de no conciliación",
+      "archivo_html": "assets/constancia-de-no-conciliacion-n-00-1844-registrada.pdf",
+      "tipo": "certificacion"
+    },
+    "doc-valoracion": {
+      "id": "doc-valoracion",
+      "titulo": "Valuación ParetoMed 2026",
+      "archivo_html": "raw_source/valuacion-paretomed-2026.md",
+      "tipo": "markdown"
+    },
+    "doc-kpis-2025": {
+      "id": "doc-kpis-2025",
+      "titulo": "KPIs 2025 ParetoMed",
+      "archivo_html": "docs/copia-de-kpis-2025.html",
+      "tipo": "financiero"
+    },
+    "doc-pagos-bancolombia": {
+      "id": "doc-pagos-bancolombia",
+      "titulo": "Capturas Bancolombia pagos a Pedro",
+      "archivo_html": "assets/pagos-1.jpeg",
+      "tipo": "financiero"
+    },
+    "doc-reunion-14jul": {
+      "id": "doc-reunion-14jul",
+      "titulo": "Hechos demanda ParetoMed 2026",
+      "archivo_html": "raw_source/hechos-demanda-paretomed-2026.md",
+      "tipo": "markdown"
+    },
+    "doc-comprobantes-excel": {
+      "id": "doc-comprobantes-excel",
+      "titulo": "Comprobantes ParetoMed análisis",
+      "archivo_html": "docs/comprobantes-paretomed-analisis.html",
+      "tipo": "financiero"
+    },
+    "doc-analisis-comprobantes": {
+      "id": "doc-analisis-comprobantes",
+      "titulo": "Análisis fiscal financiero ParetoMed 2026",
+      "archivo_html": "raw_source/analisis-fiscal-financiero-paretomed-2026.md",
+      "tipo": "markdown"
+    },
+    "doc-proyeccion-financiera": {
+      "id": "doc-proyeccion-financiera",
+      "titulo": "Análisis fiscal financiero ParetoMed 2026",
+      "archivo_html": "raw_source/analisis-fiscal-financiero-paretomed-2026.md",
+      "tipo": "markdown"
+    },
+    "doc-facturas-avanz": {
+      "id": "doc-facturas-avanz",
+      "titulo": "Factura comparativa Avanz",
+      "archivo_html": "assets/fe1-avanz-otro-cliente-con-concepto-distinto.pdf",
+      "tipo": "financiero"
+    },
+    "doc-facturas-doctor-flight": {
+      "id": "doc-facturas-doctor-flight",
+      "titulo": "Cuentas de cobro y facturas Doctor Flight",
+      "archivo_html": "docs/cuentas-de-cobro-pedro-vergara.html",
+      "tipo": "financiero"
+    },
+    "doc-analisis-fiscal": {
+      "id": "doc-analisis-fiscal",
+      "titulo": "Análisis jurídico de solidez del caso",
+      "archivo_html": "raw_source/analisis-juridico-solidez-del-caso.md",
+      "tipo": "markdown"
     }
   },
   "pruebas_urls": {
     "P-01": {
-      "html": "docs/transcripciones.html",
+      "html": "docs/grabacion-llamada-oscar-paretomed-250814-184648-original.html",
       "raw": null,
       "multipleraw": null
     },
@@ -2610,7 +2685,7 @@ const CASE_DATA = {
       "multipleraw": null
     },
     "P-04": {
-      "html": "docs/BORRADOR ACUERDO ORIGINAL DE PEDRO FECHADO 6 DE FEBRERO 2024.html",
+      "html": "docs/borrador-acuerdo-original-de-pedro-fechado-6-de-febrero-2024.html",
       "raw": null,
       "multipleraw": null
     },
@@ -2620,42 +2695,42 @@ const CASE_DATA = {
       "multipleraw": null
     },
     "P-06": {
-      "html": "docs/acuerdo socios ORIGINAL CON APORTES DE AMBOS NUNCA FIRMADO.html",
+      "html": "docs/acuerdo-socios-original-con-aportes-de-ambos-nunca-firmado.html",
       "raw": null,
       "multipleraw": null
     },
     "P-07": {
-      "html": "docs/acuerdo socios ORIGINAL CON APORTES DE AMBOS NUNCA FIRMADO APORTADO EN JULIO 2024.html",
+      "html": "docs/acuerdo-socios-original-con-aportes-de-ambos-nunca-firmado-aportado-en-julio-2024.html",
       "raw": null,
       "multipleraw": null
     },
     "P-08": {
-      "html": "docs/acuerdo socios ORIGINAL CON APORTES DE AMBOS NUNCA FIRMADO.html",
+      "html": "docs/acuerdo-socios-original-con-aportes-de-ambos-nunca-firmado.html",
       "raw": null,
       "multipleraw": null
     },
     "P-09": {
-      "html": "docs/acuerdo socios ORIGINAL CON APORTES DE AMBOS NUNCA FIRMADO APORTADO EN JULIO 2024.html",
+      "html": "docs/acuerdo-socios-original-con-aportes-de-ambos-nunca-firmado-aportado-en-julio-2024.html",
       "raw": null,
       "multipleraw": null
     },
     "P-10": {
-      "html": "docs/BORRADOR ACUERDO ORIGINAL DE PEDRO FECHADO 6 DE FEBRERO 2024.html",
+      "html": null,
       "raw": null,
       "multipleraw": null
     },
     "P-11": {
-      "html": "docs/Paretomed - Educación Médica carta de recomendación.html",
+      "html": "docs/paretomed-educacion-medica-carta-de-recomendacion.html",
       "raw": null,
       "multipleraw": null
     },
     "P-12": {
-      "html": "docs/CUENTAS DE COBRO PEDRO VERGARA.html",
+      "html": "docs/cuentas-de-cobro-pedro-vergara.html",
       "raw": null,
       "multipleraw": [
-        "assets/FE3.pdf",
-        "assets/FE4.pdf",
-        "assets/FE5.pdf"
+        "assets/fe3.pdf",
+        "assets/fe4.pdf",
+        "assets/fe5.pdf"
       ]
     },
     "P-13": {
@@ -2664,17 +2739,17 @@ const CASE_DATA = {
       "multipleraw": null
     },
     "P-14": {
-      "html": "docs/Contrato de Cuentas en Participación Paretomed  APORTADO POR OSCAR VIERNES 22 DE AGOSTO 2025 NUNCA FIRMADO.html",
+      "html": "docs/contrato-de-cuentas-en-participacion-paretomed-aportado-por-oscar-viernes-22-de-agosto-2025-nunca-firmado.html",
       "raw": null,
       "multipleraw": null
     },
     "P-15": {
       "html": null,
-      "raw": "assets/Contrato de transacción No.10.09.2025.pdf",
+      "raw": "assets/contrato-de-transaccion-no-10-09-2025.pdf",
       "multipleraw": null
     },
     "P-16": {
-      "html": "docs/Contrato de Transacción Dr. Flight 141025.html",
+      "html": "docs/contrato-de-transaccion-dr-flight-141025.html",
       "raw": null,
       "multipleraw": null
     },
@@ -2690,64 +2765,64 @@ const CASE_DATA = {
     },
     "P-19": {
       "html": null,
-      "raw": "assets/CONSTANCIA DE NO CONCILIACIÓN N° 00-1844 REGISTRADA.pdf",
+      "raw": null,
       "multipleraw": null
     },
     "P-20": {
       "html": null,
-      "raw": "assets/certificado OSCAR.pdf",
+      "raw": "assets/certificado-oscar.pdf",
       "multipleraw": null
     },
     "P-21": {
       "html": null,
-      "raw": "assets/certificado EMPRESA PEDRO.pdf",
+      "raw": "assets/certificado-empresa-pedro.pdf",
       "multipleraw": null
     },
     "P-22": {
       "html": null,
-      "raw": "assets/Certificado de registro.pdf",
+      "raw": "assets/certificado-de-registro.pdf",
       "multipleraw": null
     },
     "P-23": {
       "html": null,
-      "raw": "assets/Certificado Obras Pedro Vergara.pdf",
+      "raw": "assets/certificado-obras-pedro-vergara.pdf",
       "multipleraw": null
     },
     "P-24": {
-      "html": "docs/Reels y guiones 2025.html",
+      "html": "docs/reels-y-guiones-2025.html",
       "raw": null,
       "multipleraw": null
     },
     "P-25": {
-      "html": "docs/SOP REUNION 1_1 REDACTADO 5 DE JUNIO 2024 POR PEDRO.html",
+      "html": "docs/sop-reunion-1-1-redactado-5-de-junio-2024-por-pedro.html",
       "raw": null,
       "multipleraw": [
-        "docs/SOP SEGUIMIENTO PARETOMED REDACTADO POR PEDRO.html",
-        "docs/Explicación de metodología fechado 14 de mayo 2024.html"
+        "docs/sop-seguimiento-paretomed-redactado-por-pedro.html",
+        "docs/explicacion-de-metodologia-fechado-14-de-mayo-2024.html"
       ]
     },
     "P-26": {
-      "html": "docs/SOP SEGUIMIENTO PARETOMED REDACTADO POR PEDRO.html",
+      "html": null,
       "raw": null,
       "multipleraw": null
     },
     "P-27": {
-      "html": "docs/Explicación de metodología fechado 14 de mayo 2024.html",
+      "html": null,
       "raw": null,
       "multipleraw": null
     },
     "P-28": {
-      "html": "docs/Reels y guiones 2025.html",
+      "html": null,
       "raw": null,
       "multipleraw": null
     },
     "P-29": {
-      "html": "docs/Reels Julio 2024.html",
+      "html": null,
       "raw": null,
       "multipleraw": null
     },
     "P-30": {
-      "html": "docs/20251111 PEDRO VERGARA - Solicitud de conciliación por antiguos abogados EF LEGAL nunca radicada ni enviada.html",
+      "html": "docs/20251111-pedro-vergara-solicitud-de-conciliacion-por-antiguos-abogados-ef-legal-nunca-radicada-ni-enviada.html",
       "raw": null,
       "multipleraw": null
     },
@@ -2762,7 +2837,7 @@ const CASE_DATA = {
       "multipleraw": null
     },
     "P-33": {
-      "html": "docs/Bitácora transcripción chat con Adriana asesora de ventas paretomed.html",
+      "html": null,
       "raw": null,
       "multipleraw": null
     },
@@ -2772,22 +2847,22 @@ const CASE_DATA = {
       "multipleraw": null
     },
     "P-35": {
-      "html": "docs/20251111 PEDRO VERGARA - Solicitud de conciliación por antiguos abogados EF LEGAL nunca radicada ni enviada.html",
+      "html": null,
       "raw": null,
       "multipleraw": null
     },
     "P-36": {
-      "html": "docs/COMPROBANTES_PARETOMED_ANALISIS.html",
+      "html": null,
       "raw": null,
       "multipleraw": [
-        "assets/PAGOS 1.jpeg",
-        "assets/PAGOS 2.jpeg",
-        "assets/PAGOS 3.jpeg",
-        "assets/PAGOS 4.jpeg"
+        "assets/pagos-1.jpeg",
+        "assets/pagos-2.jpeg",
+        "assets/pagos-3.jpeg",
+        "assets/pagos-4.jpeg"
       ]
     },
     "P-37": {
-      "html": "docs/COMPROBANTES_PARETOMED_ANALISIS.html",
+      "html": null,
       "raw": null,
       "multipleraw": null
     },
@@ -2812,12 +2887,12 @@ const CASE_DATA = {
       "multipleraw": null
     },
     "P-42": {
-      "html": "docs/COMPROBANTES_PARETOMED_ANALISIS.html",
+      "html": "docs/comprobantes-paretomed-analisis.html",
       "raw": null,
       "multipleraw": null
     },
     "P-43": {
-      "html": "docs/Copia de KPIS 2025 .html",
+      "html": "docs/copia-de-kpis-2025.html",
       "raw": null,
       "multipleraw": null
     },
@@ -2835,8 +2910,8 @@ const CASE_DATA = {
       "html": null,
       "raw": null,
       "multipleraw": [
-        "assets/FE1 (AVANZ OTRO CLIENTE CON CONCEPTO DISTINTO).pdf",
-        "assets/FE15 (ULTIMA DE AVANZ).pdf"
+        "assets/fe1-avanz-otro-cliente-con-concepto-distinto.pdf",
+        "assets/fe15-ultima-de-avanz.pdf"
       ]
     },
     "P-47": {
@@ -2851,7 +2926,7 @@ const CASE_DATA = {
     },
     "P-49": {
       "html": "docs/chat-primo.html",
-      "raw": "assets/primo/00000044-Certificado_20260210.pdf",
+      "raw": "assets/primo/00000044-certificado-20260210.pdf",
       "multipleraw": null
     },
     "P-50": {
@@ -3134,298 +3209,313 @@ const CASE_DATA = {
   },
   "archivos_crudos": [
     {
-      "nombre": "20251111 PEDRO VERGARA - Solicitud de conciliación por antiguos abogados EF LEGAL nunca radicada ni enviada.docx",
-      "ruta": "raw_source/20251111 PEDRO VERGARA - Solicitud de conciliación por antiguos abogados EF LEGAL nunca radicada ni enviada.docx",
+      "nombre": "20251111 PEDRO VERGARA - Solicitud de conciliación por antiguos abogados EF LEGAL nunca radicada ni enviada.docx",
+      "ruta": "raw_source/20251111-pedro-vergara-solicitud-de-conciliacion-por-antiguos-abogados-ef-legal-nunca-radicada-ni-enviada.docx",
       "tamano": 34848
     },
     {
       "nombre": "acuerdo socios ORIGINAL CON APORTES DE AMBOS NUNCA FIRMADO APORTADO EN JULIO 2024.docx",
-      "ruta": "raw_source/acuerdo socios ORIGINAL CON APORTES DE AMBOS NUNCA FIRMADO APORTADO EN JULIO 2024.docx",
+      "ruta": "raw_source/acuerdo-socios-original-con-aportes-de-ambos-nunca-firmado-aportado-en-julio-2024.docx",
       "tamano": 16487
     },
     {
       "nombre": "acuerdo socios ORIGINAL CON APORTES DE AMBOS NUNCA FIRMADO.docx",
-      "ruta": "raw_source/acuerdo socios ORIGINAL CON APORTES DE AMBOS NUNCA FIRMADO.docx",
+      "ruta": "raw_source/acuerdo-socios-original-con-aportes-de-ambos-nunca-firmado.docx",
       "tamano": 16487
     },
     {
+      "nombre": "ANALISIS_DIFF_DEMANDA.md",
+      "ruta": "raw_source/analisis-diff-demanda.md",
+      "tamano": 21892
+    },
+    {
       "nombre": "ANALISIS_FISCAL_FINANCIERO_PARETOMED_2026.md",
-      "ruta": "raw_source/ANALISIS_FISCAL_FINANCIERO_PARETOMED_2026.md",
+      "ruta": "raw_source/analisis-fiscal-financiero-paretomed-2026.md",
       "tamano": 26634
     },
     {
       "nombre": "ANALISIS_JURIDICO_SOLIDEZ_DEL_CASO.md",
-      "ruta": "raw_source/ANALISIS_JURIDICO_SOLIDEZ_DEL_CASO.md",
+      "ruta": "raw_source/analisis-juridico-solidez-del-caso.md",
       "tamano": 18072
     },
     {
       "nombre": "Bitácora transcripción chat con Adriana asesora de ventas paretomed.docx",
-      "ruta": "raw_source/Bitácora transcripción chat con Adriana asesora de ventas paretomed.docx",
+      "ruta": "raw_source/bitacora-transcripcion-chat-con-adriana-asesora-de-ventas-paretomed.docx",
       "tamano": 50463
     },
     {
       "nombre": "BORRADOR ACUERDO ORIGINAL DE PEDRO FECHADO 6 DE FEBRERO 2024.docx",
-      "ruta": "raw_source/BORRADOR ACUERDO ORIGINAL DE PEDRO FECHADO 6 DE FEBRERO 2024.docx",
+      "ruta": "raw_source/borrador-acuerdo-original-de-pedro-fechado-6-de-febrero-2024.docx",
       "tamano": 7878
     },
     {
       "nombre": "BORRADOR DEMANDA 2.docx",
-      "ruta": "raw_source/BORRADOR DEMANDA 2.docx",
+      "ruta": "raw_source/borrador-demanda-2.docx",
       "tamano": 69576
     },
     {
       "nombre": "Certificado de registro.pdf",
-      "ruta": "raw_source/Certificado de registro.pdf",
+      "ruta": "raw_source/certificado-de-registro.pdf",
       "tamano": 106716
     },
     {
       "nombre": "certificado EMPRESA PEDRO.pdf",
-      "ruta": "raw_source/certificado EMPRESA PEDRO.pdf",
+      "ruta": "raw_source/certificado-empresa-pedro.pdf",
       "tamano": 123298
     },
     {
       "nombre": "Certificado Obras Pedro Vergara.pdf",
-      "ruta": "raw_source/Certificado Obras Pedro Vergara.pdf",
+      "ruta": "raw_source/certificado-obras-pedro-vergara.pdf",
       "tamano": 108831
     },
     {
       "nombre": "certificado OSCAR.pdf",
-      "ruta": "raw_source/certificado OSCAR.pdf",
+      "ruta": "raw_source/certificado-oscar.pdf",
       "tamano": 60384
     },
     {
       "nombre": "Chat de WhatsApp con Correcciones y sugerencias PARETOMED.txt",
-      "ruta": "raw_source/Chat de WhatsApp con Correcciones y sugerencias PARETOMED.txt",
+      "ruta": "raw_source/chat-de-whatsapp-con-correcciones-y-sugerencias-paretomed.txt",
       "tamano": 123298
     },
     {
       "nombre": "Chat de WhatsApp con Equipo de Trabajo - Paretomed 🟠.txt",
-      "ruta": "raw_source/Chat de WhatsApp con Equipo de Trabajo - Paretomed 🟠.txt",
+      "ruta": "raw_source/chat-de-whatsapp-con-equipo-de-trabajo-paretomed.txt",
       "tamano": 1055374
     },
     {
       "nombre": "Chat de WhatsApp con Oscar Maldonado Paretomed.txt",
-      "ruta": "raw_source/Chat de WhatsApp con Oscar Maldonado Paretomed.txt",
+      "ruta": "raw_source/chat-de-whatsapp-con-oscar-maldonado-paretomed.txt",
       "tamano": 2957817
     },
     {
       "nombre": "00000018-PHOTO-2026-02-10-16-01-26.jpg",
-      "ruta": "raw_source/chat-primo/00000018-PHOTO-2026-02-10-16-01-26.jpg",
+      "ruta": "raw_source/chat-primo/00000018-photo-2026-02-10-16-01-26.jpg",
       "tamano": 198131
     },
     {
       "nombre": "00000044-Certificado_20260210.pdf",
-      "ruta": "raw_source/chat-primo/00000044-Certificado_20260210.pdf",
+      "ruta": "raw_source/chat-primo/00000044-certificado-20260210.pdf",
       "tamano": 104682
     },
     {
       "nombre": "_chat.txt",
-      "ruta": "raw_source/chat-primo/_chat.txt",
+      "ruta": "raw_source/chat-primo/chat.txt",
       "tamano": 5342
     },
     {
       "nombre": "COMPROBANTES_PARETOMED_ANALISIS.csv",
-      "ruta": "raw_source/COMPROBANTES_PARETOMED_ANALISIS.csv",
+      "ruta": "raw_source/comprobantes-paretomed-analisis.csv",
       "tamano": 41639
     },
     {
       "nombre": "COMPROBANTES_PARETOMED_ANALISIS.xlsx",
-      "ruta": "raw_source/COMPROBANTES_PARETOMED_ANALISIS.xlsx",
+      "ruta": "raw_source/comprobantes-paretomed-analisis.xlsx",
       "tamano": 32988
     },
     {
-      "nombre": "Contrato de Cuentas en Participación Paretomed  APORTADO POR OSCAR VIERNES 22 DE AGOSTO 2025 NUNCA FIRMADO.docx",
-      "ruta": "raw_source/Contrato de Cuentas en Participación Paretomed  APORTADO POR OSCAR VIERNES 22 DE AGOSTO 2025 NUNCA FIRMADO.docx",
+      "nombre": "CONSTANCIA DE NO CONCILIACIÓN N° 00-1844 REGISTRADA.pdf",
+      "ruta": "raw_source/constancia-de-no-conciliacion-n-00-1844-registrada.pdf",
+      "tamano": 414059
+    },
+    {
+      "nombre": "Contrato de Cuentas en Participación Paretomed  APORTADO POR OSCAR VIERNES 22 DE AGOSTO 2025 NUNCA FIRMADO.docx",
+      "ruta": "raw_source/contrato-de-cuentas-en-participacion-paretomed-aportado-por-oscar-viernes-22-de-agosto-2025-nunca-firmado.docx",
       "tamano": 38655
     },
     {
-      "nombre": "Contrato de transacción No.10.09.2025.pdf",
-      "ruta": "raw_source/Contrato de transacción No.10.09.2025.pdf",
+      "nombre": "Contrato de transacción No.10.09.2025.pdf",
+      "ruta": "raw_source/contrato-de-transaccion-no-10-09-2025.pdf",
       "tamano": 226001
     },
     {
       "nombre": "Contrato de Transacción Dr. Flight 141025.docx",
-      "ruta": "raw_source/Contrato de Transacción Dr. Flight 141025.docx",
+      "ruta": "raw_source/contrato-de-transaccion-dr-flight-141025.docx",
       "tamano": 38516
     },
     {
       "nombre": "Copia de Documento de Reels - 28 de abril, 14_12.docx",
-      "ruta": "raw_source/Copia de Documento de Reels - 28 de abril, 14_12.docx",
+      "ruta": "raw_source/copia-de-documento-de-reels-28-de-abril-14-12.docx",
       "tamano": 600017
     },
     {
       "nombre": "Copia de KPIS 2025 .xlsx",
-      "ruta": "raw_source/Copia de KPIS 2025 .xlsx",
+      "ruta": "raw_source/copia-de-kpis-2025.xlsx",
       "tamano": 1304250
     },
     {
       "nombre": "Copia de Reels Octubre - Noviembre - Diciembre.docx",
-      "ruta": "raw_source/Copia de Reels Octubre - Noviembre - Diciembre.docx",
+      "ruta": "raw_source/copia-de-reels-octubre-noviembre-diciembre.docx",
       "tamano": 266548
     },
     {
       "nombre": "Copy of TESIS PEDRO VERGARA 2.pdf",
-      "ruta": "raw_source/Copy of TESIS PEDRO VERGARA 2.pdf",
+      "ruta": "raw_source/copy-of-tesis-pedro-vergara-2.pdf",
       "tamano": 430955
     },
     {
       "nombre": "CRM SHEETS CAMPAÑA.xlsx",
-      "ruta": "raw_source/CRM SHEETS CAMPAÑA.xlsx",
+      "ruta": "raw_source/crm-sheets-campana.xlsx",
       "tamano": 247487
     },
     {
       "nombre": "CUENTAS DE COBRO PEDRO VERGARA.docx",
-      "ruta": "raw_source/CUENTAS DE COBRO PEDRO VERGARA.docx",
+      "ruta": "raw_source/cuentas-de-cobro-pedro-vergara.docx",
       "tamano": 8557
     },
     {
       "nombre": "DOCUMENTO_EJECUTIVO_PARA_ABOGADO_TOLEDO.md",
-      "ruta": "raw_source/DOCUMENTO_EJECUTIVO_PARA_ABOGADO_TOLEDO.md",
+      "ruta": "raw_source/documento-ejecutivo-para-abogado-toledo.md",
       "tamano": 9425
     },
     {
       "nombre": "Explicación de metodología fechado 14 de mayo 2024.docx",
-      "ruta": "raw_source/Explicación de metodología fechado 14 de mayo 2024.docx",
+      "ruta": "raw_source/explicacion-de-metodologia-fechado-14-de-mayo-2024.docx",
       "tamano": 188944
     },
     {
       "nombre": "FE1 (AVANZ OTRO CLIENTE CON CONCEPTO DISTINTO).pdf",
-      "ruta": "raw_source/FE1 (AVANZ OTRO CLIENTE CON CONCEPTO DISTINTO).pdf",
+      "ruta": "raw_source/fe1-avanz-otro-cliente-con-concepto-distinto.pdf",
       "tamano": 42176
     },
     {
       "nombre": "FE15 (ULTIMA DE AVANZ).pdf",
-      "ruta": "raw_source/FE15 (ULTIMA DE AVANZ).pdf",
+      "ruta": "raw_source/fe15-ultima-de-avanz.pdf",
       "tamano": 42480
     },
     {
       "nombre": "FE3.pdf",
-      "ruta": "raw_source/FE3.pdf",
+      "ruta": "raw_source/fe3.pdf",
       "tamano": 41154
     },
     {
       "nombre": "FE4.pdf",
-      "ruta": "raw_source/FE4.pdf",
+      "ruta": "raw_source/fe4.pdf",
       "tamano": 40988
     },
     {
       "nombre": "FE5.pdf",
-      "ruta": "raw_source/FE5.pdf",
+      "ruta": "raw_source/fe5.pdf",
       "tamano": 41957
     },
     {
+      "nombre": "Grabación de llamada Oscar PARETOMED_250814_184648_original.txt",
+      "ruta": "raw_source/grabacion-de-llamada-oscar-paretomed-250814-184648-original.txt",
+      "tamano": 28317
+    },
+    {
       "nombre": "HANDOFF_INSTANCIA_FINAL.md",
-      "ruta": "raw_source/HANDOFF_INSTANCIA_FINAL.md",
+      "ruta": "raw_source/handoff-instancia-final.md",
       "tamano": 15877
     },
     {
       "nombre": "HANDOFF_SIGUIENTE_INSTANCIA.md",
-      "ruta": "raw_source/HANDOFF_SIGUIENTE_INSTANCIA.md",
+      "ruta": "raw_source/handoff-siguiente-instancia.md",
       "tamano": 10957
     },
     {
       "nombre": "HECHOS_DEMANDA_PARETOMED_2026.md",
-      "ruta": "raw_source/HECHOS_DEMANDA_PARETOMED_2026.md",
+      "ruta": "raw_source/hechos-demanda-paretomed-2026.md",
       "tamano": 63457
     },
     {
       "nombre": "INVESTIGACION_DEMANDA_PARETOMED_2026.md",
-      "ruta": "raw_source/INVESTIGACION_DEMANDA_PARETOMED_2026.md",
+      "ruta": "raw_source/investigacion-demanda-paretomed-2026.md",
       "tamano": 71106
     },
     {
       "nombre": "PAGOS 1.jpeg",
-      "ruta": "raw_source/PAGOS 1.jpeg",
+      "ruta": "raw_source/pagos-1.jpeg",
       "tamano": 370894
     },
     {
       "nombre": "PAGOS 2.jpeg",
-      "ruta": "raw_source/PAGOS 2.jpeg",
+      "ruta": "raw_source/pagos-2.jpeg",
       "tamano": 377143
     },
     {
       "nombre": "PAGOS 3.jpeg",
-      "ruta": "raw_source/PAGOS 3.jpeg",
+      "ruta": "raw_source/pagos-3.jpeg",
       "tamano": 354913
     },
     {
       "nombre": "PAGOS 4.jpeg",
-      "ruta": "raw_source/PAGOS 4.jpeg",
+      "ruta": "raw_source/pagos-4.jpeg",
       "tamano": 360353
     },
     {
       "nombre": "Paretomed - Educación Médica carta de recomendación.docx",
-      "ruta": "raw_source/Paretomed - Educación Médica carta de recomendación.docx",
+      "ruta": "raw_source/paretomed-educacion-medica-carta-de-recomendacion.docx",
       "tamano": 27778
     },
     {
       "nombre": "Planificador de Reels_Videos.xlsx",
-      "ruta": "raw_source/Planificador de Reels_Videos.xlsx",
+      "ruta": "raw_source/planificador-de-reels-videos.xlsx",
       "tamano": 14785
     },
     {
       "nombre": "PLAN_ACCION_DEMANDA_2026.md",
-      "ruta": "raw_source/PLAN_ACCION_DEMANDA_2026.md",
+      "ruta": "raw_source/plan-accion-demanda-2026.md",
       "tamano": 16535
     },
     {
       "nombre": "PLAN_WEB_CASO_PARETOMED.md",
-      "ruta": "raw_source/PLAN_WEB_CASO_PARETOMED.md",
+      "ruta": "raw_source/plan-web-caso-paretomed.md",
       "tamano": 47306
     },
     {
       "nombre": "PUNTOS_DEBILES_Y_PREPARACION.md",
-      "ruta": "raw_source/PUNTOS_DEBILES_Y_PREPARACION.md",
+      "ruta": "raw_source/puntos-debiles-y-preparacion.md",
       "tamano": 17898
     },
     {
       "nombre": "Reels Julio 2024.docx",
-      "ruta": "raw_source/Reels Julio 2024.docx",
+      "ruta": "raw_source/reels-julio-2024.docx",
       "tamano": 106996
     },
     {
       "nombre": "Reels septiembre 2024.docx",
-      "ruta": "raw_source/Reels septiembre 2024.docx",
+      "ruta": "raw_source/reels-septiembre-2024.docx",
       "tamano": 446343
     },
     {
       "nombre": "Reels y guiones 2025.docx",
-      "ruta": "raw_source/Reels y guiones 2025.docx",
+      "ruta": "raw_source/reels-y-guiones-2025.docx",
       "tamano": 218218
     },
     {
       "nombre": "RESPUESTAS_HECHOS_AMPLIADOS_2026.md",
-      "ruta": "raw_source/RESPUESTAS_HECHOS_AMPLIADOS_2026.md",
+      "ruta": "raw_source/respuestas-hechos-ampliados-2026.md",
       "tamano": 32059
     },
     {
       "nombre": "RESPUESTAS_INSTANCIA_3_PROPIEDAD_INTELECTUAL.md",
-      "ruta": "raw_source/RESPUESTAS_INSTANCIA_3_PROPIEDAD_INTELECTUAL.md",
+      "ruta": "raw_source/respuestas-instancia-3-propiedad-intelectual.md",
       "tamano": 26908
     },
     {
       "nombre": "SOP REUNION 1_1 REDACTADO 5 DE JUNIO 2024 POR PEDRO.docx",
-      "ruta": "raw_source/SOP REUNION 1_1 REDACTADO 5 DE JUNIO 2024 POR PEDRO.docx",
+      "ruta": "raw_source/sop-reunion-1-1-redactado-5-de-junio-2024-por-pedro.docx",
       "tamano": 8270
     },
     {
       "nombre": "SOP SEGUIMIENTO PARETOMED REDACTADO POR PEDRO.docx",
-      "ruta": "raw_source/SOP SEGUIMIENTO PARETOMED REDACTADO POR PEDRO.docx",
+      "ruta": "raw_source/sop-seguimiento-paretomed-redactado-por-pedro.docx",
       "tamano": 67188
     },
     {
       "nombre": "TAREA_A_MONTOS_PARA_BORRADOR_DEMANDA.md",
-      "ruta": "raw_source/TAREA_A_MONTOS_PARA_BORRADOR_DEMANDA.md",
+      "ruta": "raw_source/tarea-a-montos-para-borrador-demanda.md",
       "tamano": 9313
     },
     {
       "nombre": "TRANSCRIPCIONES_CONSOLIDADAS_FINAL.txt",
-      "ruta": "raw_source/TRANSCRIPCIONES_CONSOLIDADAS_FINAL.txt",
+      "ruta": "raw_source/transcripciones-consolidadas-final.txt",
       "tamano": 1669348
     },
     {
       "nombre": "VALUACION_PARETOMED_2026.md",
-      "ruta": "raw_source/VALUACION_PARETOMED_2026.md",
+      "ruta": "raw_source/valuacion-paretomed-2026.md",
       "tamano": 20773
     }
   ]

@@ -199,6 +199,61 @@ document.addEventListener('DOMContentLoaded', async () => {
         return Math.min(s, 5);
     }
 
+    function stripAccents(value) {
+        return (value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function normalizeSearchText(value) {
+        return stripAccents(String(value || '').toLowerCase()).replace(/\s+/g, ' ').trim();
+    }
+
+    function slugifyPathSegment(segment, isFile) {
+        if (!segment) return segment;
+
+        let base = segment;
+        let ext = '';
+        if (isFile) {
+            const dotIndex = segment.lastIndexOf('.');
+            if (dotIndex > 0) {
+                base = segment.substring(0, dotIndex);
+                ext = stripAccents(segment.substring(dotIndex).toLowerCase());
+            }
+        }
+
+        const slug = stripAccents(base)
+            .toLowerCase()
+            .replace(/&/g, ' y ')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '')
+            .replace(/-+/g, '-');
+
+        return `${slug || 'archivo'}${ext}`;
+    }
+
+    function resolvePortalUrl(rawUrl) {
+        if (!rawUrl) return rawUrl;
+
+        const hashIndex = rawUrl.indexOf('#');
+        const baseWithQuery = hashIndex === -1 ? rawUrl : rawUrl.substring(0, hashIndex);
+        const hash = hashIndex === -1 ? '' : rawUrl.substring(hashIndex);
+
+        const queryIndex = baseWithQuery.indexOf('?');
+        const pathOnly = queryIndex === -1 ? baseWithQuery : baseWithQuery.substring(0, queryIndex);
+        const query = queryIndex === -1 ? '' : baseWithQuery.substring(queryIndex);
+
+        const normalizedPath = pathOnly
+            .replace(/\\/g, '/')
+            .split('/')
+            .map((segment, index, allSegments) => {
+                if (!segment) return segment;
+                if (['docs', 'assets', 'raw_source'].includes(segment)) return segment;
+                return slugifyPathSegment(segment, index === allSegments.length - 1);
+            })
+            .join('/');
+
+        return `${normalizedPath}${query}${hash}`;
+    }
+
     // --- Helper: render single fragment box ---
     function renderFragment(frag, isPosterior) {
         const badge = detectBadgeType(frag);
@@ -534,7 +589,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (docUrl && !docUrl.endsWith('.html') && !docUrl.includes('#')) {
                 docUrl += '.html';
             }
-            const encodedUrl = docUrl || `docs/${doc.id}.html`;
+            const encodedUrl = resolvePortalUrl(docUrl || `docs/${doc.id}.html`);
             html += `<li class="doc-item">
                 <a href="${encodedUrl}" target="_blank" class="doc-link">🔍 ${doc.titulo}</a>
                 <em class="doc-type">${doc.tipo}</em>
@@ -545,9 +600,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (CASE_DATA.archivos_crudos) {
             CASE_DATA.archivos_crudos.forEach(file => {
                const sizeMB = file.tamano > 1024*1024 ? (file.tamano / (1024*1024)).toFixed(2) + ' MB' : (file.tamano / 1024).toFixed(1) + ' KB';
+               const rawUrl = resolvePortalUrl(file.ruta);
                html += `<li class="doc-item doc-raw">
                    <span class="doc-name">📄 <strong>${file.nombre}</strong> <span class="doc-size">(${sizeMB})</span></span>
-                   <a href="${file.ruta}" download class="btn-doc">⬇ Descargar</a>
+                   <a href="${rawUrl}" download class="btn-doc">⬇ Descargar</a>
                </li>`;
             });
         }
@@ -816,6 +872,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         return { base: rawUrl.substring(0, idx), hash: rawUrl.substring(idx + 1) };
     }
 
+    function normalizeViewerUrl(rawUrl) {
+        if (!rawUrl) return rawUrl;
+
+        let resolved = resolvePortalUrl(rawUrl.normalize('NFC'));
+        if (resolved && !resolved.includes('.') && resolved.includes('docs/')) {
+            const parts = resolved.split('#');
+            resolved = parts[0] + '.html' + (parts[1] ? '#' + parts[1] : '');
+        }
+        return resolved;
+    }
+
     closeViewerBtn.addEventListener('click', () => {
         mainSplitLayout.classList.remove('viewer-open');
         viewerIframe.src = 'about:blank';
@@ -863,94 +930,130 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // --- Helper: find best matching element for a cita string in the iframe doc ---
+    function elementHasLayout(element) {
+        if (!element) return false;
+        if (typeof element.getClientRects === 'function' && element.getClientRects().length > 0) return true;
+        return !!(element.offsetWidth || element.offsetHeight);
+    }
+
     function findCitaElement(doc, cita) {
         if (!cita) return null;
-        // Limpiar espacios extra, saltos de línea y normalizar para búsqueda robusta
-        const needle = cita.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, ' ').trim().substring(0, 40);
-        
-        // Prefer specific line containers; fall back to any element
-        const selectors = ['.chat-line', '.doc-line', 'p', 'tr', 'li', 'span', 'div'];
-        for (const sel of selectors) {
-            const els = doc.querySelectorAll(sel);
-            for (const el of els) {
-                // Saltar divs muy grandes que contienen a toda la página
-                if (sel === 'div' && el.children.length > 5) continue;
-                
-                const t = el.textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, ' ');
-                if (t.includes(needle)) return el;
+
+        const fullNeedle = normalizeSearchText(cita);
+        const shortNeedle = fullNeedle.substring(0, 120).trim();
+        const selectors = ['.line', '.chat-line', '.doc-line', 'blockquote', 'p', 'li', 'td', 'th', 'tr', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'div'];
+
+        function findBestMatch(needle) {
+            if (!needle) return null;
+
+            let bestElement = null;
+            let bestScore = Number.POSITIVE_INFINITY;
+
+            for (const selector of selectors) {
+                const elements = doc.querySelectorAll(selector);
+                for (const element of elements) {
+                    const text = normalizeSearchText(element.textContent);
+                    if (!text || !text.includes(needle)) continue;
+
+                    const childPenalty = element.querySelectorAll('*').length * 2;
+                    const containerPenalty = selector === 'div' && element.children.length > 5 ? 50 : 0;
+                    const score = Math.max(text.length - needle.length, 0) + childPenalty + containerPenalty;
+
+                    if (score < bestScore) {
+                        bestScore = score;
+                        bestElement = element;
+                    }
+                }
+                if (bestElement) return bestElement;
             }
+
+            return null;
         }
+
+        return findBestMatch(fullNeedle) || findBestMatch(shortNeedle);
+    }
+
+    function findViaNativeSelection(win, cita) {
+        if (!win || !cita || typeof win.find !== 'function') return null;
+
+        const attempts = [
+            cita,
+            cita.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim(),
+            cita.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 120)
+        ].filter(Boolean);
+
+        try {
+            const selection = win.getSelection();
+            selection.removeAllRanges();
+            for (const attempt of attempts) {
+                if (!attempt) continue;
+                if (win.find(attempt, false, false, true, false, false, false)) {
+                    const anchor = selection.anchorNode;
+                    return anchor && anchor.parentElement ? anchor.parentElement : null;
+                }
+            }
+        } catch (error) {
+            return null;
+        }
+
         return null;
+    }
+
+    function scheduleScrollRetry(iframe, hash, cita, attempt, delays) {
+        if (attempt >= delays.length) return;
+        setTimeout(() => scrollToLineWithRetry(iframe, hash, cita, attempt + 1), delays[attempt - 1]);
     }
 
     // --- Helper: scroll + highlight inside an iframe, by line id or cita text ---
     function scrollToLineWithRetry(iframe, hash, cita, attempt) {
         attempt = attempt || 1;
-        const maxAttempts = 6;
-        const delays = [300, 800, 1500, 2500, 4000, 6000];
+        const delays = [250, 600, 1000, 1500, 2200, 3200, 4500, 6500];
 
         try {
             const win = iframe.contentWindow;
             const doc = win ? win.document : iframe.contentDocument;
-            if (!doc || !doc.body) {
-                if (attempt < maxAttempts)
-                    setTimeout(() => scrollToLineWithRetry(iframe, hash, cita, attempt + 1), delays[attempt - 1]);
+
+            if (!doc || !doc.body || doc.readyState === 'loading') {
+                scheduleScrollRetry(iframe, hash, cita, attempt, delays);
                 return;
             }
 
-            // Clear previous highlights
             doc.querySelectorAll('.ev-highlight-active').forEach(el => el.classList.remove('ev-highlight-active'));
             injectHighlightCSS(doc);
 
             let target = hash ? doc.getElementById(hash) : null;
-            let foundNatively = false;
+
+            if (target && !elementHasLayout(target)) {
+                scheduleScrollRetry(iframe, hash, cita, attempt, delays);
+                return;
+            }
 
             if (!target && cita) {
-                // Native search (selection jump) - Funciona como Ctrl+F en Chrome!
-                try {
-                    const sel = win.getSelection();
-                    sel.removeAllRanges();
-                    foundNatively = win.find(cita, false, false, true, false, false, false);
-                    if (!foundNatively) {
-                        const needle = cita.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 40);
-                        if (needle !== cita) foundNatively = win.find(needle, false, false, true, false, false, false);
-                    }
-                    
-                    if (foundNatively) {
-                        try {
-                            const range = win.getSelection().getRangeAt(0);
-                            const span = doc.createElement('span');
-                            span.className = 'ev-highlight-active';
-                            range.surroundContents(span);
-                            target = span;
-                        } catch(err) {} 
-                    }
-                } catch(e) {}
-                
-                // Fallback clásico si la API falla
-                if (!target && !foundNatively) target = findCitaElement(doc, cita);
+                target = findCitaElement(doc, cita) || findViaNativeSelection(win, cita);
+            }
+
+            const textReady = normalizeSearchText(doc.body.innerText || doc.body.textContent).length > 40;
+            if (!textReady) {
+                scheduleScrollRetry(iframe, hash, cita, attempt, delays);
+                return;
             }
 
             if (target) {
-                if (!foundNatively) target.classList.add('ev-highlight-active');
-                setTimeout(() => {
+                if (target.classList) target.classList.add('ev-highlight-active');
+                requestAnimationFrame(() => {
                     target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }, 300);
-            } else if (!foundNatively && attempt < maxAttempts) {
-                setTimeout(() => scrollToLineWithRetry(iframe, hash, cita, attempt + 1), delays[attempt - 1]);
+                });
+            } else if (hash || cita) {
+                scheduleScrollRetry(iframe, hash, cita, attempt, delays);
             }
         } catch (e) {
-            // Cross-origin — silent fail
+            scheduleScrollRetry(iframe, hash, cita, attempt, delays);
         }
     }
     // --- Visor de Pruebas: abrir documento ---
     function openInPruebasViewer(url, title, cita) {
         if (!url) return;
-        url = url.normalize('NFC'); // Normalización de seguridad para compatibilidad con Linux/Nginx
-        if (url && !url.includes('.') && url.includes('docs/')) {
-            const parts = url.split('#');
-            url = parts[0] + '.html' + (parts[1] ? '#' + parts[1] : '');
-        }
+        url = normalizeViewerUrl(url);
 
         const { base: baseUrl, hash } = splitUrlHash(url);
 
@@ -988,8 +1091,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 pvIframe.setAttribute('data-current-doc', baseUrl);
                 scrollToLineWithRetry(pvIframe, hash, cita);
             };
-            // Usamos la URL base para el iframe para máxima estabilidad
-            pvIframe.src = url; 
+            pvIframe.src = baseUrl;
         }
     }
 
@@ -1023,11 +1125,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function openInViewer(url, title, cita) {
         if (!url) return;
-        url = url.normalize('NFC'); // Normalización de seguridad para compatibilidad con Linux/Nginx
-        if (url && !url.includes('.') && url.includes('docs/')) {
-            const parts = url.split('#');
-            url = parts[0] + '.html' + (parts[1] ? '#' + parts[1] : '');
-        }
+        url = normalizeViewerUrl(url);
 
         const { base: baseUrl, hash } = splitUrlHash(url);
 
@@ -1065,7 +1163,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 viewerIframe.setAttribute('data-current-doc', baseUrl);
                 scrollToLineWithRetry(viewerIframe, hash, cita);
             };
-            viewerIframe.src = url;
+            viewerIframe.src = baseUrl;
         }
     }
 

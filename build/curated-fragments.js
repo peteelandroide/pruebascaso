@@ -23,11 +23,11 @@ const CURATED = {
     { cita: "Vesting future stock a 30% Cliff 12 meses Consolidación trimestral", fuente: "chat-oscar-pedro", fecha: "06/02/2024", autor: "Pedro Vergara", relevancia: "Propuesta original de Pedro con 30% de acciones — incompatible con prestación de servicios" }
   ]},
   7: { extractos: [
-    { cita: "yo te presento a mi socio", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar admite presentar a Pedro como socio ante terceros (Coventus) — P-01 Grabación" },
-    { cita: "nos conocimos en un evento de emprendimiento", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar narra el origen de la relación ante terceros reconociendo su naturaleza societaria" }
+    { cita: "yo te presento a mi socio", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar admite presentar a Pedro como socio ante terceros (Coventus) — P-01 Grabación" },
+    { cita: "nos conocimos en un evento de emprendimiento", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar narra el origen de la relación ante terceros reconociendo su naturaleza societaria" }
   ]},
   8: { extractos: [
-    { cita: "te presento a mi socio", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Confesión extrajudicial: presentación de Pedro como socio ante Coventus — P-01" }
+    { cita: "te presento a mi socio", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Confesión extrajudicial: presentación de Pedro como socio ante Coventus — P-01" }
   ]},
   9: { extractos: [
     { cita: "Subdirector Académico y Comercial de Paretomed", fuente: "doc-carta-recomendacion", fecha: "27/04/2024", autor: "Oscar Maldonado", relevancia: "Cargo directivo en carta de recomendación FIRMADA por Oscar — P-11. Un cargo de Subdirector es incompatible con simple prestación de servicios" }
@@ -36,7 +36,7 @@ const CURATED = {
   // ========== CAPITULO III: APORTES RECIPROCOS ==========
   10: { extractos: [
     { cita: "No es el interes de las Partes constituir una persona juridica distinta de estas individualmente consideradas, ni una sociedad de hecho", fuente: "chat-oscar-pedro", fecha: "22/08/2025", autor: "Oscar Maldonado", relevancia: "El Contrato de Cuentas en Participación reconoce implícitamente los aportes de Oscar al describir el objeto de la relación — P-14. Si Oscar no tuviera aportes, no habría nada que regular" },
-    { cita: "estructura que tiene 90% de seguridad... tributaria", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar reconoce que él aportó el capital y la estructura legal del negocio, buscando optimizarla — P-01" }
+    { cita: "estructura que tiene 90% de seguridad... tributaria", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar reconoce que él aportó el capital y la estructura legal del negocio, buscando optimizarla — P-01" }
   ]},
   11: { extractos: [
     { cita: "experiencia en manejo de redes, edicion de videos, redaccion de guiones, grabacion de videoclases, asesoria en creacion de contenido y marketing, gestion de cuentas, optimizacion del tunel de ventas", fuente: "doc-contrato-cp", fecha: "22/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar RECONOCE TEXTUALMENTE los aportes de Pedro en el Contrato de Cuentas en Participación — P-14. Es un inventario de aportes industriales redactado por el propio demandado" }
@@ -88,12 +88,12 @@ const CURATED = {
   // ========== CAPITULO IV: REPARTO DE UTILIDADES ==========
   // Nota: numeración interna consolidada con la de hechos adicionales
   21: { extractos: [
-    { cita: "O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "CONFESIÓN EXTRAJUDICIAL DIRECTA: Oscar admite la sociedad en grabación telefónica — P-01. La palabra 'claramente' repetida dos veces refuerza la voluntariedad y conciencia de la admisión" },
-    { cita: "como te presente yo con el man de alla de Coventus, le dije ey te presento a mi socio", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar admite conducta societaria ante terceros — P-01. Presentar a alguien como 'socio' públicamente es reconocimiento inequívoco de affectio societatis" }
+    { cita: "O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "CONFESIÓN EXTRAJUDICIAL DIRECTA: Oscar admite la sociedad en grabación telefónica — P-01. La palabra 'claramente' repetida dos veces refuerza la voluntariedad y conciencia de la admisión" },
+    { cita: "como te presente yo con el man de alla de Coventus, le dije ey te presento a mi socio", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar admite conducta societaria ante terceros — P-01. Presentar a alguien como 'socio' públicamente es reconocimiento inequívoco de affectio societatis" }
   ]},
   22: { extractos: [
-    { cita: "si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "CONFESIÓN: Oscar reconoce pacto de acciones en la SAS — P-01. 'No lo niego en ningún momento' elimina cualquier defensa de negativa" },
-    { cita: "yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron, ey... si que sociedad de hecho con el man, pero tu puedes cortarlo", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "DEVASTADOR: Los propios asesores de Oscar confirmaron la sociedad de hecho — P-01. Si sus abogados y contadores lo reconocieron, el demandado no puede negarlo en juicio" }
+    { cita: "si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "CONFESIÓN: Oscar reconoce pacto de acciones en la SAS — P-01. 'No lo niego en ningún momento' elimina cualquier defensa de negativa" },
+    { cita: "yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron, ey... si que sociedad de hecho con el man, pero tu puedes cortarlo", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "DEVASTADOR: Los propios asesores de Oscar confirmaron la sociedad de hecho — P-01. Si sus abogados y contadores lo reconocieron, el demandado no puede negarlo en juicio" }
   ]},
   23: { extractos: [
     { cita: "tenemos que reunirnos para que hablemos bien de las condiciones que necesito para que legalicemos la cosa", fuente: "chat-oscar-pedro", fecha: "01/07/2024", autor: "Oscar Maldonado", relevancia: "Oscar manifiesta voluntad de FORMALIZAR lo que ya existe — solo se legaliza algo que ya opera de hecho" },
@@ -152,8 +152,8 @@ const CURATED = {
 
   // ========== CAPITULO IX: RUPTURA ==========
   34: { extractos: [
-    { cita: "O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "En la fecha exacta de la ruptura, Oscar admite la sociedad en grabación — P-01. La confesión ocurre DESPUÉS de descubrir la alteración documental, en contexto de confrontación" },
-    { cita: "los abogados y contadores me dijeron, ey... si que sociedad de hecho con el man, pero tu puedes cortarlo", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar revela que buscó asesoría legal para 'cortar' la sociedad — el acto de buscar cómo terminarla confirma que existía — P-01" }
+    { cita: "O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "En la fecha exacta de la ruptura, Oscar admite la sociedad en grabación — P-01. La confesión ocurre DESPUÉS de descubrir la alteración documental, en contexto de confrontación" },
+    { cita: "los abogados y contadores me dijeron, ey... si que sociedad de hecho con el man, pero tu puedes cortarlo", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar revela que buscó asesoría legal para 'cortar' la sociedad — el acto de buscar cómo terminarla confirma que existía — P-01" }
   ]},
   35: { extractos: [
     { cita: "se abstenga de continuar con la explotacion de los activos intangibles incluyendo pero no limitandose a metodos, contenido estatico, propiedad intelectual, videoclases, reels, videos comerciales", fuente: "chat-oscar-pedro", fecha: "29/08/2025", autor: "Pedro Vergara", relevancia: "Notificación formal de cese de explotación — P-18. Enuncia los activos aportados por Pedro que Oscar no puede usar unilateralmente" }
@@ -174,7 +174,7 @@ const CURATED = {
 
   // ========== CAPITULO XI: ACTOS POST-RUPTURA ==========
   39: { extractos: [
-    { cita: "yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron... sociedad de hecho con el man no puedes cortarlo... presenteme una forma en que yo pueda mantenerme con el pero tambien pueda crear lo otro", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar revela en la grabación que NETMED fue el 'vehículo' que sus asesores le propusieron para escapar de la sociedad con Pedro — P-01. Confesión directa del propósito fraudulento" },
+    { cita: "yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron... sociedad de hecho con el man no puedes cortarlo... presenteme una forma en que yo pueda mantenerme con el pero tambien pueda crear lo otro", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar revela en la grabación que NETMED fue el 'vehículo' que sus asesores le propusieron para escapar de la sociedad con Pedro — P-01. Confesión directa del propósito fraudulento" },
     { cita: "la politica de privacidad actual del sitio web de ParetoMed ya aparece a nombre de NETMED S.A.S.", fuente: "doc-politica-web", fecha: "oct 2025", autor: "Oscar Maldonado", relevancia: "ParetoMed migra formalmente a NETMED sin incluir a Pedro — P-24, P-52. Transferencia unilateral de activos de la sociedad de hecho" }
   ]},
   40: { extractos: [
@@ -274,18 +274,18 @@ const CURATED = {
   ]},
   61: { extractos: [
     { cita: "El dia 1 de [espacio en blanco] de 2024", fuente: "doc-contrato-cp", fecha: "agosto 2025", autor: "Oscar Maldonado", relevancia: "Contrato predatado con mes sin completar — P-14. Evidencia de documento retroactivo: quien redacta un contrato para el presente no deja el mes en blanco" },
-    { cita: "estructura que tiene 90% de seguridad... tributaria", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar revela que el Contrato de Cuentas en Participación fue diseñado por su abogada para beneficio fiscal, no para reflejar la relación real — P-01" }
+    { cita: "estructura que tiene 90% de seguridad... tributaria", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar revela que el Contrato de Cuentas en Participación fue diseñado por su abogada para beneficio fiscal, no para reflejar la relación real — P-01" }
   ]},
   62: { extractos: [
     { cita: "comenzar una empresa/emprendimiento/negocio que entre en competencia directa con Paretomed", fuente: "doc-acuerdo-sas", fecha: "nov 2024", autor: "Oscar Maldonado", relevancia: "Cláusula de 5 años de no competencia en todo el sector de educación médica virtual — P-08. Las restricciones de 5 años solo se justifican frente a un socio con conocimiento interno total, nunca frente a un contratista de marketing" },
     { cita: "la clausula de no competencia", fuente: "chat-oscar-pedro", fecha: "13/01/2025", autor: "Oscar Maldonado", relevancia: "Oscar incluye anticompetencia en estatutos de SAS propuesta — P-02. Patrón sistemático: todos los borradores incluyen anticompetencia de largo alcance" }
   ]},
   63: { extractos: [
-    { cita: "yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron... sociedad de hecho con el man no puedes cortarlo... presenteme una forma en que yo pueda mantenerme con el pero tambien pueda crear lo otro", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar revela en grabación el propósito real de NETMED: un vehículo para escapar de la sociedad con Pedro — P-01. Confesión directa de la estrategia post-ruptura" }
+    { cita: "yo quiero honrar el acuerdo contigo... los abogados y contadores me dijeron... sociedad de hecho con el man no puedes cortarlo... presenteme una forma en que yo pueda mantenerme con el pero tambien pueda crear lo otro", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar revela en grabación el propósito real de NETMED: un vehículo para escapar de la sociedad con Pedro — P-01. Confesión directa de la estrategia post-ruptura" }
   ]},
   64: { extractos: [
     { cita: "la idea es crear una SAS aca en Colombia que le preste servicios a la LLC en EUA. Por la naturaleza de los servicios estaria exento de IVA", fuente: "chat-oscar-pedro", fecha: "10/07/2025", autor: "Oscar Maldonado", relevancia: "Oscar revela plan tributario en chat — P-02. La arquitectura fiscal diseñada mientras se dilataba la formalización con Pedro evidencia prioridades opuestas" },
-    { cita: "la vamos a presentar como una empresa de cloud hosting... ya no va a ser una empresa educativa... y ahi no pago tanto impuesto", fuente: "transcripciones", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar admite en grabación que la reclasificación de ParetoMed como 'cloud hosting' era una estrategia para reducir impuestos — P-01. El demandado usa su propio discurso como evidencia de mala fe" }
+    { cita: "la vamos a presentar como una empresa de cloud hosting... ya no va a ser una empresa educativa... y ahi no pago tanto impuesto", fuente: "grabacion-llamada-oscar-250814", fecha: "14/08/2025", autor: "Oscar Maldonado", relevancia: "Oscar admite en grabación que la reclasificación de ParetoMed como 'cloud hosting' era una estrategia para reducir impuestos — P-01. El demandado usa su propio discurso como evidencia de mala fe" }
   ]}
 };
 

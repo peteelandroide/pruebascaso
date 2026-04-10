@@ -1,0 +1,1503 @@
+{
+  "generated_at": "2026-04-10T17:24:29.727Z",
+  "source_document": "HECHOS_DEMANDA_PARETOMED_2026.md",
+  "snapshot_file": "paretomed-evidencia\\scratch\\supabase_snapshot.json",
+  "supabase_project_ref": "bqigfoolbrrwpuqafxst",
+  "supabase_url": "https://bqigfoolbrrwpuqafxst.supabase.co",
+  "totals": {
+    "hechos": 67,
+    "resumenes_a_corregir": 0,
+    "pruebas_a_corregir": 0,
+    "hechos_sin_cambios": 67
+  },
+  "items": [
+    {
+      "id": "hecho-1",
+      "numero": 1,
+      "ordinal": "PRIMERO",
+      "line": 75,
+      "titulo_actual": "Identificación del demandante",
+      "resumen_actual": "El demandante, PEDRO JOSE VERGARA VILLANUEVA, identificado con cedula de ciudadania No. 1.045.750.095, es medico de profesion con domicilio en la Calle 80 #55-40, Barranquilla. Es representante legal y controlante de la sociedad DOCTOR FLIGHT S.A.S. ...",
+      "resumen_correcto": "El demandante, PEDRO JOSE VERGARA VILLANUEVA, identificado con cedula de ciudadania No. 1.045.750.095, es medico de profesion con domicilio en la Calle 80 #55-40, Barranquilla. Es representante legal y controlante de la sociedad DOCTOR FLIGHT S.A.S. ...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-21"
+      ],
+      "pruebas_correctas": [
+        "P-21"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-2",
+      "numero": 2,
+      "ordinal": "SEGUNDO",
+      "line": 77,
+      "titulo_actual": "Identificación del demandado",
+      "resumen_actual": "El demandado, OSCAR DAVID MALDONADO BADRAN, identificado con cedula de ciudadania No. 1.129.573.046, es medico internista con domicilio en la CR 44B No. 96-67 AP 606 TO 2, Barranquilla. Es propietario del establecimiento comercial PARETOMED, registra...",
+      "resumen_correcto": "El demandado, OSCAR DAVID MALDONADO BADRAN, identificado con cedula de ciudadania No. 1.129.573.046, es medico internista con domicilio en la CR 44B No. 96-67 AP 606 TO 2, Barranquilla. Es propietario del establecimiento comercial PARETOMED, registra...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-20"
+      ],
+      "pruebas_correctas": [
+        "P-20"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-3",
+      "numero": 3,
+      "ordinal": "TERCERO",
+      "line": 79,
+      "titulo_actual": "ParetoMed — programa de educación médica",
+      "resumen_actual": "PARETOMED es un programa de educacion medica virtual de preparacion para examenes de admision a especialidades medicas (residencias) en Colombia, que opera mediante una plataforma virtual con videoclases pregrabadas, simulacros de examenes, grupos de...",
+      "resumen_correcto": "PARETOMED es un programa de educacion medica virtual de preparacion para examenes de admision a especialidades medicas (residencias) en Colombia, que opera mediante una plataforma virtual con videoclases pregrabadas, simulacros de examenes, grupos de...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-20",
+        "P-27",
+        "P-28"
+      ],
+      "pruebas_correctas": [
+        "P-20",
+        "P-27",
+        "P-28"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-4",
+      "numero": 4,
+      "ordinal": "CUARTO",
+      "line": 87,
+      "titulo_actual": "Primer contacto entre las partes",
+      "resumen_actual": "El 10 de noviembre de 2023 tuvo lugar el primer contacto registrado entre las partes via WhatsApp. El 4 de enero de 2024, Pedro contacto a Oscar, recordandole que se habian conocido en el Startup Day de la Universidad del Norte, manifestando su inter...",
+      "resumen_correcto": "El 10 de noviembre de 2023 tuvo lugar el primer contacto registrado entre las partes via WhatsApp. El 4 de enero de 2024, Pedro contacto a Oscar, recordandole que se habian conocido en el Startup Day de la Universidad del Norte, manifestando su inter...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02"
+      ],
+      "pruebas_correctas": [
+        "P-02"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-5",
+      "numero": 5,
+      "ordinal": "QUINTO",
+      "line": 89,
+      "titulo_actual": "Reunión presencial y propuesta de colaboración",
+      "resumen_actual": "El 9 de enero de 2024 las partes se reunieron presencialmente en la Calle 80 #55-40 para discutir una colaboracion. Al dia siguiente, 10 de enero de 2024, Oscar propuso cruzar el valor del trabajo de Pedro con el costo del curso y definir funciones e...",
+      "resumen_correcto": "El 9 de enero de 2024 las partes se reunieron presencialmente en la Calle 80 #55-40 para discutir una colaboracion. Al dia siguiente, 10 de enero de 2024, Oscar propuso cruzar el valor del trabajo de Pedro con el costo del curso y definir funciones e...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02"
+      ],
+      "pruebas_correctas": [
+        "P-02"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-6",
+      "numero": 6,
+      "ordinal": "SEXTO",
+      "line": 91,
+      "titulo_actual": "Propuesta formal de Pedro — 30% en vesting",
+      "resumen_actual": "El 6 de febrero de 2024, Pedro envio una propuesta formal de acuerdo en la que se planteaba una participacion del 30% mediante esquema de vesting (future stock), con cliff de 12 meses y consolidacion trimestral. Las funciones propuestas incluian expr...",
+      "resumen_correcto": "El 6 de febrero de 2024, Pedro envio una propuesta formal de acuerdo en la que se planteaba una participacion del 30% mediante esquema de vesting (future stock), con cliff de 12 meses y consolidacion trimestral. Las funciones propuestas incluian expr...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-05",
+        "P-10"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-05",
+        "P-10"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-7",
+      "numero": 7,
+      "ordinal": "SEPTIMO",
+      "line": 93,
+      "titulo_actual": "Acuerdo definitivo — 20% de ingresos netos",
+      "resumen_actual": "El 28 de marzo de 2024, las partes acordaron la forma de trabajo definitiva: Pedro recibiria el 20% de los ingresos netos del negocio, con inicio desde abril de 2024. La participacion se redujo del 30% propuesto inicialmente al 20% como resultado de ...",
+      "resumen_correcto": "El 28 de marzo de 2024, las partes acordaron la forma de trabajo definitiva: Pedro recibiria el 20% de los ingresos netos del negocio, con inicio desde abril de 2024. La participacion se redujo del 30% propuesto inicialmente al 20% como resultado de ...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-04"
+      ],
+      "pruebas_correctas": [
+        "P-04"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-8",
+      "numero": 8,
+      "ordinal": "OCTAVO",
+      "line": 97,
+      "titulo_actual": "Constitución verbal de la sociedad de hecho",
+      "resumen_actual": "El 15 de abril de 2024, se constituyo verbalmente la sociedad de hecho. En esa fecha, Pedro recordo a Oscar que segun lo acordado debian iniciar los pagos y solicito definir el presupuesto de publicidad. A partir de este momento, ambas partes explota...",
+      "resumen_correcto": "El 15 de abril de 2024, se constituyo verbalmente la sociedad de hecho. En esa fecha, Pedro recordo a Oscar que segun lo acordado debian iniciar los pagos y solicito definir el presupuesto de publicidad. A partir de este momento, ambas partes explota...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-19"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-19"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-9",
+      "numero": 9,
+      "ordinal": "NOVENO",
+      "line": 99,
+      "titulo_actual": "Carta de recomendación — \"Subdirector Académico\"",
+      "resumen_actual": "El 27 de abril de 2024, tan solo 12 dias despues de iniciada la operacion conjunta, Oscar Maldonado firmo de su puno y letra una **Carta de Recomendacion** en la que certifica que Pedro Jose Vergara Villanueva *\"se desempena como Subdirector Academic...",
+      "resumen_correcto": "El 27 de abril de 2024, tan solo 12 dias despues de iniciada la operacion conjunta, Oscar Maldonado firmo de su puno y letra una **Carta de Recomendacion** en la que certifica que Pedro Jose Vergara Villanueva *\"se desempena como Subdirector Academic...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-11"
+      ],
+      "pruebas_correctas": [
+        "P-11"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-10",
+      "numero": 10,
+      "ordinal": "DECIMO",
+      "line": 107,
+      "titulo_actual": "Aportes de Oscar — capital, PI, registro",
+      "resumen_actual": "Oscar Maldonado aporto a la sociedad de hecho: (i) la propiedad intelectual original del contenido medico base y videoclases; (ii) el capital inicial para la operacion; (iii) el registro previo del establecimiento comercial ParetoMed (Matricula 865.8...",
+      "resumen_correcto": "Oscar Maldonado aporto a la sociedad de hecho: (i) la propiedad intelectual original del contenido medico base y videoclases; (ii) el capital inicial para la operacion; (iii) el registro previo del establecimiento comercial ParetoMed (Matricula 865.8...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-14",
+        "P-20"
+      ],
+      "pruebas_correctas": [
+        "P-14",
+        "P-20"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-11",
+      "numero": 11,
+      "ordinal": "DECIMOPRIMERO",
+      "line": 111,
+      "titulo_actual": "Aportes de Pedro — marketing y ventas",
+      "resumen_actual": "Pedro Vergara aporto a la sociedad de hecho trabajo especializado en marketing y ventas, incluyendo: edicion de videos de contenido para redes y del curso, redaccion de guiones para redes sociales, asesoria en creacion de contenido y marketing, gesti...",
+      "resumen_correcto": "Pedro Vergara aporto a la sociedad de hecho trabajo especializado en marketing y ventas, incluyendo: edicion de videos de contenido para redes y del curso, redaccion de guiones para redes sociales, asesoria en creacion de contenido y marketing, gesti...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-08",
+        "P-14"
+      ],
+      "pruebas_correctas": [
+        "P-08",
+        "P-14"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-12",
+      "numero": 12,
+      "ordinal": "DECIMOSEGUNDO",
+      "line": 113,
+      "titulo_actual": "Dashboard React y gestión tecnológica",
+      "resumen_actual": "Pedro aporto conocimiento y gestion tecnologica consistente en: gestion de pixel de Meta y campanas publicitarias; y desarrollo de un Dashboard de Venta Consultiva en lenguaje React desplegado con herramientas de Google Cloud, herramienta que fue pue...",
+      "resumen_correcto": "Pedro aporto conocimiento y gestion tecnologica consistente en: gestion de pixel de Meta y campanas publicitarias; y desarrollo de un Dashboard de Venta Consultiva en lenguaje React desplegado con herramientas de Google Cloud, herramienta que fue pue...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02"
+      ],
+      "pruebas_correctas": [
+        "P-02"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-13",
+      "numero": 13,
+      "ordinal": "DECIMOTERCERO",
+      "line": 115,
+      "titulo_actual": "Estudio de grabación profesional de Pedro",
+      "resumen_actual": "Pedro aporto infraestructura fisica consistente en su estudio de grabacion profesional propio, con equipos de iluminacion y audio. Oscar reconocio esta infraestructura al solicitar expresamente su uso: *\"Pensaba que tan factible es que lo hagamos en ...",
+      "resumen_correcto": "Pedro aporto infraestructura fisica consistente en su estudio de grabacion profesional propio, con equipos de iluminacion y audio. Oscar reconocio esta infraestructura al solicitar expresamente su uso: *\"Pensaba que tan factible es que lo hagamos en ...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02"
+      ],
+      "pruebas_correctas": [
+        "P-02"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-14",
+      "numero": 14,
+      "ordinal": "DECIMOCUARTO",
+      "line": 117,
+      "titulo_actual": "SOPs operativos diseñados por Pedro",
+      "resumen_actual": "Pedro diseno la infraestructura operativa del negocio mediante la creacion de procedimientos estandar de operacion (SOPs): (a) **SOP de Reunion 1:1** (redactado el 05/06/2024), que establece el procedimiento de onboarding de nuevos estudiantes, inclu...",
+      "resumen_correcto": "Pedro diseno la infraestructura operativa del negocio mediante la creacion de procedimientos estandar de operacion (SOPs): (a) **SOP de Reunion 1:1** (redactado el 05/06/2024), que establece el procedimiento de onboarding de nuevos estudiantes, inclu...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-25",
+        "P-26"
+      ],
+      "pruebas_correctas": [
+        "P-25",
+        "P-26"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-15",
+      "numero": 15,
+      "ordinal": "DECIMOQUINTO",
+      "line": 119,
+      "titulo_actual": "Reorganización de la propuesta comercial",
+      "resumen_actual": "Pedro contribuyo a la reorganizacion y mejora de la propuesta comercial del negocio. El 14 de mayo de 2024, Pedro documento comparativamente ambas versiones: la version original de Oscar describia un basico \"curso\" con descripcion generica, mientras ...",
+      "resumen_correcto": "Pedro contribuyo a la reorganizacion y mejora de la propuesta comercial del negocio. El 14 de mayo de 2024, Pedro documento comparativamente ambas versiones: la version original de Oscar describia un basico \"curso\" con descripcion generica, mientras ...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-27"
+      ],
+      "pruebas_correctas": [
+        "P-27"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-16",
+      "numero": 16,
+      "ordinal": "DECIMOSEXTO",
+      "line": 121,
+      "titulo_actual": "Producción masiva de contenido audiovisual",
+      "resumen_actual": "Pedro desarrollo, en conjunto con Oscar, una produccion masiva de contenido intelectual para el negocio consistente en decenas de guiones comerciales y educativos para Reels y videos durante 2024-2025, incluyendo: (i) guiones comerciales completos pa...",
+      "resumen_correcto": "Pedro desarrollo, en conjunto con Oscar, una produccion masiva de contenido intelectual para el negocio consistente en decenas de guiones comerciales y educativos para Reels y videos durante 2024-2025, incluyendo: (i) guiones comerciales completos pa...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-28",
+        "P-29",
+        "P-30",
+        "P-31",
+        "P-32"
+      ],
+      "pruebas_correctas": [
+        "P-28",
+        "P-29",
+        "P-30",
+        "P-31",
+        "P-32"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-17",
+      "numero": 17,
+      "ordinal": "DECIMOSEPTIMO",
+      "line": 123,
+      "titulo_actual": "Recurso humano aportado — Efraín y Paul",
+      "resumen_actual": "Pedro aporto recurso humano propio al negocio. Dos trabajadores de su empresa DOCTOR FLIGHT S.A.S. prestaron servicios con prioridad para ParetoMed: (a) **Efrain**, fotografo y editor audiovisual, quien participaba en grabaciones, revision de equipos...",
+      "resumen_correcto": "Pedro aporto recurso humano propio al negocio. Dos trabajadores de su empresa DOCTOR FLIGHT S.A.S. prestaron servicios con prioridad para ParetoMed: (a) **Efrain**, fotografo y editor audiovisual, quien participaba en grabaciones, revision de equipos...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-03",
+        "P-04",
+        "P-39"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-03",
+        "P-04",
+        "P-39"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-18-canales",
+      "numero": 18,
+      "ordinal": "DECIMOCTAVO",
+      "line": 125,
+      "titulo_actual": "Pedro crea canales TikTok y YouTube de ParetoMed",
+      "resumen_actual": "Pedro creo los canales digitales de TikTok y YouTube de ParetoMed. El 28 de marzo de 2024, Pedro propuso en el chat de trabajo: *\"Crear cuentas @paretomed para titk tok y youtube y facebook\"*. Oscar le proporciono las credenciales del correo instituc...",
+      "resumen_correcto": "Pedro creo los canales digitales de TikTok y YouTube de ParetoMed. El 28 de marzo de 2024, Pedro propuso en el chat de trabajo: *\"Crear cuentas @paretomed para titk tok y youtube y facebook\"*. Oscar le proporciono las credenciales del correo instituc...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-04"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-04"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-19-capcut",
+      "numero": 19,
+      "ordinal": "DECIMONOVENO",
+      "line": 127,
+      "titulo_actual": "Pedro — conocimiento superior en edición audiovisual (CapCut)",
+      "resumen_actual": "La edicion audiovisual se realizaba con el software CapCut (version escritorio y movil). Oscar reconocio que Pedro tenia conocimiento superior en edicion: *\"los que aprendi fueron Da Vinci Resolve y Capcut para escritorio\"* (04/01/2024), a lo que Ped...",
+      "resumen_correcto": "La edicion audiovisual se realizaba con el software CapCut (version escritorio y movil). Oscar reconocio que Pedro tenia conocimiento superior en edicion: *\"los que aprendi fueron Da Vinci Resolve y Capcut para escritorio\"* (04/01/2024), a lo que Ped...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02"
+      ],
+      "pruebas_correctas": [
+        "P-02"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-20-dnda",
+      "numero": 20,
+      "ordinal": "VIGESIMO (antes DECIMOSEPTIMO)",
+      "line": 129,
+      "titulo_actual": "DNDA: 238 obras — Pedro AUTOR/DIRECTOR/PRODUCTOR",
+      "resumen_actual": "Pedro registro ante la Direccion Nacional de Derecho de Autor (DNDA) un total de **238 obras audiovisuales unicas** (476 registros, ya que cada obra se registra como Autor/Director y como Productor), creadas en el marco de la sociedad de hecho. Los r...",
+      "resumen_correcto": "Pedro registro ante la Direccion Nacional de Derecho de Autor (DNDA) un total de **238 obras audiovisuales unicas** (476 registros, ya que cada obra se registra como Autor/Director y como Productor), creadas en el marco de la sociedad de hecho. Los r...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-22",
+        "P-23"
+      ],
+      "pruebas_correctas": [
+        "P-22",
+        "P-23"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-18",
+      "numero": 18,
+      "ordinal": "DECIMOCTAVO",
+      "line": 137,
+      "titulo_actual": "Primera liquidación — 20% de ganancia neta",
+      "resumen_actual": "Desde el primer mes de operacion conjunta (mayo 2024), Oscar calculaba el porcentaje de Pedro sobre la **ganancia neta** del negocio, desglosando ingresos y egresos antes de aplicar el 20%. El 7 de mayo de 2024, Oscar envio la primera liquidacion det...",
+      "resumen_correcto": "Desde el primer mes de operacion conjunta (mayo 2024), Oscar calculaba el porcentaje de Pedro sobre la **ganancia neta** del negocio, desglosando ingresos y egresos antes de aplicar el 20%. El 7 de mayo de 2024, Oscar envio la primera liquidacion det...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-13"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-13"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-19",
+      "numero": 19,
+      "ordinal": "DECIMONOVENO",
+      "line": 139,
+      "titulo_actual": "17 transferencias bancarias — $122.3M total",
+      "resumen_actual": "Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan **17 transferencias bancarias documentadas** rea...",
+      "resumen_correcto": "Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan **17 transferencias bancarias documentadas** rea...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-12",
+        "P-13",
+        "P-16",
+        "P-36"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-12",
+        "P-13",
+        "P-16",
+        "P-36"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-20",
+      "numero": 20,
+      "ordinal": "VIGESIMO",
+      "line": 177,
+      "titulo_actual": "Variabilidad de pagos — Participación en utilidades",
+      "resumen_actual": "Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025 — cuenta personal). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorari...",
+      "resumen_correcto": "Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025 — cuenta personal). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorari...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-16",
+        "P-36"
+      ],
+      "pruebas_correctas": [
+        "P-16",
+        "P-36"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-21",
+      "numero": 21,
+      "ordinal": "VIGESIMOPRIMERO",
+      "line": 185,
+      "titulo_actual": "Confesión: \"nos llamábamos socios\"",
+      "resumen_actual": "Oscar Maldonado reconocio expresamente la existencia de la sociedad en grabacion telefonica del 14 de agosto de 2025: *\"O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente\"*. En la m...",
+      "resumen_correcto": "Oscar Maldonado reconocio expresamente la existencia de la sociedad en grabacion telefonica del 14 de agosto de 2025: *\"O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente\"*. En la m...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-01"
+      ],
+      "pruebas_correctas": [
+        "P-01"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-22",
+      "numero": 22,
+      "ordinal": "VIGESIMOSEGUNDO",
+      "line": 187,
+      "titulo_actual": "Confesión: \"ibas a formar parte de la SAS\"",
+      "resumen_actual": "En la misma grabacion, Oscar reconocio que el pacto incluia acciones: *\"si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente\"*. Y admitio que consulto a sus propios asesores legales y...",
+      "resumen_correcto": "En la misma grabacion, Oscar reconocio que el pacto incluia acciones: *\"si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente\"*. Y admitio que consulto a sus propios asesores legales y...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-01"
+      ],
+      "pruebas_correctas": [
+        "P-01"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-23",
+      "numero": 23,
+      "ordinal": "VIGESIMOTERCERO",
+      "line": 189,
+      "titulo_actual": "Oscar promete formalizar la sociedad",
+      "resumen_actual": "Oscar manifesto en multiples ocasiones por WhatsApp su voluntad de formalizar la sociedad existente: (a) el 1 de julio de 2024: *\"tenemos que reunirnos para que hablemos bien de las condiciones que necesito para que legalicemos la cosa\"*; (b) el 28 d...",
+      "resumen_correcto": "Oscar manifesto en multiples ocasiones por WhatsApp su voluntad de formalizar la sociedad existente: (a) el 1 de julio de 2024: *\"tenemos que reunirnos para que hablemos bien de las condiciones que necesito para que legalicemos la cosa\"*; (b) el 28 d...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02"
+      ],
+      "pruebas_correctas": [
+        "P-02"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-24",
+      "numero": 24,
+      "ordinal": "VIGESIMOCUARTO",
+      "line": 191,
+      "titulo_actual": "Pedro reivindica su calidad de socio",
+      "resumen_actual": "Pedro reivindico constantemente su calidad de socio. El 18 de julio de 2025: *\"yo soy socio, no trabajador tuyo... si quieres un vale que haga todo lo que tu digas... vas a tener que contratarlo\"*. El 23 de julio de 2025: *\"no deberias poder tomar de...",
+      "resumen_correcto": "Pedro reivindico constantemente su calidad de socio. El 18 de julio de 2025: *\"yo soy socio, no trabajador tuyo... si quieres un vale que haga todo lo que tu digas... vas a tener que contratarlo\"*. El 23 de julio de 2025: *\"no deberias poder tomar de...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02"
+      ],
+      "pruebas_correctas": [
+        "P-02"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-25",
+      "numero": 25,
+      "ordinal": "VIGESIMOQUINTO",
+      "line": 193,
+      "titulo_actual": "Nota manuscrita: \"no es labor contratable\"",
+      "resumen_actual": "En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar escribio de su puno y letra las siguientes notas: (a) *\"20% de las utilidades no se justifican por una labor que es contratable. La idea, como se ...",
+      "resumen_correcto": "En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar escribio de su puno y letra las siguientes notas: (a) *\"20% de las utilidades no se justifican por una labor que es contratable. La idea, como se ...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-09"
+      ],
+      "pruebas_correctas": [
+        "P-09"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-26",
+      "numero": 26,
+      "ordinal": "VIGESIMOSEXTO",
+      "line": 199,
+      "titulo_actual": "Co-decisiones estratégicas documentadas",
+      "resumen_actual": "Pedro participaba activamente en decisiones estrategicas propias de un socio, no de un empleado o contratista: (a) **gestion de personal:** evaluo el desempeno de la asesora de ventas Adriana y propuso su reemplazo, propuso la incorporacion de un ven...",
+      "resumen_correcto": "Pedro participaba activamente en decisiones estrategicas propias de un socio, no de un empleado o contratista: (a) **gestion de personal:** evaluo el desempeno de la asesora de ventas Adriana y propuso su reemplazo, propuso la incorporacion de un ven...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-03",
+        "P-33",
+        "P-34"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-03",
+        "P-33",
+        "P-34"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-27",
+      "numero": 27,
+      "ordinal": "VIGESIMOSEPTIMO",
+      "line": 201,
+      "titulo_actual": "Siete reuniones documentadas en 2025",
+      "resumen_actual": "La co-direccion del negocio se evidencia en al menos 7 reuniones documentadas en 2025:",
+      "resumen_correcto": "La co-direccion del negocio se evidencia en al menos 7 reuniones documentadas en 2025:",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-34"
+      ],
+      "pruebas_correctas": [
+        "P-34"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-28",
+      "numero": 28,
+      "ordinal": "VIGESIMOCTAVO",
+      "line": 215,
+      "titulo_actual": "$709M en ingresos — 15 meses de operación",
+      "resumen_actual": "El negocio genero ingresos totales de **$709.010.075 COP** en 15 meses de operacion conjunta (junio 2024 - agosto 2025), con un promedio mensual de $47.267.338 COP. El mejor mes fue noviembre de 2024, cuando Oscar anuncio al equipo: *\"$108.456.900 en...",
+      "resumen_correcto": "El negocio genero ingresos totales de **$709.010.075 COP** en 15 meses de operacion conjunta (junio 2024 - agosto 2025), con un promedio mensual de $47.267.338 COP. El mejor mes fue noviembre de 2024, cuando Oscar anuncio al equipo: *\"$108.456.900 en...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-03"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-03"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-29",
+      "numero": 29,
+      "ordinal": "VIGESIMONOVENO",
+      "line": 221,
+      "titulo_actual": "Duración: 16 meses de sociedad de hecho",
+      "resumen_actual": "La sociedad de hecho opero por aproximadamente **16 meses**: desde el 15 de abril de 2024 (fecha en que Pedro recordo a Oscar el inicio de los pagos y solicitaron definir presupuesto de publicidad) hasta el 28 de agosto de 2025 (fecha en que Oscar ac...",
+      "resumen_correcto": "La sociedad de hecho opero por aproximadamente **16 meses**: desde el 15 de abril de 2024 (fecha en que Pedro recordo a Oscar el inicio de los pagos y solicitaron definir presupuesto de publicidad) hasta el 28 de agosto de 2025 (fecha en que Oscar ac...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02"
+      ],
+      "pruebas_correctas": [
+        "P-02"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-30",
+      "numero": 30,
+      "ordinal": "TRIGESIMO",
+      "line": 229,
+      "titulo_actual": "Pedro presiona reiteradamente para formalizar",
+      "resumen_actual": "Pedro presiono reiteradamente para formalizar la sociedad: (a) el 15 de julio de 2024, Pedro solicito el borrador del acuerdo; (b) el 28 de noviembre de 2024, Pedro solicito firmar y Oscar pidio tiempo porque su padre (abogado) estaba revisando: *\"no...",
+      "resumen_correcto": "Pedro presiono reiteradamente para formalizar la sociedad: (a) el 15 de julio de 2024, Pedro solicito el borrador del acuerdo; (b) el 28 de noviembre de 2024, Pedro solicito firmar y Oscar pidio tiempo porque su padre (abogado) estaba revisando: *\"no...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02"
+      ],
+      "pruebas_correctas": [
+        "P-02"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-31",
+      "numero": 31,
+      "ordinal": "TRIGESIMOPRIMERO",
+      "line": 231,
+      "titulo_actual": "Múltiples borradores de acuerdo nunca firmados",
+      "resumen_actual": "Existieron multiples borradores de acuerdo que confirman la naturaleza societaria: (a) el Acuerdo de Socios Original (inicios 2024) contemplaba **\"20% de las acciones\"** de la empresa; (b) el Acuerdo de Socios propuesto por Oscar en version SAS inclu...",
+      "resumen_correcto": "Existieron multiples borradores de acuerdo que confirman la naturaleza societaria: (a) el Acuerdo de Socios Original (inicios 2024) contemplaba **\"20% de las acciones\"** de la empresa; (b) el Acuerdo de Socios propuesto por Oscar en version SAS inclu...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-06",
+        "P-08",
+        "P-09"
+      ],
+      "pruebas_correctas": [
+        "P-06",
+        "P-08",
+        "P-09"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-32",
+      "numero": 32,
+      "ordinal": "TRIGESIMOSEGUNDO",
+      "line": 235,
+      "titulo_actual": "Alteración documental — \"acciones\" por \"utilidades\"",
+      "resumen_actual": "Aproximadamente 10 dias antes del 14 de agosto de 2025, un \"usuario anonimo\" modifico el borrador del acuerdo de socios en Google Docs, reemplazando la palabra **\"acciones\"** por **\"utilidades\"**. Pedro descubrio el cambio mediante el historial de ve...",
+      "resumen_correcto": "Aproximadamente 10 dias antes del 14 de agosto de 2025, un \"usuario anonimo\" modifico el borrador del acuerdo de socios en Google Docs, reemplazando la palabra **\"acciones\"** por **\"utilidades\"**. Pedro descubrio el cambio mediante el historial de ve...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-06",
+        "P-07"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-06",
+        "P-07"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-33",
+      "numero": 33,
+      "ordinal": "TRIGESIMOTERCERO",
+      "line": 239,
+      "titulo_actual": "Contrato de Cuentas en Participación niega sociedad",
+      "resumen_actual": "El 22 de agosto de 2025, Oscar entrego un **Contrato de Cuentas en Participacion** (nunca firmado) en el que intenta reclasificar a Pedro como \"Socio Oculto\" y a si mismo como \"Socio Gestor\". El contrato incluye una clausula que niega expresamente la...",
+      "resumen_correcto": "El 22 de agosto de 2025, Oscar entrego un **Contrato de Cuentas en Participacion** (nunca firmado) en el que intenta reclasificar a Pedro como \"Socio Oculto\" y a si mismo como \"Socio Gestor\". El contrato incluye una clausula que niega expresamente la...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-14"
+      ],
+      "pruebas_correctas": [
+        "P-14"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-34",
+      "numero": 34,
+      "ordinal": "TRIGESIMOCUARTO",
+      "line": 245,
+      "titulo_actual": "Ruptura — 14 de agosto de 2025",
+      "resumen_actual": "El 14 de agosto de 2025, tras descubrir la alteracion documental, Pedro propuso terminar la relacion por perdida de confianza. En la misma fecha, durante la grabacion de llamada telefonica, Oscar hizo las admisiones consignadas en los hechos vigesimo...",
+      "resumen_correcto": "El 14 de agosto de 2025, tras descubrir la alteracion documental, Pedro propuso terminar la relacion por perdida de confianza. En la misma fecha, durante la grabacion de llamada telefonica, Oscar hizo las admisiones consignadas en los hechos vigesimo...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-01",
+        "P-02"
+      ],
+      "pruebas_correctas": [
+        "P-01",
+        "P-02"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-35",
+      "numero": 35,
+      "ordinal": "TRIGESIMOQUINTO",
+      "line": 247,
+      "titulo_actual": "Notificación formal de cese de explotación",
+      "resumen_actual": "El 28 de agosto de 2025, Oscar acepto formalmente la terminacion de la relacion. El 29 de agosto de 2025, Pedro envio la **Notificacion Formal de Cese de Explotacion**, solicitando a Oscar *\"se abstenga de continuar con la explotacion de los activos ...",
+      "resumen_correcto": "El 28 de agosto de 2025, Oscar acepto formalmente la terminacion de la relacion. El 29 de agosto de 2025, Pedro envio la **Notificacion Formal de Cese de Explotacion**, solicitando a Oscar *\"se abstenga de continuar con la explotacion de los activos ...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-18"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-18"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-36",
+      "numero": 36,
+      "ordinal": "TRIGESIMOSEXTO",
+      "line": 253,
+      "titulo_actual": "Oferta de Oscar — $40M por renunciar a todo",
+      "resumen_actual": "Aproximadamente el 12 de septiembre de 2025, Oscar presento una propuesta de **Contrato de Transaccion** en la que ofrecio $40.000.000 COP como \"suma transaccional\", declaro la inexistencia de sociedad de hecho, exigio que toda la propiedad intelectu...",
+      "resumen_correcto": "Aproximadamente el 12 de septiembre de 2025, Oscar presento una propuesta de **Contrato de Transaccion** en la que ofrecio $40.000.000 COP como \"suma transaccional\", declaro la inexistencia de sociedad de hecho, exigio que toda la propiedad intelectu...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-15"
+      ],
+      "pruebas_correctas": [
+        "P-15"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-37",
+      "numero": 37,
+      "ordinal": "TRIGESIMOSEPTIMO",
+      "line": 255,
+      "titulo_actual": "Contrapropuesta de Pedro — $300M",
+      "resumen_actual": "El 14 de octubre de 2025, Pedro, a traves de DOCTOR FLIGHT S.A.S., envio una **contrapropuesta de transaccion** por **$300.000.000 COP** ($270M + $30M de facturas pendientes de agosto-octubre 2025). Esta contrapropuesta reconocia en su Consideracion ...",
+      "resumen_correcto": "El 14 de octubre de 2025, Pedro, a traves de DOCTOR FLIGHT S.A.S., envio una **contrapropuesta de transaccion** por **$300.000.000 COP** ($270M + $30M de facturas pendientes de agosto-octubre 2025). Esta contrapropuesta reconocia en su Consideracion ...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-16"
+      ],
+      "pruebas_correctas": [
+        "P-16"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-38",
+      "numero": 38,
+      "ordinal": "TRIGESIMOCTAVO",
+      "line": 257,
+      "titulo_actual": "Fracaso de negociación transaccional",
+      "resumen_actual": "Las partes no lograron acuerdo alguno. La diferencia entre las ofertas evidencia la brecha: Oscar ofrecio $40M (3.3% del patrimonio estimado de $1,200M), mientras Pedro pretendia $300M (25%). **[P-15, P-16, P-17]**",
+      "resumen_correcto": "Las partes no lograron acuerdo alguno. La diferencia entre las ofertas evidencia la brecha: Oscar ofrecio $40M (3.3% del patrimonio estimado de $1,200M), mientras Pedro pretendia $300M (25%). **[P-15, P-16, P-17]**",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-15",
+        "P-16",
+        "P-17"
+      ],
+      "pruebas_correctas": [
+        "P-15",
+        "P-16",
+        "P-17"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-39",
+      "numero": 39,
+      "ordinal": "TRIGESIMONOVENO",
+      "line": 263,
+      "titulo_actual": "NETMED S.A.S. — vehículo post-ruptura de Oscar",
+      "resumen_actual": "El 15 de octubre de 2025, Oscar constituyo unilateralmente la sociedad **NETMED S.A.S.** por documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del 100% de las acciones. En la grabacion...",
+      "resumen_correcto": "El 15 de octubre de 2025, Oscar constituyo unilateralmente la sociedad **NETMED S.A.S.** por documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del 100% de las acciones. En la grabacion...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-01",
+        "P-24"
+      ],
+      "pruebas_correctas": [
+        "P-01",
+        "P-24"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-40",
+      "numero": 40,
+      "ordinal": "CUADRAGESIMO",
+      "line": 265,
+      "titulo_actual": "Renovación unilateral de matrícula mercantil",
+      "resumen_actual": "Oscar renovo la matricula del establecimiento comercial PARETOMED el 9 de agosto de 2025, estando la sociedad de hecho en plena crisis, sin consultar ni informar a Pedro. Segun certificado de Camara de Comercio, ParetoMed declara activos vinculados d...",
+      "resumen_correcto": "Oscar renovo la matricula del establecimiento comercial PARETOMED el 9 de agosto de 2025, estando la sociedad de hecho en plena crisis, sin consultar ni informar a Pedro. Segun certificado de Camara de Comercio, ParetoMed declara activos vinculados d...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-20"
+      ],
+      "pruebas_correctas": [
+        "P-20"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-41",
+      "numero": 41,
+      "ordinal": "CUADRAGESIMOPRIMERO",
+      "line": 271,
+      "titulo_actual": "Solicitud de conciliación extrajudicial",
+      "resumen_actual": "El 11 de febrero de 2026, se radico solicitud de conciliacion N 013-2026 ante el Centro de Conciliacion de la Corporacion Lonja de Propiedad Raiz de Barranquilla. **[P-19]**",
+      "resumen_correcto": "El 11 de febrero de 2026, se radico solicitud de conciliacion N 013-2026 ante el Centro de Conciliacion de la Corporacion Lonja de Propiedad Raiz de Barranquilla. **[P-19]**",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-19"
+      ],
+      "pruebas_correctas": [
+        "P-19"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-42",
+      "numero": 42,
+      "ordinal": "CUADRAGESIMOSEGUNDO",
+      "line": 273,
+      "titulo_actual": "Constancia de no conciliación — vía judicial expedita",
+      "resumen_actual": "El 20 de febrero de 2026, se expidio la **CONSTANCIA DE NO CONCILIACION N 00-1844**. El Conciliador Francisco Daniel Ramirez Carreno (CC 19.334.946, T.P. 30.770) dejo constancia de que las partes no llegaron a acuerdo. Las pretensiones presentadas in...",
+      "resumen_correcto": "El 20 de febrero de 2026, se expidio la **CONSTANCIA DE NO CONCILIACION N 00-1844**. El Conciliador Francisco Daniel Ramirez Carreno (CC 19.334.946, T.P. 30.770) dejo constancia de que las partes no llegaron a acuerdo. Las pretensiones presentadas in...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-19"
+      ],
+      "pruebas_correctas": [
+        "P-19"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-43",
+      "numero": 43,
+      "ordinal": "CUADRAGESIMOTERCERO",
+      "line": 279,
+      "titulo_actual": "Valoración del patrimonio — $1,200M estimados",
+      "resumen_actual": "Segun el Anexo de Valoracion elaborado en agosto de 2025, el patrimonio de PARETOMED se estima en $1.200.000.000 COP, compuesto por: (a) fondo de comercio y proyeccion de ingresos: $905.000.000 (basado en proyeccion de 19 meses a $47.267.338/mes); (b...",
+      "resumen_correcto": "Segun el Anexo de Valoracion elaborado en agosto de 2025, el patrimonio de PARETOMED se estima en $1.200.000.000 COP, compuesto por: (a) fondo de comercio y proyeccion de ingresos: $905.000.000 (basado en proyeccion de 19 meses a $47.267.338/mes); (b...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-17"
+      ],
+      "pruebas_correctas": [
+        "P-17"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-44",
+      "numero": 44,
+      "ordinal": "CUADRAGESIMOCUARTO",
+      "line": 281,
+      "titulo_actual": "Participación de Pedro — 20% = $240M",
+      "resumen_actual": "La participacion del 20% de Pedro en el patrimonio estimado asciende a **$240.000.000 COP**. Esta cifra es congruente con tres valoraciones realizadas por el demandante y sus asesores: (a) $240M por Anexo de Valoracion para liquidacion de sociedad; (...",
+      "resumen_correcto": "La participacion del 20% de Pedro en el patrimonio estimado asciende a **$240.000.000 COP**. Esta cifra es congruente con tres valoraciones realizadas por el demandante y sus asesores: (a) $240M por Anexo de Valoracion para liquidacion de sociedad; (...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-16",
+        "P-17",
+        "P-35"
+      ],
+      "pruebas_correctas": [
+        "P-16",
+        "P-17",
+        "P-35"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-45",
+      "numero": 45,
+      "ordinal": "CUADRAGESIMOQUINTO",
+      "line": 283,
+      "titulo_actual": "Utilidades post-ruptura no pagadas a Pedro",
+      "resumen_actual": "Segun las transferencias bancarias documentadas, Pedro recibio pagos hasta julio de 2025 (transferencia del 05/08/2025 por $7.450.000, que cubria el mes de julio). Oscar continuo explotando PARETOMED de manera unilateral despues de la ruptura y **sig...",
+      "resumen_correcto": "Segun las transferencias bancarias documentadas, Pedro recibio pagos hasta julio de 2025 (transferencia del 05/08/2025 por $7.450.000, que cubria el mes de julio). Oscar continuo explotando PARETOMED de manera unilateral despues de la ruptura y **sig...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-16",
+        "P-18",
+        "P-36",
+        "P-37",
+        "P-43"
+      ],
+      "pruebas_correctas": [
+        "P-16",
+        "P-18",
+        "P-36",
+        "P-37",
+        "P-43"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-46",
+      "numero": 46,
+      "ordinal": "CUADRAGESIMOSEXTO",
+      "line": 285,
+      "titulo_actual": "Total pagos documentados — $122.3M en 17 transferencias",
+      "resumen_actual": "El total de pagos recibidos por Pedro asciende a **$122.345.065 COP** en 17 transferencias bancarias a dos cuentas entre mayo de 2024 y agosto de 2025: 14 transferencias a cuenta personal Bancolombia **4483 ($99.319.834) acreditadas con capturas de p...",
+      "resumen_correcto": "El total de pagos recibidos por Pedro asciende a **$122.345.065 COP** en 17 transferencias bancarias a dos cuentas entre mayo de 2024 y agosto de 2025: 14 transferencias a cuenta personal Bancolombia **4483 ($99.319.834) acreditadas con capturas de p...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-36",
+        "P-37",
+        "P-53",
+        "P-54"
+      ],
+      "pruebas_correctas": [
+        "P-36",
+        "P-37",
+        "P-53",
+        "P-54"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-47",
+      "numero": 47,
+      "ordinal": "CUADRAGESIMSEPTIMO",
+      "line": 323,
+      "titulo_actual": "Metodología de ciclos de 90 días",
+      "resumen_actual": "El 8 de enero de 2025, Oscar Maldonado declaro en nota de voz de WhatsApp que la firma del acuerdo de socios era una **\"mera formalidad\"**, lo que constituye un reconocimiento de que la sociedad ya existia de facto sin necesidad del documento escrito...",
+      "resumen_correcto": "El 8 de enero de 2025, Oscar Maldonado declaro en nota de voz de WhatsApp que la firma del acuerdo de socios era una **\"mera formalidad\"**, lo que constituye un reconocimiento de que la sociedad ya existia de facto sin necesidad del documento escrito...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-05",
+        "P-41"
+      ],
+      "pruebas_correctas": [
+        "P-05",
+        "P-41"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-48",
+      "numero": 48,
+      "ordinal": "CUADRAGESIMOCTAVO",
+      "line": 325,
+      "titulo_actual": "Crecimiento exponencial de ventas (10x)",
+      "resumen_actual": "El 7 de agosto de 2025, se produjo un incidente contable que evidencia la conducta de Pedro como socio y no como contratista. Oscar informo a Pedro que en la liquidacion de julio habia omitido descontar los pagos de las colaboradoras Lina y Kendy, lo...",
+      "resumen_correcto": "El 7 de agosto de 2025, se produjo un incidente contable que evidencia la conducta de Pedro como socio y no como contratista. Oscar informo a Pedro que en la liquidacion de julio habia omitido descontar los pagos de las colaboradoras Lina y Kendy, lo...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02"
+      ],
+      "pruebas_correctas": [
+        "P-02"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-49",
+      "numero": 49,
+      "ordinal": "CUADRAGESIMONOVENO",
+      "line": 329,
+      "titulo_actual": "Aporte de infraestructura CRM",
+      "resumen_actual": "Pedro participaba activamente en la **co-determinacion de los precios** del programa ParetoMed, funcion estrategica reservada a socios o directivos. Se acreditan al menos tres instancias documentadas: (a) el 21 de marzo de 2025, Pedro propuso una est...",
+      "resumen_correcto": "Pedro participaba activamente en la **co-determinacion de los precios** del programa ParetoMed, funcion estrategica reservada a socios o directivos. Se acreditan al menos tres instancias documentadas: (a) el 21 de marzo de 2025, Pedro propuso una est...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-03",
+        "P-05",
+        "P-40"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-03",
+        "P-05",
+        "P-40"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-50",
+      "numero": 50,
+      "ordinal": "QUINCUAGESIMO",
+      "line": 333,
+      "titulo_actual": "Aporte de capital relacional",
+      "resumen_actual": "Tras la aceptacion de la terminacion el 28 de agosto de 2025, Oscar procedio a **remover unilateralmente los accesos** de Pedro a las herramientas digitales del negocio. Oscar cerro las sesiones del correo institucional paretomed@gmail.com (un antece...",
+      "resumen_correcto": "Tras la aceptacion de la terminacion el 28 de agosto de 2025, Oscar procedio a **remover unilateralmente los accesos** de Pedro a las herramientas digitales del negocio. Oscar cerro las sesiones del correo institucional paretomed@gmail.com (un antece...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-18"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-18"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-51",
+      "numero": 51,
+      "ordinal": "QUINCUAGESIMOPRIMERO",
+      "line": 337,
+      "titulo_actual": "Diseño de Talleres Dominicales",
+      "resumen_actual": "ParetoMed continuo explotando despues de la ruptura la metodologia, estructura comercial, procesos de ventas y canales digitales que fueron construidos o sustancialmente mejorados por Pedro durante los 16 meses de operacion conjunta. Si bien Oscar gr...",
+      "resumen_correcto": "ParetoMed continuo explotando despues de la ruptura la metodologia, estructura comercial, procesos de ventas y canales digitales que fueron construidos o sustancialmente mejorados por Pedro durante los 16 meses de operacion conjunta. Si bien Oscar gr...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-03",
+        "P-25",
+        "P-26",
+        "P-27"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-03",
+        "P-25",
+        "P-26",
+        "P-27"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-52",
+      "numero": 52,
+      "ordinal": "QUINCUAGESIMOSEGUNDO",
+      "line": 341,
+      "titulo_actual": "Elevación de calidad visual y posicionamiento",
+      "resumen_actual": "La dinamica de sociedad entre Pedro y Oscar era presenciada habitualmente por terceros que pueden dar testimonio. Las reuniones de trabajo se realizaban en la oficina de Pedro, donde sus trabajadores Efrain (fotografo) y Paul (comunicador social) est...",
+      "resumen_correcto": "La dinamica de sociedad entre Pedro y Oscar era presenciada habitualmente por terceros que pueden dar testimonio. Las reuniones de trabajo se realizaban en la oficina de Pedro, donde sus trabajadores Efrain (fotografo) y Paul (comunicador social) est...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-03",
+        "P-39"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-03",
+        "P-39"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-53",
+      "numero": 53,
+      "ordinal": "QUINCUAGESIMOTERCERO",
+      "line": 353,
+      "titulo_actual": "Aporte de industria — +500 horas",
+      "resumen_actual": "Entre febrero de 2024 y septiembre de 2025, se documentaron **376 comprobantes de pago** de estudiantes del programa ParetoMed, correspondientes a transacciones procesadas a traves de las plataformas Bold (190 pagos, $331.646.650), Bancolombia (106 p...",
+      "resumen_correcto": "Entre febrero de 2024 y septiembre de 2025, se documentaron **376 comprobantes de pago** de estudiantes del programa ParetoMed, correspondientes a transacciones procesadas a traves de las plataformas Bold (190 pagos, $331.646.650), Bancolombia (106 p...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-42"
+      ],
+      "pruebas_correctas": [
+        "P-42"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-54",
+      "numero": 54,
+      "ordinal": "QUINCUAGESIMOCUARTO",
+      "line": 357,
+      "titulo_actual": "Metodología de simulacros como activo comercial",
+      "resumen_actual": "El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: considerando unicamente las **14 transferencias a cuenta personal** ($99.319.834), estas representan el **19.48%** de los $509....",
+      "resumen_correcto": "El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: considerando unicamente las **14 transferencias a cuenta personal** ($99.319.834), estas representan el **19.48%** de los $509....",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-16",
+        "P-36",
+        "P-37",
+        "P-42"
+      ],
+      "pruebas_correctas": [
+        "P-16",
+        "P-36",
+        "P-37",
+        "P-42"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-55",
+      "numero": 55,
+      "ordinal": "QUINCUAGESIMOQUINTO",
+      "line": 361,
+      "titulo_actual": "Inversión inicial de recursos propios",
+      "resumen_actual": "Si Pedro recibio **$122.345.065 COP** (cuenta personal + Doctor Flight S.A.S.) como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reale...",
+      "resumen_correcto": "Si Pedro recibio **$122.345.065 COP** (cuenta personal + Doctor Flight S.A.S.) como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reale...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-13",
+        "P-16",
+        "P-42"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-13",
+        "P-16",
+        "P-42"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-56",
+      "numero": 56,
+      "ordinal": "QUINCUAGESIMOSEXTO",
+      "line": 365,
+      "titulo_actual": "Transferencia de autoridad de marca personal",
+      "resumen_actual": "El 28 de febrero de 2025, Oscar revelo en el chat de WhatsApp la existencia de una **hoja de calculo personal** con la contabilidad detallada del negocio, distinta de los consolidados que compartia con Pedro: *\"yo me guio de la hoja de calculo person...",
+      "resumen_correcto": "El 28 de febrero de 2025, Oscar revelo en el chat de WhatsApp la existencia de una **hoja de calculo personal** con la contabilidad detallada del negocio, distinta de los consolidados que compartia con Pedro: *\"yo me guio de la hoja de calculo person...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-13"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-13"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-57",
+      "numero": 57,
+      "ordinal": "QUINCUAGESIMOSEPTIMO",
+      "line": 369,
+      "titulo_actual": "Sistema de Inducción y Reducción de Churn",
+      "resumen_actual": "La comparacion entre la facturacion de Pedro a AVANZ FINANZAS & SEGUROS LTDA (NIT 901286973-7) y la facturacion a Oscar/ParetoMed demuestra que Pedro distinguia perfectamente entre una relacion de prestacion de servicios y una relacion societaria. Co...",
+      "resumen_correcto": "La comparacion entre la facturacion de Pedro a AVANZ FINANZAS & SEGUROS LTDA (NIT 901286973-7) y la facturacion a Oscar/ParetoMed demuestra que Pedro distinguia perfectamente entre una relacion de prestacion de servicios y una relacion societaria. Co...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-12",
+        "P-42"
+      ],
+      "pruebas_correctas": [
+        "P-12",
+        "P-42"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-58",
+      "numero": 58,
+      "ordinal": "QUINCUAGESIMOCTAVO",
+      "line": 373,
+      "titulo_actual": "Aporte de la \"Ruta del Residente\"",
+      "resumen_actual": "Los KPIs de ventas de ParetoMed para 2025, contenidos en la hoja de calculo \"Copia de KPIS 2025.xlsx\" (archivo del demandado en poder del demandante), documentan que Oscar continuo explotando el negocio despues de la ruptura con los siguientes ingres...",
+      "resumen_correcto": "Los KPIs de ventas de ParetoMed para 2025, contenidos en la hoja de calculo \"Copia de KPIS 2025.xlsx\" (archivo del demandado en poder del demandante), documentan que Oscar continuo explotando el negocio despues de la ruptura con los siguientes ingres...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-43"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-43"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-59",
+      "numero": 59,
+      "ordinal": "QUINCUAGESIMONOVENO",
+      "line": 381,
+      "titulo_actual": "Automatización de Checkout y Recurrencia",
+      "resumen_actual": "Pedro desarrollo, de manera independiente y fuera del alcance de los aportes de la sociedad descritos en el Hecho Decimosegundo, una herramienta tecnologica educativa orientada a los estudiantes de ParetoMed. Pedro presento el prototipo a Oscar como ...",
+      "resumen_correcto": "Pedro desarrollo, de manera independiente y fuera del alcance de los aportes de la sociedad descritos en el Hecho Decimosegundo, una herramienta tecnologica educativa orientada a los estudiantes de ParetoMed. Pedro presento el prototipo a Oscar como ...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-05",
+        "P-50"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-05",
+        "P-50"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-60",
+      "numero": 60,
+      "ordinal": "SEXAGESIMO",
+      "line": 385,
+      "titulo_actual": "Implementación de Retargeting Avanzado",
+      "resumen_actual": "En la reunion del 14 de julio de 2025, Oscar Maldonado reconocio expresamente que elementos centrales de la metodologia actual de ParetoMed fueron ideados por Pedro: (a) Oscar *\"confirmo que la idea de los simulacros pre y post estudio, con objetivos...",
+      "resumen_correcto": "En la reunion del 14 de julio de 2025, Oscar Maldonado reconocio expresamente que elementos centrales de la metodologia actual de ParetoMed fueron ideados por Pedro: (a) Oscar *\"confirmo que la idea de los simulacros pre y post estudio, con objetivos...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-34"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-34"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-61",
+      "numero": 61,
+      "ordinal": "SEXAGESIMOPRIMERO",
+      "line": 389,
+      "titulo_actual": "Gestión de Crisis Comercial Mayo 2025",
+      "resumen_actual": "El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en agosto de 2025, pero su encabezado dice textualmente: *\"El dia 1 de [espacio en blanco] de 2024\"* — con el mes sin completar. Esta predatacion constituye un intento de redefini...",
+      "resumen_correcto": "El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en agosto de 2025, pero su encabezado dice textualmente: *\"El dia 1 de [espacio en blanco] de 2024\"* — con el mes sin completar. Esta predatacion constituye un intento de redefini...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-01",
+        "P-14"
+      ],
+      "pruebas_correctas": [
+        "P-01",
+        "P-14"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-62",
+      "numero": 62,
+      "ordinal": "SEXAGESIMOSEGUNDO",
+      "line": 393,
+      "titulo_actual": "Optimización de Tasa de Cierre",
+      "resumen_actual": "Todos los contratos propuestos por Oscar incluian clausulas de no competencia dirigidas a restringir la actividad profesional de Pedro: (a) el Acuerdo de Socios propuesto en version SAS incluia una restriccion de **5 anos** que prohibia a Pedro *\"com...",
+      "resumen_correcto": "Todos los contratos propuestos por Oscar incluian clausulas de no competencia dirigidas a restringir la actividad profesional de Pedro: (a) el Acuerdo de Socios propuesto en version SAS incluia una restriccion de **5 anos** que prohibia a Pedro *\"com...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-02",
+        "P-08",
+        "P-15"
+      ],
+      "pruebas_correctas": [
+        "P-02",
+        "P-08",
+        "P-15"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-63",
+      "numero": 63,
+      "ordinal": "SEXAGESIMOTERCERO",
+      "line": 397,
+      "titulo_actual": "Co-dirección y Feedback de Operación",
+      "resumen_actual": "El 15 de octubre de 2025, Oscar Maldonado constituyo la sociedad **NETMED S.A.S.** (NIT 902.004.012-9, Matricula 926.784) mediante documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del...",
+      "resumen_correcto": "El 15 de octubre de 2025, Oscar Maldonado constituyo la sociedad **NETMED S.A.S.** (NIT 902.004.012-9, Matricula 926.784) mediante documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-01",
+        "P-24",
+        "P-49"
+      ],
+      "pruebas_correctas": [
+        "P-01",
+        "P-24",
+        "P-49"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    },
+    {
+      "id": "hecho-64",
+      "numero": 64,
+      "ordinal": "SEXAGESIMOCUARTO",
+      "line": 401,
+      "titulo_actual": "Estrategia de Expansión Internacional",
+      "resumen_actual": "El 10 de julio de 2025, Oscar revelo en chat de WhatsApp un plan tributario consistente en crear una LLC en Estados Unidos y una SAS en Colombia que le prestara servicios: *\"la idea es crear una SAS aca en Colombia que le preste servicios a la LLC en...",
+      "resumen_correcto": "El 10 de julio de 2025, Oscar revelo en chat de WhatsApp un plan tributario consistente en crear una LLC en Estados Unidos y una SAS en Colombia que le prestara servicios: *\"la idea es crear una SAS aca en Colombia que le preste servicios a la LLC en...",
+      "resumen_changed": false,
+      "pruebas_actuales": [
+        "P-01",
+        "P-02"
+      ],
+      "pruebas_correctas": [
+        "P-01",
+        "P-02"
+      ],
+      "pruebas_to_add": [],
+      "pruebas_to_remove": [],
+      "pruebas_changed": false,
+      "changed": false
+    }
+  ]
+}

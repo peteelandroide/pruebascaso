@@ -102,6 +102,9 @@ function parseChatToHTML(inputFile, outputId) {
 
 function run() {
   console.log("Iniciando parse-chat.js...");
+  if (!fs.existsSync(DOCS_DIR)) {
+    fs.mkdirSync(DOCS_DIR, { recursive: true });
+  }
   for (const chat of CHAT_FILES) {
     parseChatToHTML(chat.file, chat.id);
   }

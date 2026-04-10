@@ -35,6 +35,7 @@ function searchFragmentsInDocs(hechosData) {
     const chatFiles = [
         { id: 'chat-oscar-pedro', file: 'Chat de WhatsApp con Oscar Maldonado Paretomed.txt' },
         { id: 'chat-equipo', file: 'Chat de WhatsApp con Equipo de Trabajo - Paretomed 🟠.txt' },
+        { id: 'grabacion-llamada-oscar-250814', file: 'Grabación de llamada Oscar PARETOMED_250814_184648_original.txt' },
         { id: 'transcripciones', file: 'TRANSCRIPCIONES_CONSOLIDADAS_FINAL.txt' }
     ];
 

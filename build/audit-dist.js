@@ -78,7 +78,7 @@ console.log(`  Found: ${foundPruebas}/${withHtml} (pruebas with html link)`);
 console.log('\n--- Fragment fuentes → documentos mapping ---');
 let unmapped = new Set();
 for (const [hId, hecho] of Object.entries(CASE_DATA.hechos || {})) {
-    (hecho.extractos || []).forEach(frag => {
+    (hecho.fragmentos_clave || hecho.extractos || []).forEach(frag => {
         if (frag.fuente && !CASE_DATA.documentos[frag.fuente]) {
             unmapped.add(frag.fuente);
         }
