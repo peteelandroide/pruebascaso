@@ -144,6 +144,23 @@ function ensureExists(filePath) {
   }
 }
 
+function normalizeComparableText(value) {
+  return String(value || '')
+    .replace(/\r\n/g, '\n')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function normalizeProofId(value) {
+  const trimmed = String(value || '').trim();
+  if (!trimmed) return '';
+  return trimmed.replace(/^p-/, 'P-');
+}
+
+function uniqueSortedProofIds(values) {
+  return [...new Set((values || []).map(normalizeProofId).filter(Boolean))].sort();
+}
+
 function toSummary(text) {
   if (text.length > 250) {
     return `${text.substring(0, 250)}...`;
@@ -173,7 +190,7 @@ function parseDocument() {
   function closeCurrent() {
     if (!current) return;
     current.block = current.block.trim();
-    current.pruebas = [...new Set((current.block.match(/P-\d{2}/g) || []).sort())];
+    current.pruebas = uniqueSortedProofIds(current.block.match(/P-\d{2}(?:-[A-Za-z0-9]+)?/g) || []);
     facts.push(current);
     current = null;
   }
@@ -234,11 +251,11 @@ function buildDiff(documentFacts, snapshot) {
       throw new Error(`El snapshot contiene un hecho no mapeado: ${item.id}`);
     }
 
-    const currentPruebas = [...new Set(item.pruebas)].sort();
-    const targetPruebas = [...new Set(docFact.pruebas)].sort();
+    const currentPruebas = uniqueSortedProofIds(item.pruebas);
+    const targetPruebas = uniqueSortedProofIds(docFact.pruebas);
     const pruebasToAdd = targetPruebas.filter((prueba) => !currentPruebas.includes(prueba));
     const pruebasToRemove = currentPruebas.filter((prueba) => !targetPruebas.includes(prueba));
-    const resumenChanged = item.resumen !== docFact.resumen;
+    const resumenChanged = normalizeComparableText(item.resumen) !== normalizeComparableText(docFact.resumen);
     const pruebasChanged = JSON.stringify(currentPruebas) !== JSON.stringify(targetPruebas);
 
     return {

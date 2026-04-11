@@ -28,7 +28,7 @@
   {
     "id": "hecho-12",
     "titulo": "Dashboard React y gestion tecnologica",
-    "resumen": "Pedro aporto conocimiento y gestion tecnologica consistente en la gestion de pixel de Meta, campanas publicitarias y un Dashboard de Venta Consultiva en React desplegado en Google Cloud. Este dashboard es distinto de la aplicacion educativa independiente de preguntas y respuestas para examenes de residencia descrita en el Hecho Quincuagesimonoveno.",
+    "resumen": "Pedro aporto una herramienta tecnologica propia consistente en el desarrollo de un Dashboard de Venta Consultiva en lenguaje React desplegado con herramientas de Google Cloud, herramienta que fue puesta a disposicion de la sociedad sin costo adiciona...",
     "pruebas": [
       "P-02"
     ]
@@ -101,15 +101,9 @@
   },
   {
     "id": "hecho-19",
-    "titulo": "17 transferencias bancarias — $122.3M total",
-    "resumen": "Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan **17 transferencias bancarias documentadas** rea...",
-    "pruebas": [
-      "P-02",
-      "P-12",
-      "P-13",
-      "P-16",
-      "P-36"
-    ]
+    "titulo": "Pagos acreditados — $122.3M total",
+    "resumen": "Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan **14 transferencias bancarias a la cuenta person...",
+    "pruebas": []
   },
   {
     "id": "hecho-19-capcut",
@@ -130,10 +124,12 @@
   {
     "id": "hecho-20",
     "titulo": "Variabilidad de pagos — Participación en utilidades",
-    "resumen": "Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025 — cuenta personal). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorari...",
+    "resumen": "Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorarios fijos por prest...",
     "pruebas": [
-      "P-16",
-      "P-36"
+      "P-02",
+      "P-12",
+      "P-36",
+      "P-37"
     ]
   },
   {
@@ -148,17 +144,19 @@
   {
     "id": "hecho-21",
     "titulo": "Confesión: \"nos llamábamos socios\"",
-    "resumen": "Oscar Maldonado reconocio expresamente la existencia de la sociedad en grabacion telefonica del 14 de agosto de 2025: *\"O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente\"*. En la m...",
+    "resumen": "Oscar Maldonado reconocio expresamente la existencia de la sociedad en multiples ocasiones el 14 de agosto de 2025. En la reunion del dia, Oscar declaro: *\"tu eres mi socio y venimos trabajando bien y estamos haciendo billetes\"* [P-56]. Esa misma noc...",
     "pruebas": [
-      "P-01"
+      "P-01",
+      "P-56"
     ]
   },
   {
     "id": "hecho-22",
     "titulo": "Confesión: \"ibas a formar parte de la SAS\"",
-    "resumen": "En la misma grabacion, Oscar reconocio que el pacto incluia acciones: *\"si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente\"*. Y admitio que consulto a sus propios asesores legales y...",
+    "resumen": "En la grabacion telefonica de esa noche, Oscar reconocio que el pacto incluia acciones: *\"si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente\"*. Y admitio que consulto a sus propios ...",
     "pruebas": [
-      "P-01"
+      "P-01",
+      "P-56"
     ]
   },
   {
@@ -180,9 +178,10 @@
   {
     "id": "hecho-25",
     "titulo": "Nota manuscrita: \"no es labor contratable\"",
-    "resumen": "En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar escribio de su puno y letra las siguientes notas: (a) *\"20% de las utilidades no se justifican por una labor que es contratable. La idea, como se ...",
+    "resumen": "En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar realizo comentarios digitales desde su cuenta personal de Google, fechados el 24 de julio de 2024, en el documento compartido en Google Docs. En d...",
     "pruebas": [
-      "P-09"
+      "P-09",
+      "P-09-bis"
     ]
   },
   {
@@ -199,9 +198,12 @@
   {
     "id": "hecho-27",
     "titulo": "Siete reuniones documentadas en 2025",
-    "resumen": "La co-direccion del negocio se evidencia en al menos 7 reuniones documentadas en 2025:",
+    "resumen": "La co-direccion del negocio se evidencia en al menos 8 reuniones documentadas en 2025:",
     "pruebas": [
-      "P-34"
+      "P-02",
+      "P-03",
+      "P-34",
+      "P-51"
     ]
   },
   {
@@ -210,7 +212,9 @@
     "resumen": "El negocio genero ingresos totales de **$709.010.075 COP** en 15 meses de operacion conjunta (junio 2024 - agosto 2025), con un promedio mensual de $47.267.338 COP. El mejor mes fue noviembre de 2024, cuando Oscar anuncio al equipo: *\"$108.456.900 en...",
     "pruebas": [
       "P-02",
-      "P-03"
+      "P-03",
+      "P-42",
+      "P-43"
     ]
   },
   {
@@ -242,11 +246,15 @@
   {
     "id": "hecho-31",
     "titulo": "Múltiples borradores de acuerdo nunca firmados",
-    "resumen": "Existieron multiples borradores de acuerdo que confirman la naturaleza societaria: (a) el Acuerdo de Socios Original (inicios 2024) contemplaba **\"20% de las acciones\"** de la empresa; (b) el Acuerdo de Socios propuesto por Oscar en version SAS inclu...",
+    "resumen": "Existieron multiples borradores de acuerdo que documentan una misma negociacion societaria en evolucion: (a) el Acuerdo de Socios Original (inicios de 2024) contemplaba **\"20% de las acciones\"** de la empresa; (b) el 22 de marzo de 2024 Oscar remitio...",
     "pruebas": [
+      "P-02",
       "P-06",
-      "P-08",
-      "P-09"
+      "P-09",
+      "P-09-bis",
+      "P-53",
+      "P-54",
+      "P-55"
     ]
   },
   {
@@ -384,18 +392,18 @@
   },
   {
     "id": "hecho-46",
-    "titulo": "Total pagos documentados — $122.3M en 17 transferencias",
-    "resumen": "El total de pagos recibidos por Pedro asciende a **$122.345.065 COP** en 17 transferencias bancarias a dos cuentas entre mayo de 2024 y agosto de 2025: 14 transferencias a cuenta personal Bancolombia **4483 ($99.319.834) acreditadas con capturas de p...",
+    "titulo": "Pagos acreditados — $122.3M en dos canales",
+    "resumen": "El total acreditado a favor de Pedro asciende a **$122.345.065 COP** entre mayo de 2024 y agosto de 2025, discriminado en (i) **14 transferencias a su cuenta personal** por **$99.319.834 COP** y (ii) **pagos canalizados a traves de DOCTOR FLIGHT S.A....",
     "pruebas": [
+      "P-02",
+      "P-12",
       "P-36",
-      "P-37",
-      "P-53",
-      "P-54"
+      "P-37"
     ]
   },
   {
     "id": "hecho-47",
-    "titulo": "Metodología de ciclos de 90 días",
+    "titulo": "\"La firma es una mera formalidad\" — confesión",
     "resumen": "El 8 de enero de 2025, Oscar Maldonado declaro en nota de voz de WhatsApp que la firma del acuerdo de socios era una **\"mera formalidad\"**, lo que constituye un reconocimiento de que la sociedad ya existia de facto sin necesidad del documento escrito...",
     "pruebas": [
       "P-05",
@@ -404,7 +412,7 @@
   },
   {
     "id": "hecho-48",
-    "titulo": "Crecimiento exponencial de ventas (10x)",
+    "titulo": "Incidente contable — \"somos un equipo\"",
     "resumen": "El 7 de agosto de 2025, se produjo un incidente contable que evidencia la conducta de Pedro como socio y no como contratista. Oscar informo a Pedro que en la liquidacion de julio habia omitido descontar los pagos de las colaboradoras Lina y Kendy, lo...",
     "pruebas": [
       "P-02"
@@ -431,7 +439,7 @@
   },
   {
     "id": "hecho-50",
-    "titulo": "Aporte de capital relacional",
+    "titulo": "Remoción unilateral de accesos digitales",
     "resumen": "Tras la aceptacion de la terminacion el 28 de agosto de 2025, Oscar procedio a **remover unilateralmente los accesos** de Pedro a las herramientas digitales del negocio. Oscar cerro las sesiones del correo institucional paretomed@gmail.com (un antece...",
     "pruebas": [
       "P-02",
@@ -440,7 +448,7 @@
   },
   {
     "id": "hecho-51",
-    "titulo": "Diseño de Talleres Dominicales",
+    "titulo": "Explotación post-ruptura de activos compartidos",
     "resumen": "ParetoMed continuo explotando despues de la ruptura la metodologia, estructura comercial, procesos de ventas y canales digitales que fueron construidos o sustancialmente mejorados por Pedro durante los 16 meses de operacion conjunta. Si bien Oscar gr...",
     "pruebas": [
       "P-02",
@@ -452,7 +460,7 @@
   },
   {
     "id": "hecho-52",
-    "titulo": "Elevación de calidad visual y posicionamiento",
+    "titulo": "Testigos de la dinámica societaria",
     "resumen": "La dinamica de sociedad entre Pedro y Oscar era presenciada habitualmente por terceros que pueden dar testimonio. Las reuniones de trabajo se realizaban en la oficina de Pedro, donde sus trabajadores Efrain (fotografo) y Paul (comunicador social) est...",
     "pruebas": [
       "P-02",
@@ -462,7 +470,7 @@
   },
   {
     "id": "hecho-53",
-    "titulo": "Aporte de industria — +500 horas",
+    "titulo": "376 comprobantes — $579M en ingresos documentados",
     "resumen": "Entre febrero de 2024 y septiembre de 2025, se documentaron **376 comprobantes de pago** de estudiantes del programa ParetoMed, correspondientes a transacciones procesadas a traves de las plataformas Bold (190 pagos, $331.646.650), Bancolombia (106 p...",
     "pruebas": [
       "P-42"
@@ -470,10 +478,11 @@
   },
   {
     "id": "hecho-54",
-    "titulo": "Metodología de simulacros como activo comercial",
-    "resumen": "El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: considerando unicamente las **14 transferencias a cuenta personal** ($99.319.834), estas representan el **19.48%** de los $509....",
+    "titulo": "Cruce comprobantes vs pagos — 24.0% sobre muestra",
+    "resumen": "El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: tomando solo el **subtotal de la cuenta personal** documentado por SMS Bancolombia (**$99.319.834 COP**), ese valor equivale al...",
     "pruebas": [
-      "P-16",
+      "P-02",
+      "P-12",
       "P-36",
       "P-37",
       "P-42"
@@ -481,36 +490,38 @@
   },
   {
     "id": "hecho-55",
-    "titulo": "Inversión inicial de recursos propios",
-    "resumen": "Si Pedro recibio **$122.345.065 COP** (cuenta personal + Doctor Flight S.A.S.) como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reale...",
+    "titulo": "Proyección de ingresos reales — $941M estimados",
+    "resumen": "Si Pedro recibio **$122.345.065 COP** como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reales del negocio se estiman en aproximadamen...",
     "pruebas": [
       "P-02",
+      "P-12",
       "P-13",
-      "P-16",
       "P-42"
     ]
   },
   {
     "id": "hecho-56",
-    "titulo": "Transferencia de autoridad de marca personal",
+    "titulo": "Oscar oculta contabilidad y se niega a rendir cuentas",
     "resumen": "El 28 de febrero de 2025, Oscar revelo en el chat de WhatsApp la existencia de una **hoja de calculo personal** con la contabilidad detallada del negocio, distinta de los consolidados que compartia con Pedro: *\"yo me guio de la hoja de calculo person...",
     "pruebas": [
       "P-02",
-      "P-13"
+      "P-47",
+      "P-48"
     ]
   },
   {
     "id": "hecho-57",
-    "titulo": "Sistema de Inducción y Reducción de Churn",
+    "titulo": "Facturación Avanz vs ParetoMed — dos modelos distintos",
     "resumen": "La comparacion entre la facturacion de Pedro a AVANZ FINANZAS & SEGUROS LTDA (NIT 901286973-7) y la facturacion a Oscar/ParetoMed demuestra que Pedro distinguia perfectamente entre una relacion de prestacion de servicios y una relacion societaria. Co...",
     "pruebas": [
       "P-12",
-      "P-42"
+      "P-42",
+      "P-46"
     ]
   },
   {
     "id": "hecho-58",
-    "titulo": "Aporte de la \"Ruta del Residente\"",
+    "titulo": "KPIs post-ruptura — $169M en ventas sin pagar a Pedro",
     "resumen": "Los KPIs de ventas de ParetoMed para 2025, contenidos en la hoja de calculo \"Copia de KPIS 2025.xlsx\" (archivo del demandado en poder del demandante), documentan que Oscar continuo explotando el negocio despues de la ruptura con los siguientes ingres...",
     "pruebas": [
       "P-02",
@@ -520,11 +531,13 @@
   {
     "id": "hecho-59",
     "titulo": "\"Eres socio - lo que desarrolles es para ParetoMed\"",
-    "resumen": "Pedro desarrollo de manera independiente, fuera del alcance del Hecho Decimosegundo, una aplicacion educativa de preguntas y respuestas para examenes de residencia orientada a estudiantes de ParetoMed. Oscar pretendio apropiarsela como activo social y, en los audios del 13/07/2025, no solo exigio deberes de socio sino que admitio haberle ofrecido la sociedad a Pedro.",
+    "resumen": "Pedro desarrollo, de manera independiente y fuera del alcance de los aportes de la sociedad descritos en el Hecho Decimosegundo, una aplicacion educativa de preguntas y respuestas para examenes de residencia orientada a estudiantes de ParetoMed. En l...",
     "pruebas": [
       "P-02",
       "P-05",
-      "P-50"
+      "P-34",
+      "P-50",
+      "P-56"
     ]
   },
   {
@@ -533,31 +546,32 @@
     "resumen": "El 6 de febrero de 2024, Pedro envio una propuesta formal de acuerdo en la que se planteaba una participacion del 30% mediante esquema de vesting (future stock), con cliff de 12 meses y consolidacion trimestral. Las funciones propuestas incluian expr...",
     "pruebas": [
       "P-02",
-      "P-05",
       "P-10"
     ]
   },
   {
     "id": "hecho-60",
-    "titulo": "Implementación de Retargeting Avanzado",
+    "titulo": "Oscar reconoce aportes metodológicos de Pedro",
     "resumen": "En la reunion del 14 de julio de 2025, Oscar Maldonado reconocio expresamente que elementos centrales de la metodologia actual de ParetoMed fueron ideados por Pedro: (a) Oscar *\"confirmo que la idea de los simulacros pre y post estudio, con objetivos...",
     "pruebas": [
       "P-02",
-      "P-34"
+      "P-34",
+      "P-51"
     ]
   },
   {
     "id": "hecho-61",
-    "titulo": "Gestión de Crisis Comercial Mayo 2025",
-    "resumen": "El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en agosto de 2025, pero su encabezado dice textualmente: *\"El dia 1 de [espacio en blanco] de 2024\"* — con el mes sin completar. Esta predatacion constituye un intento de redefini...",
+    "titulo": "Contrato predatado con mes en blanco",
+    "resumen": "El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en la reunion del 14 de agosto de 2025. Oscar presento el documento diciendo: *\"no es el que esta en borrador; es uno que trabaje con los contadores y los abogados, que yo creo qu...",
     "pruebas": [
       "P-01",
-      "P-14"
+      "P-14",
+      "P-56"
     ]
   },
   {
     "id": "hecho-62",
-    "titulo": "Optimización de Tasa de Cierre",
+    "titulo": "Cláusulas anticompetencia de 5 años — solo para socios",
     "resumen": "Todos los contratos propuestos por Oscar incluian clausulas de no competencia dirigidas a restringir la actividad profesional de Pedro: (a) el Acuerdo de Socios propuesto en version SAS incluia una restriccion de **5 anos** que prohibia a Pedro *\"com...",
     "pruebas": [
       "P-02",
@@ -567,29 +581,34 @@
   },
   {
     "id": "hecho-63",
-    "titulo": "Co-dirección y Feedback de Operación",
+    "titulo": "NETMED: vehículo diseñado para escapar la sociedad",
     "resumen": "El 15 de octubre de 2025, Oscar Maldonado constituyo la sociedad **NETMED S.A.S.** (NIT 902.004.012-9, Matricula 926.784) mediante documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del...",
     "pruebas": [
       "P-01",
       "P-24",
-      "P-49"
+      "P-49",
+      "P-52",
+      "P-56"
     ]
   },
   {
     "id": "hecho-64",
-    "titulo": "Estrategia de Expansión Internacional",
+    "titulo": "Plan de evasión fiscal — LLC en Estados Unidos",
     "resumen": "El 10 de julio de 2025, Oscar revelo en chat de WhatsApp un plan tributario consistente en crear una LLC en Estados Unidos y una SAS en Colombia que le prestara servicios: *\"la idea es crear una SAS aca en Colombia que le preste servicios a la LLC en...",
     "pruebas": [
       "P-01",
-      "P-02"
+      "P-02",
+      "P-56"
     ]
   },
   {
     "id": "hecho-7",
     "titulo": "Acuerdo definitivo — 20% de ingresos netos",
-    "resumen": "El 28 de marzo de 2024, las partes acordaron la forma de trabajo definitiva: Pedro recibiria el 20% de los ingresos netos del negocio, con inicio desde abril de 2024. La participacion se redujo del 30% propuesto inicialmente al 20% como resultado de ...",
+    "resumen": "El 22 de marzo de 2024, Oscar remitio a Pedro una contrapropuesta escrita para renegociar los terminos inicialmente planteados por este. Luego, en la reunion del 28 de marzo de 2024, las partes negociaron la forma de trabajo aplicable desde abril de ...",
     "pruebas": [
-      "P-04"
+      "P-02",
+      "P-04",
+      "P-53"
     ]
   },
   {
@@ -598,7 +617,7 @@
     "resumen": "El 15 de abril de 2024, se constituyo verbalmente la sociedad de hecho. En esa fecha, Pedro recordo a Oscar que segun lo acordado debian iniciar los pagos y solicito definir el presupuesto de publicidad. A partir de este momento, ambas partes explota...",
     "pruebas": [
       "P-02",
-      "P-19"
+      "P-11"
     ]
   },
   {

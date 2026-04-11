@@ -5,11 +5,11 @@
 
 ---
 
-# SECCION 1: POR QUE LOS $99.419.834 YA RECIBIDOS NO SE DESCUENTAN
+# SECCION 1: POR QUE LOS $122.345.065 YA ACREDITADOS NO SE DESCUENTAN
 
 ## 1.1 Naturaleza juridica de los pagos recibidos
 
-Los $99.419.834 que Pedro recibio durante los 16 meses de operacion (mayo 2024 - julio 2025) son **distribucion de utilidades operativas**, no anticipos contra el patrimonio ni adelantos sobre una futura liquidacion. Esto se demuestra asi:
+Los $122.345.065 acreditados a Pedro durante la operacion (cuenta personal + Doctor Flight S.A.S.) son **distribucion de utilidades operativas**, no anticipos contra el patrimonio ni adelantos sobre una futura liquidacion. Esto se demuestra asi:
 
 **A. Oscar los calculaba como porcentaje de utilidades corrientes, no como anticipos:**
 - *"Ganancia: 7,016,650. Porcentaje de Pedro: 7,016,650 x 0,20 = 1,403,330"* (07/05/2024)
@@ -21,7 +21,7 @@ Oscar nunca dijo "te adelanto", "te anticipo" ni "esto se descuenta despues". Di
 En una sociedad de hecho, el socio industrial tiene derecho a su participacion en las utilidades a medida que se generan (art. 150 C. Co.). Los pagos mensuales eran el ejercicio de ese derecho, no un prestamo ni un anticipo.
 
 **C. Oscar recibio el 80% de las mismas utilidades:**
-Si los $99.4M de Pedro fueran "anticipos descontables", entonces los ~$398M que Oscar recibio como su 80% tambien serian "anticipos". Nadie va a argumentar que Oscar debe devolver su 80%. Es absurdo: ambos recibieron lo que les correspondia de las utilidades corrientes.
+Si los $122.3M acreditados a Pedro fueran "anticipos descontables", entonces los ~$489M que Oscar recibio como su 80% tambien serian "anticipos". Nadie va a argumentar que Oscar debe devolver su 80%. Es absurdo: ambos recibieron lo que les correspondia de las utilidades corrientes.
 
 **D. Analogia clara:**
 Si dos personas son socias 80/20 de un restaurante durante 16 meses y se reparten las ganancias mensualmente, cuando liquidan la sociedad, el patrimonio a repartir son los ACTIVOS del negocio (local, equipos, marca, clientela, inventario), NO se "devuelven" las ganancias que cada socio ya cobro. Esas ganancias ya fueron devengadas y percibidas legitimamente.
@@ -38,7 +38,7 @@ En la liquidacion de la sociedad de hecho, lo que se reparte es el **patrimonio 
 | Cartera por cobrar | Estudiantes que compraron a plazos y aun debian cuotas del pago unico | NO — nunca fueron pagados |
 | Utilidades no distribuidas | Ganancias retenidas no repartidas | NO — separadas de las ya distribuidas |
 
-**Los $99.4M ya recibidos son utilidades YA DISTRIBUIDAS. No forman parte del patrimonio pendiente de liquidacion.**
+**Los $122.345.065 ya acreditados son utilidades YA DISTRIBUIDAS. No forman parte del patrimonio pendiente de liquidacion.**
 
 ## 1.3 Implicacion para las pretensiones
 
@@ -65,7 +65,7 @@ Las pretensiones quedan asi:
 |---|---|---|---|
 | 376 comprobantes de estudiantes [P-42] | Feb 2024 - Sep 2025 | $579.217.496 | Alta (99% monto valido) |
 | Ingresos reportados en chat [P-02, P-03] | Jun 2024 - Ago 2025 (15 meses) | $709.010.075 | Alta (declaraciones del propio Oscar) |
-| Proyeccion basada en pagos a Pedro | Abr 2024 - Jul 2025 | ~$765.000.000 | Media (inferida de 20% y margen 65%) |
+| Proyeccion basada en pagos a Pedro | Abr 2024 - Jul 2025 | ~$941.115.885 | Media (inferida de 20% y margen 65%) |
 | KPIs 2025 [P-43] | Ene - Dic 2025 | Ver detalle mensual | Alta (documento interno de Oscar) |
 
 ### KPIs 2025 — Ventas mensuales:
@@ -192,7 +192,7 @@ Complementario a los metodos anteriores. Identifica los activos especificos del 
 | **Contenido educativo (238 obras registradas DNDA)** | 238 videoclases + material complementario, registrados como propiedad intelectual, generan ingresos recurrentes | $200.000.000 - $350.000.000 |
 | **Base de datos de clientes** | 379 estudiantes activos x $2.85M precio promedio; lista de leads calificados de 18 meses de campanas | $50.000.000 - $100.000.000 |
 | **Comunidad digital** | Instagram 52.400 seguidores (2da del nicho), TikTok, YouTube, lista de email | $50.000.000 - $150.000.000 |
-| **Plataforma tecnologica** | WordPress + LMS + integraciones Bold/Wompi + CRM Kommo/ManyChat + automatizaciones | $30.000.000 - $50.000.000 |
+| **Plataforma tecnologica** | WordPress + LMS + integraciones Bold/Wompi + herramientas y procesos internos del negocio | $30.000.000 - $50.000.000 |
 | **Fondo de comercio (goodwill)** | Reputacion, posicionamiento, relaciones con estudiantes, pipeline de ventas | $200.000.000 - $400.000.000 |
 | **Cartera por cobrar** | Estudiantes que pagaron en cuotas (hasta 4) con saldo pendiente del pago unico de ~$2.85M. El modelo NO es suscripcion mensual: cada estudiante paga una vez y accede por 6 meses. La cartera corresponde a cuotas restantes de quienes compraron a plazos | $15.000.000 - $25.000.000 (estimado, depende de % que compro a cuotas) |
 | **Know-how y SOPs** | Metodologia de 90 dias, proceso de ventas, onboarding, seguimiento academico | $20.000.000 - $50.000.000 |
@@ -278,7 +278,7 @@ El contenido de Pedro era el motor principal del negocio:
 - Pedro edito y produjo las videoclases que los estudiantes compran [P-22]
 - Pedro creo la estructura del "programa" que se vende [P-27]
 - Pedro creo los canales de TikTok y YouTube [P-02]
-- Pedro configuro y gestionaba CRM, pixel Meta, automatizaciones [P-02]
+- Pedro aporto dashboard React, SOPs y estructura comercial/metodologica [P-02, P-25, P-26, P-27]
 
 Estimacion conservadora: **60% de los ingresos eran atribuibles al contenido y estructura creados por Pedro**
 
@@ -320,7 +320,7 @@ Estimacion conservadora del dano moral: **$30.000.000 - $50.000.000 COP**
 
 # SECCION 4: CUADRO CONSOLIDADO DE PRETENSIONES
 
-## SIN descontar los $99.419.834 ya recibidos (porque no corresponde descontarlos)
+## SIN descontar los $122.345.065 ya acreditados (porque no corresponde descontarlos)
 
 | # | Pretension | Concepto | Monto | Prueba clave |
 |---|---|---|---|---|
@@ -338,7 +338,7 @@ Estimacion conservadora del dano moral: **$30.000.000 - $50.000.000 COP**
 - $55.000.000 por danos a la propiedad intelectual (material + moral)
 - Diferencias por ingresos subregistrados: por determinar mediante peritaje
 
-**Los $99.419.834 previamente recibidos NO se descuentan** porque constituyen distribucion de utilidades operativas durante la vigencia de la sociedad (mayo 2024 - julio 2025), a las que Pedro tenia pleno derecho como socio con participacion del 20%.
+**Los $122.345.065 previamente acreditados NO se descuentan** porque constituyen distribucion de utilidades operativas durante la vigencia de la sociedad (mayo 2024 - julio 2025), a las que Pedro tenia pleno derecho como socio con participacion del 20%.
 
 ---
 

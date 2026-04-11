@@ -12,7 +12,7 @@
 ## hecho-1
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `75` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `78` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Identificación del demandante`
 - Resumen actual: `El demandante, PEDRO JOSE VERGARA VILLANUEVA, identificado con cedula de ciudadania No. 1.045.750.095, es medico de profesion con domicilio en la Calle 80 #55-40, Barranquilla. Es representante legal y controlante de la sociedad DOCTOR FLIGHT S.A.S. ...`
 - Resumen correcto: `El demandante, PEDRO JOSE VERGARA VILLANUEVA, identificado con cedula de ciudadania No. 1.045.750.095, es medico de profesion con domicilio en la Calle 80 #55-40, Barranquilla. Es representante legal y controlante de la sociedad DOCTOR FLIGHT S.A.S. ...`
@@ -24,7 +24,7 @@
 ## hecho-2
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `77` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `80` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Identificación del demandado`
 - Resumen actual: `El demandado, OSCAR DAVID MALDONADO BADRAN, identificado con cedula de ciudadania No. 1.129.573.046, es medico internista con domicilio en la CR 44B No. 96-67 AP 606 TO 2, Barranquilla. Es propietario del establecimiento comercial PARETOMED, registra...`
 - Resumen correcto: `El demandado, OSCAR DAVID MALDONADO BADRAN, identificado con cedula de ciudadania No. 1.129.573.046, es medico internista con domicilio en la CR 44B No. 96-67 AP 606 TO 2, Barranquilla. Es propietario del establecimiento comercial PARETOMED, registra...`
@@ -36,7 +36,7 @@
 ## hecho-3
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `79` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `82` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `ParetoMed — programa de educación médica`
 - Resumen actual: `PARETOMED es un programa de educacion medica virtual de preparacion para examenes de admision a especialidades medicas (residencias) en Colombia, que opera mediante una plataforma virtual con videoclases pregrabadas, simulacros de examenes, grupos de...`
 - Resumen correcto: `PARETOMED es un programa de educacion medica virtual de preparacion para examenes de admision a especialidades medicas (residencias) en Colombia, que opera mediante una plataforma virtual con videoclases pregrabadas, simulacros de examenes, grupos de...`
@@ -48,7 +48,7 @@
 ## hecho-4
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `87` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `90` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Primer contacto entre las partes`
 - Resumen actual: `El 10 de noviembre de 2023 tuvo lugar el primer contacto registrado entre las partes via WhatsApp. El 4 de enero de 2024, Pedro contacto a Oscar, recordandole que se habian conocido en el Startup Day de la Universidad del Norte, manifestando su inter...`
 - Resumen correcto: `El 10 de noviembre de 2023 tuvo lugar el primer contacto registrado entre las partes via WhatsApp. El 4 de enero de 2024, Pedro contacto a Oscar, recordandole que se habian conocido en el Startup Day de la Universidad del Norte, manifestando su inter...`
@@ -60,7 +60,7 @@
 ## hecho-5
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `89` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `92` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Reunión presencial y propuesta de colaboración`
 - Resumen actual: `El 9 de enero de 2024 las partes se reunieron presencialmente en la Calle 80 #55-40 para discutir una colaboracion. Al dia siguiente, 10 de enero de 2024, Oscar propuso cruzar el valor del trabajo de Pedro con el costo del curso y definir funciones e...`
 - Resumen correcto: `El 9 de enero de 2024 las partes se reunieron presencialmente en la Calle 80 #55-40 para discutir una colaboracion. Al dia siguiente, 10 de enero de 2024, Oscar propuso cruzar el valor del trabajo de Pedro con el costo del curso y definir funciones e...`
@@ -72,43 +72,43 @@
 ## hecho-6
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `91` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `94` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Propuesta formal de Pedro — 30% en vesting`
 - Resumen actual: `El 6 de febrero de 2024, Pedro envio una propuesta formal de acuerdo en la que se planteaba una participacion del 30% mediante esquema de vesting (future stock), con cliff de 12 meses y consolidacion trimestral. Las funciones propuestas incluian expr...`
 - Resumen correcto: `El 6 de febrero de 2024, Pedro envio una propuesta formal de acuerdo en la que se planteaba una participacion del 30% mediante esquema de vesting (future stock), con cliff de 12 meses y consolidacion trimestral. Las funciones propuestas incluian expr...`
-- Pruebas actuales: `P-02, P-05, P-10`
-- Pruebas correctas: `P-02, P-05, P-10`
+- Pruebas actuales: `P-02, P-10`
+- Pruebas correctas: `P-02, P-10`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
 ## hecho-7
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `93` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `96` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Acuerdo definitivo — 20% de ingresos netos`
-- Resumen actual: `El 28 de marzo de 2024, las partes acordaron la forma de trabajo definitiva: Pedro recibiria el 20% de los ingresos netos del negocio, con inicio desde abril de 2024. La participacion se redujo del 30% propuesto inicialmente al 20% como resultado de ...`
-- Resumen correcto: `El 28 de marzo de 2024, las partes acordaron la forma de trabajo definitiva: Pedro recibiria el 20% de los ingresos netos del negocio, con inicio desde abril de 2024. La participacion se redujo del 30% propuesto inicialmente al 20% como resultado de ...`
-- Pruebas actuales: `P-04`
-- Pruebas correctas: `P-04`
+- Resumen actual: `El 22 de marzo de 2024, Oscar remitio a Pedro una contrapropuesta escrita para renegociar los terminos inicialmente planteados por este. Luego, en la reunion del 28 de marzo de 2024, las partes negociaron la forma de trabajo aplicable desde abril de ...`
+- Resumen correcto: `El 22 de marzo de 2024, Oscar remitio a Pedro una contrapropuesta escrita para renegociar los terminos inicialmente planteados por este. Luego, en la reunion del 28 de marzo de 2024, las partes negociaron la forma de trabajo aplicable desde abril de ...`
+- Pruebas actuales: `P-02, P-04, P-53`
+- Pruebas correctas: `P-02, P-04, P-53`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
 ## hecho-8
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `97` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `100` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Constitución verbal de la sociedad de hecho`
 - Resumen actual: `El 15 de abril de 2024, se constituyo verbalmente la sociedad de hecho. En esa fecha, Pedro recordo a Oscar que segun lo acordado debian iniciar los pagos y solicito definir el presupuesto de publicidad. A partir de este momento, ambas partes explota...`
 - Resumen correcto: `El 15 de abril de 2024, se constituyo verbalmente la sociedad de hecho. En esa fecha, Pedro recordo a Oscar que segun lo acordado debian iniciar los pagos y solicito definir el presupuesto de publicidad. A partir de este momento, ambas partes explota...`
-- Pruebas actuales: `P-02, P-19`
-- Pruebas correctas: `P-02, P-19`
+- Pruebas actuales: `P-02, P-11`
+- Pruebas correctas: `P-02, P-11`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
 ## hecho-9
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `99` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `102` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Carta de recomendación — "Subdirector Académico"`
 - Resumen actual: `El 27 de abril de 2024, tan solo 12 dias despues de iniciada la operacion conjunta, Oscar Maldonado firmo de su puno y letra una **Carta de Recomendacion** en la que certifica que Pedro Jose Vergara Villanueva *"se desempena como Subdirector Academic...`
 - Resumen correcto: `El 27 de abril de 2024, tan solo 12 dias despues de iniciada la operacion conjunta, Oscar Maldonado firmo de su puno y letra una **Carta de Recomendacion** en la que certifica que Pedro Jose Vergara Villanueva *"se desempena como Subdirector Academic...`
@@ -120,7 +120,7 @@
 ## hecho-10
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `107` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `110` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Aportes de Oscar — capital, PI, registro`
 - Resumen actual: `Oscar Maldonado aporto a la sociedad de hecho: (i) la propiedad intelectual original del contenido medico base y videoclases; (ii) el capital inicial para la operacion; (iii) el registro previo del establecimiento comercial ParetoMed (Matricula 865.8...`
 - Resumen correcto: `Oscar Maldonado aporto a la sociedad de hecho: (i) la propiedad intelectual original del contenido medico base y videoclases; (ii) el capital inicial para la operacion; (iii) el registro previo del establecimiento comercial ParetoMed (Matricula 865.8...`
@@ -132,7 +132,7 @@
 ## hecho-11
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `111` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `114` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Aportes de Pedro — marketing y ventas`
 - Resumen actual: `Pedro Vergara aporto a la sociedad de hecho trabajo especializado en marketing y ventas, incluyendo: edicion de videos de contenido para redes y del curso, redaccion de guiones para redes sociales, asesoria en creacion de contenido y marketing, gesti...`
 - Resumen correcto: `Pedro Vergara aporto a la sociedad de hecho trabajo especializado en marketing y ventas, incluyendo: edicion de videos de contenido para redes y del curso, redaccion de guiones para redes sociales, asesoria en creacion de contenido y marketing, gesti...`
@@ -144,10 +144,10 @@
 ## hecho-12
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `113` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Dashboard React y gestión tecnológica`
-- Resumen actual: `Pedro aporto conocimiento y gestion tecnologica consistente en: gestion de pixel de Meta y campanas publicitarias; y desarrollo de un Dashboard de Venta Consultiva en lenguaje React desplegado con herramientas de Google Cloud, herramienta que fue pue...`
-- Resumen correcto: `Pedro aporto conocimiento y gestion tecnologica consistente en: gestion de pixel de Meta y campanas publicitarias; y desarrollo de un Dashboard de Venta Consultiva en lenguaje React desplegado con herramientas de Google Cloud, herramienta que fue pue...`
+- Documento: linea `116` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Titulo actual en Supabase: `Dashboard React y gestion tecnologica`
+- Resumen actual: `Pedro aporto una herramienta tecnologica propia consistente en el desarrollo de un Dashboard de Venta Consultiva en lenguaje React desplegado con herramientas de Google Cloud, herramienta que fue puesta a disposicion de la sociedad sin costo adiciona...`
+- Resumen correcto: `Pedro aporto una herramienta tecnologica propia consistente en el desarrollo de un Dashboard de Venta Consultiva en lenguaje React desplegado con herramientas de Google Cloud, herramienta que fue puesta a disposicion de la sociedad sin costo adiciona...`
 - Pruebas actuales: `P-02`
 - Pruebas correctas: `P-02`
 - Agregar pruebas: `(ninguna)`
@@ -156,7 +156,7 @@
 ## hecho-13
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `115` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `118` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Estudio de grabación profesional de Pedro`
 - Resumen actual: `Pedro aporto infraestructura fisica consistente en su estudio de grabacion profesional propio, con equipos de iluminacion y audio. Oscar reconocio esta infraestructura al solicitar expresamente su uso: *"Pensaba que tan factible es que lo hagamos en ...`
 - Resumen correcto: `Pedro aporto infraestructura fisica consistente en su estudio de grabacion profesional propio, con equipos de iluminacion y audio. Oscar reconocio esta infraestructura al solicitar expresamente su uso: *"Pensaba que tan factible es que lo hagamos en ...`
@@ -168,7 +168,7 @@
 ## hecho-14
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `117` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `120` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `SOPs operativos diseñados por Pedro`
 - Resumen actual: `Pedro diseno la infraestructura operativa del negocio mediante la creacion de procedimientos estandar de operacion (SOPs): (a) **SOP de Reunion 1:1** (redactado el 05/06/2024), que establece el procedimiento de onboarding de nuevos estudiantes, inclu...`
 - Resumen correcto: `Pedro diseno la infraestructura operativa del negocio mediante la creacion de procedimientos estandar de operacion (SOPs): (a) **SOP de Reunion 1:1** (redactado el 05/06/2024), que establece el procedimiento de onboarding de nuevos estudiantes, inclu...`
@@ -180,7 +180,7 @@
 ## hecho-15
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `119` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `122` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Reorganización de la propuesta comercial`
 - Resumen actual: `Pedro contribuyo a la reorganizacion y mejora de la propuesta comercial del negocio. El 14 de mayo de 2024, Pedro documento comparativamente ambas versiones: la version original de Oscar describia un basico "curso" con descripcion generica, mientras ...`
 - Resumen correcto: `Pedro contribuyo a la reorganizacion y mejora de la propuesta comercial del negocio. El 14 de mayo de 2024, Pedro documento comparativamente ambas versiones: la version original de Oscar describia un basico "curso" con descripcion generica, mientras ...`
@@ -192,7 +192,7 @@
 ## hecho-16
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `121` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `124` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Producción masiva de contenido audiovisual`
 - Resumen actual: `Pedro desarrollo, en conjunto con Oscar, una produccion masiva de contenido intelectual para el negocio consistente en decenas de guiones comerciales y educativos para Reels y videos durante 2024-2025, incluyendo: (i) guiones comerciales completos pa...`
 - Resumen correcto: `Pedro desarrollo, en conjunto con Oscar, una produccion masiva de contenido intelectual para el negocio consistente en decenas de guiones comerciales y educativos para Reels y videos durante 2024-2025, incluyendo: (i) guiones comerciales completos pa...`
@@ -204,7 +204,7 @@
 ## hecho-17
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `123` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `126` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Recurso humano aportado — Efraín y Paul`
 - Resumen actual: `Pedro aporto recurso humano propio al negocio. Dos trabajadores de su empresa DOCTOR FLIGHT S.A.S. prestaron servicios con prioridad para ParetoMed: (a) **Efrain**, fotografo y editor audiovisual, quien participaba en grabaciones, revision de equipos...`
 - Resumen correcto: `Pedro aporto recurso humano propio al negocio. Dos trabajadores de su empresa DOCTOR FLIGHT S.A.S. prestaron servicios con prioridad para ParetoMed: (a) **Efrain**, fotografo y editor audiovisual, quien participaba en grabaciones, revision de equipos...`
@@ -216,7 +216,7 @@
 ## hecho-18-canales
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `125` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `128` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Pedro crea canales TikTok y YouTube de ParetoMed`
 - Resumen actual: `Pedro creo los canales digitales de TikTok y YouTube de ParetoMed. El 28 de marzo de 2024, Pedro propuso en el chat de trabajo: *"Crear cuentas @paretomed para titk tok y youtube y facebook"*. Oscar le proporciono las credenciales del correo instituc...`
 - Resumen correcto: `Pedro creo los canales digitales de TikTok y YouTube de ParetoMed. El 28 de marzo de 2024, Pedro propuso en el chat de trabajo: *"Crear cuentas @paretomed para titk tok y youtube y facebook"*. Oscar le proporciono las credenciales del correo instituc...`
@@ -228,7 +228,7 @@
 ## hecho-19-capcut
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `127` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `130` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Pedro — conocimiento superior en edición audiovisual (CapCut)`
 - Resumen actual: `La edicion audiovisual se realizaba con el software CapCut (version escritorio y movil). Oscar reconocio que Pedro tenia conocimiento superior en edicion: *"los que aprendi fueron Da Vinci Resolve y Capcut para escritorio"* (04/01/2024), a lo que Ped...`
 - Resumen correcto: `La edicion audiovisual se realizaba con el software CapCut (version escritorio y movil). Oscar reconocio que Pedro tenia conocimiento superior en edicion: *"los que aprendi fueron Da Vinci Resolve y Capcut para escritorio"* (04/01/2024), a lo que Ped...`
@@ -240,7 +240,7 @@
 ## hecho-20-dnda
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `129` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `132` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `DNDA: 238 obras — Pedro AUTOR/DIRECTOR/PRODUCTOR`
 - Resumen actual: `Pedro registro ante la Direccion Nacional de Derecho de Autor (DNDA) un total de **238 obras audiovisuales unicas** (476 registros, ya que cada obra se registra como Autor/Director y como Productor), creadas en el marco de la sociedad de hecho. Los r...`
 - Resumen correcto: `Pedro registro ante la Direccion Nacional de Derecho de Autor (DNDA) un total de **238 obras audiovisuales unicas** (476 registros, ya que cada obra se registra como Autor/Director y como Productor), creadas en el marco de la sociedad de hecho. Los r...`
@@ -252,7 +252,7 @@
 ## hecho-18
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `137` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `140` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Primera liquidación — 20% de ganancia neta`
 - Resumen actual: `Desde el primer mes de operacion conjunta (mayo 2024), Oscar calculaba el porcentaje de Pedro sobre la **ganancia neta** del negocio, desglosando ingresos y egresos antes de aplicar el 20%. El 7 de mayo de 2024, Oscar envio la primera liquidacion det...`
 - Resumen correcto: `Desde el primer mes de operacion conjunta (mayo 2024), Oscar calculaba el porcentaje de Pedro sobre la **ganancia neta** del negocio, desglosando ingresos y egresos antes de aplicar el 20%. El 7 de mayo de 2024, Oscar envio la primera liquidacion det...`
@@ -264,55 +264,55 @@
 ## hecho-19
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `139` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `17 transferencias bancarias — $122.3M total`
-- Resumen actual: `Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan **17 transferencias bancarias documentadas** rea...`
-- Resumen correcto: `Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan **17 transferencias bancarias documentadas** rea...`
-- Pruebas actuales: `P-02, P-12, P-13, P-16, P-36`
-- Pruebas correctas: `P-02, P-12, P-13, P-16, P-36`
+- Documento: linea `142` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Titulo actual en Supabase: `Pagos acreditados — $122.3M total`
+- Resumen actual: `Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan **14 transferencias bancarias a la cuenta person...`
+- Resumen correcto: `Los montos pagados a Pedro variaban cada mes segun la rentabilidad del negocio, lo que es consistente con participacion en utilidades y NO con honorarios fijos por prestacion de servicios. Se acreditan **14 transferencias bancarias a la cuenta person...`
+- Pruebas actuales: `(ninguna)`
+- Pruebas correctas: `(ninguna)`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
 ## hecho-20
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `177` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `176` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Variabilidad de pagos — Participación en utilidades`
-- Resumen actual: `Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025 — cuenta personal). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorari...`
-- Resumen correcto: `Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025 — cuenta personal). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorari...`
-- Pruebas actuales: `P-16, P-36`
-- Pruebas correctas: `P-16, P-36`
+- Resumen actual: `Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorarios fijos por prest...`
+- Resumen correcto: `Los pagos fueron sistematicos, mensuales y variables. El monto mas bajo fue $100.000 (pago adicional) y el mas alto fue $16.726.760 (enero 2025). Esta variabilidad extrema (de $1.4M a $16.7M) es totalmente inconsistente con honorarios fijos por prest...`
+- Pruebas actuales: `P-02, P-12, P-36, P-37`
+- Pruebas correctas: `P-02, P-12, P-36, P-37`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
 ## hecho-21
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `185` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `182` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Confesión: "nos llamábamos socios"`
-- Resumen actual: `Oscar Maldonado reconocio expresamente la existencia de la sociedad en grabacion telefonica del 14 de agosto de 2025: *"O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente"*. En la m...`
-- Resumen correcto: `Oscar Maldonado reconocio expresamente la existencia de la sociedad en grabacion telefonica del 14 de agosto de 2025: *"O sea de que estamos trabajando juntos comercializando un proyecto y que nos llamabamos socios SI claramente claramente"*. En la m...`
-- Pruebas actuales: `P-01`
-- Pruebas correctas: `P-01`
+- Resumen actual: `Oscar Maldonado reconocio expresamente la existencia de la sociedad en multiples ocasiones el 14 de agosto de 2025. En la reunion del dia, Oscar declaro: *"tu eres mi socio y venimos trabajando bien y estamos haciendo billetes"* [P-56]. Esa misma noc...`
+- Resumen correcto: `Oscar Maldonado reconocio expresamente la existencia de la sociedad en multiples ocasiones el 14 de agosto de 2025. En la reunion del dia, Oscar declaro: *"tu eres mi socio y venimos trabajando bien y estamos haciendo billetes"* [P-56]. Esa misma noc...`
+- Pruebas actuales: `P-01, P-56`
+- Pruebas correctas: `P-01, P-56`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
 ## hecho-22
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `187` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `184` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Confesión: "ibas a formar parte de la SAS"`
-- Resumen actual: `En la misma grabacion, Oscar reconocio que el pacto incluia acciones: *"si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente"*. Y admitio que consulto a sus propios asesores legales y...`
-- Resumen correcto: `En la misma grabacion, Oscar reconocio que el pacto incluia acciones: *"si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente"*. Y admitio que consulto a sus propios asesores legales y...`
-- Pruebas actuales: `P-01`
-- Pruebas correctas: `P-01`
+- Resumen actual: `En la grabacion telefonica de esa noche, Oscar reconocio que el pacto incluia acciones: *"si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente"*. Y admitio que consulto a sus propios ...`
+- Resumen correcto: `En la grabacion telefonica de esa noche, Oscar reconocio que el pacto incluia acciones: *"si claramente estaba implicito que tu ibas a formar parte de la SAS. eso yo no te lo niego en ningun momento claramente"*. Y admitio que consulto a sus propios ...`
+- Pruebas actuales: `P-01, P-56`
+- Pruebas correctas: `P-01, P-56`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
 ## hecho-23
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `189` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `186` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Oscar promete formalizar la sociedad`
 - Resumen actual: `Oscar manifesto en multiples ocasiones por WhatsApp su voluntad de formalizar la sociedad existente: (a) el 1 de julio de 2024: *"tenemos que reunirnos para que hablemos bien de las condiciones que necesito para que legalicemos la cosa"*; (b) el 28 d...`
 - Resumen correcto: `Oscar manifesto en multiples ocasiones por WhatsApp su voluntad de formalizar la sociedad existente: (a) el 1 de julio de 2024: *"tenemos que reunirnos para que hablemos bien de las condiciones que necesito para que legalicemos la cosa"*; (b) el 28 d...`
@@ -324,7 +324,7 @@
 ## hecho-24
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `191` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `188` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Pedro reivindica su calidad de socio`
 - Resumen actual: `Pedro reivindico constantemente su calidad de socio. El 18 de julio de 2025: *"yo soy socio, no trabajador tuyo... si quieres un vale que haga todo lo que tu digas... vas a tener que contratarlo"*. El 23 de julio de 2025: *"no deberias poder tomar de...`
 - Resumen correcto: `Pedro reivindico constantemente su calidad de socio. El 18 de julio de 2025: *"yo soy socio, no trabajador tuyo... si quieres un vale que haga todo lo que tu digas... vas a tener que contratarlo"*. El 23 de julio de 2025: *"no deberias poder tomar de...`
@@ -336,19 +336,19 @@
 ## hecho-25
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `193` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `190` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Nota manuscrita: "no es labor contratable"`
-- Resumen actual: `En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar escribio de su puno y letra las siguientes notas: (a) *"20% de las utilidades no se justifican por una labor que es contratable. La idea, como se ...`
-- Resumen correcto: `En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar escribio de su puno y letra las siguientes notas: (a) *"20% de las utilidades no se justifican por una labor que es contratable. La idea, como se ...`
-- Pruebas actuales: `P-09`
-- Pruebas correctas: `P-09`
+- Resumen actual: `En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar realizo comentarios digitales desde su cuenta personal de Google, fechados el 24 de julio de 2024, en el documento compartido en Google Docs. En d...`
+- Resumen correcto: `En el Acuerdo de Socios Original con Aportes de Ambos, aportado en julio de 2024 (nunca firmado), Oscar realizo comentarios digitales desde su cuenta personal de Google, fechados el 24 de julio de 2024, en el documento compartido en Google Docs. En d...`
+- Pruebas actuales: `P-09, P-09-bis`
+- Pruebas correctas: `P-09, P-09-bis`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
 ## hecho-26
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `199` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `196` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Co-decisiones estratégicas documentadas`
 - Resumen actual: `Pedro participaba activamente en decisiones estrategicas propias de un socio, no de un empleado o contratista: (a) **gestion de personal:** evaluo el desempeno de la asesora de ventas Adriana y propuso su reemplazo, propuso la incorporacion de un ven...`
 - Resumen correcto: `Pedro participaba activamente en decisiones estrategicas propias de un socio, no de un empleado o contratista: (a) **gestion de personal:** evaluo el desempeno de la asesora de ventas Adriana y propuso su reemplazo, propuso la incorporacion de un ven...`
@@ -360,12 +360,12 @@
 ## hecho-27
 
 - Estado: `SIN CAMBIOS`
-- Documento: linea `201` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
+- Documento: linea `198` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Siete reuniones documentadas en 2025`
-- Resumen actual: `La co-direccion del negocio se evidencia en al menos 7 reuniones documentadas en 2025:`
-- Resumen correcto: `La co-direccion del negocio se evidencia en al menos 7 reuniones documentadas en 2025:`
-- Pruebas actuales: `P-34`
-- Pruebas correctas: `P-34`
+- Resumen actual: `La co-direccion del negocio se evidencia en al menos 8 reuniones documentadas en 2025:`
+- Resumen correcto: `La co-direccion del negocio se evidencia en al menos 8 reuniones documentadas en 2025:`
+- Pruebas actuales: `P-02, P-03, P-34, P-51`
+- Pruebas correctas: `P-02, P-03, P-34, P-51`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
@@ -376,8 +376,8 @@
 - Titulo actual en Supabase: `$709M en ingresos — 15 meses de operación`
 - Resumen actual: `El negocio genero ingresos totales de **$709.010.075 COP** en 15 meses de operacion conjunta (junio 2024 - agosto 2025), con un promedio mensual de $47.267.338 COP. El mejor mes fue noviembre de 2024, cuando Oscar anuncio al equipo: *"$108.456.900 en...`
 - Resumen correcto: `El negocio genero ingresos totales de **$709.010.075 COP** en 15 meses de operacion conjunta (junio 2024 - agosto 2025), con un promedio mensual de $47.267.338 COP. El mejor mes fue noviembre de 2024, cuando Oscar anuncio al equipo: *"$108.456.900 en...`
-- Pruebas actuales: `P-02, P-03`
-- Pruebas correctas: `P-02, P-03`
+- Pruebas actuales: `P-02, P-03, P-42, P-43`
+- Pruebas correctas: `P-02, P-03, P-42, P-43`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
@@ -410,10 +410,10 @@
 - Estado: `SIN CAMBIOS`
 - Documento: linea `231` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
 - Titulo actual en Supabase: `Múltiples borradores de acuerdo nunca firmados`
-- Resumen actual: `Existieron multiples borradores de acuerdo que confirman la naturaleza societaria: (a) el Acuerdo de Socios Original (inicios 2024) contemplaba **"20% de las acciones"** de la empresa; (b) el Acuerdo de Socios propuesto por Oscar en version SAS inclu...`
-- Resumen correcto: `Existieron multiples borradores de acuerdo que confirman la naturaleza societaria: (a) el Acuerdo de Socios Original (inicios 2024) contemplaba **"20% de las acciones"** de la empresa; (b) el Acuerdo de Socios propuesto por Oscar en version SAS inclu...`
-- Pruebas actuales: `P-06, P-08, P-09`
-- Pruebas correctas: `P-06, P-08, P-09`
+- Resumen actual: `Existieron multiples borradores de acuerdo que documentan una misma negociacion societaria en evolucion: (a) el Acuerdo de Socios Original (inicios de 2024) contemplaba **"20% de las acciones"** de la empresa; (b) el 22 de marzo de 2024 Oscar remitio...`
+- Resumen correcto: `Existieron multiples borradores de acuerdo que documentan una misma negociacion societaria en evolucion: (a) el Acuerdo de Socios Original (inicios de 2024) contemplaba **"20% de las acciones"** de la empresa; (b) el 22 de marzo de 2024 Oscar remitio...`
+- Pruebas actuales: `P-02, P-06, P-09, P-09-bis, P-53, P-54, P-55`
+- Pruebas correctas: `P-02, P-06, P-09, P-09-bis, P-53, P-54, P-55`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
@@ -589,11 +589,11 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `285` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Total pagos documentados — $122.3M en 17 transferencias`
-- Resumen actual: `El total de pagos recibidos por Pedro asciende a **$122.345.065 COP** en 17 transferencias bancarias a dos cuentas entre mayo de 2024 y agosto de 2025: 14 transferencias a cuenta personal Bancolombia **4483 ($99.319.834) acreditadas con capturas de p...`
-- Resumen correcto: `El total de pagos recibidos por Pedro asciende a **$122.345.065 COP** en 17 transferencias bancarias a dos cuentas entre mayo de 2024 y agosto de 2025: 14 transferencias a cuenta personal Bancolombia **4483 ($99.319.834) acreditadas con capturas de p...`
-- Pruebas actuales: `P-36, P-37, P-53, P-54`
-- Pruebas correctas: `P-36, P-37, P-53, P-54`
+- Titulo actual en Supabase: `Pagos acreditados — $122.3M en dos canales`
+- Resumen actual: `El total acreditado a favor de Pedro asciende a **$122.345.065 COP** entre mayo de 2024 y agosto de 2025, discriminado en (i) **14 transferencias a su cuenta personal** por **$99.319.834 COP** y (ii) **pagos canalizados a traves de DOCTOR FLIGHT S.A....`
+- Resumen correcto: `El total acreditado a favor de Pedro asciende a **$122.345.065 COP** entre mayo de 2024 y agosto de 2025, discriminado en (i) **14 transferencias a su cuenta personal** por **$99.319.834 COP** y (ii) **pagos canalizados a traves de DOCTOR FLIGHT S.A....`
+- Pruebas actuales: `P-02, P-12, P-36, P-37`
+- Pruebas correctas: `P-02, P-12, P-36, P-37`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
@@ -601,7 +601,7 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `323` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Metodología de ciclos de 90 días`
+- Titulo actual en Supabase: `"La firma es una mera formalidad" — confesión`
 - Resumen actual: `El 8 de enero de 2025, Oscar Maldonado declaro en nota de voz de WhatsApp que la firma del acuerdo de socios era una **"mera formalidad"**, lo que constituye un reconocimiento de que la sociedad ya existia de facto sin necesidad del documento escrito...`
 - Resumen correcto: `El 8 de enero de 2025, Oscar Maldonado declaro en nota de voz de WhatsApp que la firma del acuerdo de socios era una **"mera formalidad"**, lo que constituye un reconocimiento de que la sociedad ya existia de facto sin necesidad del documento escrito...`
 - Pruebas actuales: `P-05, P-41`
@@ -613,7 +613,7 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `325` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Crecimiento exponencial de ventas (10x)`
+- Titulo actual en Supabase: `Incidente contable — "somos un equipo"`
 - Resumen actual: `El 7 de agosto de 2025, se produjo un incidente contable que evidencia la conducta de Pedro como socio y no como contratista. Oscar informo a Pedro que en la liquidacion de julio habia omitido descontar los pagos de las colaboradoras Lina y Kendy, lo...`
 - Resumen correcto: `El 7 de agosto de 2025, se produjo un incidente contable que evidencia la conducta de Pedro como socio y no como contratista. Oscar informo a Pedro que en la liquidacion de julio habia omitido descontar los pagos de las colaboradoras Lina y Kendy, lo...`
 - Pruebas actuales: `P-02`
@@ -637,7 +637,7 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `333` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Aporte de capital relacional`
+- Titulo actual en Supabase: `Remoción unilateral de accesos digitales`
 - Resumen actual: `Tras la aceptacion de la terminacion el 28 de agosto de 2025, Oscar procedio a **remover unilateralmente los accesos** de Pedro a las herramientas digitales del negocio. Oscar cerro las sesiones del correo institucional paretomed@gmail.com (un antece...`
 - Resumen correcto: `Tras la aceptacion de la terminacion el 28 de agosto de 2025, Oscar procedio a **remover unilateralmente los accesos** de Pedro a las herramientas digitales del negocio. Oscar cerro las sesiones del correo institucional paretomed@gmail.com (un antece...`
 - Pruebas actuales: `P-02, P-18`
@@ -649,7 +649,7 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `337` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Diseño de Talleres Dominicales`
+- Titulo actual en Supabase: `Explotación post-ruptura de activos compartidos`
 - Resumen actual: `ParetoMed continuo explotando despues de la ruptura la metodologia, estructura comercial, procesos de ventas y canales digitales que fueron construidos o sustancialmente mejorados por Pedro durante los 16 meses de operacion conjunta. Si bien Oscar gr...`
 - Resumen correcto: `ParetoMed continuo explotando despues de la ruptura la metodologia, estructura comercial, procesos de ventas y canales digitales que fueron construidos o sustancialmente mejorados por Pedro durante los 16 meses de operacion conjunta. Si bien Oscar gr...`
 - Pruebas actuales: `P-02, P-03, P-25, P-26, P-27`
@@ -661,7 +661,7 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `341` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Elevación de calidad visual y posicionamiento`
+- Titulo actual en Supabase: `Testigos de la dinámica societaria`
 - Resumen actual: `La dinamica de sociedad entre Pedro y Oscar era presenciada habitualmente por terceros que pueden dar testimonio. Las reuniones de trabajo se realizaban en la oficina de Pedro, donde sus trabajadores Efrain (fotografo) y Paul (comunicador social) est...`
 - Resumen correcto: `La dinamica de sociedad entre Pedro y Oscar era presenciada habitualmente por terceros que pueden dar testimonio. Las reuniones de trabajo se realizaban en la oficina de Pedro, donde sus trabajadores Efrain (fotografo) y Paul (comunicador social) est...`
 - Pruebas actuales: `P-02, P-03, P-39`
@@ -673,7 +673,7 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `353` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Aporte de industria — +500 horas`
+- Titulo actual en Supabase: `376 comprobantes — $579M en ingresos documentados`
 - Resumen actual: `Entre febrero de 2024 y septiembre de 2025, se documentaron **376 comprobantes de pago** de estudiantes del programa ParetoMed, correspondientes a transacciones procesadas a traves de las plataformas Bold (190 pagos, $331.646.650), Bancolombia (106 p...`
 - Resumen correcto: `Entre febrero de 2024 y septiembre de 2025, se documentaron **376 comprobantes de pago** de estudiantes del programa ParetoMed, correspondientes a transacciones procesadas a traves de las plataformas Bold (190 pagos, $331.646.650), Bancolombia (106 p...`
 - Pruebas actuales: `P-42`
@@ -685,11 +685,11 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `357` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Metodología de simulacros como activo comercial`
-- Resumen actual: `El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: considerando unicamente las **14 transferencias a cuenta personal** ($99.319.834), estas representan el **19.48%** de los $509....`
-- Resumen correcto: `El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: considerando unicamente las **14 transferencias a cuenta personal** ($99.319.834), estas representan el **19.48%** de los $509....`
-- Pruebas actuales: `P-16, P-36, P-37, P-42`
-- Pruebas correctas: `P-16, P-36, P-37, P-42`
+- Titulo actual en Supabase: `Cruce comprobantes vs pagos — 24.0% sobre muestra`
+- Resumen actual: `El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: tomando solo el **subtotal de la cuenta personal** documentado por SMS Bancolombia (**$99.319.834 COP**), ese valor equivale al...`
+- Resumen correcto: `El cruce de los comprobantes de estudiantes con las transferencias recibidas por Pedro arroja una consistencia reveladora: tomando solo el **subtotal de la cuenta personal** documentado por SMS Bancolombia (**$99.319.834 COP**), ese valor equivale al...`
+- Pruebas actuales: `P-02, P-12, P-36, P-37, P-42`
+- Pruebas correctas: `P-02, P-12, P-36, P-37, P-42`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
@@ -697,11 +697,11 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `361` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Inversión inicial de recursos propios`
-- Resumen actual: `Si Pedro recibio **$122.345.065 COP** (cuenta personal + Doctor Flight S.A.S.) como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reale...`
-- Resumen correcto: `Si Pedro recibio **$122.345.065 COP** (cuenta personal + Doctor Flight S.A.S.) como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reale...`
-- Pruebas actuales: `P-02, P-13, P-16, P-42`
-- Pruebas correctas: `P-02, P-13, P-16, P-42`
+- Titulo actual en Supabase: `Proyección de ingresos reales — $941M estimados`
+- Resumen actual: `Si Pedro recibio **$122.345.065 COP** como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reales del negocio se estiman en aproximadamen...`
+- Resumen correcto: `Si Pedro recibio **$122.345.065 COP** como el 20% de las utilidades netas, y el margen de ganancia documentado por Oscar oscilaba entre 56% y 81% (con un promedio conservador de 65%), los ingresos brutos reales del negocio se estiman en aproximadamen...`
+- Pruebas actuales: `P-02, P-12, P-13, P-42`
+- Pruebas correctas: `P-02, P-12, P-13, P-42`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
@@ -709,11 +709,11 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `365` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Transferencia de autoridad de marca personal`
+- Titulo actual en Supabase: `Oscar oculta contabilidad y se niega a rendir cuentas`
 - Resumen actual: `El 28 de febrero de 2025, Oscar revelo en el chat de WhatsApp la existencia de una **hoja de calculo personal** con la contabilidad detallada del negocio, distinta de los consolidados que compartia con Pedro: *"yo me guio de la hoja de calculo person...`
 - Resumen correcto: `El 28 de febrero de 2025, Oscar revelo en el chat de WhatsApp la existencia de una **hoja de calculo personal** con la contabilidad detallada del negocio, distinta de los consolidados que compartia con Pedro: *"yo me guio de la hoja de calculo person...`
-- Pruebas actuales: `P-02, P-13`
-- Pruebas correctas: `P-02, P-13`
+- Pruebas actuales: `P-02, P-47, P-48`
+- Pruebas correctas: `P-02, P-47, P-48`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
@@ -721,11 +721,11 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `369` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Sistema de Inducción y Reducción de Churn`
+- Titulo actual en Supabase: `Facturación Avanz vs ParetoMed — dos modelos distintos`
 - Resumen actual: `La comparacion entre la facturacion de Pedro a AVANZ FINANZAS & SEGUROS LTDA (NIT 901286973-7) y la facturacion a Oscar/ParetoMed demuestra que Pedro distinguia perfectamente entre una relacion de prestacion de servicios y una relacion societaria. Co...`
 - Resumen correcto: `La comparacion entre la facturacion de Pedro a AVANZ FINANZAS & SEGUROS LTDA (NIT 901286973-7) y la facturacion a Oscar/ParetoMed demuestra que Pedro distinguia perfectamente entre una relacion de prestacion de servicios y una relacion societaria. Co...`
-- Pruebas actuales: `P-12, P-42`
-- Pruebas correctas: `P-12, P-42`
+- Pruebas actuales: `P-12, P-42, P-46`
+- Pruebas correctas: `P-12, P-42, P-46`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
@@ -733,7 +733,7 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `373` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Aporte de la "Ruta del Residente"`
+- Titulo actual en Supabase: `KPIs post-ruptura — $169M en ventas sin pagar a Pedro`
 - Resumen actual: `Los KPIs de ventas de ParetoMed para 2025, contenidos en la hoja de calculo "Copia de KPIS 2025.xlsx" (archivo del demandado en poder del demandante), documentan que Oscar continuo explotando el negocio despues de la ruptura con los siguientes ingres...`
 - Resumen correcto: `Los KPIs de ventas de ParetoMed para 2025, contenidos en la hoja de calculo "Copia de KPIS 2025.xlsx" (archivo del demandado en poder del demandante), documentan que Oscar continuo explotando el negocio despues de la ruptura con los siguientes ingres...`
 - Pruebas actuales: `P-02, P-43`
@@ -745,11 +745,11 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `381` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Automatización de Checkout y Recurrencia`
-- Resumen actual: `Pedro desarrollo, de manera independiente y fuera del alcance de los aportes de la sociedad descritos en el Hecho Decimosegundo, una herramienta tecnologica educativa orientada a los estudiantes de ParetoMed. Pedro presento el prototipo a Oscar como ...`
-- Resumen correcto: `Pedro desarrollo, de manera independiente y fuera del alcance de los aportes de la sociedad descritos en el Hecho Decimosegundo, una herramienta tecnologica educativa orientada a los estudiantes de ParetoMed. Pedro presento el prototipo a Oscar como ...`
-- Pruebas actuales: `P-02, P-05, P-50`
-- Pruebas correctas: `P-02, P-05, P-50`
+- Titulo actual en Supabase: `"Eres socio - lo que desarrolles es para ParetoMed"`
+- Resumen actual: `Pedro desarrollo, de manera independiente y fuera del alcance de los aportes de la sociedad descritos en el Hecho Decimosegundo, una aplicacion educativa de preguntas y respuestas para examenes de residencia orientada a estudiantes de ParetoMed. En l...`
+- Resumen correcto: `Pedro desarrollo, de manera independiente y fuera del alcance de los aportes de la sociedad descritos en el Hecho Decimosegundo, una aplicacion educativa de preguntas y respuestas para examenes de residencia orientada a estudiantes de ParetoMed. En l...`
+- Pruebas actuales: `P-02, P-05, P-34, P-50, P-56`
+- Pruebas correctas: `P-02, P-05, P-34, P-50, P-56`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
@@ -757,11 +757,11 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `385` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Implementación de Retargeting Avanzado`
+- Titulo actual en Supabase: `Oscar reconoce aportes metodológicos de Pedro`
 - Resumen actual: `En la reunion del 14 de julio de 2025, Oscar Maldonado reconocio expresamente que elementos centrales de la metodologia actual de ParetoMed fueron ideados por Pedro: (a) Oscar *"confirmo que la idea de los simulacros pre y post estudio, con objetivos...`
 - Resumen correcto: `En la reunion del 14 de julio de 2025, Oscar Maldonado reconocio expresamente que elementos centrales de la metodologia actual de ParetoMed fueron ideados por Pedro: (a) Oscar *"confirmo que la idea de los simulacros pre y post estudio, con objetivos...`
-- Pruebas actuales: `P-02, P-34`
-- Pruebas correctas: `P-02, P-34`
+- Pruebas actuales: `P-02, P-34, P-51`
+- Pruebas correctas: `P-02, P-34, P-51`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
@@ -769,11 +769,11 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `389` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Gestión de Crisis Comercial Mayo 2025`
-- Resumen actual: `El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en agosto de 2025, pero su encabezado dice textualmente: *"El dia 1 de [espacio en blanco] de 2024"* — con el mes sin completar. Esta predatacion constituye un intento de redefini...`
-- Resumen correcto: `El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en agosto de 2025, pero su encabezado dice textualmente: *"El dia 1 de [espacio en blanco] de 2024"* — con el mes sin completar. Esta predatacion constituye un intento de redefini...`
-- Pruebas actuales: `P-01, P-14`
-- Pruebas correctas: `P-01, P-14`
+- Titulo actual en Supabase: `Contrato predatado con mes en blanco`
+- Resumen actual: `El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en la reunion del 14 de agosto de 2025. Oscar presento el documento diciendo: *"no es el que esta en borrador; es uno que trabaje con los contadores y los abogados, que yo creo qu...`
+- Resumen correcto: `El Contrato de Cuentas en Participacion [P-14] fue entregado por Oscar en la reunion del 14 de agosto de 2025. Oscar presento el documento diciendo: *"no es el que esta en borrador; es uno que trabaje con los contadores y los abogados, que yo creo qu...`
+- Pruebas actuales: `P-01, P-14, P-56`
+- Pruebas correctas: `P-01, P-14, P-56`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
@@ -781,7 +781,7 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `393` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Optimización de Tasa de Cierre`
+- Titulo actual en Supabase: `Cláusulas anticompetencia de 5 años — solo para socios`
 - Resumen actual: `Todos los contratos propuestos por Oscar incluian clausulas de no competencia dirigidas a restringir la actividad profesional de Pedro: (a) el Acuerdo de Socios propuesto en version SAS incluia una restriccion de **5 anos** que prohibia a Pedro *"com...`
 - Resumen correcto: `Todos los contratos propuestos por Oscar incluian clausulas de no competencia dirigidas a restringir la actividad profesional de Pedro: (a) el Acuerdo de Socios propuesto en version SAS incluia una restriccion de **5 anos** que prohibia a Pedro *"com...`
 - Pruebas actuales: `P-02, P-08, P-15`
@@ -793,11 +793,11 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `397` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Co-dirección y Feedback de Operación`
+- Titulo actual en Supabase: `NETMED: vehículo diseñado para escapar la sociedad`
 - Resumen actual: `El 15 de octubre de 2025, Oscar Maldonado constituyo la sociedad **NETMED S.A.S.** (NIT 902.004.012-9, Matricula 926.784) mediante documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del...`
 - Resumen correcto: `El 15 de octubre de 2025, Oscar Maldonado constituyo la sociedad **NETMED S.A.S.** (NIT 902.004.012-9, Matricula 926.784) mediante documento privado en Barranquilla, inscrita en la Camara de Comercio el 30 de octubre de 2025. Oscar es propietario del...`
-- Pruebas actuales: `P-01, P-24, P-49`
-- Pruebas correctas: `P-01, P-24, P-49`
+- Pruebas actuales: `P-01, P-24, P-49, P-52, P-56`
+- Pruebas correctas: `P-01, P-24, P-49, P-52, P-56`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 
@@ -805,11 +805,11 @@
 
 - Estado: `SIN CAMBIOS`
 - Documento: linea `401` del archivo `HECHOS_DEMANDA_PARETOMED_2026.md`
-- Titulo actual en Supabase: `Estrategia de Expansión Internacional`
+- Titulo actual en Supabase: `Plan de evasión fiscal — LLC en Estados Unidos`
 - Resumen actual: `El 10 de julio de 2025, Oscar revelo en chat de WhatsApp un plan tributario consistente en crear una LLC en Estados Unidos y una SAS en Colombia que le prestara servicios: *"la idea es crear una SAS aca en Colombia que le preste servicios a la LLC en...`
 - Resumen correcto: `El 10 de julio de 2025, Oscar revelo en chat de WhatsApp un plan tributario consistente en crear una LLC en Estados Unidos y una SAS en Colombia que le prestara servicios: *"la idea es crear una SAS aca en Colombia que le preste servicios a la LLC en...`
-- Pruebas actuales: `P-01, P-02`
-- Pruebas correctas: `P-01, P-02`
+- Pruebas actuales: `P-01, P-02, P-56`
+- Pruebas correctas: `P-01, P-02, P-56`
 - Agregar pruebas: `(ninguna)`
 - Quitar pruebas: `(ninguna)`
 

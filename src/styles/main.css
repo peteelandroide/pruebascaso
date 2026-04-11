@@ -338,6 +338,8 @@ body:has(#tab-hechos.active) .app-content {
   border-radius: 4px;
   border: 1px solid;
   white-space: nowrap;
+  background: white;
+  font-family: inherit;
 }
 
 /* Expanded state */
@@ -546,6 +548,18 @@ body:has(#tab-hechos.active) .app-content {
 
 .content-markdown p { margin: 0 0 8px 0; }
 
+.inline-prueba-link {
+  color: var(--accent-blue);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+
+.inline-prueba-link:hover {
+  color: var(--accent-blue-hover);
+}
+
 /* --- Fragmentos curados --- */
 .fragment-box {
   background: #f8fafc;
@@ -603,6 +617,24 @@ body:has(#tab-hechos.active) .app-content {
 
 /* --- Tags por categoría --- */
 .tag { cursor: default; }
+.tag-link {
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.prueba-link.tag-link {
+  background: white;
+  border: 1px solid currentColor;
+  padding: 1px 6px;
+}
+.tag-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.12);
+}
+.prueba-link {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
 .tag-audio { border-color: #6f42c1; color: #6f42c1; }
 .tag-chat { border-color: #28a745; color: #28a745; }
 .tag-documento { border-color: #007bff; color: #007bff; }

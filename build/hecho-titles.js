@@ -33,7 +33,7 @@ module.exports = {
   "hecho-19-capcut": "Edición audiovisual y control de calidad",
   "hecho-20-dnda": "Registro DNDA — 238 obras audiovisuales",
   "hecho-18": "Primera liquidación — 20% de ganancia neta",
-  "hecho-19": "17 transferencias bancarias — $122.3M total",
+  "hecho-19": "Pagos acreditados — $122.3M total",
   "hecho-20": "Variabilidad de pagos — Participación en utilidades",
 
   // CAP IV: REPARTO DE UTILIDADES
@@ -50,7 +50,7 @@ module.exports = {
 
   // CAP VI: EXPLOTACIÓN CONJUNTA
   26: "Co-decisiones estratégicas documentadas",
-  27: "Siete reuniones documentadas en 2025",
+  27: "Ocho reuniones documentadas en 2025",
   28: "$709M en ingresos — 15 meses de operación",
 
   // CAP VII: DURACIÓN
@@ -83,7 +83,7 @@ module.exports = {
   43: "Valoración del patrimonio — $1,200M estimados",
   44: "Participación de Pedro — 20% = $240M",
   45: "Utilidades post-ruptura no pagadas a Pedro",
-  46: "Total pagos documentados — $99.3M en 14 transferencias",
+  46: "Pagos acreditados — $122.3M en dos canales",
 
   // CAP XIV: HECHOS ADICIONALES
   47: "\"La firma es una mera formalidad\" — confesión",
@@ -95,8 +95,8 @@ module.exports = {
 
   // CAP XV: HALLAZGOS FINANCIEROS
   53: "376 comprobantes — $579M en ingresos documentados",
-  54: "Consistencia estadística: 19.52% ≈ 20% pactado",
-  55: "Proyección de ingresos reales — $765M estimados",
+  54: "Cruce comprobantes vs pagos — 24.0% sobre muestra",
+  55: "Proyección de ingresos reales — $941M estimados",
   56: "Oscar oculta contabilidad y se niega a rendir cuentas",
   57: "Facturación Avanz vs ParetoMed — dos modelos distintos",
   58: "KPIs post-ruptura — $169M en ventas sin pagar a Pedro",

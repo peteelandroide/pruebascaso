@@ -69,15 +69,15 @@ $1.200M cae en el rango conservador-moderado. Validado por 3 fuentes adicionales
 
 ---
 
-# 4. POR QUE LOS $99.419.834 YA RECIBIDOS NO SE DESCUENTAN
+# 4. POR QUE LOS $122.345.065 YA ACREDITADOS NO SE DESCUENTAN
 
-**Los $99.419.834 recibidos por Pedro son distribucion de utilidades operativas durante la vigencia de la sociedad, NO anticipos sobre el patrimonio ni sobre una futura liquidacion.**
+**Los $122.345.065 acreditados a Pedro son distribucion de utilidades operativas durante la vigencia de la sociedad, NO anticipos sobre el patrimonio ni sobre una futura liquidacion.**
 
 Fundamento:
 1. Oscar los calculaba como *"20% que te corresponde"* sobre utilidades del mes corriente — nunca dijo "anticipo" ni "a cuenta de liquidacion"
 2. Pedro tenia DERECHO a esos pagos como socio con 20% de participacion en utilidades (art. 150 C. Co.)
 3. Oscar recibio el 80% de esas mismas utilidades (~$398M) — nadie argumenta que Oscar deba "devolver" su 80%
-4. Los $99.4M ya salieron del patrimonio de la sociedad como gastos operativos (distribucion de utilidades); el patrimonio a liquidar son los ACTIVOS REMANENTES del negocio
+4. Los $122.3M ya salieron del patrimonio de la sociedad como gastos operativos (distribucion de utilidades); el patrimonio a liquidar son los ACTIVOS REMANENTES del negocio
 
 **Las pretensiones se refieren a conceptos DISTINTOS nunca pagados:**
 - Patrimonio (marca, contenido, plataforma, comunidad, goodwill) → nunca liquidado
@@ -85,7 +85,7 @@ Fundamento:
 - Danos PI → nunca compensados
 
 **Texto para insertar en la demanda (si el abogado lo considera necesario):**
-> "Se deja constancia de que el demandante recibio la suma de $99.419.834 COP en 14 transferencias bancarias entre mayo de 2024 y agosto de 2025, correspondientes a la distribucion mensual de su participacion del 20% en las utilidades operativas de la sociedad de hecho. Dichas sumas fueron devengadas y percibidas legitimamente por el demandante en ejercicio de su derecho como socio industrial, conforme al pacto entre las partes. No constituyen anticipos sobre el patrimonio social ni sobre la liquidacion de la sociedad, y por tanto no son descontables de las pretensiones de esta demanda, que versan sobre conceptos distintos: la participacion en el patrimonio social (nunca liquidado), las utilidades post-ruptura (nunca pagadas) y los danos por uso no autorizado de propiedad intelectual (nunca compensados)."
+> "Se deja constancia de que el demandante recibio la suma total de $122.345.065 COP en pagos acreditados a dos cuentas entre mayo de 2024 y agosto de 2025, correspondientes a la distribucion mensual de su participacion del 20% en las utilidades operativas de la sociedad de hecho. Dichas sumas fueron devengadas y percibidas legitimamente por el demandante en ejercicio de su derecho como socio industrial, conforme al pacto entre las partes. No constituyen anticipos sobre el patrimonio social ni sobre la liquidacion de la sociedad, y por tanto no son descontables de las pretensiones de esta demanda, que versan sobre conceptos distintos: la participacion en el patrimonio social (nunca liquidado), las utilidades post-ruptura (nunca pagadas) y los danos por uso no autorizado de propiedad intelectual (nunca compensados)."
 
 ---
 
@@ -104,7 +104,7 @@ Fundamento:
 | **TOTAL CUANTIFICADO** | **$317.033.479** |
 
 **Texto sugerido para el juramento:**
-> "Bajo la gravedad del juramento, estimo razonadamente que las pretensiones economicas de esta demanda ascienden a la suma de TRESCIENTOS VEINTE MILLONES DE PESOS M/CTE ($320.000.000 COP), discriminados asi: (i) $240.000.000 por concepto del 20% del patrimonio social de ParetoMed, con base en valoracion documentada de $1.200.000.000, consistente con tres valoraciones independientes convergentes ($240M, $300M, $330M por el 20%) y cuatro metodos de valoracion estandar; (ii) $22.033.479 por concepto de utilidades no pagadas del periodo agosto-octubre 2025, calculadas con base en los KPIs del demandado; (iii) $55.000.000 por concepto de danos materiales y morales derivados del uso no autorizado de 238 obras audiovisuales del demandante durante 6 meses posteriores a la Notificacion de Cese [P-18]; (iv) sumas adicionales por diferencias en ingresos subregistrados que resulten del peritaje contable. No se descuentan los $99.419.834 recibidos durante la operacion de la sociedad, por tratarse de distribucion de utilidades operativas a las que el demandante tenia pleno derecho como socio con participacion del 20%."
+> "Bajo la gravedad del juramento, estimo razonadamente que las pretensiones economicas de esta demanda ascienden a la suma de TRESCIENTOS VEINTE MILLONES DE PESOS M/CTE ($320.000.000 COP), discriminados asi: (i) $240.000.000 por concepto del 20% del patrimonio social de ParetoMed, con base en valoracion documentada de $1.200.000.000, consistente con tres valoraciones independientes convergentes ($240M, $300M, $330M por el 20%) y cuatro metodos de valoracion estandar; (ii) $22.033.479 por concepto de utilidades no pagadas del periodo agosto-octubre 2025, calculadas con base en los KPIs del demandado; (iii) $55.000.000 por concepto de danos materiales y morales derivados del uso no autorizado de 238 obras audiovisuales del demandante durante 6 meses posteriores a la Notificacion de Cese [P-18]; (iv) sumas adicionales por diferencias en ingresos subregistrados que resulten del peritaje contable. No se descuentan los $122.345.065 acreditados durante la operacion de la sociedad, por tratarse de distribucion de utilidades operativas a las que el demandante tenia pleno derecho como socio con participacion del 20%."
 
 ---
 
@@ -126,7 +126,7 @@ El juramento estimatorio de $320.000.000 supera ampliamente el umbral. Competenc
 | Juramento estimatorio | **$320.000.000 COP** |
 | Cuantia procesal | Mayor Cuantia |
 
-**Los $99.419.834 previamente recibidos NO se descuentan** — son distribucion legítima de utilidades operativas, no anticipos contra patrimonio.
+**Los $122.345.065 previamente acreditados NO se descuentan** — son distribucion legítima de utilidades operativas, no anticipos contra patrimonio.
 
 ---
 

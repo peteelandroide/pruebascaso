@@ -31,9 +31,9 @@ Y por 3 valoraciones convergentes del 20% de Pedro: Anexo $240M [P-17], Dr. Flig
 | Diferencia por ingresos subregistrados | Por peritaje |
 | **TOTAL CUANTIFICADO** | **$317.033.479** |
 
-### Los $99.419.834 ya recibidos NO se descuentan
+### Los $122.345.065 ya acreditados NO se descuentan
 
-Son distribucion de utilidades operativas durante la vigencia de la sociedad (mayo 2024 - julio 2025). Pedro tenia DERECHO a recibirlos como socio con 20% de participacion. No son anticipos sobre el patrimonio ni sobre la liquidacion. Las pretensiones versan sobre conceptos DISTINTOS nunca pagados: patrimonio (nunca liquidado), utilidades post-ruptura (nunca pagadas) y danos PI (nunca compensados).
+Son distribucion de utilidades operativas durante la vigencia de la sociedad (mayo 2024 - julio 2025). Pedro tenia DERECHO a recibirlas como socio con 20% de participacion. No son anticipos sobre el patrimonio ni sobre la liquidacion. Las pretensiones versan sobre conceptos DISTINTOS nunca pagados: patrimonio (nunca liquidado), utilidades post-ruptura (nunca pagadas) y danos PI (nunca compensados).
 
 ### Pretension TERCERA (patrimonio): $240.000.000 COP (20% de $1.200M, sujeto a peritaje)
 ### Pretension CUARTA (utilidades pendientes): $22.033.479 documentados + peritaje

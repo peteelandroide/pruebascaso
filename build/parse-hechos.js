@@ -3,6 +3,7 @@ const path = require('path');
 const { getFactMeta } = require('./hecho-blueprint');
 
 const HECHOS_FILE = path.join(__dirname, '../source/HECHOS_DEMANDA_PARETOMED_2026.md');
+const PROOF_ID_REGEX = /P-\d{2}(?:-[A-Za-z0-9]+)?/g;
 
 function parseHechos() {
   console.log('Iniciando parse-hechos.js...');
@@ -28,7 +29,7 @@ function parseHechos() {
   const warnings = [];
 
   function extractPruebas(line) {
-    return [...new Set((line.match(/P-\d{2}/g) || []).filter(Boolean))];
+    return [...new Set((line.match(PROOF_ID_REGEX) || []).filter(Boolean))];
   }
 
   function finalizeCurrentHecho() {
@@ -54,7 +55,7 @@ function parseHechos() {
       continue;
     }
 
-    const pruebaTableMatch = line.match(/^\|\s*\*\*(P-\d{2})\*\*\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|/i);
+    const pruebaTableMatch = line.match(/^\|\s*\*\*(P-\d{2}(?:-[A-Za-z0-9]+)?)\*\*\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|/i);
     if (pruebaTableMatch) {
       result.pruebas_catalogo[pruebaTableMatch[1]] = {
         id: pruebaTableMatch[1],

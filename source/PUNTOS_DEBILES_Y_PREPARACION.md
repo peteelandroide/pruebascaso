@@ -30,8 +30,8 @@ Cada punto debil se analiza con:
 4. En una sociedad 80/20, es normal que el socio del 80% tenga la ultima palabra en su area de expertise (medicina). Eso no niega la sociedad.
 
 **Preparacion:**
-- Pedro debe poder explicar en interrogatorio: "Yo le pedia aprobacion del contenido clinico porque Oscar es el medico y las explicaciones medicas tenian que ser correctas. No le pedia permiso para hacer campanas de Meta, configurar el CRM, contratar personal o definir precios — eso lo hacia yo autonomamente."
-- Toledo debe preparar una lista de decisiones que Pedro tomaba SIN pedir luz verde (precios, CRM, campanas, contratacion de Paul, SOPs).
+- Pedro debe poder explicar en interrogatorio: "Yo le pedia aprobacion del contenido clinico porque Oscar es el medico y las explicaciones medicas tenian que ser correctas. No le pedia permiso para proponer ajustes comerciales, contratar personal o definir precios — eso lo hacia yo autonomamente."
+- Toledo debe preparar una lista de decisiones que Pedro tomaba SIN pedir luz verde (precios, contratacion de Paul, SOPs, metodologia y ajustes comerciales).
 
 ---
 
@@ -63,7 +63,7 @@ Cada punto debil se analiza con:
 **La defensa:**
 1. Pedro no reclama la PI original. Pedro reclama el 20% del NEGOCIO que crecio de $3.75M/mes a $94M/mes gracias a la operacion conjunta. El negocio de abril 2024 y el de enero 2025 son animales completamente distintos.
 2. Pedro no solo hizo "marketing". Pedro transformo la METODOLOGIA: simulacros pre/post (Oscar lo confirmo), acompanamiento/tutorias, ciclos de 90 dias, grupos de WhatsApp, plan semanal por modulo. Eso es el CORE del diferenciador comercial, no un adorno de marketing.
-3. Pedro creo INFRAESTRUCTURA: SOPs operativos, CRM (Kommo, ManyChat), canales TikTok/YouTube, dashboard React, automatizaciones. Un prestador de servicios de marketing no disena los procesos operativos internos del negocio.
+3. Pedro creo INFRAESTRUCTURA: SOPs operativos, canales TikTok/YouTube, dashboard React y documentacion de procesos. Un prestador de servicios de marketing no disena los procesos operativos internos del negocio.
 4. Pedro aporto PERSONAL: Efrain y Paul, empleados de Doctor Flight, trabajando para ParetoMed a costo de Pedro. Un contratista no pone a sus propios empleados al servicio del cliente.
 5. Pedro creo 238 OBRAS AUDIOVISUALES registradas ante DNDA. Eso no es "marketing" — es produccion de contenido con valor propio.
 6. Oscar MISMO lo dijo: "20% de las acciones no se justifican por una labor que es contratable" [P-09]. Si lo que Pedro hacia fuera solo marketing, Oscar no habria escrito eso.

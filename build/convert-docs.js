@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const mammoth = require('mammoth');
 const XLSX = require('xlsx');
+const MarkdownIt = require('markdown-it');
 const {
     getAssetOutputForSource,
     getHtmlOutputForSource,
@@ -26,6 +27,19 @@ const TEXT_DOCUMENTS = [
         title: 'Grabación telefónica Oscar 14/08/2025 — prueba reina'
     }
 ];
+
+const MARKDOWN_DOCUMENTS = [
+    {
+        source: 'VALUACION_PARETOMED_2026.md',
+        title: 'Valuación ParetoMed 2026'
+    },
+    {
+        source: 'TRANSCRIPCION_REUNION_14_AGOSTO_2025_CORREGIDA.md',
+        title: 'Transcripción Corregida — Reunión 14 agosto 2025 (día)'
+    }
+];
+
+const md = new MarkdownIt({ breaks: true, linkify: true });
 
 function ensureDir(dirPath) {
     fs.mkdirSync(dirPath, { recursive: true });
@@ -159,6 +173,30 @@ function processPlainText(filePath, sourceRelativePath, title) {
     console.log(`[V] Convertido TXT: ${sourceRelativePath} -> ${outputRelativePath}`);
 }
 
+function processMarkdown(filePath, sourceRelativePath, title) {
+    const outputRelativePath = getHtmlOutputForSource(sourceRelativePath);
+    const content = fs.readFileSync(filePath, 'utf8');
+    const renderedHtml = md.render(content);
+
+    const html = `<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>${title}</title>
+  <link rel="stylesheet" href="../styles/viewer.css">
+</head>
+<body>
+  <div class="document-container document-viewer-mode">
+    <div class="document-header"><h1>${title}</h1></div>
+    <div class="document-content">${injectLineIds(renderedHtml)}</div>
+  </div>
+</body>
+</html>`;
+
+    writeHtml(outputRelativePath, html);
+    console.log(`[V] Convertido MD: ${sourceRelativePath} -> ${outputRelativePath}`);
+}
+
 function walkFiles(dirPath, baseDir) {
     let results = [];
     for (const item of fs.readdirSync(dirPath)) {
@@ -195,35 +233,29 @@ async function run() {
     ensureDir(ASSETS_DIR);
     ensureDir(RAW_DIR);
 
-    const files = fs.readdirSync(SOURCE_DIR);
-    for (const file of files) {
-        const fullPath = path.join(SOURCE_DIR, file);
-        if (fs.statSync(fullPath).isDirectory()) continue;
-
-        const ext = path.extname(file).toLowerCase();
+    const files = walkFiles(SOURCE_DIR, SOURCE_DIR);
+    for (const { fullPath, relativePath } of files) {
+        const ext = path.extname(relativePath).toLowerCase();
         if (ext === '.docx') {
-            await processDocx(fullPath, file);
+            await processDocx(fullPath, relativePath);
         } else if (ext === '.xlsx') {
-            processXlsx(fullPath, file);
+            processXlsx(fullPath, relativePath);
         } else if (ext === '.pdf' || ext === '.jpg' || ext === '.jpeg' || ext === '.png') {
-            copyAsset(fullPath, file);
+            copyAsset(fullPath, relativePath);
         }
-    }
-
-    const primoDir = path.join(SOURCE_DIR, 'chat-primo');
-    if (fs.existsSync(primoDir)) {
-        walkFiles(primoDir, SOURCE_DIR).forEach(({ fullPath, relativePath }) => {
-            const ext = path.extname(relativePath).toLowerCase();
-            if (['.pdf', '.jpg', '.jpeg', '.png'].includes(ext)) {
-                copyAsset(fullPath, relativePath);
-            }
-        });
     }
 
     TEXT_DOCUMENTS.forEach(({ source, title }) => {
         const sourcePath = path.join(SOURCE_DIR, source);
         if (fs.existsSync(sourcePath)) {
             processPlainText(sourcePath, source, title);
+        }
+    });
+
+    MARKDOWN_DOCUMENTS.forEach(({ source, title }) => {
+        const sourcePath = path.join(SOURCE_DIR, source);
+        if (fs.existsSync(sourcePath)) {
+            processMarkdown(sourcePath, source, title);
         }
     });
 

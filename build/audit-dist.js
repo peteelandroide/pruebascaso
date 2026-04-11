@@ -4,10 +4,23 @@ const vm = require('vm');
 const { EXPECTED_FACT_COUNT } = require('./hecho-blueprint');
 
 const DIST = path.join(__dirname, '..', 'dist');
+const FORBIDDEN_FRAGMENT_SOURCES = new Set([
+    'doc-hechos',
+    'doc-reuniones',
+    'doc-valoracion',
+    'doc-reunion-14jul',
+    'doc-analisis-comprobantes',
+    'doc-proyeccion-financiera',
+    'doc-analisis-fiscal',
+    'doc-politica-web'
+]);
 
-// Load data.js
+// Load data.js in an isolated context for deterministic audits
 const dataContent = fs.readFileSync(path.join(DIST, 'scripts', 'data.js'), 'utf8');
-vm.runInThisContext(dataContent); // Defines CASE_DATA in global scope
+const sandbox = {};
+vm.createContext(sandbox);
+vm.runInContext(`${dataContent}\nthis.__RESULT__ = CASE_DATA;`, sandbox);
+const CASE_DATA = sandbox.__RESULT__;
 
 console.log('=== AUDIT: ParetoMed dist/ folder ===\n');
 
@@ -63,6 +76,14 @@ for (const [key, urls] of Object.entries(pruebasUrls)) {
         const fp = path.join(DIST, urls.raw);
         if (!fs.existsSync(fp)) console.log(`  ✗ MISSING RAW: [${key}] ${urls.raw}`);
     }
+    if (urls.multiplehtml) {
+        urls.multiplehtml.forEach((r, i) => {
+            const fp = path.join(DIST, r);
+            if (!fs.existsSync(fp)) {
+                console.log(`  ✗ MISSING HTML: [${key}] documento ${i+1}: ${r}`);
+            }
+        });
+    }
     if (urls.multipleraw) {
         urls.multipleraw.forEach((r, i) => {
             const fp = path.join(DIST, r);
@@ -78,15 +99,21 @@ console.log(`  Found: ${foundPruebas}/${withHtml} (pruebas with html link)`);
 // 5. Check fragment fuentes point to valid documentos
 console.log('\n--- Fragment fuentes → documentos mapping ---');
 let unmapped = new Set();
+let forbiddenSources = [];
 let hechosSinFragmentos = [];
 let hechosSinPruebas = [];
+let fragmentsWithExactSearch = 0;
 for (const [hId, hecho] of Object.entries(CASE_DATA.hechos || {})) {
     const fragmentos = hecho.fragmentos_clave || hecho.extractos || [];
     if (!fragmentos.length) hechosSinFragmentos.push({ id: hId, titulo: hecho.titulo_corto || hecho.resumen || 'Sin título' });
     if (!(hecho.pruebas || []).length) hechosSinPruebas.push({ id: hId, titulo: hecho.titulo_corto || hecho.resumen || 'Sin título' });
     fragmentos.forEach(frag => {
+        if (frag.cita_exacta) fragmentsWithExactSearch++;
         if (frag.fuente && !CASE_DATA.documentos[frag.fuente]) {
             unmapped.add(frag.fuente);
+        }
+        if (frag.fuente && FORBIDDEN_FRAGMENT_SOURCES.has(frag.fuente)) {
+            forbiddenSources.push({ hecho: hId, fuente: frag.fuente, cita: frag.cita || frag.cita_exacta || '' });
         }
     });
 }
@@ -95,6 +122,13 @@ if (unmapped.size > 0) {
 } else {
     console.log(`  ✓ All fragment fuentes map to a documento`);
 }
+if (forbiddenSources.length > 0) {
+    console.log(`  ✗ Fragmentos con fuentes IA o deshabilitadas (${forbiddenSources.length}):`);
+    forbiddenSources.forEach(item => console.log(`    - ${item.hecho}: ${item.fuente} :: ${item.cita.substring(0, 90)}`));
+} else {
+    console.log('  ✓ No hay fragmentos apuntando a documentos IA o fuentes prohibidas');
+}
+console.log(`  ℹ Fragmentos con búsqueda dual (cita_exacta): ${fragmentsWithExactSearch}`);
 
 console.log('\n--- Hechos y cobertura ---');
 console.log(`  Hechos en data.js: ${Object.keys(CASE_DATA.hechos || {}).length}/${EXPECTED_FACT_COUNT}`);
@@ -117,6 +151,7 @@ const referencedFiles = new Set(Object.values(CASE_DATA.documentos).map(d => pat
 // Also consider pruebas_urls html paths as referenced
 Object.values(CASE_DATA.pruebas_urls || {}).forEach(u => {
     if (u.html) referencedFiles.add(path.basename(u.html));
+    if (u.multiplehtml) u.multiplehtml.forEach(r => referencedFiles.add(path.basename(r)));
     if (u.multipleraw) u.multipleraw.forEach(r => referencedFiles.add(path.basename(r)));
 });
 docsOnDisk.forEach(f => {
@@ -139,8 +174,10 @@ console.log(`Core files: ${coreFiles.length} checked`);
 console.log(`Documentos: ${foundDocs} found, ${missingDocs.length} missing`);
 console.log(`Prueba URLs: ${foundPruebas} found, ${missingPruebas.length} missing`);
 console.log(`Unmapped fuentes: ${unmapped.size}`);
+console.log(`Forbidden fuentes: ${forbiddenSources.length}`);
+console.log(`Fragmentos con cita_exacta: ${fragmentsWithExactSearch}`);
 console.log(`Hechos sin fragmentos: ${hechosSinFragmentos.length}`);
 console.log(`Hechos sin pruebas: ${hechosSinPruebas.length}`);
-if (missingDocs.length > 0 || missingPruebas.length > 0 || hechosSinFragmentos.length > 0) {
+if (missingDocs.length > 0 || missingPruebas.length > 0 || hechosSinFragmentos.length > 0 || forbiddenSources.length > 0) {
     console.log('\n!!! ACTION REQUIRED: Fix missing files above !!!');
 }

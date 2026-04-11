@@ -25,6 +25,20 @@
     word-break: break-word;
 }
 
+.chat-attachment {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #0f4c81;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.chat-attachment:hover {
+    color: #0a3a62;
+}
+
 .empty-line { min-height: 1em; border: none; }
 .chat-continuation .chat-meta { visibility: hidden; }
 

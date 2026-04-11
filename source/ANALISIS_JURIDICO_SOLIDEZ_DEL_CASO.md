@@ -20,9 +20,9 @@ Para que un juez declare la existencia de una sociedad comercial de hecho (arts.
 | Socio | Aporte | Prueba directa |
 |---|---|---|
 | **Oscar** | PI original (videoclases, metodologia), capital inicial, registro comercial ParetoMed | [P-20] Camara de Comercio |
-| **Pedro** | Trabajo especializado (marketing, edicion, guiones, SOPs, CRM, canales digitales), estudio de grabacion, empleados (Efrain, Paul), 238 obras audiovisuales | [P-22, P-25, P-26, P-28-32, P-02] |
+| **Pedro** | Trabajo especializado (marketing, edicion, guiones, SOPs, canales digitales y dashboard React), estudio de grabacion, empleados (Efrain, Paul), 238 obras audiovisuales | [P-22, P-25, P-26, P-28-32, P-02] |
 
-**Fortaleza:** El aporte de Pedro no se limita a "servicios de marketing". Incluye creacion de infraestructura operativa (SOPs), canales de distribucion (TikTok, YouTube), herramientas tecnologicas (CRM, dashboard React), recurso humano propio (Efrain, Paul) y 238 obras registradas ante la DNDA. Esto excede con creces lo que un prestador de servicios hace.
+**Fortaleza:** El aporte de Pedro no se limita a "servicios de marketing". Incluye creacion de infraestructura operativa (SOPs), canales de distribucion (TikTok, YouTube), una herramienta tecnologica propia (dashboard React), recurso humano propio (Efrain, Paul) y 238 obras registradas ante la DNDA. Esto excede con creces lo que un prestador de servicios hace.
 
 **Prueba contundente:** Oscar lo reconocio por escrito en su propia nota manuscrita [P-09]: *"20% de las acciones no se justifican por una labor que es contratable. La idea... es que ademas trabaje para impulsar con nuevas ideas y trabajar DE LLENO en esta."* Oscar TEXTUALMENTE dijo que lo que Pedro hacia NO ERA una simple labor contratable.
 
@@ -32,7 +32,7 @@ Este es el elemento MAS FUERTE del caso.
 
 **Prueba directa e irrefutable:**
 - 5 consolidados en WhatsApp donde Oscar calcula *"Porcentaje de Pedro: 7,016,650 x 0.20 = 1,403,330"* [P-13]
-- 14 transferencias bancarias ($99.419.834) que coinciden al centavo con los calculos de 20% [P-36, P-37]
+- Pagos acreditados por **$122.345.065** (14 transferencias a cuenta personal por $99.319.834 + pagos canalizados via Doctor Flight por $23.025.231), consistentes con el pacto del 20% [P-36, P-37, P-12, P-02]
 - La transferencia #1 ($1.403.330) coincide EXACTAMENTE con el consolidado del 07/05/2024
 - La transferencia #8 ($16.726.760) coincide EXACTAMENTE con el consolidado del 03/02/2025
 
@@ -60,7 +60,7 @@ Este es el elemento MAS FUERTE del caso.
 - Pedro contrataba y evaluaba personal (Adriana, Paul, Isabella) [P-02, P-03, P-33]
 - Pedro disenaba SOPs operativos [P-25, P-26]
 - Pedro creo los canales TikTok y YouTube [P-02]
-- Pedro gestionaba pauta Meta y CRM [P-02]
+- Pedro participaba en decisiones comerciales y de ventas [P-02]
 - Adriana (asesora) consultaba a ambos como co-directores: *"uds me diran como la ven"* [P-03]
 - 7 reuniones documentadas de co-direccion [P-34]
 - Oscar nombro a Pedro "Subdirector Academico y Comercial" en carta firmada [P-11]
@@ -93,7 +93,7 @@ Este es el elemento MAS FUERTE del caso.
 
 **Refutacion:** Pedro editaba contenido medico (cardiologia, nefrologia, etc.). Oscar como medico internista DEBIA validar la precision clinica antes de publicar — un error medico en contenido educativo tiene consecuencias graves. Eso no es subordinacion laboral; es validacion tecnica por parte del socio con el conocimiento especializado.
 
-**Ademas:** Oscar TAMBIEN consultaba a Pedro para decisiones. Adriana (asesora) decia *"uds me diran como la ven"* refiriendose a ambos indistintamente. Y Pedro tomaba decisiones autonomas: creaba campanas de Meta, configuraba CRM, contrataba personal (Paul), definia precios.
+**Ademas:** Oscar TAMBIEN consultaba a Pedro para decisiones. Adriana (asesora) decia *"uds me diran como la ven"* refiriendose a ambos indistintamente. Y Pedro tomaba decisiones autonomas sobre estructura comercial, contratacion de personal (Paul) y definicion de precios.
 
 **Mas importante aun:** Oscar escribio en su propia nota [P-09] que Pedro NO era un empleado: *"20% de las acciones no se justifican por una labor que es contratable... un socio esta metido de lleno trabajando en el avance de la empresa, las labores que describes son de empleado."* Oscar queria que Pedro trabajara como socio, no como empleado. Si ahora dice que Pedro era empleado, se contradice con su propio documento.
 

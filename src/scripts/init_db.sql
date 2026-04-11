@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS public.capitulos (
     id TEXT PRIMARY KEY,
     numero TEXT NOT NULL,
     titulo TEXT NOT NULL,
-    orden SERIAL
+    orden INTEGER NOT NULL
 );
 
 -- 2. Hechos
@@ -19,6 +19,8 @@ CREATE TABLE IF NOT EXISTS public.hechos (
     texto_completo_html TEXT NOT NULL,
     titulo_corto TEXT NOT NULL,
     nota_abogado TEXT,
+    orden_documento INTEGER,
+    source_key TEXT,
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
@@ -43,6 +45,7 @@ CREATE TABLE IF NOT EXISTS public.fragmentos_clave (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     hecho_id TEXT REFERENCES public.hechos(id) ON DELETE CASCADE,
     cita TEXT NOT NULL,
+    cita_exacta TEXT,
     fuente TEXT NOT NULL,
     linea TEXT,
     fecha TEXT,
@@ -59,6 +62,13 @@ CREATE TABLE IF NOT EXISTS public.documentos (
     tamano BIGINT,
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
+
+CREATE INDEX IF NOT EXISTS idx_capitulos_orden ON public.capitulos(orden);
+CREATE INDEX IF NOT EXISTS idx_hechos_capitulo_id ON public.hechos(capitulo_id);
+CREATE INDEX IF NOT EXISTS idx_hechos_orden_documento ON public.hechos(orden_documento);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_hechos_source_key ON public.hechos(source_key) WHERE source_key IS NOT NULL;
+CREATE INDEX IF NOT EXISTS idx_hecho_pruebas_prueba_id ON public.hecho_pruebas(prueba_id);
+CREATE INDEX IF NOT EXISTS idx_fragmentos_hecho_id ON public.fragmentos_clave(hecho_id);
 
 -- Habilitar lectura pública (según requerimiento del usuario)
 -- Nota: En producción esto debería reemplazarse por RLS más granular si es necesario.

@@ -128,7 +128,7 @@ PARTES:
 - Demandado: Oscar David Maldonado Badran (CC 1.129.573.046), negocio ParetoMed
 
 SITUACION FINANCIERA:
-Pedro recibia el 20% de las utilidades netas del negocio ParetoMed (educacion medica virtual). Los pagos documentados con comprobantes bancarios suman $99.319.834 COP en 14 transferencias (mayo 2024 - julio 2025).
+Pedro recibia el 20% de las utilidades netas del negocio ParetoMed (educacion medica virtual). El total acreditado documentado asciende a $122.345.065 COP: 14 transferencias a la cuenta personal por $99.319.834 y pagos canalizados por Doctor Flight S.A.S. por $23.025.231 (mayo 2024 - agosto 2025).
 
 DOCUMENTOS A TU DISPOSICION:
 - Cuentas de cobro (mayo-septiembre 2024): concepto "gestion de redes y campanas publicitarias"

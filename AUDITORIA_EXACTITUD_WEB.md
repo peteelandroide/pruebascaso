@@ -119,7 +119,7 @@ Oscar redondeo al transferir. Diferencias menores sin impacto material.
 |---|---|
 | 52 pruebas P-01 a P-52 (texto) | ✓ Correcto |
 | Codigos de identificacion (CC, NIT, matriculas) | ✓ Correcto |
-| Hecho 51: CRM removido, talleres dominicales | ✓ Correcto |
+| Hecho 51: accesos digitales removidos, talleres dominicales | ✓ Correcto |
 | Hecho 24: reconocimiento tacito de Oscar | ✓ Correcto |
 | Hecho 22: audio "puedes cortarlo" | ✓ Correcto |
 | P-50 en Top 11 pruebas contundentes | ✓ Correcto |

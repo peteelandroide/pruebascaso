@@ -26,7 +26,7 @@
 | **Representante Legal** | Pedro Jose Vergara Villanueva (CC 1.045.750.095) |
 | **Tamano empresarial** | Microempresa - Ingresos reportados $15.301.407 |
 | **Cuenta bancaria** | Bancolombia Ahorros No. 77761694483 |
-| **Rol en ParetoMed** | Socio - Aporte de industria (marketing, edicion, tecnologia, estudio de grabacion) |
+| **Rol en ParetoMed** | Socio - aporte de trabajo especializado (marketing, edicion, tecnologia, estudio de grabacion) |
 | **Cargo reconocido por Oscar** | "Subdirector Academico y Comercial" (Carta de Recomendacion firmada 27/04/2024) |
 
 ## 1.2 Demandado
@@ -110,10 +110,10 @@
 | 16/01/2025 | Grabacion de videos de confianza para la pagina web (ambos presentes en estudio de Pedro) | Chat WhatsApp Oscar-Pedro |
 | 03/02/2025 | **Pago record:** Oscar calcula rentabilidad de enero en $83.633.800. 20% de Pedro = **$16.726.760 COP** | Chat WhatsApp Oscar-Pedro |
 | 28/02/2025 | Oscar reporta ventas de enero: "$94.427.575 pesos" | Chat Equipo Paretomed |
-| 16/05/2025 | Reunion: Pedro lidera cambio estrategico de campanas de WhatsApp a formularios | Reunion 16 mayo |
-| 11/06/2025 | Reunion: Pedro supervisa presupuesto publicitario, entrena asesora de ventas, propone nuevo vendedor (Paul) | Reunion 11 junio |
+| 16/05/2025 | Reunion: Pedro participa en discusion estrategica sobre discrepancia de leads y alternativas de captacion | Reunion 16 mayo |
+| 11/06/2025 | Reunion: Pedro entrena asesora de ventas y revisa problemas del proceso comercial | Reunion 11 junio |
 | 13/06/2025 | Reunion: Pedro senala baja asistencia a citas y propone mejorar proceso comercial | Reunion 13 junio |
-| 16/06/2025 | Reunion: Equipo implementa cobro por semana de prueba, optimiza CRM - decisiones impulsadas por Pedro | Reunion 16 junio |
+| 16/06/2025 | Reunion: Equipo evalua cobro por semana de prueba y flujograma de seguimiento impulsados por Pedro | Reunion 16 junio |
 | 27/06/2025 | Reunion con Jan Lio: Pedro y Oscar evaluan modelo hibrido Evergreen + lanzamientos digitales | Reunion 27 junio |
 | 14/07/2025 | Reunion: Debate sobre herramientas tecnologicas y su propiedad. Discusion sobre modelo de licenciamiento vs. adquisicion | Reunion 14 julio |
 | 15/07/2025 | Pedro despliega Dashboard de Venta Consultiva desarrollado en React para optimizar cierre de ventas | Chat WhatsApp Oscar-Pedro |
@@ -172,10 +172,7 @@ Conforme a los articulos 498 y siguientes del Codigo de Comercio colombiano, la 
 > *"Funciones de Pedro: Edicion de videos tanto de contenido para redes como del curso. Redaccion de guiones para redes sociales. Asesoria en creacion de contenido y marketing. Gestionar cuentas de Tik Tok y YouTube Shorts y publicar el contenido. Optimizar el tunel de ventas desde redes sociales"*
 > -- Acuerdo de Socios Propuesto por Oscar (SAS)
 
-**b) Conocimiento y gestion tecnologica:**
-- Configuracion y gestion de CRM (Kommo, ManyChat)
-- Gestion de pixel de Meta y campanas publicitarias
-- Automatizaciones de marketing
+**b) Herramienta tecnologica propia:**
 - Desarrollo de un Dashboard de Venta Consultiva en React desplegado con herramientas de Google Cloud, puesto a disposicion de la sociedad sin costo adicional mas alla del costo operativo de la herramienta
 
 **c) Infraestructura fisica:**
@@ -300,9 +297,7 @@ En los chats del equipo de trabajo y entre Oscar y Pedro se utilizan frecuenteme
 - Diseno sistema de simulacros pre y post estudio
 
 **Estrategia de marketing y ventas:**
-- Manejaba presupuesto de pauta en Meta
-- Decidia que campanas activar/desactivar (pruebas A/B)
-- Configuraba pixel de Meta, CRM Kommo, ManyChat
+- Participaba en discusiones sobre captacion de leads y proceso comercial
 - Redactaba guiones comerciales
 - Entrenaba directamente a la asesora de ventas
 
@@ -315,10 +310,10 @@ En los chats del equipo de trabajo y entre Oscar y Pedro se utilizan frecuenteme
 
 | Reunion | Rol de Pedro |
 |---------|-------------|
-| 16 mayo | Lidera cambio de campanas WhatsApp a formularios |
-| 11 junio | Supervisa presupuesto publicitario, entrena asesora, propone nuevo vendedor |
+| 16 mayo | Participa en discusion sobre discrepancia de leads y alternativas de captacion |
+| 11 junio | Entrena asesora, propone nuevo vendedor y revisa el proceso comercial |
 | 13 junio | Diagnostica baja asistencia a citas, propone mejoras al proceso |
-| 16 junio | Impulsa cobro por semana de prueba, optimiza CRM |
+| 16 junio | Impulsa cobro por semana de prueba y crea flujograma de seguimiento |
 | 27 junio | Evalua modelo hibrido con consultor externo como co-decisor |
 | 14 julio | Debate propiedad de app, reestructura presentacion de ventas |
 | 18 julio | Reafirma calidad de socio vs. empleado |
@@ -457,7 +452,9 @@ El cambio fue descubierto por Pedro mediante el historial de versiones de Google
 | 13 | 07/07/2025 | $6.000.000 |
 | 14 | 24/07/2025 | $6.000.000 |
 | | **Subtotal 2025 (7 transferencias)** | **$74.952.926** |
-| | **TOTAL GENERAL (14 transferencias)** | **$99.319.834** |
+| | **SUBTOTAL CUENTA PERSONAL (14 transferencias)** | **$99.319.834** |
+
+**Nota de actualizacion:** A ese subtotal personal se suman pagos canalizados via Doctor Flight S.A.S. por **$23.025.231**, por lo que el **total acreditado corregido** asciende a **$122.345.065 COP**.
 
 **Observaciones probatorias:**
 - Montos variables (de $1.4M a $16.7M) = participacion en utilidades, NO honorarios fijos
@@ -533,10 +530,10 @@ El cambio fue descubierto por Pedro mediante el historial de versiones de Google
 ## 4.7 ACTAS DE REUNIONES Y TRANSCRIPCIONES
 
 ### PRUEBA 22: Reuniones documentadas (7 reuniones de 2025)
-- 16 mayo: Discrepancia leads, cambio a formularios
-- 11 junio: Guion de ventas, pago campanas, nuevo vendedor
+- 16 mayo: Discrepancia de leads y alternativas de captacion
+- 11 junio: Guion de ventas, revision del proceso comercial, nuevo vendedor
 - 13 junio: Proceso de agendamiento, calidad de leads
-- 16 junio: Cobro semana prueba, optimizacion CRM
+- 16 junio: Cobro semana prueba, flujograma de seguimiento
 - 27 junio: Modelo hibrido con consultor externo
 - 14 julio: Propiedad de app, presentacion de ventas
 - 18 julio: Seguimiento Notion, roles de equipo
@@ -673,7 +670,7 @@ El cambio fue descubierto por Pedro mediante el historial de versiones de Google
 
 Pedro redacto decenas de guiones que constituyen la voz comercial y educativa de ParetoMed:
 - **Guiones comerciales Q1 2025:** Multiples campanas publicitarias completas
-- **VSL (Video Sales Letter):** Guion de 3 minutos para landing page con estructura profesional (gancho, problema, agitacion, solucion, credibilidad, oferta)
+- **VSL (Video Sales Letter):** Guion de 3 minutos con estructura profesional (gancho, problema, agitacion, solucion, credibilidad, oferta)
 - **Contenido educativo medico:** Casos clinicos explicados (EKG, nefrologia, hematologia, acidosis metabolica)
 - **Video introductorio a la plataforma:** 2 versiones completas, incluyendo descripcion detallada de toda la metodologia semanal
 - **Tips para entrevista de residencia:** Guion completo para modulo de preparacion de entrevistas
@@ -728,10 +725,10 @@ Pedro redacto decenas de guiones que constituyen la voz comercial y educativa de
 | 13 | 07/07/2025 | $6.000.000 |
 | 14 | 24/07/2025 | $6.000.000 |
 | | **Subtotal 2025** | **$74.952.926** |
-| | **TOTAL RECIBIDO** | **$99.319.834** |
+| | **SUBTOTAL RECIBIDO EN CUENTA PERSONAL** | **$99.319.834** |
 
 ### Proyeccion financiera:
-Si Pedro recibio $99.319.834 como 20% de las utilidades netas, las utilidades netas totales del negocio fueron aproximadamente **$496.599.170 COP**. Comparado con los ingresos brutos reportados de $709M, esto implica costos operativos de aprox. $212M (30% del ingreso bruto), cifra razonable para un negocio digital.
+Si Pedro recibio **$122.345.065** como 20% de las utilidades netas, las utilidades netas totales del negocio fueron aproximadamente **$611.725.325 COP**. El subtotal de $99.319.834 corresponde solo a la cuenta personal. Comparado con los ingresos brutos reportados y los comprobantes disponibles, esto refuerza que la muestra documental es parcial y que se requiere un peritaje contable integral.
 
 ## 5.3 Valoracion del Patrimonio de ParetoMed
 
@@ -893,8 +890,8 @@ La firma EF Legal (abogados previos de Pedro) estimo una cuantia de **$330.000.0
 | **Extractos bancarios de Oscar/ParetoMed** | Bancolombia (solicitar via juez) | Determinar ingresos reales del negocio y verificar el 20% |
 | **Historial de versiones completo** del Google Doc del acuerdo de socios | Google (solicitar via juez o evidencia digital) | Probar la manipulacion del documento: quien, cuando, que cambio |
 | **Registros de la plataforma ParetoMed** (Learnpress/Wordpress) | Servidor de ParetoMed | Acreditar contenido editado por Pedro |
-| **Registros de Meta Business Manager** | Meta/Facebook | Probar que Pedro gestionaba campanas publicitarias |
-| **Registros de CRM Kommo/ManyChat** | Kommo, ManyChat | Probar que Pedro gestionaba infraestructura tecnologica |
+| **Registros de Meta Business Manager** | Meta/Facebook | Verificar historico de campanas, accesos y titularidad de la cuenta del negocio |
+| **Registros de CRM Kommo/ManyChat** | Kommo, ManyChat | Verificar existencia, uso y titularidad de esas herramientas dentro del negocio |
 | **Facturas de Doctor Flight S.A.S.** a ParetoMed (2025) | DIAN/Contabilidad | Cuantificar pagos de 2025 |
 | **Grabaciones de las reuniones de 2025** | Google Meet (verificar si se guardaron) | Evidencia adicional de co-direccion |
 | **Certificado de existencia** de ParetoMed como establecimiento comercial | Camara de Comercio Barranquilla (Matricula 865.875) | Verificar estado actual del registro |
@@ -946,7 +943,7 @@ La firma EF Legal (abogados previos de Pedro) estimo una cuantia de **$330.000.0
 2. **Carta de Recomendacion FIRMADA por Oscar** (27/04/2024) nombrando a Pedro "Subdirector Academico y Comercial" - cargo directivo incompatible con prestacion de servicios (PRUEBA 25)
 3. **Nota manuscrita de Oscar** admitiendo que el 20% "no se justifican por una labor que es contratable" (PRUEBA 27)
 4. **Historial de versiones** que evidencia manipulacion documental (cambio "acciones" por "utilidades")
-5. **14 transferencias bancarias documentadas** por $99.319.834 COP total, correspondientes al 20% de utilidades durante 14 meses con liquidaciones detalladas
+5. **Pagos acreditados a Pedro** por **$122.345.065 COP** (14 transferencias a cuenta personal + pagos canalizados via Doctor Flight), consistentes con el 20% de utilidades durante la operacion
 6. **Participacion documentada** de Pedro en decisiones estrategicas (no solo ejecucion de tareas)
 7. **Multiples borradores de acuerdo de socios** que confirman la intencion de formalizar
 8. **238 obras audiovisuales unicas (476 registros)** en DNDA a nombre de Pedro (como AUTOR/DIRECTOR/PRODUCTOR, Oscar solo como interprete)
@@ -1035,7 +1032,7 @@ La firma EF Legal (abogados previos de Pedro) estimo una cuantia de **$330.000.0
 Se recomienda que los abogados:
 - Verifiquen la autenticidad de cada documento
 - Soliciten peritaje informatico sobre el historial de versiones del acuerdo en Google Docs
-- Obtengan extractos bancarios completos para corroborar las 14 transferencias documentadas ($99.319.834 COP total) y verificar si existen pagos adicionales
+- Obtengan extractos bancarios completos de la cuenta personal de Pedro y de Doctor Flight S.A.S. para corroborar el total acreditado de **$122.345.065 COP** y verificar si existen pagos adicionales
 - Consideren acumular pretensiones de propiedad intelectual (via DNDA) con la demanda de sociedad de hecho
 - Evaluen la estrategia complementaria de EF Legal ($330M via derechos de autor) como via adicional o subsidiaria
 

@@ -18,41 +18,46 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return typeof value === 'string' && value.trim().length > 0;
             }
 
+            function toFiniteNumber(value) {
+                const parsed = Number(value);
+                return Number.isFinite(parsed) ? parsed : null;
+            }
+
             function mergeUniqueStrings(...arrays) {
                 return [...new Set(arrays.flat().filter(Boolean))];
             }
 
             function mergeFragments(localFragments, remoteFragments) {
-                const merged = [];
-                const seen = new Set();
-                [...(remoteFragments || []), ...(localFragments || [])].forEach(fragment => {
-                    const key = [
-                        fragment.cita || '',
-                        fragment.fuente || '',
-                        fragment.linea || '',
-                        fragment.fecha || ''
-                    ].join('|');
-                    if (seen.has(key)) return;
-                    seen.add(key);
-                    merged.push(fragment);
-                });
-                return merged;
+                // Los extractos curados del build local son la fuente canónica.
+                // Supabase solo debe suplir fragmentos cuando el hecho local no trae ninguno.
+                if (Array.isArray(localFragments) && localFragments.length > 0) {
+                    return dedupeFragmentList(localFragments);
+                }
+                return dedupeFragmentList(remoteFragments || []);
             }
 
-            function mergeHecho(localHecho, remoteHecho) {
-                const merged = { ...(localHecho || {}), ...(remoteHecho || {}) };
-                merged.id = remoteHecho?.id || localHecho?.id;
-                merged.numero = Number.isFinite(remoteHecho?.numero) ? remoteHecho.numero : localHecho?.numero;
-                merged.ordinal = hasText(remoteHecho?.ordinal) ? remoteHecho.ordinal : localHecho?.ordinal;
-                merged.capitulo_id = hasText(remoteHecho?.capitulo_id) ? remoteHecho.capitulo_id : (localHecho?.capitulo_id || localHecho?.capitulo);
+            function mergeHecho(localHecho, remoteHecho, allowedProofIds) {
+                // El relato canónico vive en el build local. Supabase solo puede
+                // suplir pruebas o fragmentos cuando el build local no los trae,
+                // nunca sobreescribir títulos ni textos porque allí quedaron
+                // datos viejos y mezclados.
+                const merged = { ...(remoteHecho || {}), ...(localHecho || {}) };
+                merged.id = localHecho?.id || remoteHecho?.id;
+                merged.numero = toFiniteNumber(localHecho?.numero) ?? toFiniteNumber(remoteHecho?.numero) ?? null;
+                merged.orden_documento = toFiniteNumber(localHecho?.orden_documento) ?? toFiniteNumber(remoteHecho?.orden_documento) ?? null;
+                merged.ordinal = hasText(localHecho?.ordinal) ? localHecho.ordinal : remoteHecho?.ordinal;
+                merged.capitulo_id = hasText(localHecho?.capitulo_id) ? localHecho.capitulo_id : (remoteHecho?.capitulo_id || localHecho?.capitulo);
                 merged.capitulo = merged.capitulo_id;
-                merged.source_key = hasText(remoteHecho?.source_key) ? remoteHecho.source_key : localHecho?.source_key;
-                merged.resumen = hasText(remoteHecho?.resumen) ? remoteHecho.resumen : localHecho?.resumen;
-                merged.texto_completo = hasText(remoteHecho?.texto_completo) ? remoteHecho.texto_completo : localHecho?.texto_completo;
-                merged.texto_completo_html = hasText(remoteHecho?.texto_completo_html) ? remoteHecho.texto_completo_html : localHecho?.texto_completo_html;
-                merged.titulo_corto = hasText(remoteHecho?.titulo_corto) ? remoteHecho.titulo_corto : localHecho?.titulo_corto;
-                merged.nota_abogado = hasText(remoteHecho?.nota_abogado) ? remoteHecho.nota_abogado : localHecho?.nota_abogado;
-                merged.pruebas = mergeUniqueStrings(localHecho?.pruebas || [], remoteHecho?.pruebas || []);
+                merged.source_key = hasText(localHecho?.source_key) ? localHecho.source_key : remoteHecho?.source_key;
+                merged.resumen = hasText(localHecho?.resumen) ? localHecho.resumen : remoteHecho?.resumen;
+                merged.texto_completo = hasText(localHecho?.texto_completo) ? localHecho.texto_completo : remoteHecho?.texto_completo;
+                merged.texto_completo_html = hasText(localHecho?.texto_completo_html) ? localHecho.texto_completo_html : remoteHecho?.texto_completo_html;
+                merged.titulo_corto = hasText(localHecho?.titulo_corto) ? localHecho.titulo_corto : remoteHecho?.titulo_corto;
+                merged.nota_abogado = hasText(localHecho?.nota_abogado) ? localHecho.nota_abogado : remoteHecho?.nota_abogado;
+                const filteredRemoteProofs = (remoteHecho?.pruebas || []).filter(proofId => allowedProofIds.has(proofId));
+                merged.pruebas = (localHecho?.pruebas && localHecho.pruebas.length > 0)
+                    ? [...localHecho.pruebas]
+                    : filteredRemoteProofs;
                 merged.fragmentos_clave = mergeFragments(localHecho?.fragmentos_clave || [], remoteHecho?.fragmentos_clave || []);
                 return merged;
             }
@@ -66,6 +71,35 @@ document.addEventListener('DOMContentLoaded', async () => {
                     merged.push(id);
                 });
                 return merged;
+            }
+
+            function buildAugmentedCaseData(localData, remoteData) {
+                const localHechos = localData?.hechos || {};
+                const remoteHechos = remoteData?.hechos || {};
+                const mergedHechos = {};
+                const allowedProofIds = new Set(Object.keys(localData?.pruebas_catalogo || {}));
+                const ignoredRemoteIds = Object.keys(remoteHechos).filter(id => !localHechos[id]);
+
+                Object.keys(localHechos).forEach(id => {
+                    mergedHechos[id] = mergeHecho(localHechos[id], remoteHechos[id], allowedProofIds);
+                });
+
+                const localCapitulos = localData?.capitulos || [];
+
+                return {
+                    ...localData,
+                    capitulos: localCapitulos.map(localCap => ({
+                        ...localCap,
+                        hechos: mergeChapterHechos(localCap.hechos, [])
+                    })),
+                    hechos: mergedHechos,
+                    pruebas_catalogo: { ...(localData?.pruebas_catalogo || {}) },
+                    pruebas_urls: { ...(localData?.pruebas_urls || {}) },
+                    pruebas_meta: { ...(localData?.pruebas_meta || {}) },
+                    documentos: { ...(localData?.documentos || {}) },
+                    archivos_crudos: [...(localData?.archivos_crudos || [])],
+                    ignored_remote_hechos: ignoredRemoteIds
+                };
             }
 
             const [capRes, hechosRes, pruebasRes, mappingRes, fragRes] = await Promise.all([
@@ -95,6 +129,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (!hechoToFragmentos[f.hecho_id]) hechoToFragmentos[f.hecho_id] = [];
                 hechoToFragmentos[f.hecho_id].push({
                     cita: f.cita,
+                    cita_exacta: f.cita_exacta || null,
                     fuente: f.fuente,
                     linea: f.linea,
                     fecha: f.fecha,
@@ -125,9 +160,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             hechosRes.data.forEach(h => {
                 hechos[h.id] = {
                     id: h.id,
-                    numero: h.numero,
+                    numero: toFiniteNumber(h.numero),
+                    orden_documento: toFiniteNumber(h.orden_documento),
                     ordinal: h.ordinal,
                     capitulo_id: h.capitulo_id,
+                    source_key: h.source_key || null,
                     resumen: h.resumen,
                     texto_completo: h.texto_completo,
                     texto_completo_html: h.texto_completo_html,
@@ -148,46 +185,25 @@ document.addEventListener('DOMContentLoaded', async () => {
                 };
             });
 
-            // Mezcla resiliente: si Supabase trae algo incompleto, conservamos el fallback local.
+            const remoteSnapshot = {
+                capitulos,
+                hechos,
+                pruebas_catalogo
+            };
+
+            // Mezcla resiliente y local-first:
+            // lo canónico (estructura, catálogo, URLs y metadatos de pruebas) permanece local;
+            // Supabase solo enriquece hechos existentes y aporta hechos remotos faltantes.
             if (localCaseData) {
-                const localHechos = localCaseData.hechos || {};
-                const mergedHechos = {};
-                const mergedIds = new Set([...Object.keys(localHechos), ...Object.keys(hechos)]);
-                mergedIds.forEach(id => {
-                    mergedHechos[id] = mergeHecho(localHechos[id], hechos[id]);
-                });
-
-                const localCapitulos = localCaseData.capitulos || [];
-                const remoteCapitulos = capitulos || [];
-                const remoteCapMap = Object.fromEntries(remoteCapitulos.map(cap => [cap.id, cap]));
-                const localCapMap = Object.fromEntries(localCapitulos.map(cap => [cap.id, cap]));
-                const mergedCapitulos = [];
-                const seenCapIds = new Set();
-
-                localCapitulos.forEach(localCap => {
-                    const remoteCap = remoteCapMap[localCap.id];
-                    mergedCapitulos.push({
-                        id: localCap.id,
-                        numero: remoteCap?.numero || localCap.numero,
-                        titulo: remoteCap?.titulo || localCap.titulo,
-                        hechos: mergeChapterHechos(localCap.hechos, remoteCap?.hechos)
-                    });
-                    seenCapIds.add(localCap.id);
-                });
-
-                remoteCapitulos.forEach(remoteCap => {
-                    if (seenCapIds.has(remoteCap.id)) return;
-                    mergedCapitulos.push({
-                        id: remoteCap.id,
-                        numero: remoteCap.numero,
-                        titulo: remoteCap.titulo,
-                        hechos: mergeChapterHechos(localCapMap[remoteCap.id]?.hechos, remoteCap.hechos)
-                    });
-                });
-
-                CASE_DATA.capitulos = mergedCapitulos;
-                CASE_DATA.hechos = mergedHechos;
-                CASE_DATA.pruebas_catalogo = { ...(localCaseData.pruebas_catalogo || {}), ...pruebas_catalogo };
+                const mergedCaseData = buildAugmentedCaseData(localCaseData, remoteSnapshot);
+                CASE_DATA.capitulos = mergedCaseData.capitulos;
+                CASE_DATA.hechos = mergedCaseData.hechos;
+                CASE_DATA.pruebas_catalogo = mergedCaseData.pruebas_catalogo;
+                CASE_DATA.pruebas_urls = mergedCaseData.pruebas_urls;
+                CASE_DATA.pruebas_meta = mergedCaseData.pruebas_meta;
+                CASE_DATA.documentos = mergedCaseData.documentos;
+                CASE_DATA.archivos_crudos = mergedCaseData.archivos_crudos;
+                CASE_DATA.ignored_remote_hechos = mergedCaseData.ignored_remote_hechos;
             } else {
                 window.CASE_DATA = {
                     capitulos,
@@ -202,7 +218,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             const finalCaseData = typeof CASE_DATA !== 'undefined' ? CASE_DATA : window.CASE_DATA;
             const finalFactsCount = Object.keys((finalCaseData || {}).hechos || {}).length;
-            console.log(`[Supabase] Data loaded: ${capitulos.length} capitulos remotos, ${Object.keys(hechos).length} hechos remotos, ${finalFactsCount} hechos finales tras merge resiliente`);
+            const ignoredRemoteCount = (finalCaseData?.ignored_remote_hechos || []).length;
+            console.log(`[Supabase] Data loaded: ${capitulos.length} capitulos remotos, ${Object.keys(hechos).length} hechos remotos, ${finalFactsCount} hechos finales tras merge local-first`);
+            if (ignoredRemoteCount > 0) {
+                console.warn(`[Supabase] ${ignoredRemoteCount} hechos remotos fueron ignorados para no desincronizar la estructura local.`);
+            }
         } catch (err) {
             console.error('[Supabase] Error loading data:', err);
             console.log('[Supabase] Falling back to static data.js');
@@ -211,6 +231,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Load data from Supabase before rendering
     await loadFromSupabase();
+    normalizeCaseDataPortalPaths(typeof CASE_DATA !== 'undefined' ? CASE_DATA : window.CASE_DATA);
 
     const DOM = {
         tabs: document.querySelectorAll('.tab-btn'),
@@ -283,12 +304,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     function computeStrength(h) {
         let s = 0;
         const all = JSON.stringify(h).toLowerCase();
+        const uniqueFragments = dedupeFragmentList(h.fragmentos_clave || []);
         if (all.includes('confesión') || all.includes('confesion extrajudicial')) s += 2;
         else if (all.includes('reconoce') || all.includes('admite')) s += 1;
         if (all.includes('firmad')) s += 1;
         if (h.pruebas && h.pruebas.length >= 3) s += 2;
         else if (h.pruebas && h.pruebas.length >= 1) s += 1;
-        if (h.fragmentos_clave && h.fragmentos_clave.length >= 3) s += 1;
+        if (uniqueFragments.length >= 3) s += 1;
         return Math.min(s, 5);
     }
 
@@ -297,7 +319,182 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function normalizeSearchText(value) {
-        return stripAccents(String(value || '').toLowerCase()).replace(/\s+/g, ' ').trim();
+        return stripAccents(String(value || '').toLowerCase())
+            .replace(/[…]/g, ' ')
+            .replace(/[,.;:?!"'«»()\-]/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+    }
+
+    function mergeFragmentFieldSet(baseFragment, incomingFragment) {
+        return {
+            ...baseFragment,
+            ...incomingFragment,
+            cita: incomingFragment?.cita || baseFragment?.cita || null,
+            cita_exacta: incomingFragment?.cita_exacta || baseFragment?.cita_exacta || null,
+            fuente: incomingFragment?.fuente || baseFragment?.fuente || null,
+            linea: incomingFragment?.linea ?? baseFragment?.linea ?? null,
+            fecha: incomingFragment?.fecha || baseFragment?.fecha || null,
+            autor: incomingFragment?.autor || baseFragment?.autor || null,
+            relevancia: incomingFragment?.relevancia || baseFragment?.relevancia || null
+        };
+    }
+
+    function buildFragmentIdentityKey(fragment) {
+        const quote = normalizeSearchText(fragment?.cita_exacta || fragment?.cita || '');
+        const source = normalizeSearchText(fragment?.fuente || '');
+        const author = normalizeSearchText(fragment?.autor || '');
+
+        if (quote) {
+            return [quote, source, author].join('|');
+        }
+
+        const date = normalizeSearchText(fragment?.fecha || '');
+        const line = String(fragment?.linea ?? '').trim();
+        const relevance = normalizeSearchText(fragment?.relevancia || '');
+        return [source, author, date, line, relevance].join('|');
+    }
+
+    function dedupeFragmentList(fragments) {
+        const merged = new Map();
+
+        (fragments || []).forEach(fragment => {
+            const key = buildFragmentIdentityKey(fragment);
+            merged.set(key, mergeFragmentFieldSet(merged.get(key), fragment));
+        });
+
+        return [...merged.values()];
+    }
+
+    let portalAssetPrefix = '';
+
+    function sanitizeLegacyPortalPath(path) {
+        if (typeof path !== 'string' || path.length === 0) return path;
+        if (/^(?:https?:)?\/\//i.test(path) || /^(?:blob|data):/i.test(path)) {
+            return path;
+        }
+
+        return String(path)
+            .replace(/\\/g, '/')
+            .replace(/^\.\//, '')
+            .replace(/^(?:\.\.\/)?dist\//, '');
+    }
+
+    function isPortalAssetPath(path) {
+        return /^(docs|assets|raw_source)\//.test(String(path || '').replace(/\\/g, '/').replace(/^\.\//, ''));
+    }
+
+    function stripKnownPortalPrefix(path) {
+        return sanitizeLegacyPortalPath(path);
+    }
+
+    function normalizeCaseDataPortalPaths(caseData) {
+        if (!caseData || caseData.__portal_paths_normalized) return;
+
+        Object.values(caseData.pruebas_urls || {}).forEach(urls => {
+            if (!urls) return;
+            urls.html = sanitizeLegacyPortalPath(urls.html) || null;
+            urls.raw = sanitizeLegacyPortalPath(urls.raw) || null;
+            urls.multiplehtml = Array.isArray(urls.multiplehtml)
+                ? urls.multiplehtml.map(sanitizeLegacyPortalPath).filter(Boolean)
+                : null;
+            urls.multipleraw = Array.isArray(urls.multipleraw)
+                ? urls.multipleraw.map(sanitizeLegacyPortalPath).filter(Boolean)
+                : null;
+        });
+
+        Object.values(caseData.documentos || {}).forEach(doc => {
+            if (!doc) return;
+            doc.archivo_html = sanitizeLegacyPortalPath(doc.archivo_html) || null;
+        });
+
+        Object.values(caseData.pruebas_catalogo || {}).forEach(proof => {
+            if (!proof || !proof.archivo_url) return;
+            proof.archivo_url = sanitizeLegacyPortalPath(proof.archivo_url);
+        });
+
+        (caseData.archivos_crudos || []).forEach(file => {
+            if (!file) return;
+            file.ruta = sanitizeLegacyPortalPath(file.ruta) || null;
+        });
+
+        caseData.__portal_paths_normalized = true;
+    }
+
+    function inferPortalAssetPrefix() {
+        const pathname = decodeURIComponent(String(window.location.pathname || '')).replace(/\\/g, '/');
+        const pagePath = pathname.replace(/\/+$/, '');
+        const appScript = document.querySelector('script[src$="scripts/app.js"]')?.getAttribute('src') || '';
+
+        if (pagePath.includes('/src/') || /^src\//.test(appScript)) return '../dist/';
+        if (pagePath.includes('/dist/') || /^dist\//.test(appScript)) return '';
+        if (window.location.protocol === 'file:') {
+            if (/(^|\/)src(\/|$)/.test(pagePath)) return '../dist/';
+            if (/(^|\/)dist(\/|$)/.test(pagePath)) return '';
+        }
+        return '';
+    }
+
+    function buildPortalPathCandidates(normalizedPath) {
+        const cleanedPath = String(normalizedPath || '').replace(/\\/g, '/').replace(/^\.\//, '');
+        const baseAssetPath = stripKnownPortalPrefix(cleanedPath);
+
+        if (!isPortalAssetPath(baseAssetPath)) {
+            return [cleanedPath];
+        }
+
+        const inferredPrefix = portalAssetPrefix || inferPortalAssetPrefix();
+        const candidates = [
+            inferredPrefix ? `${inferredPrefix}${baseAssetPath}` : baseAssetPath,
+            baseAssetPath,
+            `../dist/${baseAssetPath}`
+        ];
+
+        if (/^(?:\.\.\/)?dist\//.test(cleanedPath)) {
+            candidates.unshift(cleanedPath);
+        }
+
+        return [...new Set(candidates.filter(Boolean))];
+    }
+
+    async function probeViewerUrl(url) {
+        if (!url || typeof fetch !== 'function' || /^(?:https?:)?\/\//i.test(url) || /^(?:blob|data):/i.test(url)) {
+            return true;
+        }
+
+        try {
+            const headResponse = await fetch(url, { method: 'HEAD', cache: 'no-store' });
+            if (headResponse.ok) return true;
+            if (headResponse.status !== 405) return false;
+        } catch (error) {
+            // Algunos servidores locales no soportan HEAD. Intentamos GET liviano.
+        }
+
+        try {
+            const getResponse = await fetch(url, {
+                method: 'GET',
+                cache: 'no-store',
+                headers: { Range: 'bytes=0-0' }
+            });
+            return getResponse.ok || getResponse.status === 206;
+        } catch (error) {
+            return false;
+        }
+    }
+
+    async function detectPortalAssetPrefix() {
+        portalAssetPrefix = inferPortalAssetPrefix();
+
+        const probePath = 'docs/chat-oscar-pedro.html';
+        const probeCandidates = buildPortalPathCandidates(probePath);
+
+        for (const probeUrl of probeCandidates) {
+            const isReachable = await probeViewerUrl(probeUrl);
+            if (isReachable) {
+                portalAssetPrefix = probeUrl.slice(0, -probePath.length);
+                return;
+            }
+        }
     }
 
     function slugifyPathSegment(segment, isFile) {
@@ -323,8 +520,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         return `${slug || 'archivo'}${ext}`;
     }
 
-    function resolvePortalUrl(rawUrl) {
+    function getResolvedPortalUrlParts(rawUrl) {
         if (!rawUrl) return rawUrl;
+        if (/^(?:https?:)?\/\//i.test(rawUrl) || /^(?:blob|data):/i.test(rawUrl)) {
+            return {
+                candidates: [rawUrl],
+                primary: rawUrl
+            };
+        }
 
         const hashIndex = rawUrl.indexOf('#');
         const baseWithQuery = hashIndex === -1 ? rawUrl : rawUrl.substring(0, hashIndex);
@@ -344,7 +547,201 @@ document.addEventListener('DOMContentLoaded', async () => {
             })
             .join('/');
 
-        return `${normalizedPath}${query}${hash}`;
+        const candidates = buildPortalPathCandidates(normalizedPath)
+            .map(candidatePath => `${candidatePath}${query}${hash}`);
+
+        return {
+            candidates,
+            primary: candidates[0]
+        };
+    }
+
+    function resolvePortalUrl(rawUrl) {
+        const resolved = getResolvedPortalUrlParts(rawUrl);
+        return resolved?.primary || rawUrl;
+    }
+
+    async function resolveAccessiblePortalUrl(rawUrl) {
+        const resolved = getResolvedPortalUrlParts(rawUrl);
+        const candidates = resolved?.candidates || [];
+
+        for (const candidate of candidates) {
+            const { base } = splitUrlHash(candidate);
+            const isReachable = await probeViewerUrl(base);
+            if (isReachable) {
+                if (candidate.startsWith('../dist/')) portalAssetPrefix = '../dist/';
+                else if (isPortalAssetPath(candidate)) portalAssetPrefix = '';
+                return candidate;
+            }
+        }
+
+        return resolved?.primary || rawUrl;
+    }
+
+    function humanizeViewerResourceLabel(url, fallbackLabel) {
+        if (!url) return fallbackLabel;
+
+        const cleanUrl = String(url).split('#')[0].split('?')[0];
+        const fileName = cleanUrl.split('/').pop() || '';
+        const baseName = fileName.replace(/\.[^.]+$/, '');
+        const humanized = baseName
+            .replace(/[-_]+/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+        if (!humanized) return fallbackLabel;
+        return humanized.charAt(0).toUpperCase() + humanized.slice(1);
+    }
+
+    function getHechoDisplayOrder(hecho) {
+        if (Number.isFinite(hecho?.orden_documento)) return hecho.orden_documento;
+        if (Number.isFinite(hecho?.numero)) return hecho.numero;
+        return Number.MAX_SAFE_INTEGER;
+    }
+
+    function compareHechosForDisplay(left, right) {
+        const orderDiff = getHechoDisplayOrder(left) - getHechoDisplayOrder(right);
+        if (orderDiff !== 0) return orderDiff;
+
+        const numberDiff = (left?.numero || 0) - (right?.numero || 0);
+        if (numberDiff !== 0) return numberDiff;
+
+        return String(left?.id || '').localeCompare(String(right?.id || ''));
+    }
+
+    function sortHechoIdsForDisplay(hechoIds) {
+        return [...(hechoIds || [])].sort((leftId, rightId) =>
+            compareHechosForDisplay(CASE_DATA.hechos?.[leftId], CASE_DATA.hechos?.[rightId])
+        );
+    }
+
+    function getCapituloDisplayOrder(capitulo) {
+        const orders = sortHechoIdsForDisplay(capitulo?.hechos)
+            .map(hechoId => getHechoDisplayOrder(CASE_DATA.hechos?.[hechoId]))
+            .filter(Number.isFinite);
+
+        return orders.length ? Math.min(...orders) : Number.MAX_SAFE_INTEGER;
+    }
+
+    function sortCapitulosForDisplay(capitulos) {
+        return [...(capitulos || [])].sort((left, right) => {
+            const orderDiff = getCapituloDisplayOrder(left) - getCapituloDisplayOrder(right);
+            if (orderDiff !== 0) return orderDiff;
+            return String(left?.id || '').localeCompare(String(right?.id || ''));
+        });
+    }
+
+    function renderProofLinksInHtml(html) {
+        if (!html) return '';
+
+        return String(html).replace(/\[((?:P-\d{2}(?:-[A-Za-z0-9]+)?)(?:\s*,\s*P-\d{2}(?:-[A-Za-z0-9]+)?)*)\]/g, (_, group) => (
+            group
+                .split(/\s*,\s*/)
+                .filter(Boolean)
+                .map(pruebaId => `<a href="#" class="prueba-link inline-prueba-link" data-prueba="${pruebaId}">${pruebaId}</a>`)
+                .join(', ')
+        ));
+    }
+
+    function buildViewerActionButton(url, title, label) {
+        return `<button class="btn-doc ver-doc-inline" data-url="${url}" data-title="${title}">${label}</button>`;
+    }
+
+    function buildProofActionButtons(urls, baseTitle) {
+        if (!urls) return '';
+
+        const buttons = [];
+
+        if (urls.multiplehtml && urls.multiplehtml.length > 0) {
+            if (urls.html) {
+                buttons.push(buildViewerActionButton(urls.html, baseTitle, `📄 ${humanizeViewerResourceLabel(urls.html, 'Documento principal')}`));
+            }
+
+            urls.multiplehtml.forEach((url, index) => {
+                buttons.push(buildViewerActionButton(
+                    url,
+                    `${baseTitle} — Documento ${index + 1}`,
+                    `📄 ${humanizeViewerResourceLabel(url, `Documento ${index + 1}`)}`
+                ));
+            });
+
+            if (urls.multipleraw && urls.multipleraw.length > 0) {
+                urls.multipleraw.forEach((url, index) => {
+                    buttons.push(buildViewerActionButton(
+                        url,
+                        `${baseTitle} — Soporte ${index + 1}`,
+                        `📎 ${humanizeViewerResourceLabel(url, `Soporte ${index + 1}`)}`
+                    ));
+                });
+            }
+
+            return buttons.join('');
+        }
+
+        if (urls.multipleraw && urls.multipleraw.length > 0) {
+            if (urls.html) {
+                buttons.push(buildViewerActionButton(urls.html, baseTitle, `📄 ${humanizeViewerResourceLabel(urls.html, 'Documento principal')}`));
+            }
+
+            urls.multipleraw.forEach((url, index) => {
+                buttons.push(buildViewerActionButton(
+                    url,
+                    `${baseTitle} — Anexo ${index + 1}`,
+                    `📎 ${humanizeViewerResourceLabel(url, `Anexo ${index + 1}`)}`
+                ));
+            });
+
+            return buttons.join('');
+        }
+
+        if (urls.raw) {
+            buttons.push(buildViewerActionButton(urls.raw, `${baseTitle} — Soporte original`, '📎 Abrir Soporte'));
+        }
+
+        if (urls.html) {
+            buttons.push(buildViewerActionButton(urls.html, baseTitle, urls.raw ? '💬 Ver Contexto' : '📄 Abrir Documento'));
+        }
+
+        return buttons.join('');
+    }
+
+    function resolvePruebaTarget(pruebaId) {
+        if (!pruebaId) return null;
+
+        const pid = String(pruebaId).trim();
+        const pidKey = pid.split('/')[0];
+        const urls = CASE_DATA.pruebas_urls?.[pidKey];
+        const meta = CASE_DATA.pruebas_meta?.[pidKey];
+
+        let url = null;
+        if (urls) {
+            if (urls.multiplehtml && urls.multiplehtml.length > 0) {
+                url = urls.html || urls.multiplehtml[0] || urls.raw || urls.multipleraw?.[0];
+            } else if (urls.multipleraw && urls.multipleraw.length > 0) {
+                url = urls.html || urls.multipleraw[0];
+            } else {
+                url = urls.raw || urls.html || null;
+            }
+        }
+
+        if (!url && pidKey === 'P-50') {
+            url = 'docs/transcripciones.html';
+        }
+
+        if (!url) {
+            const catalogDoc = CASE_DATA.pruebas_catalogo?.[pid] || CASE_DATA.pruebas_catalogo?.[pidKey];
+            if (catalogDoc?.archivo_url) {
+                url = catalogDoc.archivo_url;
+            }
+        }
+
+        if (!url) return null;
+
+        return {
+            id: pidKey,
+            url,
+            title: meta?.descripcion || pidKey
+        };
     }
 
     // --- Helper: render single fragment box ---
@@ -363,7 +760,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         let docBtn = '';
-        const citaEncoded = frag.cita ? frag.cita.replace(/"/g, '&quot;').substring(0, 120) : '';
+        const citaBusqueda = frag.cita_exacta || frag.cita || '';
+        const citaEncoded = citaBusqueda ? citaBusqueda.replace(/"/g, '&quot;').substring(0, 180) : '';
         if (frag.fuente && frag.linea) {
             const docObj = CASE_DATA.documentos[frag.fuente];
             const docName = docObj ? docObj.titulo : frag.fuente;
@@ -378,7 +776,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         return `<div class="fragment-box${isPosterior ? ' frag-posterior' : ''}">
             ${meta}
-            <blockquote>"${frag.cita}"</blockquote>
+            <blockquote>"${frag.cita || frag.cita_exacta || ''}"</blockquote>
             ${rel}
             ${docBtn ? `<div class="frag-actions">${docBtn}</div>` : ''}
         </div>`;
@@ -391,20 +789,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const meta = CASE_DATA.pruebas_meta ? CASE_DATA.pruebas_meta[pId] : null;
         const baseTitle = meta ? meta.descripcion : pId;
-
-        let links = '';
-        if (urls.multipleraw && urls.multipleraw.length > 0) {
-            links = urls.multipleraw.map((u, i) =>
-                `<button class="btn-doc ver-doc-inline" data-url="${u}" data-title="${baseTitle} (Anexo ${i+1})">📄 Anexo ${i+1}</button>`
-            ).join('');
-            if (urls.html) {
-                links = `<button class="btn-doc ver-doc-inline" data-url="${urls.html}" data-title="${baseTitle}">📄 Documento Principal</button>` + links;
-            }
-        } else if (urls.html) {
-            links = `<button class="btn-doc ver-doc-inline" data-url="${urls.html}" data-title="${baseTitle}">📄 Abrir Documento</button>`;
-        } else if (urls.raw) {
-            links = `<button class="btn-doc ver-doc-inline" data-url="${urls.raw}" data-title="${baseTitle}">📎 Abrir Archivo</button>`;
-        }
+        const links = buildProofActionButtons(urls, baseTitle);
         return links || `<span class="ev-no-link">Archivo no disponible digitalmente</span>`;
     }
 
@@ -445,8 +830,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!CASE_DATA || !CASE_DATA.capitulos) return;
 
         let html = '';
-        CASE_DATA.capitulos.forEach(capitulo => {
-            const hCount = capitulo.hechos.length;
+        sortCapitulosForDisplay(CASE_DATA.capitulos).forEach(capitulo => {
+            const hechoIds = sortHechoIdsForDisplay(capitulo.hechos);
+            const hCount = hechoIds.length;
             html += `
             <div class="chapter-block" id="cap-${capitulo.numero}" data-id="${capitulo.id}">
                 <div class="chapter-header" onclick="this.parentElement.classList.toggle('expanded')">
@@ -455,7 +841,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
                 <div class="chapter-content">`;
 
-            capitulo.hechos.forEach(hid => {
+            hechoIds.forEach(hid => {
                 const h = CASE_DATA.hechos[hid];
                 if (!h) return;
 
@@ -466,13 +852,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const tags = h.pruebas.map(p => {
                     const meta = CASE_DATA.pruebas_meta ? CASE_DATA.pruebas_meta[p] : null;
                     const cat = meta ? meta.categoria : '';
-                    return `<span class="tag tag-${cat}" title="${meta ? meta.descripcion : p}">${catIcon(cat)} ${p}</span>`;
+                    return `<button type="button" class="tag tag-${cat} prueba-link tag-link" data-prueba="${p}" title="${meta ? meta.descripcion : p}">${catIcon(cat)} ${p}</button>`;
                 }).join('');
 
                 // === CONTENIDO EXPANDIDO ===
 
                 // Texto legal completo
-                let bodyText = h.texto_completo_html || h.texto_completo || '';
+                let bodyText = renderProofLinksInHtml(h.texto_completo_html || h.texto_completo || '');
 
                 // Nota del abogado
                 let notaHtml = '';
@@ -482,8 +868,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // Extractos curados — ordenados cronológicamente, agrupados
                 let fragHtml = '';
-                if (h.fragmentos_clave && h.fragmentos_clave.length > 0) {
-                    const sorted = [...h.fragmentos_clave].sort((a, b) => {
+                const displayFragments = dedupeFragmentList(h.fragmentos_clave || []);
+                if (displayFragments.length > 0) {
+                    const sorted = [...displayFragments].sort((a, b) => {
                         const da = parseFragDate(a.fecha), db = parseFragDate(b.fecha);
                         if (!da && !db) return 0;
                         if (!da) return 1;
@@ -608,9 +995,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         let gridHtml = '';
         const sortedIds = Object.keys(pruebas).sort((a, b) => {
-            const numA = parseInt(a.replace('P-', ''), 10);
-            const numB = parseInt(b.replace('P-', ''), 10);
-            return numA - numB;
+            const [, numA, suffixA = ''] = String(a).match(/^P-(\d{2})(.*)$/) || [];
+            const [, numB, suffixB = ''] = String(b).match(/^P-(\d{2})(.*)$/) || [];
+            const diff = Number(numA || 0) - Number(numB || 0);
+            if (diff !== 0) return diff;
+            return suffixA.localeCompare(suffixB);
         });
 
         sortedIds.forEach(pId => {
@@ -618,21 +1007,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const u = urls[pId] || {};
             const cat = meta.categoria || '';
 
-            let actionBtns = '';
-            if (u.multipleraw && u.multipleraw.length > 0) {
-                if (u.html) {
-                    actionBtns += `<button class="btn-doc ver-doc-inline" data-url="${u.html}" data-title="${meta.descripcion}">📄 Ver Documento</button>`;
-                }
-                actionBtns += u.multipleraw.map((r, i) =>
-                    `<button class="btn-doc ver-doc-inline" data-url="${r}" data-title="${meta.descripcion} — Anexo ${i+1}">📎 Anexo ${i+1}</button>`
-                ).join('');
-            } else if (u.html) {
-                actionBtns = `<button class="btn-doc ver-doc-inline" data-url="${u.html}" data-title="${meta.descripcion}">📄 Ver Documento</button>`;
-            } else if (u.raw) {
-                actionBtns = `<button class="btn-doc ver-doc-inline" data-url="${u.raw}" data-title="${meta.descripcion}">📎 Abrir Archivo</button>`;
-            } else {
-                actionBtns = `<span class="prueba-no-link">⏳ Pendiente de digitalización</span>`;
-            }
+            const actionBtns = buildProofActionButtons(u, meta.descripcion) || `<span class="prueba-no-link">⏳ Pendiente de digitalización</span>`;
 
             gridHtml += `
             <div class="prueba-card-premium" data-cat="${cat}">
@@ -814,7 +1189,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <div class="card"><h3>Hechos</h3><div class="value">${hechosCount}</div><div class="card-sub">${capsCount} capítulos temáticos</div></div>
                 <div class="card"><h3>Pruebas</h3><div class="value">${pruebasCount}</div><div class="card-sub">corpus documental</div></div>
                 <div class="card card-accent"><h3>Confesiones</h3><div class="value">${confesiones}</div><div class="card-sub">extrajudiciales del demandado</div></div>
-                <div class="card"><h3>Ingresos Est.</h3><div class="value">$765M</div><div class="card-sub">COP (abr 2024 – ago 2025)</div></div>
+                <div class="card"><h3>Ingresos Est.</h3><div class="value">~$941M</div><div class="card-sub">COP estimados (abr 2024 – ago 2025)</div></div>
             </div>
 
             <div class="resumen-section">
@@ -833,8 +1208,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         {id:'P-09', cls:'te-admision', badgeCls:'badge-admision', badge:'ADMISIÓN', title:'[P-09] Nota manuscrita en Acuerdo de Socios', desc:'Oscar admite que el 20% "no se justifican por una labor que es contratable".', cita:'no se justifican por una labor que es contratable'},
                         {id:'P-41', cls:'te-admision', badgeCls:'badge-admision', badge:'ADMISIÓN', title:'[P-41] Audio 08/01/2025', desc:'"La firma como una mera formalidad" + "no alguien contratado, sino alguien que sepa que eso es suyo".', cita:'sino alguien que sepa que eso es suyo'},
                         {id:'P-06', cls:'', badgeCls:'badge-posterior', badge:'ALTERACIÓN', title:'[P-06/P-07] Google Doc modificado', desc:'Cambio de "acciones" por "utilidades" por usuario anónimo evidencia mala fe.', cita:'utilidades'},
-                        {id:'P-36', cls:'te-financiero', badgeCls:'badge-cert', badge:'FINANCIERO', title:'[P-36/P-37] 14 transferencias ($99.3M)', desc:'Montos variables ($1.4M a $16.7M) = 20% de utilidades netas. Inconsistente con honorarios fijos.', cita:'1.4'},
-                        {id:'P-42', cls:'te-financiero', badgeCls:'badge-cert', badge:'FINANCIERO', title:'[P-42] 376 comprobantes ($579M)', desc:'Ingresos brutos documentados. Pedro recibió el 19.52% ≈ 20% pactado.', cita:'20'},
+                        {id:'P-36', cls:'te-financiero', badgeCls:'badge-cert', badge:'FINANCIERO', title:'[P-36/P-37] 14 transferencias personales ($99.3M subtotal)', desc:'Ese subtotal personal ya refleja pagos variables; al sumar Doctor Flight el total acreditado asciende a $122.3M.', cita:'122.3'},
+                        {id:'P-42', cls:'te-financiero', badgeCls:'badge-cert', badge:'FINANCIERO', title:'[P-42] 376 comprobantes ($579M)', desc:'Los comprobantes documentan ingresos mínimos; frente a $122.3M acreditados a Pedro, confirman que la muestra es parcial.', cita:'579'},
                         {id:'P-22', cls:'', badgeCls:'badge-cert', badge:'CERTIFICACIÓN', title:'[P-22/P-23] DNDA — 238 obras', desc:'Pedro registrado como AUTOR/DIRECTOR/PRODUCTOR; Oscar como INTÉRPRETE.', cita:'PRODUCTOR'},
                         {id:'P-19', cls:'', badgeCls:'', badge:'PROCESAL', title:'[P-19] Constancia de No Conciliación', desc:'Agotamiento del requisito de procedibilidad. Vía judicial expedita.', cita:'Agotamiento'}
                     ].map(p => `
@@ -859,8 +1234,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <h3>Resumen Financiero</h3>
                 <div class="financial-grid">
                     <div class="fin-card"><div class="fin-label">Ingresos Documentados</div><div class="fin-value">$579.2M</div><div class="fin-sub">376 comprobantes (feb 2024 – sep 2025)</div></div>
-                    <div class="fin-card"><div class="fin-label">Ingresos Estimados</div><div class="fin-value">$765M</div><div class="fin-sub">Proyección: 20% a Pedro + margen 65%</div></div>
-                    <div class="fin-card"><div class="fin-label">Pagos a Pedro</div><div class="fin-value">$99.3M</div><div class="fin-sub">14 transferencias (may 2024 – ago 2025)</div></div>
+                    <div class="fin-card"><div class="fin-label">Ingresos Estimados</div><div class="fin-value">~$941M</div><div class="fin-sub">Proyección: total acreditado a Pedro + margen 65%</div></div>
+                    <div class="fin-card"><div class="fin-label">Pagos a Pedro</div><div class="fin-value">$122.3M</div><div class="fin-sub">14 transferencias personales + 4 pagos vía Doctor Flight</div></div>
                     <div class="fin-card fin-accent"><div class="fin-label">Pretensión (20%)</div><div class="fin-value">$240M</div><div class="fin-sub">Valoración ParetoMed: $1,200M</div></div>
                     <div class="fin-card fin-danger"><div class="fin-label">Utilidades Post-Ruptura</div><div class="fin-value">$22M+</div><div class="fin-sub">Ago–Oct 2025 adeudadas a Pedro</div></div>
                     <div class="fin-card"><div class="fin-label">Activos Declarados (CC)</div><div class="fin-value">$20M</div><div class="fin-sub">vs. $709M+ reales — subvaloración</div></div>
@@ -870,6 +1245,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // --- RENDERIZACIÓN INICIAL ---
+    await detectPortalAssetPrefix();
     renderHechos();
     renderPruebas();
     renderDocumentos();
@@ -904,33 +1280,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         const jumpPruebaBtn = e.target.closest('.btn-jump-prueba');
         if (jumpPruebaBtn) {
             const pid = jumpPruebaBtn.dataset.prueba;
-            const pTitle = jumpPruebaBtn.dataset.title;
             const pCita = jumpPruebaBtn.dataset.cita || null;
-            let pUrl = null;
-            
-            const pidKey = pid.split('/')[0];
-            
-            // 1. Intentar desde pruebas_urls (mapeo directo a HTML)
-            if (CASE_DATA.pruebas_urls && CASE_DATA.pruebas_urls[pidKey]) {
-                const mapping = CASE_DATA.pruebas_urls[pidKey];
-                pUrl = mapping.html || (mapping.raw ? mapping.raw : null);
-            } 
-            
-            // 2. Fallbacks especiales (P-50 es crucial y a veces falta en data.js)
-            if (!pUrl && pidKey === 'P-50') pUrl = 'docs/transcripciones.html';
-            
-            // 3. Intentar desde catálogo si aún no hay URL
-            if (!pUrl && CASE_DATA.pruebas_catalogo) {
-                const cat = CASE_DATA.pruebas_catalogo;
-                const doc = cat[pid] || cat[pidKey];
-                if (doc && doc.archivo_url) pUrl = doc.archivo_url;
-            }
+            const target = resolvePruebaTarget(pid);
             
             document.querySelector('[data-target="tab-pruebas"]').click();
             
             setTimeout(() => {
-                if (pUrl) {
-                    openInPruebasViewer(pUrl, pTitle, pCita);
+                if (target) {
+                    openInPruebasViewer(target.url, target.title, pCita);
                     pruebasSplit.classList.add('viewer-open');
                 } else {
                     console.error("No se encontró URL para la prueba:", pid);
@@ -948,6 +1305,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const viewerDownloadBtn = document.getElementById('viewer-download-btn');
     const closeViewerBtn = document.getElementById('close-viewer-btn');
     const mainSplitLayout = document.querySelector('.split-layout');
+    let viewerLoadRequestId = 0;
 
     // --- VISOR DE PRUEBAS (pestaña Pruebas) ---
     const pvIframe = document.getElementById('pv-iframe');
@@ -957,6 +1315,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     const pvDownloadBtn = document.getElementById('pv-download-btn');
     const pvCloseBtn = document.getElementById('pv-close-btn');
     const pruebasSplit = document.getElementById('pruebas-split');
+    let pruebasViewerLoadRequestId = 0;
+
+    function openProofInHechosViewer(pruebaId, sourceElement) {
+        const target = resolvePruebaTarget(pruebaId);
+        if (!target) {
+            console.error("No se encontró URL para la prueba:", pruebaId);
+            alert("No se encontró el archivo para la prueba " + pruebaId);
+            return;
+        }
+
+        openInViewer(target.url, target.title, null);
+        mainSplitLayout.classList.add('viewer-open');
+
+        document.querySelectorAll('.hecho-card').forEach(card => card.classList.remove('active-fact'));
+        const parentCard = sourceElement?.closest('.hecho-card');
+        if (parentCard) parentCard.classList.add('active-fact');
+    }
 
     // --- Helper: split URL into base path and hash fragment ---
     function splitUrlHash(rawUrl) {
@@ -977,6 +1352,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     closeViewerBtn.addEventListener('click', () => {
+        viewerLoadRequestId += 1;
         mainSplitLayout.classList.remove('viewer-open');
         viewerIframe.src = 'about:blank';
         viewerIframe.removeAttribute('data-current-doc');
@@ -985,6 +1361,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Visor en pestaña Hechos
     document.getElementById('tab-hechos').addEventListener('click', (e) => {
+        const proofLink = e.target.closest('.prueba-link');
+        if (proofLink) {
+            e.preventDefault();
+            e.stopPropagation();
+            openProofInHechosViewer(proofLink.dataset.prueba, proofLink);
+            return;
+        }
+
         const btn = e.target.closest('.ver-doc-inline');
         if (!btn) return;
         e.preventDefault();
@@ -1063,7 +1447,89 @@ document.addEventListener('DOMContentLoaded', async () => {
             return null;
         }
 
-        return findBestMatch(fullNeedle) || findBestMatch(shortNeedle);
+        function buildSearchNeedles(text) {
+            const raw = String(text || '').trim();
+            const needles = new Set();
+            const addNeedle = (value, minLength) => {
+                const normalized = normalizeSearchText(value);
+                if (normalized.length >= minLength) {
+                    needles.add(normalized);
+                }
+            };
+
+            addNeedle(raw, 5);
+            raw.split(/(?:\.\.\.|…|\n)+/).forEach(part => addNeedle(part, 14));
+            raw.split(/[.!?;:]+/).forEach(part => addNeedle(part, 18));
+
+            const normalized = normalizeSearchText(raw);
+            if (normalized.length > 90) {
+                addNeedle(normalized.substring(0, 160), 40);
+                addNeedle(normalized.slice(-160), 40);
+            }
+
+            return Array.from(needles).sort((a, b) => b.length - a.length);
+        }
+
+        function extractSearchKeywords(text) {
+            return Array.from(new Set(
+                normalizeSearchText(text)
+                    .split(' ')
+                    .filter(token => token.length >= 4)
+            ));
+        }
+
+        function isSubstantiveLineElement(element) {
+            const raw = String(element?.textContent || '').trim();
+            const normalized = normalizeSearchText(raw);
+            return normalized.length >= 8 && !/^\d{2}:\d{2}$/.test(raw) && raw !== '.';
+        }
+
+        function findWindowedLineMatch() {
+            const lineElements = Array.from(doc.querySelectorAll('.line, .chat-line, .doc-line'));
+            if (!lineElements.length) return null;
+
+            const needles = buildSearchNeedles(cita);
+            const keywords = extractSearchKeywords(cita);
+            const maxWindow = Math.min(4, lineElements.length);
+            let bestMatch = null;
+
+            for (let start = 0; start < lineElements.length; start++) {
+                for (let size = 1; size <= maxWindow && (start + size) <= lineElements.length; size++) {
+                    const windowElements = lineElements.slice(start, start + size);
+                    const windowText = normalizeSearchText(windowElements.map(element => element.textContent).join(' '));
+                    if (!windowText) continue;
+
+                    const exactHits = needles.filter(needle => windowText.includes(needle));
+                    let score = null;
+
+                    if (exactHits.length > 0) {
+                        score = exactHits.reduce((sum, needle) => sum + Math.min(needle.length, 220), 0) + (exactHits.length * 120);
+                    } else if (keywords.length >= 4) {
+                        const hits = keywords.filter(keyword => windowText.includes(keyword));
+                        const ratio = hits.length / keywords.length;
+                        if (hits.length >= Math.min(4, keywords.length) && ratio >= 0.58) {
+                            score = Math.round(ratio * 100) + (hits.length * 8);
+                        }
+                    }
+
+                    if (score === null) continue;
+
+                    const anchor = windowElements.find(isSubstantiveLineElement) || windowElements[0];
+                    const candidate = {
+                        element: anchor,
+                        score: score - ((size - 1) * 4)
+                    };
+
+                    if (!bestMatch || candidate.score > bestMatch.score) {
+                        bestMatch = candidate;
+                    }
+                }
+            }
+
+            return bestMatch ? bestMatch.element : null;
+        }
+
+        return findBestMatch(fullNeedle) || findBestMatch(shortNeedle) || findWindowedLineMatch();
     }
 
     function findViaNativeSelection(win, cita) {
@@ -1144,9 +1610,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
     // --- Visor de Pruebas: abrir documento ---
-    function openInPruebasViewer(url, title, cita) {
+    async function openInPruebasViewer(url, title, cita) {
         if (!url) return;
-        url = normalizeViewerUrl(url);
+        const requestId = ++pruebasViewerLoadRequestId;
+        pvTitleText.textContent = title;
+        pvPlaceholder.innerHTML = '<div class="placeholder-icon rotating">⏳</div><h3>Resolviendo ruta del archivo...</h3>';
+        pvPlaceholder.style.display = 'flex';
+        pvIframe.style.display = 'none';
+        const resolvedUrl = await resolveAccessiblePortalUrl(url);
+        if (requestId !== pruebasViewerLoadRequestId) return;
+
+        url = normalizeViewerUrl(resolvedUrl);
 
         const { base: baseUrl, hash } = splitUrlHash(url);
 
@@ -1176,9 +1650,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             pvPlaceholder.style.display = 'flex';
             pvIframe.style.display = 'none';
             pvIframe.onerror = () => {
+                if (requestId !== pruebasViewerLoadRequestId) return;
                 pvPlaceholder.innerHTML = '<div class="placeholder-icon">❌</div><h3>Error al cargar</h3>';
             };
             pvIframe.onload = () => {
+                if (requestId !== pruebasViewerLoadRequestId) return;
                 pvPlaceholder.style.display = 'none';
                 pvIframe.style.display = 'block';
                 pvIframe.setAttribute('data-current-doc', baseUrl);
@@ -1190,6 +1666,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // --- Visor de Pruebas: cerrar ---
     pvCloseBtn.addEventListener('click', () => {
+        pruebasViewerLoadRequestId += 1;
         pruebasSplit.classList.remove('viewer-open');
         pvIframe.src = 'about:blank';
         pvIframe.removeAttribute('data-current-doc');
@@ -1216,9 +1693,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (parentCard) parentCard.classList.add('active-prueba');
     });
 
-    function openInViewer(url, title, cita) {
+    async function openInViewer(url, title, cita) {
         if (!url) return;
-        url = normalizeViewerUrl(url);
+        const requestId = ++viewerLoadRequestId;
+        viewerTitleText.textContent = title;
+        viewerPlaceholder.innerHTML = '<div class="placeholder-icon rotating">⏳</div><h3>Resolviendo ruta del archivo...</h3>';
+        viewerPlaceholder.style.display = 'flex';
+        viewerIframe.style.display = 'none';
+        const resolvedUrl = await resolveAccessiblePortalUrl(url);
+        if (requestId !== viewerLoadRequestId) return;
+
+        url = normalizeViewerUrl(resolvedUrl);
 
         const { base: baseUrl, hash } = splitUrlHash(url);
 
@@ -1248,9 +1733,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             viewerPlaceholder.style.display = 'flex';
             viewerIframe.style.display = 'none';
             viewerIframe.onerror = () => {
+                if (requestId !== viewerLoadRequestId) return;
                 viewerPlaceholder.innerHTML = '<div class="placeholder-icon">❌</div><h3>Error al cargar documento</h3>';
             };
             viewerIframe.onload = () => {
+                if (requestId !== viewerLoadRequestId) return;
                 viewerPlaceholder.style.display = 'none';
                 viewerIframe.style.display = 'block';
                 viewerIframe.setAttribute('data-current-doc', baseUrl);

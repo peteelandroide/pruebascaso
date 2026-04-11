@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { getAssetOutputForSource } = require('./path-utils');
 
 const SOURCE_DIR = path.join(__dirname, '../source');
 const DOCS_DIR = path.join(__dirname, '../dist/docs');
@@ -16,8 +17,10 @@ const CHAT_FILES = [
   { file: 'chat-primo/_chat.txt', id: 'chat-primo' } // path relativo a source
 ];
 
-// Regex adaptada para capturar también casos de mensajes multilínea
-const chatRegex = /^(\d{1,2})[/\\](\d{1,2})[/\\](\d{4}),\s+(\d{1,2}):(\d{2})\s+([aApP]\.?\s*[mM]\.?)\s*-\s*(.+?):\s*(.*)$/;
+const CHAT_PATTERNS = [
+  /^[\u200e\u200f]?(\d{1,2})[/\\](\d{1,2})[/\\](\d{2,4}),\s+(\d{1,2}):(\d{2})(?::(\d{2}))?\s*([aApP]\.?\s*[mM]\.?)?\s*-\s*(.+?):\s*(.*)$/,
+  /^[\u200e\u200f]?\[(\d{1,2})[/\\](\d{1,2})[/\\](\d{2,4}),\s+(\d{1,2}):(\d{2})(?::(\d{2}))?\s*([aApP]\.?\s*[mM]\.?)?\]\s+(.+?):\s*(.*)$/
+];
 
 function getClassForParticipant(name) {
   const norm = name.toLowerCase();
@@ -36,6 +39,54 @@ function escapeHtml(unsafe) {
          .replace(/>/g, "&gt;")
          .replace(/"/g, "&quot;")
          .replace(/'/g, "&#039;");
+}
+
+function normalizeChatYear(year) {
+  const cleanYear = String(year || '').trim();
+  return cleanYear.length === 2 ? `20${cleanYear}` : cleanYear;
+}
+
+function formatAttachmentLink(fileName, inputFile) {
+  const normalizedInput = inputFile.replace(/\\/g, '/');
+  const baseDir = path.posix.dirname(normalizedInput);
+  const relativeAssetPath = baseDir === '.'
+    ? fileName
+    : path.posix.join(baseDir, fileName);
+
+  const assetUrl = `../${getAssetOutputForSource(relativeAssetPath)}`;
+  const safeName = escapeHtml(fileName);
+  return `<a class="chat-attachment" href="${assetUrl}" target="_blank" rel="noopener">Adjunto: ${safeName}</a>`;
+}
+
+function formatChatMessage(rawMessage, inputFile) {
+  const normalizedMessage = String(rawMessage || '').replace(/[\u200e\u200f]/g, '').trim();
+  const attachmentMatch = normalizedMessage.match(/<attached:\s*([^>]+)>/i);
+
+  if (attachmentMatch) {
+    const beforeAttachment = normalizedMessage.substring(0, attachmentMatch.index).trim();
+    const attachmentHtml = formatAttachmentLink(attachmentMatch[1].trim(), inputFile);
+    if (beforeAttachment) {
+      return `${escapeHtml(beforeAttachment)} ${attachmentHtml}`;
+    }
+    return attachmentHtml;
+  }
+
+  return escapeHtml(rawMessage).replace(/<Media omitted>|<Multimedia omitido>/i, '<em>[📸 Imagen/Audio omitido]</em>');
+}
+
+function parseChatLine(rawLine) {
+  const normalizedLine = String(rawLine || '')
+    .replace(/[\u202f\u00a0]/g, ' ')
+    .replace(/\r/g, '');
+
+  for (const pattern of CHAT_PATTERNS) {
+    const match = normalizedLine.match(pattern);
+    if (match) {
+      const [_, d, m, y, h, min, sec, ampm, author, msg] = match;
+      return { d, m, y, h, min, sec, ampm, author, msg };
+    }
+  }
+  return null;
 }
 
 function parseChatToHTML(inputFile, outputId) {
@@ -73,18 +124,21 @@ function parseChatToHTML(inputFile, outputId) {
       continue;
     }
 
-    const match = rawLine.match(chatRegex);
-    if (match) {
-      const [_, d, m, y, h, min, ampm, author, msg] = match;
-      const normalizedDate = `${d.padStart(2, '0')}/${m.padStart(2, '0')}/${y}`;
-      let msgSafe = escapeHtml(msg).replace(/<Media omitted>|<Multimedia omitido>/i, '<em>[📸 Imagen/Audio omitido]</em>');
+    const parsedLine = parseChatLine(rawLine);
+    if (parsedLine) {
+      const { d, m, y, h, min, sec, ampm, author, msg } = parsedLine;
+      const normalizedDate = `${d.padStart(2, '0')}/${m.padStart(2, '0')}/${normalizeChatYear(y)}`;
+      const normalizedAmPm = ampm ? ampm.replace(/\s+/g, ' ').trim() : '';
+      const timeSuffix = normalizedAmPm ? ` ${normalizedAmPm}` : '';
+      const displayTime = `${h}:${min}${sec ? `:${sec}` : ''}${timeSuffix}`;
+      const msgSafe = formatChatMessage(msg, inputFile);
       
       const participantClass = getClassForParticipant(author);
       // Comenzamos nueva línea de chat
-      htmlOutput += `<div id="L${i + 1}" class="chat-line"><div class="chat-meta">[${normalizedDate} ${h}:${min} ${ampm}] <span class="chat-author ${participantClass}">${escapeHtml(author)}</span>:</div><div class="chat-msg">${msgSafe}</div></div>\n`;
+      htmlOutput += `<div id="L${i + 1}" class="chat-line"><div class="chat-meta">[${normalizedDate} ${displayTime}] <span class="chat-author ${participantClass}">${escapeHtml(author)}</span>:</div><div class="chat-msg">${msgSafe}</div></div>\n`;
     } else {
       // Línea de continuación de chat o mensaje de sistema
-      let msgSafe = escapeHtml(rawLine).replace(/<Media omitted>|<Multimedia omitido>/i, '<em>[📸 Imagen/Audio omitido]</em>');
+      const msgSafe = formatChatMessage(rawLine, inputFile);
       htmlOutput += `<div id="L${i + 1}" class="chat-line chat-continuation"><div class="chat-msg">${msgSafe}</div></div>\n`;
     }
   }

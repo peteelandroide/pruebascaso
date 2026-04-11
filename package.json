@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node build/extract-data.js && node build/sync-src.js",
+    "build": "node build/check-hechos-sync.js && node build/extract-data.js && npm run validate && npm run db:generate && node build/sync-src.js",
     "sync": "node build/sync-src.js",
     "dev": "npm run build && npm run serve",
     "serve": "cd dist && python -m http.server 8080",
-    "audit": "node build/audit-dist.js",
+    "validate": "node build/validate-case-integrity.js",
+    "db:generate": "node src/scripts/generate-sql.js",
+    "audit": "npm run build && node build/audit-dist.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
